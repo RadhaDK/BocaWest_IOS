@@ -3176,6 +3176,7 @@ class MemberDirectoryViewController: UIViewController,UITableViewDataSource, UIT
                 if let regGuest = UIStoryboard.init(name: "MemberApp", bundle: .main).instantiateViewController(withIdentifier: "AddMemberVC") as? AddMemberVC
                 {
                     regGuest.SelectedMemberInfo = [contactsWithSections[indexPath.section][indexPath.row]]
+                    regGuest.modifyDietary = contactsWithSections[indexPath.section][indexPath.row].modifyDietary ?? 0
                     regGuest.selectedData = String(format: "%@, %@", contactsWithSections[indexPath.section][indexPath.row].lastName!, contactsWithSections[indexPath.section][indexPath.row].firstName!)
                     regGuest.delegateAddMember = self.delegate as? AddMemberDelegate
                     regGuest.membersData = self.membersData
@@ -3665,6 +3666,7 @@ class MemberDirectoryViewController: UIViewController,UITableViewDataSource, UIT
                         regGuest.SelectedMemberInfo = [contactsWithSections[selectedSection][selectedRow]]
                         regGuest.delegateAddMember = self.delegate as? AddMemberDelegate
                         regGuest.selectedTime = self.selectedTime
+                        regGuest.modifyDietary = contactsWithSections[selectedSection][selectedRow].modifyDietary ?? 0
                         navigationController?.pushViewController(regGuest, animated: true)
                         
                     }

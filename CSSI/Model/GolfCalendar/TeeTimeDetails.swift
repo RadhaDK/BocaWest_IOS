@@ -189,6 +189,8 @@ class GroupDetail: RequestData, Mappable  {
     var guestLastName : String?
     var guestLinkedMemberID : String?
     //ENGAGE0011784 -- End
+    
+    var modifyDietary: Int?
 
     convenience required init?(map: Map) {
         self.init()
@@ -235,7 +237,7 @@ class GroupDetail: RequestData, Mappable  {
         self.guestLastName <- map["GuestLastName"]
         self.guestLinkedMemberID <- map["GuestLinkedMemberID"]
         //ENGAGE0011784 -- End
-
+        self.modifyDietary <- map["ModifyDietary"]
     }
     
 }

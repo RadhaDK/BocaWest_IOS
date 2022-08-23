@@ -568,7 +568,7 @@ class DiningEventRegistrationVC: UIViewController,UITableViewDataSource,UITableV
             APIKeys.kid : UserDefaults.standard.string(forKey: UserDefaultsKeys.id.rawValue) ?? "",
             APIKeys.kParentId : UserDefaults.standard.string(forKey: UserDefaultsKeys.parentID.rawValue) ?? "",
             APIKeys.kdeviceInfo: [APIHandler.devicedict],
-            APIKeys.ksearchby : UserDefaults.standard.string(forKey: UserDefaultsKeys.firstName.rawValue) ?? "",
+            APIKeys.ksearchby : UserDefaults.standard.string(forKey: UserDefaultsKeys.userID.rawValue) ?? "",
             APIKeys.kpagecount: 1,
             APIKeys.krecordperpage:25
         ]
@@ -800,20 +800,23 @@ class DiningEventRegistrationVC: UIViewController,UITableViewDataSource,UITableV
     }
     
     func ModifyClicked(cell: ModifyRegCustomCell) {
-        self.btnModifyAdd.isEnabled = true
-        
-        let indexPath = self.modifyTableView.indexPath(for: cell)
-        selectedPlayerIndex = indexPath?.row
-        arrTotalList.remove(at: selectedPlayerIndex!)
-       // arrTotalList.insert(RequestData(), at: selectedPlayerIndex!)
-        modifyCount = arrTotalList.count
-        if(arrTotalList.count == 0){
+        if isFrom != "View" {
+            self.btnModifyAdd.isEnabled = true
+            
+            let indexPath = self.modifyTableView.indexPath(for: cell)
+            selectedPlayerIndex = indexPath?.row
+            arrTotalList.remove(at: selectedPlayerIndex!)
+           // arrTotalList.insert(RequestData(), at: selectedPlayerIndex!)
+            modifyCount = arrTotalList.count
+            if(arrTotalList.count == 0){
 
-                self.lblMemberName.text =  String(format: "%@ %@",self.appDelegate.masterLabeling.captain!,"")
-            }
-        
-        modifyTableView.reloadData()
-        self.view.setNeedsLayout()
+                    self.lblMemberName.text =  String(format: "%@ %@",self.appDelegate.masterLabeling.captain!,"")
+                }
+            
+            modifyTableView.reloadData()
+            self.view.setNeedsLayout()
+            
+        }
         
     }
     func editClicked(cell: CustomNewRegCell) {
@@ -2820,7 +2823,7 @@ class DiningEventRegistrationVC: UIViewController,UITableViewDataSource,UITableV
                         regGuest.forDiningEvent = "DiningEvent"
 
                         regGuest.arrSpecialOccasion = (self.eventDetails[0].requestDiningDetails?[0].diningDetails?[indexPath.row].specialOccasion)!
-                        
+                        regGuest.modifyDietary = self.eventDetails[0].requestDiningDetails?[0].diningDetails?[indexPath.row].modifyDietary ?? 0
                         regGuest.delegateAddMember = self
                         navigationController?.pushViewController(regGuest, animated: true)
                     }

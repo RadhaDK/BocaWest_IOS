@@ -176,6 +176,8 @@ class DiningMemberInfo: RequestData, Mappable{
     var id: String?
     var firstName: String?
     var profilePic: String?
+    var modifyDietary: Int?
+    
     convenience required init?(map: Map) {
         self.init()
     }
@@ -197,6 +199,7 @@ class DiningMemberInfo: RequestData, Mappable{
         firstName <- map[""]
         profilePic <- map[""]
         parentID <- map[""]
+        
     }
     
     func setDiningMemberDetails(MemberId: String,firstName:String, Name: String,profilePic: String, id: String , parentID : String, highChair: Int, booster: Int, dietary: String, otherNo: Int, otherTextInformation: String, birthdayNo: Int, anniversaryNo: Int) {
@@ -213,6 +216,7 @@ class DiningMemberInfo: RequestData, Mappable{
         self.firstName = firstName
         self.profilePic = profilePic
         self.parentID = parentID
+        
     }
 }
 
@@ -330,6 +334,7 @@ class MemberInfo: RequestData, Mappable  {
     //Added by kiran V3.2 -- ENGAGE0012617 -- Added dietry ristrictions
     //ENGAGE0012617 -- Start
     var dietaryRestrictions : String?
+    var modifyDietary: Int?
     //ENGAGE0012617 -- End
     convenience required init?(map: Map) {
         self.init()
@@ -373,6 +378,7 @@ class MemberInfo: RequestData, Mappable  {
         //Added by kiran V3.2 -- ENGAGE0012617 -- Added dietry ristrictions
         //ENGAGE0012617 -- Start
         self.dietaryRestrictions <- map["DietaryRestrictions"]
+        self.modifyDietary <- map["ModifyDietary"]
         //ENGAGE0012617 -- End
         
     }

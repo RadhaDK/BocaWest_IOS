@@ -75,7 +75,7 @@ class APIHandler: NSObject
     
     //Note:- Use for internal only. User below code for production
     //when using this comment generateBaseURL() method call in app delegate applicationWillFinishLaunching with options method.
-    lazy var baseURL : String = self.testURL
+    lazy var baseURL : String = self.UATURL
     
     //MARK:- API Switch Variable
     //This is only implemented only for Boca West app as of now.

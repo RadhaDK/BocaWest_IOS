@@ -1225,7 +1225,7 @@ func addMemberDelegate() {
             APIKeys.kid : UserDefaults.standard.string(forKey: UserDefaultsKeys.id.rawValue) ?? "",
             APIKeys.kParentId : UserDefaults.standard.string(forKey: UserDefaultsKeys.parentID.rawValue) ?? "",
             APIKeys.kdeviceInfo: [APIHandler.devicedict],
-            APIKeys.ksearchby : UserDefaults.standard.string(forKey: UserDefaultsKeys.firstName.rawValue) ?? "",
+            APIKeys.ksearchby : UserDefaults.standard.string(forKey: UserDefaultsKeys.userID.rawValue) ?? "",
             APIKeys.kpagecount: 1,
             APIKeys.krecordperpage:25
         ]
@@ -1238,15 +1238,20 @@ func addMemberDelegate() {
                 if(response.memberList == nil){
                     self.setCaptainWithDefaultValues()
                 } else {
-                    for i in response.memberList! {
-                        if i.id == UserDefaults.standard.string(forKey: UserDefaultsKeys.id.rawValue) ?? "" {
-                            let captainInfo = CaptaineInfo.init()
-                            captainInfo.setCaptainDetails(id: i.id ?? "", name:  i.memberName ?? "", firstName: i.firstName ?? "" , order: 1, memberID: i.memberID ?? "", parentID: i.parentid ?? "", profilePic: i.profilePic ?? "", dietRestriction: i.dietaryRestrictions ?? "")
-                            let selectedObject = captainInfo
-                            selectedObject.isEmpty = false
-                            self.arrTotalList.remove(at: 0)
-                            self.arrTotalList.insert(selectedObject, at: 0)
+                    if response.memberList?.count != 0 {
+                        for i in response.memberList! {
+                            if i.id == UserDefaults.standard.string(forKey: UserDefaultsKeys.id.rawValue) ?? "" {
+                                let captainInfo = CaptaineInfo.init()
+                                captainInfo.setCaptainDetails(id: i.id ?? "", name:  i.memberName ?? "", firstName: i.firstName ?? "" , order: 1, memberID: i.memberID ?? "", parentID: i.parentid ?? "", profilePic: i.profilePic ?? "", dietRestriction: i.dietaryRestrictions ?? "")
+                                let selectedObject = captainInfo
+                                selectedObject.isEmpty = false
+                                self.arrTotalList.remove(at: 0)
+                                self.arrTotalList.insert(selectedObject, at: 0)
+                                self.partyTableview.reloadData()
+                            }
                         }
+                    } else {
+                        self.setCaptainWithDefaultValues()
                     }
                 }
             }
@@ -1264,8 +1269,9 @@ func addMemberDelegate() {
 
         let selectedObject = captainInfo
         selectedObject.isEmpty = false
-        arrTotalList.remove(at: 0)
-        arrTotalList.insert(selectedObject, at: 0)
+        self.arrTotalList.remove(at: 0)
+        self.arrTotalList.insert(selectedObject, at: 0)
+        self.partyTableview.reloadData()
     }
     
     //MARK:- MemberDirectory Delegates
@@ -1318,23 +1324,25 @@ func addMemberDelegate() {
     
     //MARK:- Modify Action
     func ModifyClicked(cell: ModifyRegCustomCell) {
-        let indexPath = self.modifyTableview.indexPath(for: cell)
-        selectedIndex = indexPath?.row
-        arrTotalList.remove(at: selectedIndex!)
-        modifyCount = arrTotalList.count
-        if arrTotalList.count == 0 {
-        self.lblModifyCaptainName.text = String(format: "%@ %@",self.appDelegate.masterLabeling.captain!,"")
-        }
-        
-        if arrTotalList.count == Int(self.lblPartySizeNumber.text!)! {
-            self.btnAddNewPlayer.isEnabled = false
-        }
-        else if arrTotalList.count < Int(self.lblPartySizeNumber.text!)! {
-            self.btnAddNewPlayer.isEnabled = true
+        if isFrom != "View" {
+            let indexPath = self.modifyTableview.indexPath(for: cell)
+            selectedIndex = indexPath?.row
+            arrTotalList.remove(at: selectedIndex!)
+            modifyCount = arrTotalList.count
+            if arrTotalList.count == 0 {
+            self.lblModifyCaptainName.text = String(format: "%@ %@",self.appDelegate.masterLabeling.captain!,"")
+            }
+            
+            if arrTotalList.count == Int(self.lblPartySizeNumber.text!)! {
+                self.btnAddNewPlayer.isEnabled = false
+            }
+            else if arrTotalList.count < Int(self.lblPartySizeNumber.text!)! {
+                self.btnAddNewPlayer.isEnabled = true
 
+            }
+            modifyTableview.reloadData()
+            self.view.setNeedsLayout()
         }
-        modifyTableview.reloadData()
-        self.view.setNeedsLayout()
     }
     
     func memberViewControllerResponse(selecteArray: [MemberInfo]) {
@@ -3373,7 +3381,7 @@ func addMemberDelegate() {
                             regGuest.isFrom = "Modify"
                         }
                         regGuest.arrSpecialOccasion = (self.arrTeeTimeDetails[0].diningDetails?[indexPath.row].specialOccasion)!
-
+                        regGuest.modifyDietary = self.arrTeeTimeDetails[0].diningDetails?[indexPath.row].modifyDietary ?? 0
                         regGuest.delegateAddMember = self
                         navigationController?.pushViewController(regGuest, animated: true)
                     }
@@ -3394,7 +3402,7 @@ func addMemberDelegate() {
                     }
                     
                    // regGuest.arrSpecialOccasion = (self.arrTeeTimeDetails[0].diningDetails?[indexPath.row].specialOccasion)!
-
+//                    regGuest.modifyDietary = self.arrTeeTimeDetails[0].diningDetails?[indexPath.row].modifyDietary ?? 0
                     regGuest.delegateAddMember = self
                     navigationController?.pushViewController(regGuest, animated: true)
                 }

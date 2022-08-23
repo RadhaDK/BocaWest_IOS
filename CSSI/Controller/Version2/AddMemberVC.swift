@@ -14,7 +14,7 @@ protocol AddMemberDelegate
     func addMemberDelegate(selecteArray: [RequestData])
     
 }
-class AddMemberVC: UIViewController, UISearchBarDelegate {
+class AddMemberVC: UIViewController, UISearchBarDelegate, UITextViewDelegate {
 
     @IBOutlet weak var viewMain: UIView!
     @IBOutlet weak var bottomView: UIView!
@@ -101,6 +101,7 @@ class AddMemberVC: UIViewController, UISearchBarDelegate {
     //Added by kiran V3.2 -- ENGAGE0012617 -- Added dietry ristrictions
     //ENGAGE0012617 -- Start
     var dietaryRestrictions : String?
+    var modifyDietary = 0
     //ENGAGE0012617 -- End
     
     override func viewDidLoad() {
@@ -114,6 +115,7 @@ class AddMemberVC: UIViewController, UISearchBarDelegate {
         self.btnOther.setTitle(self.appDelegate.masterLabeling.oTHER, for: UIControlState.normal)
         self.lbladdASpecialRequest.text = self.appDelegate.masterLabeling.special_request_add
         self.lblShouldWeBeaware.text = self.appDelegate.masterLabeling.dIETARY_RESTRICTIONS_INFO
+        self.txtSpecify.delegate = self
 
         if isFrom == "Modify"{
             
@@ -1270,6 +1272,19 @@ class AddMemberVC: UIViewController, UISearchBarDelegate {
                 self.appDelegate.hideIndicator()
             }
             
+        }
+    }
+    
+    func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
+//        if UserDefaults.standard.string(forKey: UserDefaultsKeys.userID.rawValue) ?? "" == memberID?.replacingOccurrences(of: "#", with: "") {
+//            return true
+//        } else {
+//            return false
+//        }
+        if modifyDietary == 1 {
+            return true
+        } else {
+            return false
         }
     }
     
