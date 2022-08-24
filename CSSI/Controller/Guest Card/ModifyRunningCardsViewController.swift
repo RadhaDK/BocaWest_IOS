@@ -66,6 +66,9 @@ class ModifyRunningCardsViewController: UIViewController, UITableViewDelegate, U
     var PDFTitle : String?
     //ENGAGE0011898 -- End
     
+    var checkForTwoWeek : Bool?
+    var updatedToDate : String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -286,30 +289,94 @@ class ModifyRunningCardsViewController: UIViewController, UITableViewDelegate, U
         if let date = SharedUtlity.sharedHelper().dateFormatter.date(from: guests![0].previousToDate){
             let fromdate = SharedUtlity.sharedHelper().dateFormatter.date(from: guests![0].fromDate)
             var numberOfDaysToAdd = 0
-            if selectedDay?.day == "1 day" {
-                numberOfDaysToAdd = 1
-            } else if selectedDay?.day == "2 days" {
-                numberOfDaysToAdd = 2
-            }else if selectedDay?.day == "3 days" {
-                numberOfDaysToAdd = 3
-            }else if selectedDay?.day == "4 days" {
-                numberOfDaysToAdd = 4
-            }else if selectedDay?.day == "5 days" {
-                numberOfDaysToAdd = 5
-            }else if selectedDay?.day == "6 days" {
-                numberOfDaysToAdd = 6
-            }else if selectedDay?.day == "7 days" {
-                numberOfDaysToAdd = 7
-            }
             
+           
+    
+            //calculateDaysBetweenTwoDates(start: <#T##Date#>, end: <#T##Date#>)
+            
+//            let diffInDays = Calendar.current.dateComponents([.day], from: fromdate!, to: date)
+//            print(diffInDays)
+            
+            let daySelected = calculateDaysBetweenTwoDates(start: fromdate!, end: date)
+            if daySelected > 12{
+                
+                
+                if selectedDay?.day == "1 day" {
+                    checkForTwoWeek =  false
+                    numberOfDaysToAdd = -6
+                } else if selectedDay?.day == "2 days" {
+                    checkForTwoWeek =  false
+                    numberOfDaysToAdd = -5
+                }else if selectedDay?.day == "3 days" {
+                    checkForTwoWeek =  false
+                    numberOfDaysToAdd = -4
+                }else if selectedDay?.day == "4 days" {
+                    checkForTwoWeek =  false
+                    numberOfDaysToAdd = -3
+                }else if selectedDay?.day == "5 days" {
+                    checkForTwoWeek =  false
+                    numberOfDaysToAdd = -2
+                }else if selectedDay?.day == "6 days" {
+                    checkForTwoWeek =  false
+                    numberOfDaysToAdd = -1
+                }else if selectedDay?.day == "7 days" {
+                   // if numberOfDaysToAdd == 0{
+                    numberOfDaysToAdd = 100
+                        checkForTwoWeek =  true
+                    //}
+                   
+                }
+                
+            }
+            else{
+                if selectedDay?.day == "1 day" {
+                    numberOfDaysToAdd = 1
+                } else if selectedDay?.day == "2 days" {
+                    numberOfDaysToAdd = 2
+                }else if selectedDay?.day == "3 days" {
+                    numberOfDaysToAdd = 3
+                }else if selectedDay?.day == "4 days" {
+                    numberOfDaysToAdd = 4
+                }else if selectedDay?.day == "5 days" {
+                    numberOfDaysToAdd = 5
+                }else if selectedDay?.day == "6 days" {
+                    numberOfDaysToAdd = 6
+                }else if selectedDay?.day == "7 days" {
+                    numberOfDaysToAdd = 7
+                }
+            }
+
+           
             let dateNew = SharedUtlity.sharedHelper().dateFormatter.date(from: (UserDefaultsKeys.visitToDate.rawValue))
             
             if let dateFormatter = SharedUtlity.sharedHelper().dateFormatter,
                 let toDate = Calendar.current.date(byAdding: .day , value: numberOfDaysToAdd, to: date, wrappingComponents: false),
                 numberOfDaysToAdd != 0 {
-                txtVisit.text = "\(dateFormatter.string(from: fromdate!)) - \(dateFormatter.string(from: toDate))"
+                if checkForTwoWeek == true{
+                    let toDateNew = UserDefaults.standard.object(forKey: "TwoWeekCheck") as! Date
+                    
+                    txtVisit.text = "\(dateFormatter.string(from: fromdate!)) - \(dateFormatter.string(from: toDateNew))"
+                    updatedToDate = "\(dateFormatter.string(from: fromdate!)) - \(dateFormatter.string(from: toDateNew))"
+                }
+                else{
+                    txtVisit.text = "\(dateFormatter.string(from: fromdate!)) - \(dateFormatter.string(from: toDate))"
+                    updatedToDate = "\(dateFormatter.string(from: fromdate!)) - \(dateFormatter.string(from: toDate))"
+
+                }
             }
         }
+    }
+    
+    private func calculateDaysBetweenTwoDates(start: Date, end: Date) -> Int {
+
+        let currentCalendar = Calendar.current
+        guard let start = currentCalendar.ordinality(of: .day, in: .era, for: start) else {
+            return 0
+        }
+        guard let end = currentCalendar.ordinality(of: .day, in: .era, for: end) else {
+            return 0
+        }
+        return end - start
     }
     
 //    func textFieldDidEndEditing(_ textField: UITextField) {
@@ -392,8 +459,8 @@ class ModifyRunningCardsViewController: UIViewController, UITableViewDelegate, U
             APIKeys.kDuration : self.txtUpComingVisit.text ?? "",
             "LinkedMemberIds": guests?.first?.transactionDetailID ?? "",
             "Action": "CurrentVisit"
-
         ]
+        print(params)
         //commented by kiran V3.0
         //print(params)
         APIHandler.sharedInstance.addOrModifyGuestCard(paramater: params, onSuccess: {
