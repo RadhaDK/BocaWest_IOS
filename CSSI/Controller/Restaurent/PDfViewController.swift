@@ -263,8 +263,8 @@ class PDfViewController: UIViewController,UIWebViewDelegate {
                 APIKeys.kParentId: UserDefaults.standard.string(forKey: UserDefaultsKeys.parentID.rawValue)  ?? "",
                 APIKeys.kid: UserDefaults.standard.string(forKey: UserDefaultsKeys.id.rawValue)  ?? "",
                 "ARType": "NORMAL A/R",
-                "Year": year,
-                "Month": month,
+                "Year": year ?? "",
+                "Month": month ?? "",
                 APIKeys.kdeviceInfo: [APIHandler.devicedict],
                 //Added by kiran V3.1 -- ENGAGE0012480 --
                 //ENGAGE0012480 -- Start

@@ -1016,19 +1016,24 @@ class CalendarOfEventsViewController: UIViewController, UITableViewDataSource, U
             }else{
                 cell.lblPartySize.text = ""
             }
+            
+            
+            
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "dd MMM yyyy"
-            let EventDate = dateFormatter.date(from: eventobj.eventstartdate ?? "")
-            
+                dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+            dateFormatter.dateFormat = "dd MMM YYYY"
+                let EventDate = dateFormatter.date(from: eventobj.eventstartdate ?? "29 Jul 2022")
+               
             let date = EventDate
-            
+
             let dateFormat = DateFormatter()
-            dateFormat.dateFormat = "dd-MM-yyyy"
+            dateFormat.dateFormat = "dd MMM yyyy"
             
             dateFormat.dateFormat = "dd"
-            let weekDay: String = dateFormat.string(from: date!)
+           let weekDay: String = dateFormat.string(from: date!)
             
             dateFormat.dateFormat = "MMM"
+            
             let dateAndMonth: String = dateFormat.string(from: date!)
            
             
@@ -1144,19 +1149,20 @@ class CalendarOfEventsViewController: UIViewController, UITableViewDataSource, U
         }else{
             cell.lblPartySize.text = ""
         }
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd MMM yyyy"
-        let EventDate = dateFormatter.date(from: eventobj.eventstartdate ?? "")
-      
-        let date = EventDate
+            let dateFormatter = DateFormatter()
+                dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+            dateFormatter.dateFormat = "dd MMM YYYY"
+                let EventDate = dateFormatter.date(from: eventobj.eventstartdate ?? "29 Jul 2022")
+               
+            let date = EventDate
 
-        let dateFormat = DateFormatter()
-        dateFormat.dateFormat = "dd-MM-yyyy"
-        
-        dateFormat.dateFormat = "dd"
-        let weekDay: String = dateFormat.string(from: date!)
-        
-        dateFormat.dateFormat = "MMM"
+            let dateFormat = DateFormatter()
+            dateFormat.dateFormat = "dd MMM yyyy"
+            
+            dateFormat.dateFormat = "dd"
+           let weekDay: String = dateFormat.string(from: date!)
+            
+            dateFormat.dateFormat = "MMM"
         let dateAndMonth: String = dateFormat.string(from: date!)
         if eventobj.buttontextvalue == "5" || eventobj.buttontextvalue == "6" {
             cell.lblExternalRegText.isHidden = true
@@ -1971,7 +1977,7 @@ class CalendarOfEventsViewController: UIViewController, UITableViewDataSource, U
             
             if(!(i == 0)){
               //  self.segmentedController.segmentStyle = .textOnly
-                self.segmentedController.insertSegment(withTitle: statementData.categoryText, image: nil, at: i)
+                self.segmentedController.insertSegment(withTitle: statementData.DisplayText, image: nil, at: i)
 //                self.segmentedController.segmentStyle = .imageOnLeft
             }
             else{

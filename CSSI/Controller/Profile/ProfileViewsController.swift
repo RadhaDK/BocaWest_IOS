@@ -469,8 +469,11 @@ class ProfileViewsController: UIViewController , UINavigationControllerDelegate,
         self.lblNotificationPrimaryEamil.text = self.appDelegate.masterLabeling.pRIMARY_EMAIL
         self.lblSecondaryEmailNotification.text = self.appDelegate.masterLabeling.sECONDARY_EMAIL
         self.lblSendStatementTo.text = self.appDelegate.masterLabeling.send_statements_to
+        self.selectedStatement = self.appDelegate.masterLabeling.send_statements_to
+
         self.lblEditSendMagazineTo.text = self.appDelegate.masterLabeling.send_magazines_to
-        
+        self.selectedMagazine = self.appDelegate.masterLabeling.send_magazines_to
+
         self.lblEditAddressOther.text = self.appDelegate.masterLabeling.address_other
         self.lblEditStreetAdd1.text = self.appDelegate.masterLabeling.street_address_1
         self.lblEDitStreetAdd2.text = self.appDelegate.masterLabeling.street_address_2

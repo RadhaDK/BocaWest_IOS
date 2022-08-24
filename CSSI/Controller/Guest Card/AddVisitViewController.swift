@@ -272,8 +272,6 @@ class AddVisitViewController: UIViewController, UITableViewDelegate, UITableView
         duration.setColor(color: hexStringToUIColor(hex: self.appDelegate.masterLabeling.rEQUIREDFIELD_COLOR!), forText: "*")   // or use direct value for text "red"
         self.lblDuration.attributedText = duration
         
-        
-        
     }
     override func viewWillAppear(_ animated: Bool)
     {
@@ -524,22 +522,45 @@ class AddVisitViewController: UIViewController, UITableViewDelegate, UITableView
      
 
         self.appDelegate.showIndicator(withTitle: "", intoView: self.view)
+        let params: [String : Any]?
+        if self.isFrom .isEqual(to: "Modify") {
+             params = [
+                APIKeys.kMemberId : UserDefaults.standard.string(forKey: UserDefaultsKeys.userID.rawValue)!,
+                APIKeys.kdeviceInfo: [APIHandler.devicedict],
+                APIKeys.kParentId: UserDefaults.standard.string(forKey: UserDefaultsKeys.parentID.rawValue)!,
+                APIKeys.kid: UserDefaults.standard.string(forKey: UserDefaultsKeys.id.rawValue) ?? "",
+                APIKeys.kFromDate : (txtVisit.text?.prefix(10))!,
+                APIKeys.kToDate : String(txtVisit.text?.suffix(10) ?? ""),
+                APIKeys.kExtendBy : "",
+                APIKeys.kDuration : txtExtendBy.text ?? "",
+                "AccompanyWithMainMember": btnSwitchSelection.tag,
+                "SelectedNumbers": selectedNumbers,
+                "GuestID": guests?.first?.guestID ?? "" ,
+                "ReceiptNumber": ReceiptNumber ?? "",
+                "LinkedMemberIds": "\(guests?.first?.transactionDetailID ?? ""),\(guests?.last?.transactionDetailID ?? "")",
+                 "Action": "AddVisit"
+            ]
 
-        let params: [String : Any] = [
-            APIKeys.kMemberId : UserDefaults.standard.string(forKey: UserDefaultsKeys.userID.rawValue)!,
-            APIKeys.kdeviceInfo: [APIHandler.devicedict],
-            APIKeys.kParentId: UserDefaults.standard.string(forKey: UserDefaultsKeys.parentID.rawValue)!,
-            APIKeys.kid: UserDefaults.standard.string(forKey: UserDefaultsKeys.id.rawValue) ?? "",
-            APIKeys.kFromDate : (txtVisit.text?.prefix(10))!,
-            APIKeys.kExtendBy : "",
-            APIKeys.kDuration : txtExtendBy.text ?? "",
-            "AccompanyWithMainMember": btnSwitchSelection.tag,
-            "SelectedNumbers": selectedNumbers,
-            "GuestID": guests?.first?.guestID ?? "" ,
-            "ReceiptNumber": ReceiptNumber ?? "",
-            "LinkedMemberIds": guests?.first?.transactionDetailID ?? "",
-             "Action": "AddVisit"
-        ]
+        }
+        else{
+             params = [
+                APIKeys.kMemberId : UserDefaults.standard.string(forKey: UserDefaultsKeys.userID.rawValue)!,
+                APIKeys.kdeviceInfo: [APIHandler.devicedict],
+                APIKeys.kParentId: UserDefaults.standard.string(forKey: UserDefaultsKeys.parentID.rawValue)!,
+                APIKeys.kid: UserDefaults.standard.string(forKey: UserDefaultsKeys.id.rawValue) ?? "",
+                APIKeys.kFromDate : (txtVisit.text?.prefix(10))!,
+                APIKeys.kToDate : String(txtVisit.text?.suffix(10) ?? ""),
+                APIKeys.kExtendBy : "",
+                APIKeys.kDuration : txtExtendBy.text ?? "",
+                "AccompanyWithMainMember": btnSwitchSelection.tag,
+                "SelectedNumbers": selectedNumbers,
+                "GuestID": guests?.first?.guestID ?? "" ,
+                "ReceiptNumber": ReceiptNumber ?? "",
+                "LinkedMemberIds": guests?.first?.transactionDetailID ?? "",
+                 "Action": "AddVisit"
+            ]
+
+        }
         
         APIHandler.sharedInstance.addOrModifyGuestCard(paramater: params, onSuccess: {
             // self.navigationController?.popViewController(animated: true)

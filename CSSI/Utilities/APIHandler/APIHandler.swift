@@ -1498,7 +1498,9 @@ class APIHandler: NSObject
             APIHeader.kautherization: UserDefaults.standard.string(forKey: UserDefaultsKeys.apiauthtoken.rawValue) ?? "",
             APIHeader.kContentType : "application/json"
         ]
-        
+        print(url)
+        print(paramater)
+        print(headers)
         Alamofire.request(url, method: .post, parameters: paramater, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in
             switch response.result {
             case .success:
@@ -2227,7 +2229,9 @@ class APIHandler: NSObject
 
         ]
         //print("lang\(headers)")
-
+        print(url)
+        print(paramater)
+print(headers)
         Alamofire.request(url, method:.post, parameters:paramater, encoding: JSONEncoding.default, headers:headers).responseJSON { response in
 
             switch response.result {
@@ -2485,6 +2489,7 @@ class APIHandler: NSObject
             APIHeader.kautherization: UserDefaults.standard.string(forKey: UserDefaultsKeys.apiauthtoken.rawValue) ?? "",
             APIHeader.kculturecode: UserDefaults.standard.string(forKey: UserDefaultsKeys.culturecode.rawValue) ?? ""
         ]
+        print(paramater)
         
         Alamofire.request(url,method:.post, parameters:paramater,encoding: JSONEncoding.default, headers:headers).responseJSON { response  in
             switch response.result {
@@ -3435,8 +3440,12 @@ class APIHandler: NSObject
             APIHeader.kculturecode: UserDefaults.standard.string(forKey: UserDefaultsKeys.culturecode.rawValue) ?? ""
             
         ]
+       
         
         let url : String = baseURL + APIHandler.getGiftCard
+        print(url)
+        print(paramaterDict)
+        print(headers)
         Alamofire.request(url,method:.post, parameters:paramaterDict,encoding: JSONEncoding.default, headers:headers).responseJSON { response  in
             switch response.result {
             case.success(let result):
@@ -3825,6 +3834,9 @@ class APIHandler: NSObject
             APIHeader.kautherization: UserDefaults.standard.string(forKey: UserDefaultsKeys.apiauthtoken.rawValue) ?? "",
             APIHeader.kculturecode: UserDefaults.standard.string(forKey: UserDefaultsKeys.culturecode.rawValue) ?? ""
         ]
+        print(url)
+        print(paramaterDict)
+        print(headers)
         
         Alamofire.request(url,method:.post, parameters:paramaterDict,encoding: JSONEncoding.default, headers:headers).responseJSON { response  in
             switch response.result {
@@ -5059,6 +5071,10 @@ class APIHandler: NSObject
             APIHeader.kculturecode: UserDefaults.standard.string(forKey: UserDefaultsKeys.culturecode.rawValue) ?? ""
             
         ]
+        
+        print(url)
+        print(paramater)
+        print(headers)
         Alamofire.request(url,method:.post, parameters:paramater, encoding: JSONEncoding.default, headers:headers).responseJSON { response  in
             switch response.result {
         
