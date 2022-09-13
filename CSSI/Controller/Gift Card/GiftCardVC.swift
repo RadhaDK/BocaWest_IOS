@@ -211,7 +211,7 @@ class GiftCardVC: UIViewController, UITableViewDelegate, UITableViewDataSource
             
             if let segmentController = self.scrollSegmentedController
             {
-                selectedCardType = self.appDelegate.giftCertificateCardType[segmentController.selectedSegmentIndex].name ?? ""
+                selectedCardType = self.appDelegate.giftCertificateCardType[segmentController.selectedSegmentIndex].Id ?? ""
             }
             
             // print(UserDefaultsKeys.userID.rawValue)
@@ -463,7 +463,7 @@ extension GiftCardVC
         
         for (index,segment) in self.appDelegate.giftCertificateCardType.enumerated()
         {
-            self.scrollSegmentedController!.insertSegment(withTitle: segment.name ?? "", at: index)
+            self.scrollSegmentedController!.insertSegment(withTitle: "  " + (segment.name ?? "") + "  ", at: index)
         }
         
         self.scrollSegmentedController!.selectedSegmentIndex = 0

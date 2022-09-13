@@ -155,6 +155,7 @@ class TransactionDetailsViewController: UIViewController, UITableViewDelegate,UI
             },onFailure: { error  in
                 //commented by kiran V3.0
                 //print(error)
+                self.appDelegate.hideIndicator()
                 SharedUtlity.sharedHelper().showToast(on:
                     self.view, withMeassge: error.localizedDescription, withDuration: Duration.kMediumDuration)
             })

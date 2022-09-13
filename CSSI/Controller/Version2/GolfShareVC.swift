@@ -149,8 +149,12 @@ class GolfShareVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
             lblNPC.isHidden = true
             lblNPCValue.isHidden = true
             
-            let title = "\(self.appDelegate.bookingAppointmentDetails.department?.departmentName ?? "") \(self.appDelegate.masterLabeling.BMS_CALENDAR ?? "")"
-            self.navigationItem.title = title
+            if self.arrEventDetails.first?.DepartmentName == "Tennis" {
+                self.navigationItem.title = self.appDelegate.masterLabeling.tennis_calendar
+            } else {
+                let title = "\(self.appDelegate.bookingAppointmentDetails.department?.departmentName ?? "") \(self.appDelegate.masterLabeling.BMS_CALENDAR ?? "")"
+                self.navigationItem.title = title
+            }
         }
         else
         {
