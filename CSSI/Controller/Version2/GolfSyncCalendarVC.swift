@@ -207,7 +207,8 @@ class GolfSyncCalendarVC: UIViewController, UITextFieldDelegate, UITableViewData
             }
             
             if self.arrEventDetails.first?.DepartmentName == "Tennis" {
-                self.navigationItem.title = self.appDelegate.masterLabeling.court_time_details
+                let title = "\(self.appDelegate.masterLabeling.racquet_time_details ?? "") \(self.appDelegate.masterLabeling.BMS_REQUESTDETAILS ?? "")"
+                self.navigationItem.title = title
             } else {
                 let title = "\(self.appDelegate.bookingAppointmentDetails.department?.departmentName ?? "") \(self.appDelegate.masterLabeling.BMS_REQUESTDETAILS ?? "")"
                 self.navigationItem.title = title

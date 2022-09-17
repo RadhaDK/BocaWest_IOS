@@ -1146,10 +1146,10 @@ class CalendarOfEventsViewController: UIViewController, UITableViewDataSource, U
             cell.lblPartySize.text = ""
         }
             let dateFormatter = DateFormatter()
-                dateFormatter.locale = Locale(identifier: "en_US_POSIX")
-            dateFormatter.dateFormat = "dd MMM YYYY"
-                let EventDate = dateFormatter.date(from: eventobj.eventstartdate ?? "29 Jul 2022")
-               
+            dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+            dateFormatter.dateFormat = "dd MMM yyyy"
+            let EventDate = dateFormatter.date(from: eventobj.eventstartdate ?? "")
+
             let date = EventDate
 
             let dateFormat = DateFormatter()

@@ -496,6 +496,7 @@ class Label: NSObject, Mappable  {
     var tee_time_details: String?
     var court_time_details: String?
     var dining_reservation_details: String?
+    var racquet_time_details: String?
     var rEQUEST_COURT: String?
     var sINGLES: String?
     var dOUBLES: String?
@@ -1047,6 +1048,7 @@ class Label: NSObject, Mappable  {
         tee_time_details <- map["TEETIME_DETAILS"]
         court_time_details <- map["COURT_TIME_DETAILS"]
         dining_reservation_details <- map["DINING_RESERVATION_DETAILS"]
+        racquet_time_details <- map["TENNIS_DISPLAYTEXT_COMPARISION"]
 
         link_groups <- map["LINK_GROUPS"]
         share <- map["SHARE"]

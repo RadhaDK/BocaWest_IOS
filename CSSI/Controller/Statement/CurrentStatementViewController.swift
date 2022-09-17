@@ -579,7 +579,7 @@ class CurrentStatementViewController: UIViewController, UITableViewDelegate, UIT
         }
         
         cell.lblDate.text = statementDict.purchaseDate ?? ""
-        cell.lblCategory.text = statementDict.category
+        cell.lblCategory.text = statementDict.displayText ?? ""
         cell.lblReceipt.text = statementDict.receiptNo ?? ""
         cell.lblDescription.text = statementDict.descriptions ?? ""
         
