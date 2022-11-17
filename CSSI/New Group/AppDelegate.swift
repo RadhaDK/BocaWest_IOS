@@ -814,22 +814,23 @@ extension AppDelegate : CBCentralManagerDelegate
             //ENGAGE0012323 -- Start
             if #available(iOS 14.5, *)
             {
-                ATTrackingManager.requestTrackingAuthorization { status in
-                    
-                    switch status
-                    {
-                    case .authorized:
-                        self.locationManager?.requestWhenInUseAuthorization()
-                    case .denied:
-                        break
-                    case .notDetermined:
-                        break
-                    case .restricted:
-                        break
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+                    ATTrackingManager.requestTrackingAuthorization { status in
+                        
+                        switch status
+                        {
+                        case .authorized:
+                            self.locationManager?.requestWhenInUseAuthorization()
+                        case .denied:
+                            break
+                        case .notDetermined:
+                            break
+                        case .restricted:
+                            break
+                        }
+                        
                     }
-                    
-                }
-                
+                })
             }
             else
             {

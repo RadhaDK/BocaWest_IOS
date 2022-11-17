@@ -662,7 +662,7 @@ class APIHandler: NSObject
             switch response.result {
             case.success(let result):
                 let responseString = NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue)
-                print("responseString eventlist= \(String(describing: responseString))")
+//                print("responseString eventlist= \(String(describing: responseString))")
                 do {
                     if let jsonDict = try JSONSerialization.jsonObject(with: response.data!, options: []) as? [String: AnyObject] {
                         print(jsonDict)
@@ -1782,7 +1782,8 @@ class APIHandler: NSObject
             APIHeader.kautherization: UserDefaults.standard.string(forKey: UserDefaultsKeys.apiauthtoken.rawValue) ?? "",
             APIHeader.kContentType : "application/json"
         ]
-        
+        print("==========\(url) ========== Start")
+//        print(paramater)
         Alamofire.request(url, method: .post, parameters: paramater, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in
             switch response.result {
             case .success:
@@ -2599,6 +2600,7 @@ print(headers)
 //                print("responseString restdetails = \(String(describing: responseString))")
                 do {
                     if let jsonDict = try JSONSerialization.jsonObject(with: response.data!, options: []) as? [String: AnyObject] {
+                        print(jsonDict)
                         let dashboardDicterror = Mapper<BrokenRulesModel>().map(JSONObject: jsonDict)
                         if(((dashboardDicterror?.brokenRules?.fields?.count) ?? 0) > 0 ){
                             self.appDelegate.hideIndicator()
@@ -3495,7 +3497,7 @@ print(headers)
             APIHeader.kculturecode: UserDefaults.standard.string(forKey: UserDefaultsKeys.culturecode.rawValue) ?? ""
             
         ]
-        
+        print("==========\(url) ========== Start")
         Alamofire.request(url,method:.post, parameters:paramaterDict,encoding: JSONEncoding.default, headers:headers).responseJSON { response  in
             switch response.result {
             case.success(let result):
@@ -6353,7 +6355,7 @@ print(headers)
                     
                     if let jsonDict = try JSONSerialization.jsonObject(with: response.data!, options: []) as? [String: AnyObject]
                     {
-                        
+                        print(jsonDict)
                         let dashboardDicterror = Mapper<BrokenRulesModel>().map(JSONObject: jsonDict)
                         //Broken rule
                         if(((dashboardDicterror?.brokenRules?.fields?.count) ?? 0) > 0 )
