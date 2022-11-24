@@ -11897,7 +11897,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" title="High Chair" image="CheckBox_uncheck">
-                                                    <color key="titleColor" name="ThemeBrownColor"/>
+                                                    <color key="titleColor" name="PrimaryThemeColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="highChair:" destination="IC5-8b-qcm" eventType="touchUpInside" id="X9q-nk-Jxt"/>
@@ -11925,7 +11925,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27A-IC-ce9">
                                                         <rect key="frame" x="74.5" y="2" width="31" height="37"/>
                                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="30"/>
-                                                        <color key="textColor" name="ThemeBrownColor"/>
+                                                        <color key="textColor" name="PrimaryThemeColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyr-Je-5MW">
@@ -11972,7 +11972,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" title="Booster Seat" image="CheckBox_uncheck">
-                                                    <color key="titleColor" name="ThemeBrownColor"/>
+                                                    <color key="titleColor" name="PrimaryThemeColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="boosterClicked:" destination="IC5-8b-qcm" eventType="touchUpInside" id="7Xs-Qo-w9y"/>
@@ -11984,7 +11984,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guO-c7-LUV">
                                                         <rect key="frame" x="74.5" y="2" width="31" height="37"/>
                                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="30"/>
-                                                        <color key="textColor" name="ThemeBrownColor"/>
+                                                        <color key="textColor" name="PrimaryThemeColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dcp-EP-RSN">
@@ -13474,7 +13474,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will be notified on Tuesday, April 23 of your Reservation status." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40w-23-YAo">
                                         <rect key="frame" x="40" y="317" width="275" height="46"/>
                                         <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="18"/>
-                                        <color key="textColor" name="ThemeBrownColor"/>
+                                        <color key="textColor" name="PrimaryThemeColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ppm-8V-5Rb">
@@ -13499,7 +13499,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will be notified on Tuesday, April 23 of your Reservation status." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yf0-77-cu1">
                                         <rect key="frame" x="17" y="258" width="321" height="46"/>
                                         <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="18"/>
-                                        <color key="textColor" name="ThemeBrownColor"/>
+                                        <color key="textColor" name="PrimaryThemeColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r1M-S8-PC8">
@@ -13516,7 +13516,7 @@
                                             <constraint firstAttribute="width" constant="250" id="eyL-Tw-jtm"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="32"/>
-                                        <color key="textColor" name="ThemeOrangeColor"/>
+                                        <color key="textColor" name="ThemeColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
