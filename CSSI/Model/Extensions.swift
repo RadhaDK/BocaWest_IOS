@@ -166,7 +166,11 @@ extension UIViewController
     func navBackBtnItem(target: Any?, action: Selector,image : UIImage? = nil) -> UIBarButtonItem
     {
         let backImage = UIImage.init(named: "back_btn")
-        
+        // * Uncomment code convert back button to white color *
+//        let backBtn = BackBarButtonItem.init(image: image ?? backImage , style: .plain, target: target, action: action)
+//        backBtn.image?.withRenderingMode(.alwaysTemplate)
+//        backBtn.tintColor = APPColor.NavigationControllerColors.memberIDBackBtnColor
+//        return backBtn
         return BackBarButtonItem.init(image: image ?? backImage , style: .plain, target: target, action: action)
     }
     

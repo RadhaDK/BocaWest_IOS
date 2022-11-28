@@ -281,7 +281,7 @@ class TransactionDetailsViewController: UIViewController, UITableViewDelegate,UI
         cell.lblNo.text = String(format: "%02d", indexPath.row + 1)
 
        // cell.lblNo.text = "\(indexPath.row + 1)"
-        cell.lblQty.text = "\(String(describing: self.appDelegate.masterLabeling.qTY ?? "")) \(itemDict.quntity ?? 0)"
+        cell.lblQty.text = "\(String(describing: self.appDelegate.masterLabeling.qTY ?? "")) \(itemDict.quntity ?? "")"
         cell.lblItemName.text = itemDict.name
         cell.lblSKUNo.text = itemDict.sku
 //        cell.lblAmount.text =  self.appDelegate.masterLabeling.cURRENCY!  + String(format: "%.2f",itemDict.price ?? 0.0)
