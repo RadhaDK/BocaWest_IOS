@@ -5,6 +5,17 @@ import AlamofireObjectMapper
 import ObjectMapper
 import Toaster
 
+
+#if CobaltENGAGE
+
+let targetType = BaseUrls.Cobalt
+
+#else
+
+let targetType = BaseUrls.Bocawest
+
+#endif
+
 struct Response: Codable {
     
     let responseCode, responseMessage: String
@@ -14,11 +25,11 @@ struct Response: Codable {
         case responseCode = "ResponseCode"
         case responseMessage = "ResponseMessage"
     }
-    
-    
 }
 
 
+var projectTarget : BaseUrls?
+var targetName : BaseUrls?
 
 class APIHandler: NSObject
 {
@@ -65,6 +76,8 @@ class APIHandler: NSObject
     
     let devURL = "https://cobaltportal.mycobaltsoftware.com/cssi.cobalt.member.wrapper.dev/api/"
     
+    let engageTestURL : String = "https://cobaltportal.mycobaltsoftware.com/cssi.cobalt.member.wrapper.Eng.Test/api/"
+    
     //Added on 4th September 2020
     //Demo Links
     let bocaWestDemoURL = "https://api.mycobaltsoftware.com/App.Wrapper.BW/api/"
@@ -75,7 +88,10 @@ class APIHandler: NSObject
     
     //Note:- Use for internal only. User below code for production
     //when using this comment generateBaseURL() method call in app delegate applicationWillFinishLaunching with options method.
-    lazy var baseURL : String = self.productionURL
+
+
+    
+    lazy var baseURL : String = assignBaseUrl()
     
     //MARK:- API Switch Variable
     //This is only implemented only for Boca West app as of now.
@@ -291,6 +307,27 @@ class APIHandler: NSObject
     static let getWalletPass = "Member/GetWalletPass"
     //ENGAGE0011722 -- End
     
+    
+   
+    
+    func assignBaseUrl() -> String{
+      var urlString = ""
+        if targetName == BaseUrls.Bocawest{
+            urlString = self.productionURL
+        }
+        else if targetName == BaseUrls.Cobalt{
+            urlString = "enviroment"
+         }else{
+             urlString = "enviroment"
+         }
+        return urlString
+    }
+
+//    switch
+//        case .dev:
+//        baseurl:
+//
+        
     //Added on 17th October 2020 V2.3
     //MARK:- BASE URL Handler
     func generateBaseURL()

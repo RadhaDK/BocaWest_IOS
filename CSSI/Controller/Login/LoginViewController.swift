@@ -6,6 +6,10 @@ import ObjectMapper
 import Popover
 import Gimbal
 
+
+
+
+
 class LoginViewController: UIViewController , UITextFieldDelegate{
    
     @IBOutlet weak var lblText: UILabel!
@@ -947,7 +951,14 @@ class LoginViewController: UIViewController , UITextFieldDelegate{
     }
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = true
-        
+//        if targetName == "Cobalt"{
+//            imgBackground.image = UIImage(named: "MaskGroup357Cobalt")
+//
+//
+//         }else{
+//             imgBackground.image = UIImage(named: "Mask Group 357")
+//
+//         }
         
     }
     

@@ -430,3 +430,8 @@ enum PassErrorCodes : Int
     case addingError = 100050
 }
 //ENGAGE0011722 -- End
+
+enum BaseUrls : String{
+    case Bocawest
+    case Cobalt
+}
