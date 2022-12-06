@@ -312,11 +312,11 @@ class APIHandler: NSObject
     
     func assignBaseUrl() -> String{
       var urlString = ""
-        if targetName == BaseUrls.Bocawest{
-            urlString = self.productionURL
+        if targetType == BaseUrls.Bocawest{
+            urlString = self.testURL
         }
-        else if targetName == BaseUrls.Cobalt{
-            urlString = "enviroment"
+        else if targetType == BaseUrls.Cobalt{
+            urlString = self.engageTestURL
          }else{
              urlString = "enviroment"
          }

@@ -1929,7 +1929,7 @@ class DashBoardViewController: UIViewController, UICollectionViewDelegate, UICol
                 if let guestCard = UIStoryboard.init(name: "MemberApp", bundle: .main).instantiateViewController(withIdentifier: "TodayAtGlanceVC") as? TodayAtGlanceVC {
                     self.navigationController?.navigationBar.backIndicatorImage = UIImage(named: "Path 117")
                     self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "Path 117")
-                    self.navigationController?.navigationBar.tintColor = APPColor.viewNews.backButtonColor
+                    self.navigationController?.navigationBar.tintColor = UIColor(named: "navigationColor")
 
                     self.navigationController?.pushViewController(guestCard, animated: true)
                     
