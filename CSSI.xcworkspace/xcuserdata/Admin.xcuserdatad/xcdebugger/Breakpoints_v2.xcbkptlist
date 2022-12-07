@@ -16,7 +16,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "803"
             endingLineNumber = "803"
-            landmarkName = "getRequestDiningDetails(paramaterDict:onSuccess:onFailure:)"
+            landmarkName = "getRequestTennisDetails(paramaterDict:onSuccess:onFailure:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -32,7 +32,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "4790"
             endingLineNumber = "4790"
-            landmarkName = "getEventDetails(paramater:onSuccess:onFailure:)"
+            landmarkName = "getInterest(paramater:onSuccess:onFailure:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -48,7 +48,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "668"
             endingLineNumber = "668"
-            landmarkName = "getDiningCalendarList(paramaterDict:onSuccess:onFailure:)"
+            landmarkName = "getTennisCalendarList(paramaterDict:onSuccess:onFailure:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -64,7 +64,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "3106"
             endingLineNumber = "3106"
-            landmarkName = "getMemberSpouseList(paramaterDict:onSuccess:onFailure:)"
+            landmarkName = "getMemberList(paramaterDict:onSuccess:onFailure:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -80,23 +80,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "4099"
             endingLineNumber = "4099"
-            landmarkName = "changePasswordApi(paramaterDict:onSuccess:onFailure:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F53153A8-71B4-40A7-A820-550329FD1BB0"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CSSI/Utilities/APIHandler/APIHandler.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "323"
-            endingLineNumber = "323"
-            landmarkName = "generateBaseURL()"
+            landmarkName = "resetPasswordApi(paramaterDict:onSuccess:onFailure:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -128,7 +112,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1788"
             endingLineNumber = "1788"
-            landmarkName = "getMemberValidation(paramater:onSuccess:onFailure:)"
+            landmarkName = "getAppVersion(paramater:onSuccess:onFailure:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -145,6 +129,22 @@
             startingLineNumber = "467"
             endingLineNumber = "467"
             landmarkName = "addToCalendarClicked(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9078B9CE-0C05-4118-839D-FB88101DCC8E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CSSI/Utilities/APIHandler/APIHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "314"
+            endingLineNumber = "314"
+            landmarkName = "assignBaseUrl()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
