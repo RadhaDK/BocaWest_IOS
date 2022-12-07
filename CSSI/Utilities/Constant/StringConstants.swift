@@ -79,6 +79,7 @@ struct APIKeys
     static let klastName = "LastName"
     static let krelation = "Relation"
     static let krestaurentID = "RestaurentID"
+    static let kOtherAvailableDate = "OtherAvailableDates"
     
     static let kprimaryphone = "PrimaryPhone"
     static let kGuests = "Guests"
@@ -107,7 +108,7 @@ struct APIKeys
     static let ksecondaryPhone = "SecondaryPhone"
     static let kprimaryEmail = "PrimaryEmail"
     static let ksecondaryEmail = "SecondaryEmail"
-    
+    static let kBillingFrequency = "NewBillingFrequency"
     
     static let kmonthCount = "MonthCount"
     
@@ -259,6 +260,22 @@ struct APIKeys
     static let kSectionName = "SectionName"
     //ENGAGE0011898 -- End
     
+    static let kOTP = "OTP"
+    //PROD0000019 -- End
+    
+    
+    
+    //Dues renewal
+    static let kNewBaseMemberTypeID = "NewBaseMemberTypeID"
+    static let kPartySize = "PartySize"
+    static let kFilterDate = "FilterDate"
+    static let kFilterTime = "FilterTime"
+    static let kCompanyCode = "CompanyCode"
+    
+    
+    
+    //Dinning
+    static let kRequestID = "RequestID"
 }
 
 struct APIHeader
@@ -323,7 +340,9 @@ struct InternetMessge {
     static let kFail = "Fail"
     static let kNoupcomingVisits = "No upcoming visits"
     static var kNoData = "No data found"
-
+    static let ksuccess = "success"
+    static let kNoTimeSlot = "No time slots available"
+    static let kNoRestaurant = "No restaurants available"
     
     
 }
