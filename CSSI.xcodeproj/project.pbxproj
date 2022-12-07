@@ -508,7 +508,6 @@
 		09507B88293743BC0003DA73 /* HorizontalFilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F6620C824AE578D0061BB9C /* HorizontalFilterView.xib */; };
 		09507B89293743BC0003DA73 /* FitnessAppSettingsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FB84710250BC40C0065DB8A /* FitnessAppSettingsTVC.xib */; };
 		09507B8A293743BC0003DA73 /* GuestSelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C77C798921880DBF00F5DD90 /* GuestSelectionTableViewCell.xib */; };
-		09507B8E293743BC0003DA73 /* CSSINotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9F8944D125377F8600645908 /* CSSINotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		09507B97293762A30003DA73 /* CobaltAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09507B95293762170003DA73 /* CobaltAsset.xcassets */; };
 		1800E8C5225CA9C20041E95D /* HtmlTextConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800E8C4225CA9C10041E95D /* HtmlTextConverter.swift */; };
 		1801B39C230ED8BE00E7ECC2 /* NewSuccessPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801B39B230ED8BE00E7ECC2 /* NewSuccessPopupView.swift */; };
@@ -1022,13 +1021,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		09507990293743BC0003DA73 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 59FEC3D820B6A64F00FF2DB0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9F8944D025377F8600645908;
-			remoteInfo = CSSINotificationService;
-		};
 		59FEC3F520B6A65100FF2DB0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 59FEC3D820B6A64F00FF2DB0 /* Project object */;
@@ -1059,7 +1051,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				09507B8E293743BC0003DA73 /* CSSINotificationService.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3097,7 +3088,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				0950798F293743BC0003DA73 /* PBXTargetDependency */,
 			);
 			name = CobaltENGAGE;
 			productName = CSSI;
@@ -4630,11 +4620,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0950798F293743BC0003DA73 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9F8944D025377F8600645908 /* CSSINotificationService */;
-			targetProxy = 09507990293743BC0003DA73 /* PBXContainerItemProxy */;
-		};
 		59FEC3F620B6A65100FF2DB0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 59FEC3DF20B6A64F00FF2DB0 /* CSSI */;
@@ -4696,7 +4681,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3.4.1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 7FZWATBH5A;
+				DEVELOPMENT_TEAM = 8UXMG9F326;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4707,7 +4692,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 3.4;
 				OTHER_SWIFT_FLAGS = "-D CobaltENGAGE";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bocawest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycobaltsoftware.cobaltengage;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:cssibocawestapp)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -4730,7 +4715,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3.4.1;
-				DEVELOPMENT_TEAM = 7FZWATBH5A;
+				DEVELOPMENT_TEAM = 8UXMG9F326;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4741,7 +4726,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 3.4;
 				OTHER_SWIFT_FLAGS = "-D CobaltENGAGE";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bocawest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycobaltsoftware.cobaltengage;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:cssibocawestapp)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
