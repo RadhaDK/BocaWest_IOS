@@ -68,7 +68,8 @@ class APIHandler: NSObject
     let productionURL = "https://api.bocawestcc.org/app.wrapper/api/"
     
     let preProductionURL = "https://api.mycobaltsoftware.com/App.Wrapper.PreProd/api/"
-    
+    let preProductionURLCobalt = "https://api.mycobaltsoftware.com/Staging/App.Wrapper.CSSI/api/"
+
     //Added on 20th August 2020
     let UATURL = "https://api.mycobaltsoftware.com/App.Wrapper.BW/api/"
     
@@ -316,7 +317,7 @@ class APIHandler: NSObject
             urlString = self.testURL
         }
         else if targetType == BaseUrls.Cobalt{
-            urlString = self.engageTestURL
+            urlString = self.preProductionURLCobalt
          }else{
              urlString = "enviroment"
          }

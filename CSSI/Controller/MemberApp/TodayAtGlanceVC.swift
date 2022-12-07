@@ -54,6 +54,8 @@ class TodayAtGlanceVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         
         self.navigationController?.navigationBar.isHidden = false
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
+     
+
 
         self.isAppAlreadyLaunchedOnce()
         

@@ -448,7 +448,8 @@ class DashBoardViewController: UIViewController, UICollectionViewDelegate, UICol
 
         self.btnAllNews.layer.cornerRadius = 12
         self.btnAllNews.layer.masksToBounds = true
-        self.btnAllNews.layer.borderColor = APPColor.viewNews.viewbg.cgColor         //hexStringToUIColor(hex: "ffffff").cgColor
+        self.btnAllNews.layer.borderColor = UIColor(named: "navigationColor")?.cgColor         //hexStringToUIColor(hex: "ffffff").cgColor
+        
         self.btnAllNews.layer.borderWidth = 1
 
         
@@ -1944,7 +1945,6 @@ class DashBoardViewController: UIViewController, UICollectionViewDelegate, UICol
                     self.navigationController?.navigationBar.backIndicatorImage = UIImage(named: "Path 117")
                     self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "Path 117")
                     self.navigationController?.navigationBar.tintColor = APPColor.viewNews.backButtonColor
-
 
                     self.navigationController?.pushViewController(guestCard, animated: true)
                     
