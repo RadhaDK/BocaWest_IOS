@@ -926,6 +926,98 @@ class Label: NSObject, Mappable  {
     var downloadAnnualDues : String?
     //ENGAGE0012480 -- End
     
+    
+    
+    
+    //Added by kiran V1.3 -- PROD0000069 -- Support to request events from club news on click of news
+    //PROD0000069 -- Start
+    var clubNewsToEvents_OK : String?
+    //PROD0000069 -- End
+    
+    //Added by kiran V1.4 -- PROD0000121 -- changed the request key to individual departents keys.
+    //PROD0000121 -- Start
+    var BMS_Fitness_Request : String?
+    var BMS_Tennis_Request : String?
+    var BMS_Spa_Request : String?
+    var BMS_Salon_Request : String?
+    //PROD0000121 -- End
+
+    //Added by kiran V1.4 -- PROD0000148 -- Success mesage popup message change
+    //PROD0000148 -- Start
+    var your_Dining_Event_Cancel: String?
+    //PROD0000148 -- End
+    
+    // Added by Zeeshan May 11 2022
+    var legendInfoTitle : String?
+    var legendInfoValue : String?
+    var legendInfoTransValue : String?
+    var fCFS_SELECTTIMEVALIDATION : String?
+    
+    // Minimum Statements
+    var mINIMUMS_TITLE : String?
+    var mINIMUMS_AMOUNT_TITLE : String?
+    var mINIMUMS_PARAMETERS_TITLE : String?
+    var mINIMUM_CREDIT : String?
+    var mINIMUM_AMOUNT_SPENT : String?
+    var mINIMUM_BALANCE_AMOUNT : String?
+    var mINIMUMS_END_DATE_TITLE : String?
+    var tRANSACTION_HISTORY_DATE : String?
+    var tRANSACTION_HISTORY_RECEIPT : String?
+    var tRANSACTION_HISTORY_LOCATION : String?
+    var tRANSACTION_HISTORY_TOTAL : String?
+    var tRANSACTION_HISOTRY_DESCRIPTION : String?
+    var mINIMUMS_TRANSACTION_HISTORY_TITLE: String?
+    
+    
+    //DuesRenewal
+    var DUES_RENEWAL_MEMBERSHIP_TYPE: String?
+    var DUES_RENEWAL_DURATION : String?
+    var DUES_RENEWAL_BILLING_FREQUENCY : String?
+    var DUES_RENEWAL_UPDATE_MEMBERSHIP_TYPE_TITLE : String?
+    var DUES_RENEWAL_MEMBERSHIP_TYPE_HISTORY_TITLE : String?
+    var OLD_MEMBERSHIP_TYPE_TITLE : String?
+    var NEW_MEMBERSHIP_TYPE_TITLE : String?
+    var REQUESTED_ON_TITLE : String?
+    var STATUS_TYPE_TITLE : String?
+    var COMMENT_TITLE : String?
+    var CURRENT_MEM_TYPE_TITLE : String?
+    var NEW_MEM_TYPE_TITLE : String?
+    var DUES_RENEWAL_BILLING_FREQUENCY_HISTORY_TITLE : String?
+    var DUES_RENEWAL_MEMBERSHIP_TYPE_UPDATE_REQUEST_MESSAGE : String?
+    var DUES_RENEWAL_MEMBERSHIP_TYPE_CANCELLED_MESSAGE : String?
+    var AUTO_APPROVED_MESSAGE : String?
+    var DUES_RENEWAL_BILLING_FREQUENCY_UPDATE_REQUEST_MESSAGE : String?
+    var DUES_RENEWAL_CANCEL_PENDING_REQUEST_MESSAGE : String?
+    var DUES_RENEWAL_UPDATE_BILLING_FREQUENCY_TITLE : String?
+    var PLEASE_SELECT_TYPE_MESSAGE : String?
+    var DUES_RENEWAL_BILLING_FREQUENCY_CANCELLED_MESSAGE : String?
+    
+    var mINIMUMS_TABLE_COLUMNTITLE : String?
+    var mINIMUMS_COVER_COLUMNTITLE : String?
+    var mINIMUMS_QTY_COLUMNTITLE: String?
+    var mINIMUMS_RULES_DISPLAYTEXT: String?
+    
+    var DINING_FCFS_TITLE : String?
+    var DINING_FCFS_NEXT_DATE : String?
+    var DINING_FCFS_SELECTED_DATE : String?
+    var DINING_FCFS_ANYRESTAURANT : String?
+    var DINING_FCFS_DININGINFOONE : String?
+    var DINING_FCFS_DININGDATETIME : String?
+    var DINING_FCFS_ELECTEDRESTAURANT : String?
+    var DINING_FCFS_DININGINFOTWO : String?
+    var DINING_FCFS_DINING_OTHERDATE : String?
+    
+    var DINING_FCFS_DININGREQUEST_TIME : String?
+    var DINING_FCFS_DINING_CANCELTEXT : String?
+    var DINING_FCFS_NO_RESTAURANTS : String?
+    var DINING_FCFS_NO_TIMESLOTAVAILABLE : String?
+    var DINING_FCFS_PARTYSIZEWARNING : String?
+    var DINING_FCFS_DINING_RESTAURANT : String?
+    var DINING_FCFS_RESERVATION_BUTTON : String?
+    var DINING_FCFS_MODIFY_TITLE : String?
+    var DINING_FCFS_DATE_TIME : String?
+    
+    
     convenience required init?(map: Map)
     {
         self.init()
@@ -933,6 +1025,20 @@ class Label: NSObject, Mappable  {
     
     func mapping(map: Map)
     {
+        
+        mINIMUMS_TRANSACTION_HISTORY_TITLE <- map["MINIMUMS_TRANSACTION_HISTORY_TITLE"]
+        tRANSACTION_HISOTRY_DESCRIPTION <- map["TRANSACTION_HISOTRY_DESCRIPTION"]
+        tRANSACTION_HISTORY_TOTAL <- map["TRANSACTION_HISTORY_TOTAL"]
+        tRANSACTION_HISTORY_LOCATION <- map["TRANSACTION_HISTORY_LOCATION"]
+        tRANSACTION_HISTORY_RECEIPT <- map["TRANSACTION_HISTORY_RECEIPT"]
+        tRANSACTION_HISTORY_DATE <- map["TRANSACTION_HISTORY_DATE"]
+        mINIMUMS_END_DATE_TITLE <- map["MINIMUMS_END_DATE_TITLE"]
+        mINIMUM_BALANCE_AMOUNT <- map["MINIMUM_BALANCE_AMOUNT"]
+        mINIMUM_AMOUNT_SPENT <- map["MINIMUM_AMOUNT_SPENT"]
+        mINIMUM_CREDIT <- map["MINIMUM_CREDIT"]
+        mINIMUMS_PARAMETERS_TITLE <- map["MINIMUMS_PARAMETERS_TITLE"]
+        mINIMUMS_AMOUNT_TITLE <- map["MINIMUMS_AMOUNT_TITLE"]
+        mINIMUMS_TITLE <- map["MINIMUMS_TITLE"]
         
         mEMBER_DEACTIVATED <- map["MEMBER_DEACTIVATED"]
         dEACTIVATED_LOGOUT <- map["DEACTIVATED_LOGOUT"]

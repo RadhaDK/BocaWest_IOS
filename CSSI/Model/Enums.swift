@@ -435,3 +435,40 @@ enum BaseUrls : String{
     case Bocawest
     case Cobalt
 }
+
+enum EventNavigatedFrom
+{
+    case clubNews
+    case dashboard
+    case fitnessSpa
+    case golf
+    case tennis
+    case dining
+}
+
+// Added by Zeeshan
+enum GolfRequestType : String
+{
+    case lottery = "Lottery request"
+    case fcfs = "FCFS Request"
+}
+
+// Storyboard List
+enum Storyboards : String
+{
+    case main = "Main"
+    case member = "MemberApp"
+    case dining = "DiningStoryboard"
+}
+
+enum dinningMode {
+    case view, modify, create
+}
+
+enum diningVersion {
+    case FCFS, lottery
+}
+
+enum diningCancelPopupMode{
+    case listing, detail
+}

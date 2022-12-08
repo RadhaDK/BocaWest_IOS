@@ -25,11 +25,14 @@ class ImpotantContactsVC: UIViewController, UITableViewDelegate, UITableViewData
     
     var arrImpNo = [ImportantNumbers]()
     var arrList = [DetailDuplicate]()
+    var isHardRule = 1
     
     //Added by kiran v2.9 -- Cobalt Pha0010644 -- To show Hard & Soft message details there is an over lap with member validation and aelrt prompt. added called back to solbe the overlap.
     //Cobalt Pha0010644 -- Start
     var closeClicked : (()->())?
     //Cobalt Pha0010644 -- End
+    
+    var yesClicked : (()->())?
     
 //    var arr
     

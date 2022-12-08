@@ -163,6 +163,8 @@ class APIHandler: NSObject
     static let getStatementCategory = "Member/GetStatementCategory"
     static let getStatement = "Member/GetStatement"
     static let getStatementDetail = "Member/GetStatementDetail"
+    static let getMinimumDetail = "Member/GetMinimumDetail"
+    static let getMinimumTransactionHistory = "Member/GetMinimumTransactionHistory"
     static let getMemberInfo = "Member/GetMemberInfo"
     static let getMemberDirectoryApp = "Member/GetMemberDirectoryApp"
     static let getMemberSpouseList = "Member/GetMemberSpouseList"
@@ -6816,8 +6818,6 @@ print(headers)
             }
             
         }
-        
-        
     }
     
     

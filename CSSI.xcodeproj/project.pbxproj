@@ -1007,6 +1007,78 @@
 		9FFF66D3246D61DA009BCA41 /* ViewVideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FFF66D1246D61D9009BCA41 /* ViewVideoCollectionViewCell.xib */; };
 		9FFF66D8246EB5EA009BCA41 /* viewContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFF66D6246EB5EA009BCA41 /* viewContentCollectionViewCell.swift */; };
 		9FFF66D9246EB5EA009BCA41 /* viewContentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FFF66D7246EB5EA009BCA41 /* viewContentCollectionViewCell.xib */; };
+		A84B0FBF2941D8AE00F8D88F /* membershipHistoryModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FBE2941D8AE00F8D88F /* membershipHistoryModal.swift */; };
+		A84B0FC02941D8AE00F8D88F /* membershipHistoryModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FBE2941D8AE00F8D88F /* membershipHistoryModal.swift */; };
+		A84B0FC22941D8C500F8D88F /* MembershipListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FC12941D8C500F8D88F /* MembershipListModel.swift */; };
+		A84B0FC32941D8C500F8D88F /* MembershipListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FC12941D8C500F8D88F /* MembershipListModel.swift */; };
+		A84B0FC52941D8D600F8D88F /* saveMembershipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FC42941D8D600F8D88F /* saveMembershipModel.swift */; };
+		A84B0FC62941D8D600F8D88F /* saveMembershipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FC42941D8D600F8D88F /* saveMembershipModel.swift */; };
+		A84B0FC82941D90200F8D88F /* GenerateOTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FC72941D90200F8D88F /* GenerateOTP.swift */; };
+		A84B0FC92941D90200F8D88F /* GenerateOTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FC72941D90200F8D88F /* GenerateOTP.swift */; };
+		A84B0FCB2941D91900F8D88F /* ValidateOTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FCA2941D91900F8D88F /* ValidateOTP.swift */; };
+		A84B0FCC2941D91900F8D88F /* ValidateOTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FCA2941D91900F8D88F /* ValidateOTP.swift */; };
+		A84B0FCE2941D99700F8D88F /* GolfCourseTimeSlots.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FCD2941D99700F8D88F /* GolfCourseTimeSlots.swift */; };
+		A84B0FCF2941D99700F8D88F /* GolfCourseTimeSlots.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FCD2941D99700F8D88F /* GolfCourseTimeSlots.swift */; };
+		A84B0FD12941DA0400F8D88F /* TemplateHistoryDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FD02941DA0400F8D88F /* TemplateHistoryDetail.swift */; };
+		A84B0FD22941DA0400F8D88F /* TemplateHistoryDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FD02941DA0400F8D88F /* TemplateHistoryDetail.swift */; };
+		A84B0FD42941DA5400F8D88F /* MinimumDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FD32941DA5300F8D88F /* MinimumDetails.swift */; };
+		A84B0FD52941DA5400F8D88F /* MinimumDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FD32941DA5300F8D88F /* MinimumDetails.swift */; };
+		A84B0FDB2941DC2B00F8D88F /* GetDinningReservationDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FDA2941DC2B00F8D88F /* GetDinningReservationDetailModel.swift */; };
+		A84B0FDC2941DC2B00F8D88F /* GetDinningReservationDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FDA2941DC2B00F8D88F /* GetDinningReservationDetailModel.swift */; };
+		A84B0FDE2941DC4000F8D88F /* GetRestaurantDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FDD2941DC3F00F8D88F /* GetRestaurantDetailModel.swift */; };
+		A84B0FDF2941DC4000F8D88F /* GetRestaurantDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FDD2941DC3F00F8D88F /* GetRestaurantDetailModel.swift */; };
+		A84B0FE12941DC5400F8D88F /* EditDinningReservationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FE02941DC5400F8D88F /* EditDinningReservationModel.swift */; };
+		A84B0FE22941DC5400F8D88F /* EditDinningReservationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FE02941DC5400F8D88F /* EditDinningReservationModel.swift */; };
+		A84B0FE42941DC7700F8D88F /* DeleteDinningReservationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FE32941DC7700F8D88F /* DeleteDinningReservationModel.swift */; };
+		A84B0FE52941DC7700F8D88F /* DeleteDinningReservationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FE32941DC7700F8D88F /* DeleteDinningReservationModel.swift */; };
+		A84B0FE72941DC8C00F8D88F /* getDinningReservationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FE62941DC8B00F8D88F /* getDinningReservationModel.swift */; };
+		A84B0FE82941DC8C00F8D88F /* getDinningReservationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FE62941DC8B00F8D88F /* getDinningReservationModel.swift */; };
+		A84B0FEA2941DCB500F8D88F /* GetMyDinnningReservationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FE92941DCB500F8D88F /* GetMyDinnningReservationModel.swift */; };
+		A84B0FEB2941DCB500F8D88F /* GetMyDinnningReservationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FE92941DCB500F8D88F /* GetMyDinnningReservationModel.swift */; };
+		A84B0FED2941DD6200F8D88F /* DiningStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A84B0FEC2941DD6200F8D88F /* DiningStoryboard.storyboard */; };
+		A84B0FEE2941DD6200F8D88F /* DiningStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A84B0FEC2941DD6200F8D88F /* DiningStoryboard.storyboard */; };
+		A84B0FF02941DD7C00F8D88F /* DiningResvTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A84B0FEF2941DD7C00F8D88F /* DiningResvTableCell.xib */; };
+		A84B0FF12941DD7C00F8D88F /* DiningResvTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A84B0FEF2941DD7C00F8D88F /* DiningResvTableCell.xib */; };
+		A84B0FF32941DD9700F8D88F /* DinningReservationTimeSlotCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A84B0FF22941DD9700F8D88F /* DinningReservationTimeSlotCollectionCell.xib */; };
+		A84B0FF42941DD9700F8D88F /* DinningReservationTimeSlotCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A84B0FF22941DD9700F8D88F /* DinningReservationTimeSlotCollectionCell.xib */; };
+		A84B0FFD2941DE2800F8D88F /* DinningReservationTimeSlotCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FF62941DE2500F8D88F /* DinningReservationTimeSlotCollectionCell.swift */; };
+		A84B0FFE2941DE2800F8D88F /* DinningReservationTimeSlotCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FF62941DE2500F8D88F /* DinningReservationTimeSlotCollectionCell.swift */; };
+		A84B0FFF2941DE2800F8D88F /* PartySizeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FF72941DE2500F8D88F /* PartySizeCollectionCell.swift */; };
+		A84B10002941DE2800F8D88F /* PartySizeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FF72941DE2500F8D88F /* PartySizeCollectionCell.swift */; };
+		A84B10012941DE2800F8D88F /* AddGuestTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FF82941DE2500F8D88F /* AddGuestTableCell.swift */; };
+		A84B10022941DE2800F8D88F /* AddGuestTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FF82941DE2500F8D88F /* AddGuestTableCell.swift */; };
+		A84B10032941DE2800F8D88F /* AddGuestModifyTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FF92941DE2600F8D88F /* AddGuestModifyTableCell.swift */; };
+		A84B10042941DE2800F8D88F /* AddGuestModifyTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FF92941DE2600F8D88F /* AddGuestModifyTableCell.swift */; };
+		A84B10052941DE2800F8D88F /* DinningReservedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FFA2941DE2700F8D88F /* DinningReservedTableViewCell.swift */; };
+		A84B10062941DE2800F8D88F /* DinningReservedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FFA2941DE2700F8D88F /* DinningReservedTableViewCell.swift */; };
+		A84B10072941DE2800F8D88F /* DinningMyReservationTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FFB2941DE2700F8D88F /* DinningMyReservationTableCell.swift */; };
+		A84B10082941DE2800F8D88F /* DinningMyReservationTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FFB2941DE2700F8D88F /* DinningMyReservationTableCell.swift */; };
+		A84B10092941DE2800F8D88F /* DiningResvTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FFC2941DE2700F8D88F /* DiningResvTableCell.swift */; };
+		A84B100A2941DE2800F8D88F /* DiningResvTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FFC2941DE2700F8D88F /* DiningResvTableCell.swift */; };
+		A84B100C2941DE5E00F8D88F /* DiningReservationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B100B2941DE5D00F8D88F /* DiningReservationVC.swift */; };
+		A84B100D2941DE5E00F8D88F /* DiningReservationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B100B2941DE5D00F8D88F /* DiningReservationVC.swift */; };
+		A84B100F2941DE7500F8D88F /* DinningDetailRestuarantVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B100E2941DE7500F8D88F /* DinningDetailRestuarantVC.swift */; };
+		A84B10102941DE7500F8D88F /* DinningDetailRestuarantVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B100E2941DE7500F8D88F /* DinningDetailRestuarantVC.swift */; };
+		A84B10122941DE8D00F8D88F /* PartySizePopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B10112941DE8C00F8D88F /* PartySizePopUpVC.swift */; };
+		A84B10132941DE8D00F8D88F /* PartySizePopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B10112941DE8C00F8D88F /* PartySizePopUpVC.swift */; };
+		A84B10152941DEA100F8D88F /* DiningAddMemberGuestPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B10142941DEA100F8D88F /* DiningAddMemberGuestPopUpVC.swift */; };
+		A84B10162941DEA100F8D88F /* DiningAddMemberGuestPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B10142941DEA100F8D88F /* DiningAddMemberGuestPopUpVC.swift */; };
+		A84B10182941DEB900F8D88F /* DiningRequestConfirmedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B10172941DEB900F8D88F /* DiningRequestConfirmedVC.swift */; };
+		A84B10192941DEB900F8D88F /* DiningRequestConfirmedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B10172941DEB900F8D88F /* DiningRequestConfirmedVC.swift */; };
+		A84B101B2941DECE00F8D88F /* DinningAddSpecialRequestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B101A2941DECE00F8D88F /* DinningAddSpecialRequestVC.swift */; };
+		A84B101C2941DECE00F8D88F /* DinningAddSpecialRequestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B101A2941DECE00F8D88F /* DinningAddSpecialRequestVC.swift */; };
+		A84B101E2941DEE600F8D88F /* RestaurantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B101D2941DEE600F8D88F /* RestaurantDetailsViewController.swift */; };
+		A84B101F2941DEE600F8D88F /* RestaurantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B101D2941DEE600F8D88F /* RestaurantDetailsViewController.swift */; };
+		A84B10212941DEFF00F8D88F /* DiningRequestSelectResturantDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B10202941DEFE00F8D88F /* DiningRequestSelectResturantDateVC.swift */; };
+		A84B10222941DEFF00F8D88F /* DiningRequestSelectResturantDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B10202941DEFE00F8D88F /* DiningRequestSelectResturantDateVC.swift */; };
+		A84B10242941DF1500F8D88F /* DinningHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B10232941DF1400F8D88F /* DinningHelper.swift */; };
+		A84B10252941DF1500F8D88F /* DinningHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B10232941DF1400F8D88F /* DinningHelper.swift */; };
+		A84B10272941DF2900F8D88F /* RestaurantSpecificDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B10262941DF2800F8D88F /* RestaurantSpecificDetailVC.swift */; };
+		A84B10282941DF2900F8D88F /* RestaurantSpecificDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B10262941DF2800F8D88F /* RestaurantSpecificDetailVC.swift */; };
+		A84B102A2941DF4000F8D88F /* DinningCalederVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B10292941DF4000F8D88F /* DinningCalederVC.swift */; };
+		A84B102B2941DF4000F8D88F /* DinningCalederVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B10292941DF4000F8D88F /* DinningCalederVC.swift */; };
+		A84B102D2941DF5900F8D88F /* CancelDinningReservationPopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B102C2941DF5900F8D88F /* CancelDinningReservationPopupVC.swift */; };
+		A84B102E2941DF5900F8D88F /* CancelDinningReservationPopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B102C2941DF5900F8D88F /* CancelDinningReservationPopupVC.swift */; };
 		C70E34B4215AA3E70076935C /* GuestCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70E34B3215AA3E70076935C /* GuestCard.storyboard */; };
 		C70E34B6215AB1390076935C /* GuestCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E34B5215AB1390076935C /* GuestCardsViewController.swift */; };
 		C70E34B8215AB2580076935C /* GuestCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E34B7215AB2580076935C /* GuestCardTableViewCell.swift */; };
@@ -1639,6 +1711,42 @@
 		9FFF66D1246D61D9009BCA41 /* ViewVideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewVideoCollectionViewCell.xib; sourceTree = "<group>"; };
 		9FFF66D6246EB5EA009BCA41 /* viewContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewContentCollectionViewCell.swift; sourceTree = "<group>"; };
 		9FFF66D7246EB5EA009BCA41 /* viewContentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = viewContentCollectionViewCell.xib; sourceTree = "<group>"; };
+		A84B0FBE2941D8AE00F8D88F /* membershipHistoryModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = membershipHistoryModal.swift; sourceTree = "<group>"; };
+		A84B0FC12941D8C500F8D88F /* MembershipListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembershipListModel.swift; sourceTree = "<group>"; };
+		A84B0FC42941D8D600F8D88F /* saveMembershipModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = saveMembershipModel.swift; sourceTree = "<group>"; };
+		A84B0FC72941D90200F8D88F /* GenerateOTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateOTP.swift; sourceTree = "<group>"; };
+		A84B0FCA2941D91900F8D88F /* ValidateOTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateOTP.swift; sourceTree = "<group>"; };
+		A84B0FCD2941D99700F8D88F /* GolfCourseTimeSlots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GolfCourseTimeSlots.swift; sourceTree = "<group>"; };
+		A84B0FD02941DA0400F8D88F /* TemplateHistoryDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateHistoryDetail.swift; sourceTree = "<group>"; };
+		A84B0FD32941DA5300F8D88F /* MinimumDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinimumDetails.swift; sourceTree = "<group>"; };
+		A84B0FDA2941DC2B00F8D88F /* GetDinningReservationDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetDinningReservationDetailModel.swift; sourceTree = "<group>"; };
+		A84B0FDD2941DC3F00F8D88F /* GetRestaurantDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRestaurantDetailModel.swift; sourceTree = "<group>"; };
+		A84B0FE02941DC5400F8D88F /* EditDinningReservationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditDinningReservationModel.swift; sourceTree = "<group>"; };
+		A84B0FE32941DC7700F8D88F /* DeleteDinningReservationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteDinningReservationModel.swift; sourceTree = "<group>"; };
+		A84B0FE62941DC8B00F8D88F /* getDinningReservationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getDinningReservationModel.swift; sourceTree = "<group>"; };
+		A84B0FE92941DCB500F8D88F /* GetMyDinnningReservationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMyDinnningReservationModel.swift; sourceTree = "<group>"; };
+		A84B0FEC2941DD6200F8D88F /* DiningStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DiningStoryboard.storyboard; sourceTree = "<group>"; };
+		A84B0FEF2941DD7C00F8D88F /* DiningResvTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiningResvTableCell.xib; sourceTree = "<group>"; };
+		A84B0FF22941DD9700F8D88F /* DinningReservationTimeSlotCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DinningReservationTimeSlotCollectionCell.xib; sourceTree = "<group>"; };
+		A84B0FF62941DE2500F8D88F /* DinningReservationTimeSlotCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinningReservationTimeSlotCollectionCell.swift; sourceTree = "<group>"; };
+		A84B0FF72941DE2500F8D88F /* PartySizeCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartySizeCollectionCell.swift; sourceTree = "<group>"; };
+		A84B0FF82941DE2500F8D88F /* AddGuestTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGuestTableCell.swift; sourceTree = "<group>"; };
+		A84B0FF92941DE2600F8D88F /* AddGuestModifyTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGuestModifyTableCell.swift; sourceTree = "<group>"; };
+		A84B0FFA2941DE2700F8D88F /* DinningReservedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinningReservedTableViewCell.swift; sourceTree = "<group>"; };
+		A84B0FFB2941DE2700F8D88F /* DinningMyReservationTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinningMyReservationTableCell.swift; sourceTree = "<group>"; };
+		A84B0FFC2941DE2700F8D88F /* DiningResvTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningResvTableCell.swift; sourceTree = "<group>"; };
+		A84B100B2941DE5D00F8D88F /* DiningReservationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningReservationVC.swift; sourceTree = "<group>"; };
+		A84B100E2941DE7500F8D88F /* DinningDetailRestuarantVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinningDetailRestuarantVC.swift; sourceTree = "<group>"; };
+		A84B10112941DE8C00F8D88F /* PartySizePopUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartySizePopUpVC.swift; sourceTree = "<group>"; };
+		A84B10142941DEA100F8D88F /* DiningAddMemberGuestPopUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningAddMemberGuestPopUpVC.swift; sourceTree = "<group>"; };
+		A84B10172941DEB900F8D88F /* DiningRequestConfirmedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningRequestConfirmedVC.swift; sourceTree = "<group>"; };
+		A84B101A2941DECE00F8D88F /* DinningAddSpecialRequestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinningAddSpecialRequestVC.swift; sourceTree = "<group>"; };
+		A84B101D2941DEE600F8D88F /* RestaurantDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsViewController.swift; sourceTree = "<group>"; };
+		A84B10202941DEFE00F8D88F /* DiningRequestSelectResturantDateVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningRequestSelectResturantDateVC.swift; sourceTree = "<group>"; };
+		A84B10232941DF1400F8D88F /* DinningHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinningHelper.swift; sourceTree = "<group>"; };
+		A84B10262941DF2800F8D88F /* RestaurantSpecificDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantSpecificDetailVC.swift; sourceTree = "<group>"; };
+		A84B10292941DF4000F8D88F /* DinningCalederVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinningCalederVC.swift; sourceTree = "<group>"; };
+		A84B102C2941DF5900F8D88F /* CancelDinningReservationPopupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelDinningReservationPopupVC.swift; sourceTree = "<group>"; };
 		B97D0ED64FE9E0515C2C716F /* Pods-CSSIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSSIUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSSIUITests/Pods-CSSIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C70E34B3215AA3E70076935C /* GuestCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GuestCard.storyboard; sourceTree = "<group>"; };
 		C70E34B5215AB1390076935C /* GuestCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestCardsViewController.swift; sourceTree = "<group>"; };
@@ -1768,6 +1876,7 @@
 				181CC2A92269E16A0033ABC8 /* PlayHistorydetails.swift */,
 				181CC2AB2269F0190033ABC8 /* HistoryDetails.swift */,
 				189E8F102279877A00B286E9 /* TeeTimeDetails.swift */,
+				A84B0FCD2941D99700F8D88F /* GolfCourseTimeSlots.swift */,
 			);
 			path = GolfCalendar;
 			sourceTree = "<group>";
@@ -1916,7 +2025,6 @@
 		59FEC3E220B6A64F00FF2DB0 /* CSSI */ = {
 			isa = PBXGroup;
 			children = (
-				181EE37B23290F7F00C8A62F /* GoogleService-Info.plist */,
 				5F3AABFA2101DE960031103A /* AppDelegate */,
 				5F2E85352138035F00530F3D /* Utilities */,
 				5F8D96A52109A5550088FA61 /* CSSI.entitlements */,
@@ -1925,9 +2033,11 @@
 				59FEC41320B6B72F00FF2DB0 /* Model */,
 				59FEC41220B6B71D00FF2DB0 /* View */,
 				59FEC41120B6B71400FF2DB0 /* Controller */,
+				A84B0FD62941DBD300F8D88F /* Dining */,
 				59FEC3E720B6A64F00FF2DB0 /* Main.storyboard */,
 				59FEC3EA20B6A65100FF2DB0 /* Assets.xcassets */,
 				09507B95293762170003DA73 /* CobaltAsset.xcassets */,
+				181EE37B23290F7F00C8A62F /* GoogleService-Info.plist */,
 				59FEC3EC20B6A65100FF2DB0 /* LaunchScreen.storyboard */,
 				59FEC3EF20B6A65100FF2DB0 /* Info.plist */,
 				187913B7215FA7320025EC11 /* HeaderTableView.xib */,
@@ -2013,6 +2123,8 @@
 		59FEC41320B6B72F00FF2DB0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A84B0FB92941D86500F8D88F /* MembershipList */,
+				A84B0FB42941D78D00F8D88F /* OTP */,
 				18BB25C821ABCCED00E12504 /* SendUsFeedback */,
 				5F79F20921131A30008DC5D2 /* ResetPassword */,
 				5F15A60521255C6A00F8D14E /* Token */,
@@ -2365,6 +2477,8 @@
 				5F85D8AA20DCEF4E003F9477 /* ListCurrentStatement.swift */,
 				5F85D8AC20DCF65D003F9477 /* StatementDetails.swift */,
 				5F85D8AE20DCF813003F9477 /* ListStatementDetails.swift */,
+				A84B0FD02941DA0400F8D88F /* TemplateHistoryDetail.swift */,
+				A84B0FD32941DA5300F8D88F /* MinimumDetails.swift */,
 			);
 			path = Statement;
 			sourceTree = "<group>";
@@ -3039,6 +3153,92 @@
 			path = "Activity Share";
 			sourceTree = "<group>";
 		};
+		A84B0FB42941D78D00F8D88F /* OTP */ = {
+			isa = PBXGroup;
+			children = (
+				A84B0FC72941D90200F8D88F /* GenerateOTP.swift */,
+				A84B0FCA2941D91900F8D88F /* ValidateOTP.swift */,
+			);
+			path = OTP;
+			sourceTree = "<group>";
+		};
+		A84B0FB92941D86500F8D88F /* MembershipList */ = {
+			isa = PBXGroup;
+			children = (
+				A84B0FBE2941D8AE00F8D88F /* membershipHistoryModal.swift */,
+				A84B0FC12941D8C500F8D88F /* MembershipListModel.swift */,
+				A84B0FC42941D8D600F8D88F /* saveMembershipModel.swift */,
+			);
+			path = MembershipList;
+			sourceTree = "<group>";
+		};
+		A84B0FD62941DBD300F8D88F /* Dining */ = {
+			isa = PBXGroup;
+			children = (
+				A84B0FD92941DC0D00F8D88F /* Controller */,
+				A84B100B2941DE5D00F8D88F /* DiningReservationVC.swift */,
+				A84B100E2941DE7500F8D88F /* DinningDetailRestuarantVC.swift */,
+				A84B10112941DE8C00F8D88F /* PartySizePopUpVC.swift */,
+				A84B10142941DEA100F8D88F /* DiningAddMemberGuestPopUpVC.swift */,
+				A84B10172941DEB900F8D88F /* DiningRequestConfirmedVC.swift */,
+				A84B101A2941DECE00F8D88F /* DinningAddSpecialRequestVC.swift */,
+				A84B101D2941DEE600F8D88F /* RestaurantDetailsViewController.swift */,
+				A84B10202941DEFE00F8D88F /* DiningRequestSelectResturantDateVC.swift */,
+				A84B10232941DF1400F8D88F /* DinningHelper.swift */,
+				A84B10262941DF2800F8D88F /* RestaurantSpecificDetailVC.swift */,
+				A84B10292941DF4000F8D88F /* DinningCalederVC.swift */,
+				A84B102C2941DF5900F8D88F /* CancelDinningReservationPopupVC.swift */,
+				A84B0FD82941DC0500F8D88F /* View */,
+				A84B0FD72941DBFA00F8D88F /* Model */,
+			);
+			path = Dining;
+			sourceTree = "<group>";
+		};
+		A84B0FD72941DBFA00F8D88F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A84B0FDA2941DC2B00F8D88F /* GetDinningReservationDetailModel.swift */,
+				A84B0FDD2941DC3F00F8D88F /* GetRestaurantDetailModel.swift */,
+				A84B0FE02941DC5400F8D88F /* EditDinningReservationModel.swift */,
+				A84B0FE32941DC7700F8D88F /* DeleteDinningReservationModel.swift */,
+				A84B0FE62941DC8B00F8D88F /* getDinningReservationModel.swift */,
+				A84B0FE92941DCB500F8D88F /* GetMyDinnningReservationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A84B0FD82941DC0500F8D88F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A84B0FEC2941DD6200F8D88F /* DiningStoryboard.storyboard */,
+				A84B0FEF2941DD7C00F8D88F /* DiningResvTableCell.xib */,
+				A84B0FF22941DD9700F8D88F /* DinningReservationTimeSlotCollectionCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A84B0FD92941DC0D00F8D88F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A84B0FF52941DE0300F8D88F /* Cell */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A84B0FF52941DE0300F8D88F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A84B0FF92941DE2600F8D88F /* AddGuestModifyTableCell.swift */,
+				A84B0FF82941DE2500F8D88F /* AddGuestTableCell.swift */,
+				A84B0FFC2941DE2700F8D88F /* DiningResvTableCell.swift */,
+				A84B0FFB2941DE2700F8D88F /* DinningMyReservationTableCell.swift */,
+				A84B0FF62941DE2500F8D88F /* DinningReservationTimeSlotCollectionCell.swift */,
+				A84B0FFA2941DE2700F8D88F /* DinningReservedTableViewCell.swift */,
+				A84B0FF72941DE2500F8D88F /* PartySizeCollectionCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		C5F611C3BCD0E07FDB029C8B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -3243,8 +3443,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A84B0FEE2941DD6200F8D88F /* DiningStoryboard.storyboard in Resources */,
 				09507B3E293743BC0003DA73 /* NewGroupFooterCell.xib in Resources */,
 				09507B3F293743BC0003DA73 /* FitnessInterestGroupCollectionViewCell.xib in Resources */,
+				A84B0FF42941DD9700F8D88F /* DinningReservationTimeSlotCollectionCell.xib in Resources */,
 				09507B40293743BC0003DA73 /* viewContentCollectionViewCell.xib in Resources */,
 				09507B41293743BC0003DA73 /* FooterView.xib in Resources */,
 				09507B42293743BC0003DA73 /* InstructionVideoCollectionViewCell.xib in Resources */,
@@ -3319,6 +3521,7 @@
 				09507B87293743BC0003DA73 /* PlayfairDisplay-Regular.otf in Resources */,
 				09507B88293743BC0003DA73 /* HorizontalFilterView.xib in Resources */,
 				09507B89293743BC0003DA73 /* FitnessAppSettingsTVC.xib in Resources */,
+				A84B0FF12941DD7C00F8D88F /* DiningResvTableCell.xib in Resources */,
 				09507B8A293743BC0003DA73 /* GuestSelectionTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3327,8 +3530,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A84B0FED2941DD6200F8D88F /* DiningStoryboard.storyboard in Resources */,
 				18C791A7229419C600E0ADA6 /* NewGroupFooterCell.xib in Resources */,
 				9F62E8772549AE46000307DB /* FitnessInterestGroupCollectionViewCell.xib in Resources */,
+				A84B0FF32941DD9700F8D88F /* DinningReservationTimeSlotCollectionCell.xib in Resources */,
 				9FFF66D9246EB5EA009BCA41 /* viewContentCollectionViewCell.xib in Resources */,
 				5FC89E4D2122BCBF007B4E65 /* FooterView.xib in Resources */,
 				9FD0473824A3477600EE8C63 /* InstructionVideoCollectionViewCell.xib in Resources */,
@@ -3403,6 +3608,7 @@
 				598DE05D20D3E7A1009AFEF0 /* PlayfairDisplay-Regular.otf in Resources */,
 				9F6620D424AE578E0061BB9C /* HorizontalFilterView.xib in Resources */,
 				9FB84712250BC40C0065DB8A /* FitnessAppSettingsTVC.xib in Resources */,
+				A84B0FF02941DD7C00F8D88F /* DiningResvTableCell.xib in Resources */,
 				C77C798B21880DBF00F5DD90 /* GuestSelectionTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3755,6 +3961,7 @@
 				09507999293743BC0003DA73 /* UIView+Toast.m in Sources */,
 				0950799A293743BC0003DA73 /* ServiceTypeViewController.swift in Sources */,
 				0950799B293743BC0003DA73 /* CustomDashBoardCell.swift in Sources */,
+				A84B0FCF2941D99700F8D88F /* GolfCourseTimeSlots.swift in Sources */,
 				0950799C293743BC0003DA73 /* ProfileViewOnlyVC.swift in Sources */,
 				0950799D293743BC0003DA73 /* LandingMenus.swift in Sources */,
 				0950799E293743BC0003DA73 /* TableViewHelper.swift in Sources */,
@@ -3763,11 +3970,13 @@
 				095079A1293743BC0003DA73 /* UIImageView+WebCache.m in Sources */,
 				095079A2293743BC0003DA73 /* UIView+WebCache.m in Sources */,
 				095079A3293743BC0003DA73 /* FitnessVideoSubCategories.swift in Sources */,
+				A84B10222941DEFF00F8D88F /* DiningRequestSelectResturantDateVC.swift in Sources */,
 				095079A4293743BC0003DA73 /* APIHandler.swift in Sources */,
 				095079A5293743BC0003DA73 /* RestaurantsViewController.swift in Sources */,
 				095079A6293743BC0003DA73 /* SettingsCustomCell.swift in Sources */,
 				095079A7293743BC0003DA73 /* RegisterYourDeviceResponse.swift in Sources */,
 				095079A8293743BC0003DA73 /* GolfRequestTeeTimeVC.swift in Sources */,
+				A84B0FD22941DA0400F8D88F /* TemplateHistoryDetail.swift in Sources */,
 				095079A9293743BC0003DA73 /* InstructionVideoCollectionViewCell.swift in Sources */,
 				095079AA293743BC0003DA73 /* TabbarModel.swift in Sources */,
 				095079AB293743BC0003DA73 /* StringConstants.swift in Sources */,
@@ -3804,6 +4013,7 @@
 				095079CA293743BC0003DA73 /* ThanksApproveVC.swift in Sources */,
 				095079CB293743BC0003DA73 /* BackBarButtonItem.swift in Sources */,
 				095079CC293743BC0003DA73 /* AlphaReportsVC.swift in Sources */,
+				A84B102B2941DF4000F8D88F /* DinningCalederVC.swift in Sources */,
 				095079CD293743BC0003DA73 /* SaveMemberInfo.swift in Sources */,
 				095079CE293743BC0003DA73 /* WalletPassData.swift in Sources */,
 				095079CF293743BC0003DA73 /* SendUsFeedbackVC.swift in Sources */,
@@ -3812,6 +4022,7 @@
 				095079D2293743BC0003DA73 /* FilterViewController.swift in Sources */,
 				095079D3293743BC0003DA73 /* StatementDetailFooter.swift in Sources */,
 				095079D4293743BC0003DA73 /* PreviousStatementViewController.swift in Sources */,
+				A84B101C2941DECE00F8D88F /* DinningAddSpecialRequestVC.swift in Sources */,
 				095079D5293743BC0003DA73 /* LoadMoreFooterTableViewCell.swift in Sources */,
 				095079D6293743BC0003DA73 /* AbstractActionSheetPicker.m in Sources */,
 				095079D7293743BC0003DA73 /* FitnessRequestTableViewCell.swift in Sources */,
@@ -3822,14 +4033,17 @@
 				095079DC293743BC0003DA73 /* DatabaseHandler.swift in Sources */,
 				095079DD293743BC0003DA73 /* Guest.swift in Sources */,
 				095079DE293743BC0003DA73 /* FitnessVideo.swift in Sources */,
+				A84B102E2941DF5900F8D88F /* CancelDinningReservationPopupVC.swift in Sources */,
 				095079DF293743BC0003DA73 /* SlideMenus.swift in Sources */,
 				095079E0293743BC0003DA73 /* FitnessActivityCollectionViewCell.swift in Sources */,
 				095079E1293743BC0003DA73 /* NewVisitViewController.swift in Sources */,
 				095079E2293743BC0003DA73 /* GuestCardTableViewCell.swift in Sources */,
 				095079E3293743BC0003DA73 /* HalfModalTransitioningDelegate.swift in Sources */,
 				095079E4293743BC0003DA73 /* FitnessGroupsViewController.swift in Sources */,
+				A84B0FDC2941DC2B00F8D88F /* GetDinningReservationDetailModel.swift in Sources */,
 				095079E5293743BC0003DA73 /* GuestOrChildrenVC.swift in Sources */,
 				095079E6293743BC0003DA73 /* EventDetail.swift in Sources */,
+				A84B10102941DE7500F8D88F /* DinningDetailRestuarantVC.swift in Sources */,
 				095079E7293743BC0003DA73 /* AddGuestRegVC.swift in Sources */,
 				095079E8293743BC0003DA73 /* FitnessVideosViewController.swift in Sources */,
 				095079E9293743BC0003DA73 /* StatementDetails.swift in Sources */,
@@ -3855,9 +4069,12 @@
 				095079FD293743BC0003DA73 /* UpComingTeeTimesCustomCell.swift in Sources */,
 				095079FE293743BC0003DA73 /* RegisterYourDeviceVC.swift in Sources */,
 				095079FF293743BC0003DA73 /* AddMemberVC.swift in Sources */,
+				A84B0FFE2941DE2800F8D88F /* DinningReservationTimeSlotCollectionCell.swift in Sources */,
+				A84B0FC62941D8D600F8D88F /* saveMembershipModel.swift in Sources */,
 				09507A00293743BC0003DA73 /* FitnessSpaRS.swift in Sources */,
 				09507A01293743BC0003DA73 /* RestaurantMenuDetailsTableviewCell.swift in Sources */,
 				09507A02293743BC0003DA73 /* CurrentStatementViewController.swift in Sources */,
+				A84B10022941DE2800F8D88F /* AddGuestTableCell.swift in Sources */,
 				09507A03293743BC0003DA73 /* UIImage+GIF.m in Sources */,
 				09507A04293743BC0003DA73 /* FitnessGoalsAndChallengesViewController.swift in Sources */,
 				09507A05293743BC0003DA73 /* Reachability.swift in Sources */,
@@ -3886,10 +4103,12 @@
 				09507A1C293743BC0003DA73 /* AlertDetailCollectionViewCell.swift in Sources */,
 				09507A1D293743BC0003DA73 /* FLAnimatedImageView+WebCache.m in Sources */,
 				09507A1E293743BC0003DA73 /* ImageCache.swift in Sources */,
+				A84B10252941DF1500F8D88F /* DinningHelper.swift in Sources */,
 				09507A1F293743BC0003DA73 /* SharedUtlity.m in Sources */,
 				09507A20293743BC0003DA73 /* SuccessPopupDetails.swift in Sources */,
 				09507A21293743BC0003DA73 /* DistancePickerView.m in Sources */,
 				09507A22293743BC0003DA73 /* AllRequestTableViewCell.swift in Sources */,
+				A84B10192941DEB900F8D88F /* DiningRequestConfirmedVC.swift in Sources */,
 				09507A23293743BC0003DA73 /* SDWebImageManager.m in Sources */,
 				09507A24293743BC0003DA73 /* AppointmentDetails.swift in Sources */,
 				09507A25293743BC0003DA73 /* IndividualMemberDirectoryDetails.swift in Sources */,
@@ -3897,16 +4116,19 @@
 				09507A27293743BC0003DA73 /* ImageAutoSize.swift in Sources */,
 				09507A28293743BC0003DA73 /* ProfileInterest.swift in Sources */,
 				09507A29293743BC0003DA73 /* DiningEventRegistrationVC.swift in Sources */,
+				A84B0FC02941D8AE00F8D88F /* membershipHistoryModal.swift in Sources */,
 				09507A2A293743BC0003DA73 /* ProviderDetails.swift in Sources */,
 				09507A2B293743BC0003DA73 /* DataManager.swift in Sources */,
 				09507A2C293743BC0003DA73 /* HeaderViewEventDetails.swift in Sources */,
 				09507A2D293743BC0003DA73 /* CustomFunctions.swift in Sources */,
 				09507A2E293743BC0003DA73 /* UpcomingEvent.swift in Sources */,
 				09507A2F293743BC0003DA73 /* AvailableTimes.swift in Sources */,
+				A84B0FD52941DA5400F8D88F /* MinimumDetails.swift in Sources */,
 				09507A30293743BC0003DA73 /* ExpandedVideo.swift in Sources */,
 				09507A31293743BC0003DA73 /* ViewImageCollectionViewCell.swift in Sources */,
 				09507A32293743BC0003DA73 /* NotificationDetailVC.swift in Sources */,
 				09507A33293743BC0003DA73 /* ReservationGuestList.swift in Sources */,
+				A84B10042941DE2800F8D88F /* AddGuestModifyTableCell.swift in Sources */,
 				09507A34293743BC0003DA73 /* ViewVideoCollectionViewCell.swift in Sources */,
 				09507A35293743BC0003DA73 /* GolfSyncCalendarVC.swift in Sources */,
 				09507A36293743BC0003DA73 /* ModifyRegCustomCell.swift in Sources */,
@@ -3916,6 +4138,7 @@
 				09507A3A293743BC0003DA73 /* MemberDirectoryDetailsViewController.swift in Sources */,
 				09507A3B293743BC0003DA73 /* SendUsFeedback.swift in Sources */,
 				09507A3C293743BC0003DA73 /* MyInterest.swift in Sources */,
+				A84B10082941DE2800F8D88F /* DinningMyReservationTableCell.swift in Sources */,
 				09507A3D293743BC0003DA73 /* NotificationListTableViewCell.swift in Sources */,
 				09507A3E293743BC0003DA73 /* ProfileUpdate.swift in Sources */,
 				09507A3F293743BC0003DA73 /* CancelPopUpViewController.swift in Sources */,
@@ -3944,10 +4167,12 @@
 				09507A56293743BC0003DA73 /* EventCustomTableViewCell.swift in Sources */,
 				09507A57293743BC0003DA73 /* AllClubNewsViewController.swift in Sources */,
 				09507A58293743BC0003DA73 /* DiningReservationViewController.swift in Sources */,
+				A84B10282941DF2900F8D88F /* RestaurantSpecificDetailVC.swift in Sources */,
 				09507A59293743BC0003DA73 /* CurrentStatement.swift in Sources */,
 				09507A5A293743BC0003DA73 /* EventDetailsViewController.swift in Sources */,
 				09507A5B293743BC0003DA73 /* AnualCourtBookingResponse.swift in Sources */,
 				09507A5C293743BC0003DA73 /* ViewController.swift in Sources */,
+				A84B0FE22941DC5400F8D88F /* EditDinningReservationModel.swift in Sources */,
 				09507A5D293743BC0003DA73 /* SDWebImageFrame.m in Sources */,
 				09507A5E293743BC0003DA73 /* FitnessActivityCategory.swift in Sources */,
 				09507A5F293743BC0003DA73 /* GuestNameSuggestionTableViewCell.swift in Sources */,
@@ -3971,6 +4196,7 @@
 				09507A71293743BC0003DA73 /* MemberTableViewCell.swift in Sources */,
 				09507A72293743BC0003DA73 /* FitnessGoalsAndChallance.swift in Sources */,
 				09507A73293743BC0003DA73 /* ColorConstant.swift in Sources */,
+				A84B10002941DE2800F8D88F /* PartySizeCollectionCell.swift in Sources */,
 				09507A74293743BC0003DA73 /* ImageSizeReduce.swift in Sources */,
 				09507A75293743BC0003DA73 /* TodayGlanceDetails.swift in Sources */,
 				09507A76293743BC0003DA73 /* PlayHistoryDetailVC.swift in Sources */,
@@ -3979,6 +4205,7 @@
 				09507A79293743BC0003DA73 /* GolfLeaguesTableViewCell.swift in Sources */,
 				09507A7A293743BC0003DA73 /* AppDelegate.swift in Sources */,
 				09507A7B293743BC0003DA73 /* TeeTimesViewController.swift in Sources */,
+				A84B100A2941DE2800F8D88F /* DiningResvTableCell.swift in Sources */,
 				09507A7C293743BC0003DA73 /* FitnessVideoCategory.swift in Sources */,
 				09507A7D293743BC0003DA73 /* HalfModalTransitionAnimator.swift in Sources */,
 				09507A7E293743BC0003DA73 /* HamburgerMenuTableViewCell.swift in Sources */,
@@ -4006,6 +4233,7 @@
 				09507A94293743BC0003DA73 /* CustomStatmentTableViewCell.swift in Sources */,
 				09507A95293743BC0003DA73 /* MoreViewController.swift in Sources */,
 				09507A96293743BC0003DA73 /* TabbarViewController.swift in Sources */,
+				A84B0FE82941DC8C00F8D88F /* getDinningReservationModel.swift in Sources */,
 				09507A97293743BC0003DA73 /* RequestSettings.swift in Sources */,
 				09507A98293743BC0003DA73 /* AppointmentHisotryDetailTableViewCell.swift in Sources */,
 				09507A99293743BC0003DA73 /* PreviousStatement.swift in Sources */,
@@ -4034,6 +4262,7 @@
 				09507AB0293743BC0003DA73 /* UpComingTeeTimes.swift in Sources */,
 				09507AB1293743BC0003DA73 /* NSButton+WebCache.m in Sources */,
 				09507AB2293743BC0003DA73 /* RequestCardViewController.swift in Sources */,
+				A84B10132941DE8D00F8D88F /* PartySizePopUpVC.swift in Sources */,
 				09507AB3293743BC0003DA73 /* YLCollectionReusableView.m in Sources */,
 				09507AB4293743BC0003DA73 /* FitnessProvidersTableViewCell.swift in Sources */,
 				09507AB5293743BC0003DA73 /* UIImage+MultiFormat.m in Sources */,
@@ -4045,11 +4274,13 @@
 				09507ABB293743BC0003DA73 /* ModifyRunningCardsViewController.swift in Sources */,
 				09507ABC293743BC0003DA73 /* TransactionDetailsViewController.swift in Sources */,
 				09507ABD293743BC0003DA73 /* EventsVC.swift in Sources */,
+				A84B10062941DE2800F8D88F /* DinningReservedTableViewCell.swift in Sources */,
 				09507ABE293743BC0003DA73 /* GuestList.swift in Sources */,
 				09507ABF293743BC0003DA73 /* FitnessMainViewController.swift in Sources */,
 				09507AC0293743BC0003DA73 /* RequestTableViewCell.swift in Sources */,
 				09507AC1293743BC0003DA73 /* FitnessVideoTableViewCell.swift in Sources */,
 				09507AC2293743BC0003DA73 /* SWRevealViewController.m in Sources */,
+				A84B0FC92941D90200F8D88F /* GenerateOTP.swift in Sources */,
 				09507AC3293743BC0003DA73 /* CobaltImageView.swift in Sources */,
 				09507AC4293743BC0003DA73 /* AddBuddyCustomCell.swift in Sources */,
 				09507AC5293743BC0003DA73 /* SDImageCacheConfig.m in Sources */,
@@ -4058,10 +4289,12 @@
 				09507AC8293743BC0003DA73 /* RequestCardAccountTableViewCell.swift in Sources */,
 				09507AC9293743BC0003DA73 /* ServiceTypeCollectionViewCell.swift in Sources */,
 				09507ACA293743BC0003DA73 /* NotificationRead.swift in Sources */,
+				A84B100D2941DE5E00F8D88F /* DiningReservationVC.swift in Sources */,
 				09507ACB293743BC0003DA73 /* VimeoVideoID.swift in Sources */,
 				09507ACC293743BC0003DA73 /* RegisterEventVC.swift in Sources */,
 				09507ACD293743BC0003DA73 /* UIImage+WebP.m in Sources */,
 				09507ACE293743BC0003DA73 /* EventList.swift in Sources */,
+				A84B10162941DEA100F8D88F /* DiningAddMemberGuestPopUpVC.swift in Sources */,
 				09507ACF293743BC0003DA73 /* ImportantNumberViewController.swift in Sources */,
 				09507AD0293743BC0003DA73 /* UIImageView+HighlightedWebCache.m in Sources */,
 				09507AD1293743BC0003DA73 /* SDWebImageImageIOCoder.m in Sources */,
@@ -4070,6 +4303,7 @@
 				09507AD4293743BC0003DA73 /* GetIPAddres.swift in Sources */,
 				09507AD5293743BC0003DA73 /* SpaAndFitnessRequestVC.swift in Sources */,
 				09507AD6293743BC0003DA73 /* FitnessProfile.swift in Sources */,
+				A84B0FC32941D8C500F8D88F /* MembershipListModel.swift in Sources */,
 				09507AD7293743BC0003DA73 /* CheckinViewController.swift in Sources */,
 				09507AD8293743BC0003DA73 /* PlayHistoryVC.swift in Sources */,
 				09507AD9293743BC0003DA73 /* AddBuddyCategory.swift in Sources */,
@@ -4079,6 +4313,7 @@
 				09507ADD293743BC0003DA73 /* HistoryDetails.swift in Sources */,
 				09507ADE293743BC0003DA73 /* StatementCategories.swift in Sources */,
 				09507ADF293743BC0003DA73 /* MenusAndHoursTableViewCell.swift in Sources */,
+				A84B101F2941DEE600F8D88F /* RestaurantDetailsViewController.swift in Sources */,
 				09507AE0293743BC0003DA73 /* EventsTableViewCell.swift in Sources */,
 				09507AE1293743BC0003DA73 /* VCExpandCell.swift in Sources */,
 				09507AE2293743BC0003DA73 /* APIResponse.swift in Sources */,
@@ -4096,6 +4331,7 @@
 				09507AEE293743BC0003DA73 /* RestaurentMenuDetailViewController.swift in Sources */,
 				09507AEF293743BC0003DA73 /* FitnessInterestGroupCollectionViewCell.swift in Sources */,
 				09507AF0293743BC0003DA73 /* AllRequestViewController.swift in Sources */,
+				A84B0FCC2941D91900F8D88F /* ValidateOTP.swift in Sources */,
 				09507AF1293743BC0003DA73 /* CustomMultipleSelectionCell.swift in Sources */,
 				09507AF2293743BC0003DA73 /* RequestCardTableViewCell.swift in Sources */,
 				09507AF3293743BC0003DA73 /* EventCategory.swift in Sources */,
@@ -4115,6 +4351,7 @@
 				09507B01293743BC0003DA73 /* GroupDetailVC.swift in Sources */,
 				09507B02293743BC0003DA73 /* ThankYouViewController.swift in Sources */,
 				09507B03293743BC0003DA73 /* NSImage+WebCache.m in Sources */,
+				A84B0FEB2941DCB500F8D88F /* GetMyDinnningReservationModel.swift in Sources */,
 				09507B04293743BC0003DA73 /* ActionSheetLocalePicker.m in Sources */,
 				09507B05293743BC0003DA73 /* CheckBoxCustomCell.swift in Sources */,
 				09507B06293743BC0003DA73 /* Event.swift in Sources */,
@@ -4123,6 +4360,7 @@
 				09507B09293743BC0003DA73 /* BMSHeaderCalendarViewSyncTVC.swift in Sources */,
 				09507B0A293743BC0003DA73 /* HalfModalPresentationController.swift in Sources */,
 				09507B0B293743BC0003DA73 /* StatementDetailCell.swift in Sources */,
+				A84B0FE52941DC7700F8D88F /* DeleteDinningReservationModel.swift in Sources */,
 				09507B0C293743BC0003DA73 /* YLWaterFlowLayout.m in Sources */,
 				09507B0D293743BC0003DA73 /* FitnessGroupHeaderCollectionViewCell.swift in Sources */,
 				09507B0E293743BC0003DA73 /* CommonImages.swift in Sources */,
@@ -4135,6 +4373,7 @@
 				09507B15293743BC0003DA73 /* SDWebImageWebPCoder.m in Sources */,
 				09507B16293743BC0003DA73 /* GetMemberInfo.swift in Sources */,
 				09507B17293743BC0003DA73 /* AvailableDates.swift in Sources */,
+				A84B0FDF2941DC4000F8D88F /* GetRestaurantDetailModel.swift in Sources */,
 				09507B18293743BC0003DA73 /* MenuViewController.swift in Sources */,
 				09507B19293743BC0003DA73 /* ImpotantContactsVC.swift in Sources */,
 				09507B1A293743BC0003DA73 /* GuestCardPolicyVC.swift in Sources */,
@@ -4180,6 +4419,7 @@
 				5F85D8B720DD0AA5003F9477 /* UIView+Toast.m in Sources */,
 				9F6620F824AE58550061BB9C /* ServiceTypeViewController.swift in Sources */,
 				18DE586821886AFC003EF0C1 /* CustomDashBoardCell.swift in Sources */,
+				A84B0FCE2941D99700F8D88F /* GolfCourseTimeSlots.swift in Sources */,
 				1869D53D225603F700F02F1B /* ProfileViewOnlyVC.swift in Sources */,
 				18DE586E218899F7003EF0C1 /* LandingMenus.swift in Sources */,
 				5FEE5E1B210595D700408BAC /* TableViewHelper.swift in Sources */,
@@ -4188,11 +4428,13 @@
 				5F713A672133D27700A56CE3 /* UIImageView+WebCache.m in Sources */,
 				5F713A682133D27700A56CE3 /* UIView+WebCache.m in Sources */,
 				9F6D34CE2552CCE600531177 /* FitnessVideoSubCategories.swift in Sources */,
+				A84B10212941DEFF00F8D88F /* DiningRequestSelectResturantDateVC.swift in Sources */,
 				598DEEA920D11E43000326DB /* APIHandler.swift in Sources */,
 				5F1A451B210F473C00D8348B /* RestaurantsViewController.swift in Sources */,
 				18AA4925221ED7AA005F2DE8 /* SettingsCustomCell.swift in Sources */,
 				18B4DECF2160EFF000B2FEE3 /* RegisterYourDeviceResponse.swift in Sources */,
 				18D58A9D22660D3100F26390 /* GolfRequestTeeTimeVC.swift in Sources */,
+				A84B0FD12941DA0400F8D88F /* TemplateHistoryDetail.swift in Sources */,
 				9FD0473724A3477600EE8C63 /* InstructionVideoCollectionViewCell.swift in Sources */,
 				5F17741220FF0BC1003E5529 /* TabbarModel.swift in Sources */,
 				5999C5DB20CAB08600B0382A /* StringConstants.swift in Sources */,
@@ -4229,6 +4471,7 @@
 				18207E0C2168CAF40006066D /* ThanksApproveVC.swift in Sources */,
 				9F6CD6F625483F3600906846 /* BackBarButtonItem.swift in Sources */,
 				186FA6C7237468A800546C9D /* AlphaReportsVC.swift in Sources */,
+				A84B102A2941DF4000F8D88F /* DinningCalederVC.swift in Sources */,
 				5FCBE9D420F62E8C00EC747C /* SaveMemberInfo.swift in Sources */,
 				9F5036DF264D236C00459C78 /* WalletPassData.swift in Sources */,
 				1862245521ABC3D400A83023 /* SendUsFeedbackVC.swift in Sources */,
@@ -4237,6 +4480,7 @@
 				5FD6593120E757EF0033CD5B /* FilterViewController.swift in Sources */,
 				188BDFD321FCB51500927817 /* StatementDetailFooter.swift in Sources */,
 				598DEEAD20D12C59000326DB /* PreviousStatementViewController.swift in Sources */,
+				A84B101B2941DECE00F8D88F /* DinningAddSpecialRequestVC.swift in Sources */,
 				9F67DCEC26297EFC00830D24 /* LoadMoreFooterTableViewCell.swift in Sources */,
 				74874F2A20ED47D400C654B7 /* AbstractActionSheetPicker.m in Sources */,
 				9F6620B624AE573F0061BB9C /* FitnessRequestTableViewCell.swift in Sources */,
@@ -4247,14 +4491,17 @@
 				5FCD05E52119BDCE00F42C2F /* DatabaseHandler.swift in Sources */,
 				5FBFFBDC20EB7BA2004D31D9 /* Guest.swift in Sources */,
 				9FB7876C250CCFAD0067004F /* FitnessVideo.swift in Sources */,
+				A84B102D2941DF5900F8D88F /* CancelDinningReservationPopupVC.swift in Sources */,
 				5F17741420FF0BC1003E5529 /* SlideMenus.swift in Sources */,
 				9FDCA07B2538CD8900EABD7B /* FitnessActivityCollectionViewCell.swift in Sources */,
 				18D2ED27215D0C9D00EDFF9C /* NewVisitViewController.swift in Sources */,
 				C70E34B8215AB2580076935C /* GuestCardTableViewCell.swift in Sources */,
 				5FD6592920E757EF0033CD5B /* HalfModalTransitioningDelegate.swift in Sources */,
 				9F612251250F7EF800506A8B /* FitnessGroupsViewController.swift in Sources */,
+				A84B0FDB2941DC2B00F8D88F /* GetDinningReservationDetailModel.swift in Sources */,
 				1834D1FA235F385E007E0FF9 /* GuestOrChildrenVC.swift in Sources */,
 				18ACDB14222544FA00D13903 /* EventDetail.swift in Sources */,
+				A84B100F2941DE7500F8D88F /* DinningDetailRestuarantVC.swift in Sources */,
 				1825EA152227E12400C5A361 /* AddGuestRegVC.swift in Sources */,
 				9FB78760250CB5CC0067004F /* FitnessVideosViewController.swift in Sources */,
 				5F85D8AD20DCF65D003F9477 /* StatementDetails.swift in Sources */,
@@ -4280,10 +4527,12 @@
 				18B6036422683B310045FAE5 /* UpComingTeeTimesCustomCell.swift in Sources */,
 				187913BD215FD1B80025EC11 /* RegisterYourDeviceVC.swift in Sources */,
 				18D945CA2286DDE5008BE907 /* AddMemberVC.swift in Sources */,
+				A84B0FFD2941DE2800F8D88F /* DinningReservationTimeSlotCollectionCell.swift in Sources */,
 				9F3D08DB24234971001FFA5F /* FitnessSpaRS.swift in Sources */,
 				5F1A4517210F420400D8348B /* RestaurantMenuDetailsTableviewCell.swift in Sources */,
 				598DEEAB20D12C43000326DB /* CurrentStatementViewController.swift in Sources */,
 				5F713A632133D27700A56CE3 /* UIImage+GIF.m in Sources */,
+				A84B10012941DE2800F8D88F /* AddGuestTableCell.swift in Sources */,
 				9FCE25AB250A761C00E6B5B9 /* FitnessGoalsAndChallengesViewController.swift in Sources */,
 				5F3E182120D2A320009E3EB6 /* Reachability.swift in Sources */,
 				5F3E181220D22B0F009E3EB6 /* DeviceInfo.swift in Sources */,
@@ -4303,6 +4552,7 @@
 				5F85D8A520DCD4BA003F9477 /* ListEvents.swift in Sources */,
 				9FB78763250CB6070067004F /* FitnessVideoFilterCollectionViewCell.swift in Sources */,
 				9F2DF5CB23FD6874003E65F1 /* SelfSizingTableView.swift in Sources */,
+				A84B0FBF2941D8AE00F8D88F /* membershipHistoryModal.swift in Sources */,
 				5F757C3B212BF44C006AC0AA /* RequestCardAccountSummaryViewController.swift in Sources */,
 				9FFF66D8246EB5EA009BCA41 /* viewContentCollectionViewCell.swift in Sources */,
 				5FBD470F20F7962D00226396 /* GetIcon.swift in Sources */,
@@ -4311,10 +4561,12 @@
 				9F302A90254C2048003EC5C4 /* AlertDetailCollectionViewCell.swift in Sources */,
 				5F713A4C2133D27700A56CE3 /* FLAnimatedImageView+WebCache.m in Sources */,
 				9FB9BE0623C4AFA400466832 /* ImageCache.swift in Sources */,
+				A84B10242941DF1500F8D88F /* DinningHelper.swift in Sources */,
 				5F2E85342137E36A00530F3D /* SharedUtlity.m in Sources */,
 				9F8BC34425D265E6007F2D52 /* SuccessPopupDetails.swift in Sources */,
 				74874F2820ED47D400C654B7 /* DistancePickerView.m in Sources */,
 				5FD6591720E752D50033CD5B /* AllRequestTableViewCell.swift in Sources */,
+				A84B10182941DEB900F8D88F /* DiningRequestConfirmedVC.swift in Sources */,
 				5F713A5D2133D27700A56CE3 /* SDWebImageManager.m in Sources */,
 				9F6620EF24AE57EF0061BB9C /* AppointmentDetails.swift in Sources */,
 				5F70BBA220ECCD1B00A950BE /* IndividualMemberDirectoryDetails.swift in Sources */,
@@ -4329,18 +4581,22 @@
 				5F47195E20D90A4E002EFBB1 /* UpcomingEvent.swift in Sources */,
 				9F6620E824AE57EF0061BB9C /* AvailableTimes.swift in Sources */,
 				9F33B5B4250E867700FE31CD /* ExpandedVideo.swift in Sources */,
+				A84B0FD42941DA5400F8D88F /* MinimumDetails.swift in Sources */,
 				9F50E15B23CC491D002864DE /* ViewImageCollectionViewCell.swift in Sources */,
 				1869D5352254928800F02F1B /* NotificationDetailVC.swift in Sources */,
 				18C9A63522A437A900E1073A /* ReservationGuestList.swift in Sources */,
 				9FFF66D2246D61DA009BCA41 /* ViewVideoCollectionViewCell.swift in Sources */,
+				A84B10032941DE2800F8D88F /* AddGuestModifyTableCell.swift in Sources */,
 				18690C7022717DA4009263F8 /* GolfSyncCalendarVC.swift in Sources */,
 				184F5AC92226963E00240C02 /* ModifyRegCustomCell.swift in Sources */,
 				1805056C218C22DD00BFBA0D /* CalendarOfEventsViewController.swift in Sources */,
 				9F3D08D4242222E7001FFA5F /* FitnessEventTableViewCell.swift in Sources */,
 				18B603602268281D0045FAE5 /* MyBuddiesProfileVC.swift in Sources */,
 				5F9B839A20E4D2C800A20EAF /* MemberDirectoryDetailsViewController.swift in Sources */,
+				A84B0FC82941D90200F8D88F /* GenerateOTP.swift in Sources */,
 				18BB25CA21ABCD2100E12504 /* SendUsFeedback.swift in Sources */,
 				181FF64F221D35A4009D57F8 /* MyInterest.swift in Sources */,
+				A84B10072941DE2800F8D88F /* DinningMyReservationTableCell.swift in Sources */,
 				597B3B8E20CE3A730095D345 /* NotificationListTableViewCell.swift in Sources */,
 				5F79F20B21131A6F008DC5D2 /* ProfileUpdate.swift in Sources */,
 				18A0B8C4215E13C600315FA7 /* CancelPopUpViewController.swift in Sources */,
@@ -4361,6 +4617,7 @@
 				9F6620D624AE578E0061BB9C /* HorizontalFilterView.swift in Sources */,
 				18161A6F22855ED000F254E1 /* DiningRequestVC.swift in Sources */,
 				5FBFFBE020EBC7C3004D31D9 /* MemberDirectory.swift in Sources */,
+				A84B0FCB2941D91900F8D88F /* ValidateOTP.swift in Sources */,
 				5F70BBB020ED08C000A950BE /* CustomUIButton.swift in Sources */,
 				C79EA8DD2160FDF9008AB18C /* GuestListFilterView.swift in Sources */,
 				5FD6592E20E757EF0033CD5B /* VBHeader.swift in Sources */,
@@ -4368,14 +4625,18 @@
 				1802B03822C7A85B009C9ABE /* GifFile.swift in Sources */,
 				18F5DF932190485400E64309 /* EventCustomTableViewCell.swift in Sources */,
 				18DE58722189D42B003EF0C1 /* AllClubNewsViewController.swift in Sources */,
+				A84B10272941DF2900F8D88F /* RestaurantSpecificDetailVC.swift in Sources */,
 				182F40FC21A664DB00CDF5C2 /* DiningReservationViewController.swift in Sources */,
 				5F85D8A920DCEEFF003F9477 /* CurrentStatement.swift in Sources */,
 				5F8B2CCC210AEAD30028B774 /* EventDetailsViewController.swift in Sources */,
 				188A13C42289E2B000765664 /* AnualCourtBookingResponse.swift in Sources */,
+				A84B0FE12941DC5400F8D88F /* EditDinningReservationModel.swift in Sources */,
 				59FEC3E620B6A64F00FF2DB0 /* ViewController.swift in Sources */,
 				5F713A5A2133D27700A56CE3 /* SDWebImageFrame.m in Sources */,
 				9F9BB4282546E16C008847E3 /* FitnessActivityCategory.swift in Sources */,
 				9F67DCF02629926300830D24 /* GuestNameSuggestionTableViewCell.swift in Sources */,
+				A84B0FC52941D8D600F8D88F /* saveMembershipModel.swift in Sources */,
+				A84B0FC22941D8C500F8D88F /* MembershipListModel.swift in Sources */,
 				9F6620D524AE578E0061BB9C /* ProviderDetailsHeaderView.swift in Sources */,
 				5F05D02420E2259B00037BFE /* ImportantNumberTableViewCell.swift in Sources */,
 				5F3E182320D2A563009E3EB6 /* AuthenticateUser.swift in Sources */,
@@ -4393,6 +4654,7 @@
 				18EB56C42269999E002DE5E2 /* RequestHeaderView.swift in Sources */,
 				597B3B8C20CE38DD0095D345 /* NotificationListViewController.swift in Sources */,
 				9FA4192D2578D2A500964199 /* CSSIGeoFence.swift in Sources */,
+				A84B0FFF2941DE2800F8D88F /* PartySizeCollectionCell.swift in Sources */,
 				9F86DE952616362600B7086B /* MemberTableViewCell.swift in Sources */,
 				9F9BB42B2546ED79008847E3 /* FitnessGoalsAndChallance.swift in Sources */,
 				5999C5D520CA90AB00B0382A /* ColorConstant.swift in Sources */,
@@ -4401,6 +4663,7 @@
 				18B6036622685D520045FAE5 /* PlayHistoryDetailVC.swift in Sources */,
 				5F713A552133D27700A56CE3 /* SDWebImageCoderHelper.m in Sources */,
 				5F79F20D21131A90008DC5D2 /* ResetPassword.swift in Sources */,
+				A84B10092941DE2800F8D88F /* DiningResvTableCell.swift in Sources */,
 				1811B4402385174000A08ACF /* GolfLeaguesTableViewCell.swift in Sources */,
 				C71537BA215D745E00007FFB /* AppDelegate.swift in Sources */,
 				18FB8158219D49BA006F0F78 /* TeeTimesViewController.swift in Sources */,
@@ -4428,6 +4691,7 @@
 				18659DC721F1925C00AEBF5D /* PopUpForCategoryVC.swift in Sources */,
 				5F9D76F520DA59A100728446 /* AddOnType.swift in Sources */,
 				9F6620DA24AE578E0061BB9C /* AppointmentHistoryHeaderView.swift in Sources */,
+				A84B0FE72941DC8C00F8D88F /* getDinningReservationModel.swift in Sources */,
 				18E1C6C621CB7D480022145D /* CustomStatmentTableViewCell.swift in Sources */,
 				598D249120B7DE260018AE2F /* MoreViewController.swift in Sources */,
 				598DE05320D3CA0E009AFEF0 /* TabbarViewController.swift in Sources */,
@@ -4456,6 +4720,7 @@
 				1801B39E230F03C600E7ECC2 /* NewSuccessUpdateView.swift in Sources */,
 				1816407A2280751D00A3E9E9 /* MyGroupDetails.swift in Sources */,
 				18EF0C5A2379D3C6005771FA /* AppVersion.swift in Sources */,
+				A84B10122941DE8D00F8D88F /* PartySizePopUpVC.swift in Sources */,
 				181CC2AE2269F9220033ABC8 /* UpComingTeeTimes.swift in Sources */,
 				5F713A4E2133D27700A56CE3 /* NSButton+WebCache.m in Sources */,
 				5F757C3D212BF44C006AC0AA /* RequestCardViewController.swift in Sources */,
@@ -4467,6 +4732,7 @@
 				1804744821B00501009CE944 /* ForgotVC.swift in Sources */,
 				18FA22022382AA6A002B82DB /* MyCalendarXib.swift in Sources */,
 				5F9DC7DD20EE46D700EB734C /* AllGuestCardRequest.swift in Sources */,
+				A84B10052941DE2800F8D88F /* DinningReservedTableViewCell.swift in Sources */,
 				18D2ED30215D2AF700EDFF9C /* ModifyRunningCardsViewController.swift in Sources */,
 				5F3E181820D25485009E3EB6 /* TransactionDetailsViewController.swift in Sources */,
 				1815B55A226748F300AB52E6 /* EventsVC.swift in Sources */,
@@ -4481,10 +4747,12 @@
 				9F6620D824AE578E0061BB9C /* BMSCancelView.swift in Sources */,
 				5F17741320FF0BC1003E5529 /* MemberApp.swift in Sources */,
 				5FD6593720E7AEC90033CD5B /* RequestCardAccountTableViewCell.swift in Sources */,
+				A84B100C2941DE5E00F8D88F /* DiningReservationVC.swift in Sources */,
 				9F6620B724AE573F0061BB9C /* ServiceTypeCollectionViewCell.swift in Sources */,
 				5F1246C221269A9400A1D48F /* NotificationRead.swift in Sources */,
 				1862245321A6A7CA00A83023 /* VimeoVideoID.swift in Sources */,
 				18ACDB122225309800D13903 /* RegisterEventVC.swift in Sources */,
+				A84B10152941DEA100F8D88F /* DiningAddMemberGuestPopUpVC.swift in Sources */,
 				5F713A652133D27700A56CE3 /* UIImage+WebP.m in Sources */,
 				74C6BBCF20D1978700842A77 /* EventList.swift in Sources */,
 				5F05D02220E2249C00037BFE /* ImportantNumberViewController.swift in Sources */,
@@ -4503,6 +4771,7 @@
 				18B6035E22675A870045FAE5 /* MyBuddiesViewController.swift in Sources */,
 				181CC2AC2269F0190033ABC8 /* HistoryDetails.swift in Sources */,
 				5F9D76FB20DA752900728446 /* StatementCategories.swift in Sources */,
+				A84B101E2941DEE600F8D88F /* RestaurantDetailsViewController.swift in Sources */,
 				188BDFD721FCDF1A00927817 /* MenusAndHoursTableViewCell.swift in Sources */,
 				59D1A3FF20CA625500E92C86 /* EventsTableViewCell.swift in Sources */,
 				5FD6592820E757EF0033CD5B /* VCExpandCell.swift in Sources */,
@@ -4540,6 +4809,7 @@
 				18D12551226ED9A600E34D07 /* GroupDetailVC.swift in Sources */,
 				18A0B8C0215E052500315FA7 /* ThankYouViewController.swift in Sources */,
 				5F713A502133D27700A56CE3 /* NSImage+WebCache.m in Sources */,
+				A84B0FEA2941DCB500F8D88F /* GetMyDinnningReservationModel.swift in Sources */,
 				74874F2320ED47D400C654B7 /* ActionSheetLocalePicker.m in Sources */,
 				181FF64D221D271A009D57F8 /* CheckBoxCustomCell.swift in Sources */,
 				59D1A40920CA773500E92C86 /* Event.swift in Sources */,
@@ -4548,6 +4818,7 @@
 				9F6620D224AE578E0061BB9C /* BMSHeaderCalendarViewSyncTVC.swift in Sources */,
 				5FD6592B20E757EF0033CD5B /* HalfModalPresentationController.swift in Sources */,
 				188BDFCD21FCA56900927817 /* StatementDetailCell.swift in Sources */,
+				A84B0FE42941DC7700F8D88F /* DeleteDinningReservationModel.swift in Sources */,
 				5F06DC1620E62E00007137C7 /* YLWaterFlowLayout.m in Sources */,
 				9FE085E4250FDDB5005FDF55 /* FitnessGroupHeaderCollectionViewCell.swift in Sources */,
 				5F8B2CCE210B379D0028B774 /* CommonImages.swift in Sources */,
@@ -4560,6 +4831,7 @@
 				5F713A602133D27700A56CE3 /* SDWebImageWebPCoder.m in Sources */,
 				5F9D76F320DA58B300728446 /* GetMemberInfo.swift in Sources */,
 				9F6620EE24AE57EF0061BB9C /* AvailableDates.swift in Sources */,
+				A84B0FDE2941DC4000F8D88F /* GetRestaurantDetailModel.swift in Sources */,
 				59FEC41B20B6B78600FF2DB0 /* MenuViewController.swift in Sources */,
 				18CEB4A5219EA4700097E28A /* ImpotantContactsVC.swift in Sources */,
 				184A3A102163BBB30062A48D /* GuestCardPolicyVC.swift in Sources */,

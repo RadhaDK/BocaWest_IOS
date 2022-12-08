@@ -20,6 +20,13 @@ class SenUsFeedback: NSObject, Mappable {
     //Added on 22nd June 2020 BMS
     var imagePath : String?
     
+    //Added by kiran V1.4 -- PROD0000121 -- success popup department name string
+    //PROD0000121 -- Start
+    var BMS_Success_Header : String?
+    //PROD0000121 -- End
+    var ValidationMessage: String?
+    var ValidCheck: String?
+    var IsHardRuleEnabled: Int?
     
     convenience required init?(map: Map) {
         self.init()
@@ -31,6 +38,14 @@ class SenUsFeedback: NSObject, Mappable {
         responseMessage <- map["ResponseMessage"]
         //Added on 22nd June 2020 BMS
         imagePath <- map["ImagePath"]
+        
+        //Added by kiran V1.4 -- PROD0000121 --
+        //PROD0000121 -- Start
+        self.BMS_Success_Header <- map["BMS_SUCCESS_HEADER"]
+        //PROD0000121 -- End
+        self.ValidationMessage <- map["ValidationMessage"]
+        self.ValidCheck <- map["ValidCheck"]
+        self.IsHardRuleEnabled <- map["IsHardRuleEnabled"]
     }
 }
 

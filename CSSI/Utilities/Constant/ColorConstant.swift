@@ -201,6 +201,8 @@ struct APPColor {
         //orange
         static let primary2 : UIColor = hexStringToUIColor(hex: "#F37D4A")
         
+        static let primary3 : UIColor = hexStringToUIColor(hex: "#1D1DFF")
+        
         //used in fitness App
         ///Indicates the active state
         static let active : UIColor = .green
