@@ -1121,7 +1121,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="40" minY="0.0" maxX="40" maxY="0.0"/>
                                                 <state key="normal" title="Request Tee Time">
-                                                    <color key="titleColor" name="ThemeColor"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="requestTeetimesClicked:" destination="Ps5-mG-n6g" eventType="touchUpInside" id="v0J-gj-hBP"/>
@@ -1133,7 +1133,9 @@
                                                     <constraint firstAttribute="height" constant="43" id="M7X-N3-EVs"/>
                                                 </constraints>
                                                 <inset key="contentEdgeInsets" minX="40" minY="0.0" maxX="40" maxY="0.0"/>
-                                                <state key="normal" title="Book A Lesson"/>
+                                                <state key="normal" title="Book A Lesson">
+                                                    <color key="titleColor" name="navigationColor"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="BookALessonClicked:" destination="Ps5-mG-n6g" eventType="touchUpInside" id="wwv-YW-jY8"/>
                                                 </connections>
@@ -1169,7 +1171,7 @@
                                                     <constraint firstAttribute="height" constant="23" id="JJF-co-omn"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="20"/>
-                                                <color key="textColor" name="PrimaryThemeColor"/>
+                                                <color key="textColor" name="UpcomingHeadingColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WKz-i6-JA0">
@@ -1231,7 +1233,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                                 <state key="normal" title="Calendar">
-                                                    <color key="titleColor" name="ThemeColor"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -1249,7 +1251,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alpha Reports" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ji-Lj-Vfv">
                                                         <rect key="frame" x="152.5" y="20" width="109" height="24"/>
                                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="18"/>
-                                                        <color key="textColor" name="PrimaryThemeColor"/>
+                                                        <color key="textColor" name="UpcomingHeadingColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aDj-ff-jbb">
@@ -1284,7 +1286,7 @@
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2PT-cd-A96">
                                                                                     <rect key="frame" x="26" y="46" width="28" height="15.5"/>
                                                                                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="12"/>
-                                                                                    <color key="textColor" name="PrimaryThemeColor"/>
+                                                                                    <color key="textColor" name="UpcomingHeadingColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                             </subviews>
@@ -1349,7 +1351,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="40" minY="0.0" maxX="40" maxY="0.0"/>
                                                 <state key="normal" title="Tournament Forms">
-                                                    <color key="titleColor" name="ThemeColor"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -1374,7 +1376,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Golf Leagues" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRC-nf-RIc">
                                                 <rect key="frame" x="157.5" y="960.5" width="99" height="24"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="18"/>
-                                                <color key="textColor" name="PrimaryThemeColor"/>
+                                                <color key="textColor" name="UpcomingHeadingColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rmN-MQ-EfR">
@@ -1399,7 +1401,7 @@
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                                     <state key="normal" title="Men's 9 &amp; 18 Hole League">
-                                                                        <color key="titleColor" name="ThemeColor"/>
+                                                                        <color key="titleColor" name="navigationColor"/>
                                                                     </state>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -1444,7 +1446,7 @@
                                                                 <constraint firstAttribute="height" constant="23" id="kwy-ES-xpE"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="18"/>
-                                                            <color key="textColor" name="PrimaryThemeColor"/>
+                                                            <color key="textColor" name="UpcomingHeadingColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -1475,7 +1477,7 @@
                                                                         <constraint firstAttribute="width" constant="85" id="pVI-HI-iCM"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
-                                                                    <color key="textColor" name="PrimaryThemeColor"/>
+                                                                    <color key="textColor" name="UpcomingHeadingColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5Q-SY-Jh9">
@@ -1521,7 +1523,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="22" minY="0.0" maxX="22" maxY="0.0"/>
                                                 <state key="normal" title="View All">
-                                                    <color key="titleColor" name="ThemeColor"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -3862,7 +3864,7 @@
                                                     <constraint firstAttribute="height" constant="23" id="Lqg-6T-JEd"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="20"/>
-                                                <color key="textColor" name="PrimaryThemeColor"/>
+                                                <color key="textColor" name="UpcomingHeadingColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NDJ-5Q-wgB">
@@ -3921,7 +3923,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                                 <state key="normal" title="Calendar">
-                                                    <color key="titleColor" name="ThemeColor"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -3949,7 +3951,7 @@
                                                                 <constraint firstAttribute="height" constant="23" id="ZMe-7a-5qo"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="18"/>
-                                                            <color key="textColor" name="PrimaryThemeColor"/>
+                                                            <color key="textColor" name="UpcomingHeadingColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -4026,7 +4028,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="22" minY="0.0" maxX="22" maxY="0.0"/>
                                                 <state key="normal" title="View All">
-                                                    <color key="titleColor" name="ThemeColor"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -4075,7 +4077,7 @@
                                                             <constraint firstAttribute="height" constant="23" id="TH3-Q2-nvL"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="18"/>
-                                                        <color key="textColor" name="PrimaryThemeColor"/>
+                                                        <color key="textColor" name="UpcomingHeadingColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -4360,7 +4362,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="40" minY="0.0" maxX="40" maxY="0.0"/>
                                                 <state key="normal" title="Request Court Time">
-                                                    <color key="titleColor" name="ThemeColor"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="requestTeeTimeClicked:" destination="gUD-hz-Sv0" eventType="touchUpInside" id="R2F-UM-9KB"/>
@@ -4372,6 +4374,9 @@
                                                     <constraint firstAttribute="height" constant="43" id="yLK-sX-hqG"/>
                                                 </constraints>
                                                 <inset key="contentEdgeInsets" minX="40" minY="0.0" maxX="40" maxY="0.0"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" name="navigationColor"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="bookALessonClicked:" destination="gUD-hz-Sv0" eventType="touchUpInside" id="9mc-dG-3eL"/>
                                                 </connections>
@@ -4476,7 +4481,7 @@
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1s-QK-Jya">
                                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="43.5"/>
-                                                                        <color key="backgroundColor" name="ThemeColor"/>
+                                                                        <color key="backgroundColor" name="navigationColor"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="43.5" id="wHX-Bj-5MF"/>
                                                                         </constraints>
@@ -4491,7 +4496,7 @@
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="999" horizontalCompressionResistancePriority="999" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgW-wD-kRx">
                                                                         <rect key="frame" x="40" y="0.0" width="299" height="43.5"/>
-                                                                        <color key="backgroundColor" name="ThemeColor"/>
+                                                                        <color key="backgroundColor" name="navigationColor"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="43.5" id="eaZ-b0-u0t"/>
                                                                         </constraints>
@@ -4521,7 +4526,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nL-LB-Ch0">
                                                 <rect key="frame" x="187.5" y="119" width="0.0" height="0.0"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="20"/>
-                                                <color key="textColor" name="PrimaryThemeColor"/>
+                                                <color key="textColor" name="UpcomingHeadingColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8JG-OG-1r6">
@@ -4578,7 +4583,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <state key="normal">
-                                                    <color key="titleColor" name="ThemeColor"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="calendarClicked:" destination="6is-fi-M18" eventType="touchUpInside" id="84i-x9-bUN"/>
@@ -4669,7 +4674,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="22" minY="0.0" maxX="22" maxY="0.0"/>
                                                 <state key="normal" title="View All">
-                                                    <color key="titleColor" name="ThemeColor"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="viewAllNewsClicked:" destination="6is-fi-M18" eventType="touchUpInside" id="TZ2-Lq-4CS"/>
@@ -4799,7 +4804,7 @@
                                                     <constraint firstAttribute="height" constant="23" id="NW1-Kq-JkH"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="20"/>
-                                                <color key="textColor" name="PrimaryThemeColor"/>
+                                                <color key="textColor" name="UpcomingHeadingColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ytg-YU-CNz">
@@ -4858,7 +4863,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                                 <state key="normal" title="Calendar">
-                                                    <color key="titleColor" red="0.94117647058823528" green="0.42352941176470588" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -4879,7 +4884,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="22" minY="0.0" maxX="22" maxY="0.0"/>
                                                 <state key="normal" title="View All">
-                                                    <color key="titleColor" name="ThemeOrangeColor"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -5242,7 +5247,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="20"/>
                                                 <state key="normal" title="Dining Request">
-                                                    <color key="titleColor" name="ThemeColor"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="diningRequestClicked:" destination="8Qk-V2-wxQ" eventType="touchUpInside" id="Vxi-VT-m33"/>
@@ -5256,7 +5261,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="20"/>
                                                 <state key="normal" title="Menus &amp; Hours">
-                                                    <color key="titleColor" name="ThemeColor"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="menuAndHoursClicked:" destination="8Qk-V2-wxQ" eventType="touchUpInside" id="O49-Tm-dtS"/>
@@ -16815,10 +16820,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="O7v-ET-kCU">
-                                                <rect key="frame" x="20" y="80.5" width="7.5" height="0.0"/>
+                                                <rect key="frame" x="20" y="80.5" width="374" height="0.0"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cq-hI-ejt">
-                                                        <rect key="frame" x="0.0" y="0.0" width="2.5" height="0.0"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="141" height="0.0"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="230" id="LTT-gf-Ugs"/>
                                                         </constraints>
@@ -16827,7 +16832,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXh-KD-dxn">
-                                                        <rect key="frame" x="7.5" y="0.0" width="0.0" height="0.0"/>
+                                                        <rect key="frame" x="146" y="0.0" width="228" height="0.0"/>
                                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="18"/>
                                                         <color key="textColor" red="0.41176470590000003" green="0.35686274509999999" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -17069,8 +17074,8 @@
         <image name="Group 2384" width="18" height="18"/>
         <image name="Group 2394" width="23.5" height="18.5"/>
         <image name="Icon-options" width="4" height="16"/>
-        <image name="Icon_ArrowLeftActive" width="6" height="10.5"/>
-        <image name="Icon_ArrowRightActive" width="6" height="10.5"/>
+        <image name="Icon_ArrowLeftActive" width="6.5" height="11"/>
+        <image name="Icon_ArrowRightActive" width="6.5" height="11"/>
         <image name="Icon_Calendar" width="17" height="16.5"/>
         <image name="Istagram_Icon" width="20" height="20"/>
         <image name="News Icon" width="19" height="21"/>
@@ -17348,10 +17353,10 @@ AFQAAAAAAAAAAAAAAAAAADWqA
             <color red="0.82400000095367432" green="0.82400000095367432" blue="0.82400000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="HighlightedPrimaryColor">
-            <color red="0.23137254901960785" green="0.52941176470588236" blue="0.75686274509803919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23100000619888306" green="0.52899998426437378" blue="0.75700002908706665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="HighlightedSecondaryColor">
-            <color red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.68199998140335083" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="LabelDarkGrayColor">
             <color red="0.52899998426437378" green="0.52499997615814209" blue="0.52499997615814209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -17372,7 +17377,7 @@ AFQAAAAAAAAAAAAAAAAAADWqA
             <color red="0.33700001239776611" green="0.54100000858306885" blue="0.55699998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="PrimaryThemeColor">
-            <color red="0.41200000047683716" green="0.35699999332427979" blue="0.36899998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="SecondaryBackgroundColor">
             <color red="0.46700000762939453" green="0.63099998235702515" blue="0.64300000667572021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -17395,6 +17400,9 @@ AFQAAAAAAAAAAAAAAAAAADWqA
         <namedColor name="ThemeOrangeColor">
             <color red="0.94099998474121094" green="0.4309999942779541" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="UpcomingHeadingColor">
+            <color red="0.0" green="0.68199998140335083" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="ViewBackgroundGreenColor">
             <color red="0.33700001239776611" green="0.54100000858306885" blue="0.55699998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -17408,7 +17416,7 @@ AFQAAAAAAAAAAAAAAAAAADWqA
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="navigationColor">
-            <color red="0.28928005699999998" green="0.40875631569999998" blue="0.5665878057" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94099998474121094" green="0.4309999942779541" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

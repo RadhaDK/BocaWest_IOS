@@ -475,19 +475,19 @@ class TeeTimesViewController: UIViewController, UITableViewDelegate, UITableView
         
         self.imgImpContacts.layer.cornerRadius = 12
         self.lblCalendarofEvents.layer.borderWidth = 1
-        self.lblCalendarofEvents.layer.borderColor = hexStringToUIColor(hex: "F06C42").cgColor
+        self.lblCalendarofEvents.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
         
         self.btnTournamentForms.layer.borderWidth = 1
-        self.btnTournamentForms.layer.borderColor = hexStringToUIColor(hex: "F06C42").cgColor
+        self.btnTournamentForms.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
 
         
         self.btnReqTeeTime.layer.cornerRadius = 18
         self.btnReqTeeTime.layer.borderWidth = 1
-        self.btnReqTeeTime.layer.borderColor = hexStringToUIColor(hex: "F06C42").cgColor
+        self.btnReqTeeTime.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
         self.btnReqTeeTime.setTitle(self.appDelegate.masterLabeling.request_tee_time, for: UIControlState.normal)
         
         self.btnViewAll.layer.borderWidth = 1
-        self.btnViewAll.layer.borderColor = hexStringToUIColor(hex: "F06C42").cgColor
+        self.btnViewAll.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
         self.btnTournament.layer.borderWidth = 1
         self.btnTournament.layer.borderColor = hexStringToUIColor(hex: "FFFFFF").cgColor
 
@@ -514,6 +514,8 @@ class TeeTimesViewController: UIViewController, UITableViewDelegate, UITableView
         self.btnBookALesson.isHidden = hideBookLessonBtn
         self.btnBookALesson.setStyle(style: .outlined, type: .primary, cornerRadius: 18)
         self.btnBookALesson.layer.borderWidth = 1.0
+        self.btnBookALesson.setTitleColor(UIColor(named: "navigationColor"), for: .normal)
+        self.btnBookALesson.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
         self.btnBookALesson.titleLabel?.font = AppFonts.semibold22
         self.btnBookALesson.setTitle(self.appDelegate.masterLabeling.BMS_Golf_ButtonText ?? "", for: .normal)
         //GATHER0001167 -- End
@@ -800,7 +802,7 @@ class TeeTimesViewController: UIViewController, UITableViewDelegate, UITableView
             cell.selectionStyle = .none
             
             cell.btnLeague.layer.borderWidth = 1
-            cell.btnLeague.layer.borderColor = hexStringToUIColor(hex: "F06C42").cgColor
+            cell.btnLeague.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
 
             cell.btnLeague.setTitle(self.appDelegate.arrGolfLeagues[indexPath.row].text, for: UIControlState.normal)
             cell.delegate = self

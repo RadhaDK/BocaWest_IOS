@@ -345,13 +345,13 @@ class CourtTimesViewController: UIViewController, UICollectionViewDataSource, UI
     func initController(){
         
         self.lblCalendarofEvents.layer.borderWidth = 1
-        self.lblCalendarofEvents.layer.borderColor = hexStringToUIColor(hex: "F06C42").cgColor
+        self.lblCalendarofEvents.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
         self.btnViewAll.layer.borderWidth = 1
-        self.btnViewAll.layer.borderColor = hexStringToUIColor(hex: "F06C42").cgColor
+        self.btnViewAll.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
         
         self.btnRequestTeeTime.layer.cornerRadius = 18
         self.btnRequestTeeTime.layer.borderWidth = 1
-        self.btnRequestTeeTime.layer.borderColor = hexStringToUIColor(hex: "F06C42").cgColor
+        self.btnRequestTeeTime.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
         self.btnRequestTeeTime.setTitle(self.appDelegate.masterLabeling.rEQUEST_COURT, for: UIControlState.normal)
         
         imgUpcomingEvents.layer.cornerRadius = 30
@@ -380,6 +380,8 @@ class CourtTimesViewController: UIViewController, UICollectionViewDataSource, UI
         self.btnBookALesson.isHidden = hideBookLessonBtn
         self.btnBookALesson.setStyle(style: .outlined, type: .primary, cornerRadius: 18)
         self.btnBookALesson.layer.borderWidth = 1.0
+        self.btnBookALesson.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
+        self.btnBookALesson.setTitleColor(UIColor(named: "navigationColor"), for: .normal)
         self.btnBookALesson.titleLabel?.font = AppFonts.semibold22
         self.btnBookALesson.setTitle(self.appDelegate.masterLabeling.TL_ButtonText ?? "", for: .normal)
         //GATHER0000700 - End

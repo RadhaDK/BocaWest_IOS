@@ -103,7 +103,7 @@ extension UIButton
     {
         self.layer.cornerRadius = self.frame.height/2
         self.layer.borderWidth = 1
-        self.layer.borderColor = hexStringToUIColor(hex: "F06C42").cgColor
+        self.layer.borderColor = UIColor(named: "navigationColor")?.cgColor      
         self.clipsToBounds = true
     }
     
@@ -127,7 +127,7 @@ extension UIButton
         self.backgroundColor = .clear
         self.layer.cornerRadius = 15
         self.layer.borderWidth = 1
-        self.layer.borderColor = hexStringToUIColor(hex: "F37D4A").cgColor
+        self.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
     }
 
     
@@ -137,7 +137,7 @@ extension UIButton
     /// Adds corner radius , Background color and removes border
     func fitnessRequestBttnViewSetup()
     {
-        self.backgroundColor = hexStringToUIColor(hex: "F37D4A")
+        self.backgroundColor = UIColor(named: "navigationColor")
         self.layer.cornerRadius = self.bounds.height/2
         self.layer.borderWidth = 0
         self.layer.borderColor = UIColor.clear.cgColor

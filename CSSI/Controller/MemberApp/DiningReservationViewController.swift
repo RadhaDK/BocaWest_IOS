@@ -78,6 +78,7 @@ class DiningReservationViewController: UIViewController, UICollectionViewDataSou
         self.btnDiningReq.setTitle(self.appDelegate.masterLabeling.dining_request, for: UIControlState.normal)
         
         self.btnMenusHours.diningBtnViewSetup()
+        
         self.btnMenusHours.setTitle(self.appDelegate.masterLabeling.menus_hours ?? "", for: .normal)
         
         //Added by kiran V2.5 -- ENGAGE0011372 -- Custom method to dismiss screen when left edge swipe.
@@ -135,9 +136,9 @@ class DiningReservationViewController: UIViewController, UICollectionViewDataSou
         
         self.imgImpContacts.layer.cornerRadius = 12
         self.lblCalendarofEvents.layer.borderWidth = 1
-        self.lblCalendarofEvents.layer.borderColor = hexStringToUIColor(hex: "F06C42").cgColor
+        self.lblCalendarofEvents.layer.borderColor = UIColor(named: "navigationColor")?.cgColor      
         self.btnViewAll.layer.borderWidth = 1
-        self.btnViewAll.layer.borderColor = hexStringToUIColor(hex: "F06C42").cgColor
+        self.btnViewAll.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
         
         imgUpcomingEvents.layer.cornerRadius = 30
         imgUpcomingEvents.layer.borderWidth = 1
