@@ -107,6 +107,16 @@ class GetMemberInfo: NSObject, Mappable {
     var memberLinkedMemberNumber : String?
     //ENGAGE0012634 -- End
     
+    var MemberShipType : String?
+    var Duration : String?
+    var BillingFrequency : String?
+    var AllowToChangeDuesMembershipType : Int?
+    var AllowToChangeDuesBillingFrequency : Int?
+    var AllowToCancelMTPendingRequest : Int?
+    var AllowToCancelBFPendingRequest : Int?
+    var IsAvailableBFApprovedRequest : Int?
+    var IsAvailableMTApprovedRequest : Int?
+    
     override init() {
         super.init()
     }
@@ -204,6 +214,16 @@ class GetMemberInfo: NSObject, Mappable {
         //ENGAGE0012634 -- Start
         self.memberLinkedMemberNumber <- map["MemberLinkedMemberNumber"]
         //ENGAGE0012634 -- End
+        
+        self.MemberShipType <- map["MemberShipType"]
+        self.Duration <- map["Duration"]
+        self.BillingFrequency <- map["BillingFrequency"]
+        self.AllowToChangeDuesMembershipType <- map["AllowToChangeDuesMembershipType"]
+        self.AllowToChangeDuesBillingFrequency <- map["AllowToChangeDuesBillingFrequency"]
+        self.AllowToCancelMTPendingRequest <- map["AllowToCancelMTPendingRequest"]
+        self.AllowToCancelBFPendingRequest <- map["AllowToCancelBFPendingRequest"]
+        self.IsAvailableBFApprovedRequest <- map["IsAvailableBFApprovedRequest"]
+        self.IsAvailableMTApprovedRequest <- map["IsAvailableMTApprovedRequest"]
     }
     
 }

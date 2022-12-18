@@ -98,13 +98,51 @@ class ProfileViewOnlyVC: UIViewController {
     //@IBOutlet weak var profileViewHeight: NSLayoutConstraint!
     //ENGAGE0012634 -- End
 
-    @IBOutlet weak var btnPrivacyPolicy: UIButton!
-    
-    @IBOutlet weak var btnTermsOfUse: UIButton!
+ 
     
     //Added by kiran V3.2 -- ENGAGE0012634 -- Added a parent view for anniversary and added the parent view to stack view to hide the view in storyboard IB.
     //ENGAGE0012634 -- Start
     @IBOutlet weak var viewAnniversary: UIView!
+    
+    
+    
+    
+   //MARK:- Code from Cobalt
+    @IBOutlet weak var profileViewHeight: NSLayoutConstraint!
+    @IBOutlet weak var btnPrivacyPolicy: UIButton!
+    @IBOutlet weak var btnTermsOfUse: UIButton!
+    
+    @IBOutlet weak var viewDivider: UIView!
+    @IBOutlet weak var btnEditMembershipType: UIButton!
+    @IBOutlet weak var viewMemberShipType: UIView!
+    @IBOutlet weak var btnHistoryMembershipType: UIButton!
+    @IBOutlet weak var btnCancelMemberShipRequest: UIButton!
+    @IBOutlet weak var viewDueBilles: UIView!
+    @IBOutlet weak var btnEditDueBill: UIButton!
+    @IBOutlet weak var btnDuebillHistory: UIButton!
+    @IBOutlet weak var lblMemberShipType: UILabel!
+    @IBOutlet weak var lblDuration: UILabel!
+    @IBOutlet weak var lblBillingType: UILabel!
+    @IBOutlet weak var btncancelDueBill: UIButton!
+
+    @IBOutlet weak var imgEditMembershipIcon: UIImageView!
+    @IBOutlet weak var imgHitoryMembershipIcon: UIImageView!
+    @IBOutlet weak var imgCancelMembershipIcon: UIImageView!
+    @IBOutlet weak var imgEditBillingIcon: UIImageView!
+    @IBOutlet weak var imgHitoryBillingIcon: UIImageView!
+    @IBOutlet weak var imgCancelBillingIcon: UIImageView!
+    
+    @IBOutlet weak var viewEditMembershipIcon: UIView!
+    @IBOutlet weak var viewiHistoryMembershipIcon: UIView!
+    @IBOutlet weak var viewCancelMembershipIcon: UIView!
+    @IBOutlet weak var viewEditBillingIcon: UIView!
+    @IBOutlet weak var viewHistoryBillingIcon: UIView!
+    @IBOutlet weak var viewCancelBillingIcon: UIView!
+    @IBOutlet weak var lblMembershipHeading: UILabel!
+    @IBOutlet weak var lblDurationHeading: UILabel!
+    @IBOutlet weak var lblDueBBillHeading: UILabel!
+    @IBOutlet weak var viewBack: UIView!
+    @IBOutlet weak var viewDuesHeight: NSLayoutConstraint!
    
     //ENGAGE0012634 -- End
     var arrMarketOptions :[String] = []
@@ -113,6 +151,10 @@ class ProfileViewOnlyVC: UIViewController {
 
     var appDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
     var dictmemberInfo = GetMemberInfo()
+    
+    var AllowToCancePendingRequest : Int?
+    var AllowtocancelMTRequest : Int?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -120,8 +162,44 @@ class ProfileViewOnlyVC: UIViewController {
         // Do any additional setup after loading the view.
         //Added by kiran V2.5 -- ENGAGE0011372 -- Custom method to dismiss screen when left edge swipe.
         //ENGAGE0011372 -- Start
+        //ENGAGE0011372 -- Start
+        
+        self.enableDues(isEnable: false)
+        self.btnTermsOfUse.setTitleColor(APPColor.MainColours.primary2, for: .normal)
+        self.btnPrivacyPolicy.setTitleColor(APPColor.MainColours.primary2, for: .normal)
+        self.viewDivider.backgroundColor = APPColor.MainColours.primary2
+        // Do any additional setup after loading the view.
+        //Added by kiran V2.5 -- ENGAGE0011372 -- Custom method to dismiss screen when left edge swipe.
+        //ENGAGE0011372 -- Start
         self.addLeftEdgeSwipeDismissAction()
         //ENGAGE0011372 -- Start
+        
+        //Added by kiran V1.3 -- PROD0000036 -- removing place holder image set in storyboard
+        //PROD0000036 -- Start
+        self.imgProfilePic.image = UIImage(named: "provider_Male")
+        //PROD0000036 -- End
+        viewMemberShipType.layer.cornerRadius = viewMemberShipType.frame.height/2
+        viewMemberShipType.layer.borderColor = UIColor.lightGray.cgColor
+        viewMemberShipType.layer.borderWidth = 1
+        btnEditMembershipType.setTitle("", for: .normal)
+        btnHistoryMembershipType.setTitle("", for: .normal)
+        btnCancelMemberShipRequest.setTitle("", for: .normal)
+        viewDueBilles.layer.cornerRadius = viewMemberShipType.frame.height/2
+        viewDueBilles.layer.borderColor = UIColor.lightGray.cgColor
+        viewDueBilles.layer.borderWidth = 1
+        btnEditDueBill.setTitle("", for: .normal)
+        btnDuebillHistory.setTitle("", for: .normal)
+        btncancelDueBill.setTitle("", for: .normal)
+        
+        
+        viewMemberShipType.isHidden = true
+        viewDueBilles.isHidden = true
+        viewEditMembershipIcon.isHidden = true
+        viewiHistoryMembershipIcon.isHidden = true
+        viewCancelMembershipIcon.isHidden = true
+        viewEditBillingIcon.isHidden = true
+        viewHistoryBillingIcon.isHidden = true
+        viewCancelBillingIcon.isHidden = true
     }
     
     override func viewWillLayoutSubviews() {
@@ -255,6 +333,56 @@ class ProfileViewOnlyVC: UIViewController {
         //ENGAGE0011419 -- End
     }
     
+    @IBAction func btnTappedEditMembership(_ sender: Any) {
+        if let settingsVC = UIStoryboard.init(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "EditMembershipTypeVC") as? EditMembershipTypeVC {
+            settingsVC.AllowtocancelMTRequest = AllowtocancelMTRequest
+            self.navigationController?.pushViewController(settingsVC, animated: true)
+        }
+    }
+    
+    @IBAction func btnTappedHistoryMembership(_ sender: Any) {
+        if let HistoryVc = UIStoryboard.init(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "MemberShipHistoryVC") as? MemberShipHistoryVC {
+            HistoryVc.typeOfHistory = .Membership
+            self.navigationController?.pushViewController(HistoryVc, animated: true)
+        }
+    }
+    @IBAction func btnTappedCancelMemberRequest(_ sender: Any) {
+        if let vc = UIStoryboard.init(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "CancelMembershipRequestPopUpVC") as? CancelMembershipRequestPopUpVC{
+            vc.typeCancelPoppupfrombillormember = .Membership
+            self.present(vc, animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func editDueBillFrequencyBtnTapped(_ sender: Any) {
+        if let vc = UIStoryboard.init(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "MemberEditBillingFrequencyVC") as? MemberEditBillingFrequencyVC {
+            self.navigationController?.navigationBar.tintColor = APPColor.viewNews.backButtonColor
+            vc.currentFrequency = lblBillingType.text
+            vc.AllowToCancePendingRequest = AllowToCancePendingRequest
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        }
+    }
+    
+    @IBAction func HistoryDueBillFrequencyBtnTapped(_ sender: Any) {
+        if let vc = UIStoryboard.init(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "MemberShipHistoryVC") as? MemberShipHistoryVC {
+            self.navigationController?.navigationBar.tintColor = APPColor.viewNews.backButtonColor
+            vc.typeOfHistory = .Billing
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    @IBAction func cancelDueBillFrequencyBtnTapped(_ sender: Any) {
+        if let vc = UIStoryboard.init(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "CancelMembershipRequestPopUpVC") as? CancelMembershipRequestPopUpVC{
+            vc.typeCancelPoppupfrombillormember = .Billing
+            self.present(vc, animated: true, completion: nil)
+        }
+    }
+    func enableDues(isEnable: Bool) {
+        if isEnable {
+            self.viewDuesHeight.constant = 215.0
+        } else {
+            self.viewDuesHeight.constant = 0.0
+        }
+    }
     
     @objc func logout(sender : UITapGestureRecognizer) {
         self.userLogOut()
@@ -631,6 +759,61 @@ class ProfileViewOnlyVC: UIViewController {
                 self.uiScrollView.contentSize = CGSize(width: UIScreen.main.bounds.size.width, height: self.profileViewHeight.constant)
                  */
                 //ENGAGE0012634 -- End
+                
+                
+                self.lblMembershipHeading.text = self.appDelegate.masterLabeling.DUES_RENEWAL_MEMBERSHIP_TYPE ?? ""
+                self.lblDurationHeading.text = self.appDelegate.masterLabeling.DUES_RENEWAL_DURATION
+                self.lblMemberShipType.text = arrgetMemberInfo.MemberShipType
+                self.lblDuration.text = arrgetMemberInfo.Duration
+                self.lblBillingType.text = arrgetMemberInfo.BillingFrequency
+                self.lblDueBBillHeading.text = self.appDelegate.masterLabeling.DUES_RENEWAL_BILLING_FREQUENCY
+                self.AllowToCancePendingRequest = arrgetMemberInfo.AllowToCancelBFPendingRequest
+
+
+                if arrgetMemberInfo.AllowToChangeDuesMembershipType == 1{
+                    self.viewiHistoryMembershipIcon.isHidden = false
+                    self.viewEditMembershipIcon.isHidden = false
+                    self.viewMemberShipType.isHidden = false
+                }
+                else{
+                    self.viewEditMembershipIcon.isHidden = true
+                    self.viewiHistoryMembershipIcon.isHidden = true
+                    
+                }
+
+                if arrgetMemberInfo.AllowToCancelMTPendingRequest == 1{
+                    self.viewCancelMembershipIcon.isHidden = false
+                    self.viewMemberShipType.isHidden = false
+                    self.AllowtocancelMTRequest = 1
+                }
+                else{
+                    self.viewCancelMembershipIcon.isHidden = true
+                }
+
+
+                if arrgetMemberInfo.AllowToChangeDuesBillingFrequency == 1{
+                    self.viewEditBillingIcon.isHidden = false
+                    self.viewDueBilles.isHidden = false
+                }
+                else{
+                    self.viewEditBillingIcon.isHidden = true
+                }
+
+                if arrgetMemberInfo.AllowToChangeDuesBillingFrequency == 1{
+                    self.viewHistoryBillingIcon.isHidden = false
+                    self.viewDueBilles.isHidden = false
+                }
+                else{
+                    self.viewHistoryBillingIcon.isHidden = true
+                }
+
+                if arrgetMemberInfo.AllowToCancelBFPendingRequest == 1{
+                    self.viewCancelBillingIcon.isHidden = false
+                    self.viewDueBilles.isHidden = false
+                }
+                else{
+                    self.viewCancelBillingIcon.isHidden = true
+                }
                 
                 
             },onFailure: { error  in

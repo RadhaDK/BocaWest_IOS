@@ -1079,6 +1079,38 @@
 		A84B102B2941DF4000F8D88F /* DinningCalederVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B10292941DF4000F8D88F /* DinningCalederVC.swift */; };
 		A84B102D2941DF5900F8D88F /* CancelDinningReservationPopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B102C2941DF5900F8D88F /* CancelDinningReservationPopupVC.swift */; };
 		A84B102E2941DF5900F8D88F /* CancelDinningReservationPopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B102C2941DF5900F8D88F /* CancelDinningReservationPopupVC.swift */; };
+		A8A29A9B294F6ABD00CC34F8 /* MemberBillingFrequencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8A29A98294F6ABC00CC34F8 /* MemberBillingFrequencyCell.xib */; };
+		A8A29A9C294F6ABD00CC34F8 /* MemberBillingFrequencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8A29A98294F6ABC00CC34F8 /* MemberBillingFrequencyCell.xib */; };
+		A8A29A9D294F6ABD00CC34F8 /* MemberEditBillingFrequencyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A29A99294F6ABD00CC34F8 /* MemberEditBillingFrequencyVC.swift */; };
+		A8A29A9E294F6ABD00CC34F8 /* MemberEditBillingFrequencyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A29A99294F6ABD00CC34F8 /* MemberEditBillingFrequencyVC.swift */; };
+		A8A29A9F294F6ABD00CC34F8 /* MemberBillingFrequencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A29A9A294F6ABD00CC34F8 /* MemberBillingFrequencyCell.swift */; };
+		A8A29AA0294F6ABD00CC34F8 /* MemberBillingFrequencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A29A9A294F6ABD00CC34F8 /* MemberBillingFrequencyCell.swift */; };
+		A8A29AAA294F6B1B00CC34F8 /* MembershiphHistoryFilterPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A29AA1294F6B1900CC34F8 /* MembershiphHistoryFilterPopUpView.swift */; };
+		A8A29AAB294F6B1B00CC34F8 /* MembershiphHistoryFilterPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A29AA1294F6B1900CC34F8 /* MembershiphHistoryFilterPopUpView.swift */; };
+		A8A29AAC294F6B1B00CC34F8 /* FilterHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A29AA2294F6B1900CC34F8 /* FilterHistoryTableViewCell.swift */; };
+		A8A29AAD294F6B1B00CC34F8 /* FilterHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A29AA2294F6B1900CC34F8 /* FilterHistoryTableViewCell.swift */; };
+		A8A29AAE294F6B1B00CC34F8 /* MemberShipHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A29AA3294F6B1900CC34F8 /* MemberShipHistoryVC.swift */; };
+		A8A29AAF294F6B1B00CC34F8 /* MemberShipHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A29AA3294F6B1900CC34F8 /* MemberShipHistoryVC.swift */; };
+		A8A29AB0294F6B1B00CC34F8 /* MembershiphHistoryFilterPopUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8A29AA4294F6B1900CC34F8 /* MembershiphHistoryFilterPopUpView.xib */; };
+		A8A29AB1294F6B1B00CC34F8 /* MembershiphHistoryFilterPopUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8A29AA4294F6B1900CC34F8 /* MembershiphHistoryFilterPopUpView.xib */; };
+		A8A29AB2294F6B1B00CC34F8 /* FilterHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8A29AA5294F6B1A00CC34F8 /* FilterHistoryTableViewCell.xib */; };
+		A8A29AB3294F6B1B00CC34F8 /* FilterHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8A29AA5294F6B1A00CC34F8 /* FilterHistoryTableViewCell.xib */; };
+		A8A29AB4294F6B1B00CC34F8 /* HistoryFilterPopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A29AA6294F6B1A00CC34F8 /* HistoryFilterPopupVC.swift */; };
+		A8A29AB5294F6B1B00CC34F8 /* HistoryFilterPopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A29AA6294F6B1A00CC34F8 /* HistoryFilterPopupVC.swift */; };
+		A8A29AB6294F6B1B00CC34F8 /* ¸ in Resources */ = {isa = PBXBuildFile; fileRef = A8A29AA7294F6B1A00CC34F8 /* ¸ */; };
+		A8A29AB7294F6B1B00CC34F8 /* ¸ in Resources */ = {isa = PBXBuildFile; fileRef = A8A29AA7294F6B1A00CC34F8 /* ¸ */; };
+		A8A29AB8294F6B1B00CC34F8 /* MembershipHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A29AA8294F6B1A00CC34F8 /* MembershipHistoryCell.swift */; };
+		A8A29AB9294F6B1B00CC34F8 /* MembershipHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A29AA8294F6B1A00CC34F8 /* MembershipHistoryCell.swift */; };
+		A8A29ABA294F6B1B00CC34F8 /* MembershipHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8A29AA9294F6B1B00CC34F8 /* MembershipHistoryCell.xib */; };
+		A8A29ABB294F6B1B00CC34F8 /* MembershipHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8A29AA9294F6B1B00CC34F8 /* MembershipHistoryCell.xib */; };
+		A8A29ABE294F6B5500CC34F8 /* CancelMembershipRequestPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A29ABD294F6B5500CC34F8 /* CancelMembershipRequestPopUpVC.swift */; };
+		A8A29ABF294F6B5500CC34F8 /* CancelMembershipRequestPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A29ABD294F6B5500CC34F8 /* CancelMembershipRequestPopUpVC.swift */; };
+		A8A29AC2294F6B9E00CC34F8 /* ThankYouMemberShipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A29AC1294F6B9E00CC34F8 /* ThankYouMemberShipVC.swift */; };
+		A8A29AC3294F6B9E00CC34F8 /* ThankYouMemberShipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A29AC1294F6B9E00CC34F8 /* ThankYouMemberShipVC.swift */; };
+		A8A29AC6294F6C5C00CC34F8 /* EditMembershipTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A29AC4294F6C5B00CC34F8 /* EditMembershipTypeVC.swift */; };
+		A8A29AC7294F6C5C00CC34F8 /* EditMembershipTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A29AC4294F6C5B00CC34F8 /* EditMembershipTypeVC.swift */; };
+		A8A29AC8294F6C5C00CC34F8 /* EditMembershipTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A29AC5294F6C5B00CC34F8 /* EditMembershipTypeTableViewCell.swift */; };
+		A8A29AC9294F6C5C00CC34F8 /* EditMembershipTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A29AC5294F6C5B00CC34F8 /* EditMembershipTypeTableViewCell.swift */; };
 		C70E34B4215AA3E70076935C /* GuestCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70E34B3215AA3E70076935C /* GuestCard.storyboard */; };
 		C70E34B6215AB1390076935C /* GuestCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E34B5215AB1390076935C /* GuestCardsViewController.swift */; };
 		C70E34B8215AB2580076935C /* GuestCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E34B7215AB2580076935C /* GuestCardTableViewCell.swift */; };
@@ -1747,6 +1779,22 @@
 		A84B10262941DF2800F8D88F /* RestaurantSpecificDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantSpecificDetailVC.swift; sourceTree = "<group>"; };
 		A84B10292941DF4000F8D88F /* DinningCalederVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinningCalederVC.swift; sourceTree = "<group>"; };
 		A84B102C2941DF5900F8D88F /* CancelDinningReservationPopupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelDinningReservationPopupVC.swift; sourceTree = "<group>"; };
+		A8A29A98294F6ABC00CC34F8 /* MemberBillingFrequencyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberBillingFrequencyCell.xib; sourceTree = "<group>"; };
+		A8A29A99294F6ABD00CC34F8 /* MemberEditBillingFrequencyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberEditBillingFrequencyVC.swift; sourceTree = "<group>"; };
+		A8A29A9A294F6ABD00CC34F8 /* MemberBillingFrequencyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberBillingFrequencyCell.swift; sourceTree = "<group>"; };
+		A8A29AA1294F6B1900CC34F8 /* MembershiphHistoryFilterPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembershiphHistoryFilterPopUpView.swift; sourceTree = "<group>"; };
+		A8A29AA2294F6B1900CC34F8 /* FilterHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		A8A29AA3294F6B1900CC34F8 /* MemberShipHistoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberShipHistoryVC.swift; sourceTree = "<group>"; };
+		A8A29AA4294F6B1900CC34F8 /* MembershiphHistoryFilterPopUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MembershiphHistoryFilterPopUpView.xib; sourceTree = "<group>"; };
+		A8A29AA5294F6B1A00CC34F8 /* FilterHistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterHistoryTableViewCell.xib; sourceTree = "<group>"; };
+		A8A29AA6294F6B1A00CC34F8 /* HistoryFilterPopupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryFilterPopupVC.swift; sourceTree = "<group>"; };
+		A8A29AA7294F6B1A00CC34F8 /* ¸ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "¸"; sourceTree = "<group>"; };
+		A8A29AA8294F6B1A00CC34F8 /* MembershipHistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembershipHistoryCell.swift; sourceTree = "<group>"; };
+		A8A29AA9294F6B1B00CC34F8 /* MembershipHistoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MembershipHistoryCell.xib; sourceTree = "<group>"; };
+		A8A29ABD294F6B5500CC34F8 /* CancelMembershipRequestPopUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelMembershipRequestPopUpVC.swift; sourceTree = "<group>"; };
+		A8A29AC1294F6B9E00CC34F8 /* ThankYouMemberShipVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThankYouMemberShipVC.swift; sourceTree = "<group>"; };
+		A8A29AC4294F6C5B00CC34F8 /* EditMembershipTypeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditMembershipTypeVC.swift; sourceTree = "<group>"; };
+		A8A29AC5294F6C5B00CC34F8 /* EditMembershipTypeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditMembershipTypeTableViewCell.swift; sourceTree = "<group>"; };
 		B97D0ED64FE9E0515C2C716F /* Pods-CSSIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSSIUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSSIUITests/Pods-CSSIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C70E34B3215AA3E70076935C /* GuestCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GuestCard.storyboard; sourceTree = "<group>"; };
 		C70E34B5215AB1390076935C /* GuestCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestCardsViewController.swift; sourceTree = "<group>"; };
@@ -2079,6 +2127,9 @@
 		59FEC41120B6B71400FF2DB0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A8A29AC0294F6B8600CC34F8 /* ThankYouMemberShipVC */,
+				A8A29ABC294F6B3000CC34F8 /* CancelMembershipRequestPopUpVC */,
+				A8A29A90294F6A5600CC34F8 /* MemberShipHistoryVC */,
 				5F1A4513210F2E4C00D8348B /* Restaurent */,
 				5F8B2CC8210AEA470028B774 /* Event Pop UP */,
 				5F3AAC082101E1780031103A /* Tab bar */,
@@ -2403,6 +2454,8 @@
 				18AA4922221ED6CA005F2DE8 /* SettingsViewController.swift */,
 				18AA4924221ED7AA005F2DE8 /* SettingsCustomCell.swift */,
 				181FF64C221D271A009D57F8 /* CheckBoxCustomCell.swift */,
+				A8A29AC5294F6C5B00CC34F8 /* EditMembershipTypeTableViewCell.swift */,
+				A8A29AC4294F6C5B00CC34F8 /* EditMembershipTypeVC.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -3239,6 +3292,49 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		A8A29A90294F6A5600CC34F8 /* MemberShipHistoryVC */ = {
+			isa = PBXGroup;
+			children = (
+				A8A29A91294F6A6800CC34F8 /* MemberEditBillingFrequencyVC */,
+			);
+			path = MemberShipHistoryVC;
+			sourceTree = "<group>";
+		};
+		A8A29A91294F6A6800CC34F8 /* MemberEditBillingFrequencyVC */ = {
+			isa = PBXGroup;
+			children = (
+				A8A29AA7294F6B1A00CC34F8 /* ¸ */,
+				A8A29AA2294F6B1900CC34F8 /* FilterHistoryTableViewCell.swift */,
+				A8A29AA5294F6B1A00CC34F8 /* FilterHistoryTableViewCell.xib */,
+				A8A29AA6294F6B1A00CC34F8 /* HistoryFilterPopupVC.swift */,
+				A8A29AA1294F6B1900CC34F8 /* MembershiphHistoryFilterPopUpView.swift */,
+				A8A29AA4294F6B1900CC34F8 /* MembershiphHistoryFilterPopUpView.xib */,
+				A8A29AA8294F6B1A00CC34F8 /* MembershipHistoryCell.swift */,
+				A8A29AA9294F6B1B00CC34F8 /* MembershipHistoryCell.xib */,
+				A8A29AA3294F6B1900CC34F8 /* MemberShipHistoryVC.swift */,
+				A8A29A9A294F6ABD00CC34F8 /* MemberBillingFrequencyCell.swift */,
+				A8A29A98294F6ABC00CC34F8 /* MemberBillingFrequencyCell.xib */,
+				A8A29A99294F6ABD00CC34F8 /* MemberEditBillingFrequencyVC.swift */,
+			);
+			path = MemberEditBillingFrequencyVC;
+			sourceTree = "<group>";
+		};
+		A8A29ABC294F6B3000CC34F8 /* CancelMembershipRequestPopUpVC */ = {
+			isa = PBXGroup;
+			children = (
+				A8A29ABD294F6B5500CC34F8 /* CancelMembershipRequestPopUpVC.swift */,
+			);
+			path = CancelMembershipRequestPopUpVC;
+			sourceTree = "<group>";
+		};
+		A8A29AC0294F6B8600CC34F8 /* ThankYouMemberShipVC */ = {
+			isa = PBXGroup;
+			children = (
+				A8A29AC1294F6B9E00CC34F8 /* ThankYouMemberShipVC.swift */,
+			);
+			path = ThankYouMemberShipVC;
+			sourceTree = "<group>";
+		};
 		C5F611C3BCD0E07FDB029C8B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -3453,6 +3549,7 @@
 				09507B43293743BC0003DA73 /* FitnessEventTableViewCell.xib in Resources */,
 				09507B44293743BC0003DA73 /* GuestNameSuggestionTableViewCell.xib in Resources */,
 				09507B45293743BC0003DA73 /* InstructionsTableViewCell.xib in Resources */,
+				A8A29AB3294F6B1B00CC34F8 /* FilterHistoryTableViewCell.xib in Resources */,
 				09507B46293743BC0003DA73 /* ProviderDetailsHeaderView.xib in Resources */,
 				09507B47293743BC0003DA73 /* AllNewsHeaderView.xib in Resources */,
 				09507B48293743BC0003DA73 /* AppointmentHistoryHeaderView.xib in Resources */,
@@ -3466,6 +3563,7 @@
 				09507B50293743BC0003DA73 /* AddBuddyHeaderView.xib in Resources */,
 				09507B51293743BC0003DA73 /* HeaderViewEventDetails.xib in Resources */,
 				09507B52293743BC0003DA73 /* MemberTableViewCell.xib in Resources */,
+				A8A29AB1294F6B1B00CC34F8 /* MembershiphHistoryFilterPopUpView.xib in Resources */,
 				09507B53293743BC0003DA73 /* AppointmentHisotryDetailTableViewCell.xib in Resources */,
 				09507B54293743BC0003DA73 /* FooterTableViewCell.xib in Resources */,
 				09507B55293743BC0003DA73 /* SourceSansPro-Semibold.otf in Resources */,
@@ -3482,6 +3580,7 @@
 				09507B60293743BC0003DA73 /* FitnessCategoryCollectionViewCell.xib in Resources */,
 				09507B61293743BC0003DA73 /* HamburgerMenuTableViewCell.xib in Resources */,
 				09507B62293743BC0003DA73 /* ViewVideoCollectionViewCell.xib in Resources */,
+				A8A29ABB294F6B1B00CC34F8 /* MembershipHistoryCell.xib in Resources */,
 				09507B63293743BC0003DA73 /* FitnessVideoTableViewCell.xib in Resources */,
 				09507B64293743BC0003DA73 /* README.md in Resources */,
 				09507B65293743BC0003DA73 /* SFUIDisplay-Medium.otf in Resources */,
@@ -3501,8 +3600,10 @@
 				09507B73293743BC0003DA73 /* OptiosCollectionViewCell.xib in Resources */,
 				09507B74293743BC0003DA73 /* GuestDateSelection.xib in Resources */,
 				09507B75293743BC0003DA73 /* GuestCard.storyboard in Resources */,
+				A8A29A9C294F6ABD00CC34F8 /* MemberBillingFrequencyCell.xib in Resources */,
 				09507B76293743BC0003DA73 /* TimeCollectionViewCell.xib in Resources */,
 				09507B77293743BC0003DA73 /* FitnessRequestTableViewCell.xib in Resources */,
+				A8A29AB7294F6B1B00CC34F8 /* ¸ in Resources */,
 				09507B78293743BC0003DA73 /* SourceSansPro-Bold.otf in Resources */,
 				09507B79293743BC0003DA73 /* StatementDetailFooter.xib in Resources */,
 				09507B7A293743BC0003DA73 /* FitnessProvidersTableViewCell.xib in Resources */,
@@ -3540,6 +3641,7 @@
 				9F3D08D5242222E7001FFA5F /* FitnessEventTableViewCell.xib in Resources */,
 				9F67DCF12629926300830D24 /* GuestNameSuggestionTableViewCell.xib in Resources */,
 				9F2DF5C923FD61FF003E65F1 /* InstructionsTableViewCell.xib in Resources */,
+				A8A29AB2294F6B1B00CC34F8 /* FilterHistoryTableViewCell.xib in Resources */,
 				9F6620D724AE578E0061BB9C /* ProviderDetailsHeaderView.xib in Resources */,
 				18E1C6D021CBAD470022145D /* AllNewsHeaderView.xib in Resources */,
 				9F6620DC24AE578E0061BB9C /* AppointmentHistoryHeaderView.xib in Resources */,
@@ -3553,6 +3655,7 @@
 				187AA7CF22A2BA8F004F04D2 /* AddBuddyHeaderView.xib in Resources */,
 				185746F72276DB5200F69E12 /* HeaderViewEventDetails.xib in Resources */,
 				9F86DE962616362600B7086B /* MemberTableViewCell.xib in Resources */,
+				A8A29AB0294F6B1B00CC34F8 /* MembershiphHistoryFilterPopUpView.xib in Resources */,
 				9F6620C224AE573F0061BB9C /* AppointmentHisotryDetailTableViewCell.xib in Resources */,
 				187913B8215FA7330025EC11 /* FooterTableViewCell.xib in Resources */,
 				5FA174CE20D7917A0049D0BA /* SourceSansPro-Semibold.otf in Resources */,
@@ -3569,6 +3672,7 @@
 				9FC4F2EB25430B4100E7DB80 /* FitnessCategoryCollectionViewCell.xib in Resources */,
 				9F5A1A1E250B810D00AADE80 /* HamburgerMenuTableViewCell.xib in Resources */,
 				9FFF66D3246D61DA009BCA41 /* ViewVideoCollectionViewCell.xib in Resources */,
+				A8A29ABA294F6B1B00CC34F8 /* MembershipHistoryCell.xib in Resources */,
 				9FB78768250CB6490067004F /* FitnessVideoTableViewCell.xib in Resources */,
 				74874F2120ED47D400C654B7 /* README.md in Resources */,
 				598DE06020D3E7A1009AFEF0 /* SFUIDisplay-Medium.otf in Resources */,
@@ -3588,8 +3692,10 @@
 				9F6620BA24AE573F0061BB9C /* OptiosCollectionViewCell.xib in Resources */,
 				5F70BBAE20ED07AD00A950BE /* GuestDateSelection.xib in Resources */,
 				C70E34B4215AA3E70076935C /* GuestCard.storyboard in Resources */,
+				A8A29A9B294F6ABD00CC34F8 /* MemberBillingFrequencyCell.xib in Resources */,
 				9F6620BD24AE573F0061BB9C /* TimeCollectionViewCell.xib in Resources */,
 				9F6620BE24AE573F0061BB9C /* FitnessRequestTableViewCell.xib in Resources */,
+				A8A29AB6294F6B1B00CC34F8 /* ¸ in Resources */,
 				9FE085DF250FC729005FDF55 /* SourceSansPro-Bold.otf in Resources */,
 				188BDFCF21FCAE9700927817 /* StatementDetailFooter.xib in Resources */,
 				9F6620B924AE573F0061BB9C /* FitnessProvidersTableViewCell.xib in Resources */,
@@ -3966,6 +4072,7 @@
 				0950799D293743BC0003DA73 /* LandingMenus.swift in Sources */,
 				0950799E293743BC0003DA73 /* TableViewHelper.swift in Sources */,
 				0950799F293743BC0003DA73 /* DownloadStatement.swift in Sources */,
+				A8A29AC7294F6C5C00CC34F8 /* EditMembershipTypeVC.swift in Sources */,
 				095079A0293743BC0003DA73 /* ClubNewsDetails.swift in Sources */,
 				095079A1293743BC0003DA73 /* UIImageView+WebCache.m in Sources */,
 				095079A2293743BC0003DA73 /* UIView+WebCache.m in Sources */,
@@ -3983,6 +4090,7 @@
 				095079AC293743BC0003DA73 /* ThanksUPdateViewController.swift in Sources */,
 				095079AD293743BC0003DA73 /* FitnessVideoDetailsViewController.swift in Sources */,
 				095079AE293743BC0003DA73 /* HalfModalFilterPresentationController.swift in Sources */,
+				A8A29AA0294F6ABD00CC34F8 /* MemberBillingFrequencyCell.swift in Sources */,
 				095079AF293743BC0003DA73 /* ModifyGuest.swift in Sources */,
 				095079B0293743BC0003DA73 /* AlertDetailsViewController.swift in Sources */,
 				095079B1293743BC0003DA73 /* ServiceDetails.swift in Sources */,
@@ -4057,6 +4165,7 @@
 				095079F1293743BC0003DA73 /* FormValidation.swift in Sources */,
 				095079F2293743BC0003DA73 /* StatementViewController.swift in Sources */,
 				095079F3293743BC0003DA73 /* FooterTableViewCell.swift in Sources */,
+				A8A29ABF294F6B5500CC34F8 /* CancelMembershipRequestPopUpVC.swift in Sources */,
 				095079F4293743BC0003DA73 /* FilterNavigationController.swift in Sources */,
 				095079F5293743BC0003DA73 /* FooterMenus.swift in Sources */,
 				095079F6293743BC0003DA73 /* SDWebImageGIFCoder.m in Sources */,
@@ -4084,6 +4193,7 @@
 				09507A09293743BC0003DA73 /* PDfViewController.swift in Sources */,
 				09507A0A293743BC0003DA73 /* MembersList.swift in Sources */,
 				09507A0B293743BC0003DA73 /* MultiSelectionCollectionViewCell.swift in Sources */,
+				A8A29AAD294F6B1B00CC34F8 /* FilterHistoryTableViewCell.swift in Sources */,
 				09507A0C293743BC0003DA73 /* RestaurantCollectionViewCell.swift in Sources */,
 				09507A0D293743BC0003DA73 /* GiftCardVC.swift in Sources */,
 				09507A0E293743BC0003DA73 /* HalfModalInteractiveTransition.swift in Sources */,
@@ -4171,6 +4281,7 @@
 				09507A59293743BC0003DA73 /* CurrentStatement.swift in Sources */,
 				09507A5A293743BC0003DA73 /* EventDetailsViewController.swift in Sources */,
 				09507A5B293743BC0003DA73 /* AnualCourtBookingResponse.swift in Sources */,
+				A8A29A9E294F6ABD00CC34F8 /* MemberEditBillingFrequencyVC.swift in Sources */,
 				09507A5C293743BC0003DA73 /* ViewController.swift in Sources */,
 				A84B0FE22941DC5400F8D88F /* EditDinningReservationModel.swift in Sources */,
 				09507A5D293743BC0003DA73 /* SDWebImageFrame.m in Sources */,
@@ -4225,6 +4336,7 @@
 				09507A8C293743BC0003DA73 /* ActionSheetDistancePicker.m in Sources */,
 				09507A8D293743BC0003DA73 /* MemberDirectoryTableViewCell.swift in Sources */,
 				09507A8E293743BC0003DA73 /* TeeTimesDetails.swift in Sources */,
+				A8A29AC3294F6B9E00CC34F8 /* ThankYouMemberShipVC.swift in Sources */,
 				09507A8F293743BC0003DA73 /* SettingsViewController.swift in Sources */,
 				09507A90293743BC0003DA73 /* Club_news.swift in Sources */,
 				09507A91293743BC0003DA73 /* PopUpForCategoryVC.swift in Sources */,
@@ -4256,6 +4368,7 @@
 				09507AAA293743BC0003DA73 /* HeaderViewPlayHistory.swift in Sources */,
 				09507AAB293743BC0003DA73 /* TagView.swift in Sources */,
 				09507AAC293743BC0003DA73 /* SampleViewController.swift in Sources */,
+				A8A29AAF294F6B1B00CC34F8 /* MemberShipHistoryVC.swift in Sources */,
 				09507AAD293743BC0003DA73 /* NewSuccessUpdateView.swift in Sources */,
 				09507AAE293743BC0003DA73 /* MyGroupDetails.swift in Sources */,
 				09507AAF293743BC0003DA73 /* AppVersion.swift in Sources */,
@@ -4279,6 +4392,7 @@
 				09507ABF293743BC0003DA73 /* FitnessMainViewController.swift in Sources */,
 				09507AC0293743BC0003DA73 /* RequestTableViewCell.swift in Sources */,
 				09507AC1293743BC0003DA73 /* FitnessVideoTableViewCell.swift in Sources */,
+				A8A29AAB294F6B1B00CC34F8 /* MembershiphHistoryFilterPopUpView.swift in Sources */,
 				09507AC2293743BC0003DA73 /* SWRevealViewController.m in Sources */,
 				A84B0FC92941D90200F8D88F /* GenerateOTP.swift in Sources */,
 				09507AC3293743BC0003DA73 /* CobaltImageView.swift in Sources */,
@@ -4297,6 +4411,7 @@
 				A84B10162941DEA100F8D88F /* DiningAddMemberGuestPopUpVC.swift in Sources */,
 				09507ACF293743BC0003DA73 /* ImportantNumberViewController.swift in Sources */,
 				09507AD0293743BC0003DA73 /* UIImageView+HighlightedWebCache.m in Sources */,
+				A8A29AC9294F6C5C00CC34F8 /* EditMembershipTypeTableViewCell.swift in Sources */,
 				09507AD1293743BC0003DA73 /* SDWebImageImageIOCoder.m in Sources */,
 				09507AD2293743BC0003DA73 /* SDWebImagePrefetcher.m in Sources */,
 				09507AD3293743BC0003DA73 /* RecentNewsTableViewCell.swift in Sources */,
@@ -4354,6 +4469,7 @@
 				A84B0FEB2941DCB500F8D88F /* GetMyDinnningReservationModel.swift in Sources */,
 				09507B04293743BC0003DA73 /* ActionSheetLocalePicker.m in Sources */,
 				09507B05293743BC0003DA73 /* CheckBoxCustomCell.swift in Sources */,
+				A8A29AB5294F6B1B00CC34F8 /* HistoryFilterPopupVC.swift in Sources */,
 				09507B06293743BC0003DA73 /* Event.swift in Sources */,
 				09507B07293743BC0003DA73 /* GuestCardsViewController.swift in Sources */,
 				09507B08293743BC0003DA73 /* YLTagsChooser.m in Sources */,
@@ -4392,6 +4508,7 @@
 				09507B27293743BC0003DA73 /* AddNewGuestViewController.swift in Sources */,
 				09507B28293743BC0003DA73 /* SDWebImageCoder.m in Sources */,
 				09507B29293743BC0003DA73 /* AppointmentHistory.swift in Sources */,
+				A8A29AB9294F6B1B00CC34F8 /* MembershipHistoryCell.swift in Sources */,
 				09507B2A293743BC0003DA73 /* AddGroupVC.swift in Sources */,
 				09507B2B293743BC0003DA73 /* MenuTableViewCell.swift in Sources */,
 				09507B2C293743BC0003DA73 /* CustomNewRegCell.swift in Sources */,
@@ -4424,6 +4541,7 @@
 				18DE586E218899F7003EF0C1 /* LandingMenus.swift in Sources */,
 				5FEE5E1B210595D700408BAC /* TableViewHelper.swift in Sources */,
 				1869D533225491C000F02F1B /* DownloadStatement.swift in Sources */,
+				A8A29AC6294F6C5C00CC34F8 /* EditMembershipTypeVC.swift in Sources */,
 				1805056A2189E3F000BFBA0D /* ClubNewsDetails.swift in Sources */,
 				5F713A672133D27700A56CE3 /* UIImageView+WebCache.m in Sources */,
 				5F713A682133D27700A56CE3 /* UIView+WebCache.m in Sources */,
@@ -4441,6 +4559,7 @@
 				187913BF215FE1660025EC11 /* ThanksUPdateViewController.swift in Sources */,
 				9F61224F250F791D00506A8B /* FitnessVideoDetailsViewController.swift in Sources */,
 				5FE537EB20EA094000CC3FBF /* HalfModalFilterPresentationController.swift in Sources */,
+				A8A29A9F294F6ABD00CC34F8 /* MemberBillingFrequencyCell.swift in Sources */,
 				5FBEEE2120F8A3FA0010516B /* ModifyGuest.swift in Sources */,
 				9FB20008254B27A100003176 /* AlertDetailsViewController.swift in Sources */,
 				9F6620EA24AE57EF0061BB9C /* ServiceDetails.swift in Sources */,
@@ -4515,6 +4634,7 @@
 				74C6BBCE20D1978700842A77 /* FormValidation.swift in Sources */,
 				598D248D20B7DE050018AE2F /* StatementViewController.swift in Sources */,
 				187913B9215FA7330025EC11 /* FooterTableViewCell.swift in Sources */,
+				A8A29ABE294F6B5500CC34F8 /* CancelMembershipRequestPopUpVC.swift in Sources */,
 				5FD6592C20E757EF0033CD5B /* FilterNavigationController.swift in Sources */,
 				5F17741120FF0BC1003E5529 /* FooterMenus.swift in Sources */,
 				5F713A5B2133D27700A56CE3 /* SDWebImageGIFCoder.m in Sources */,
@@ -4542,6 +4662,7 @@
 				5FBFFBE220EBD068004D31D9 /* MembersList.swift in Sources */,
 				9F538CCA23F133F400250261 /* MultiSelectionCollectionViewCell.swift in Sources */,
 				5F1A451A210F473C00D8348B /* RestaurantCollectionViewCell.swift in Sources */,
+				A8A29AAC294F6B1B00CC34F8 /* FilterHistoryTableViewCell.swift in Sources */,
 				1874627621FDC31B00814CFF /* GiftCardVC.swift in Sources */,
 				5FD6592F20E757EF0033CD5B /* HalfModalInteractiveTransition.swift in Sources */,
 				5F713A692133D27700A56CE3 /* UIView+WebCacheOperation.m in Sources */,
@@ -4629,6 +4750,7 @@
 				182F40FC21A664DB00CDF5C2 /* DiningReservationViewController.swift in Sources */,
 				5F85D8A920DCEEFF003F9477 /* CurrentStatement.swift in Sources */,
 				5F8B2CCC210AEAD30028B774 /* EventDetailsViewController.swift in Sources */,
+				A8A29A9D294F6ABD00CC34F8 /* MemberEditBillingFrequencyVC.swift in Sources */,
 				188A13C42289E2B000765664 /* AnualCourtBookingResponse.swift in Sources */,
 				A84B0FE12941DC5400F8D88F /* EditDinningReservationModel.swift in Sources */,
 				59FEC3E620B6A64F00FF2DB0 /* ViewController.swift in Sources */,
@@ -4683,6 +4805,7 @@
 				9F600FF226245A18009CA1E1 /* ExistingGuest.swift in Sources */,
 				C79EA8E121610F99008AB18C /* SegmentControlle.swift in Sources */,
 				18E8581721D0EDFD00AC18D5 /* ViewNewsViewController.swift in Sources */,
+				A8A29AC2294F6B9E00CC34F8 /* ThankYouMemberShipVC.swift in Sources */,
 				74874F2420ED47D400C654B7 /* ActionSheetDistancePicker.m in Sources */,
 				5F9B839620E4A5AF00A20EAF /* MemberDirectoryTableViewCell.swift in Sources */,
 				18CEB499219D72860097E28A /* TeeTimesDetails.swift in Sources */,
@@ -4714,6 +4837,7 @@
 				9F62E86E2549A6B4000307DB /* FitnessCheckin.swift in Sources */,
 				5FDEF69620F3885400426067 /* NotificationDetails.swift in Sources */,
 				1869D537225493AC00F02F1B /* GetSettingsValues.swift in Sources */,
+				A8A29AAE294F6B1B00CC34F8 /* MemberShipHistoryVC.swift in Sources */,
 				18B6036C226885F00045FAE5 /* HeaderViewPlayHistory.swift in Sources */,
 				5FE537F120EA410200CC3FBF /* TagView.swift in Sources */,
 				5FD6592620E757EF0033CD5B /* SampleViewController.swift in Sources */,
@@ -4737,6 +4861,7 @@
 				5F3E181820D25485009E3EB6 /* TransactionDetailsViewController.swift in Sources */,
 				1815B55A226748F300AB52E6 /* EventsVC.swift in Sources */,
 				5FBFFBDA20EB7B35004D31D9 /* GuestList.swift in Sources */,
+				A8A29AAA294F6B1B00CC34F8 /* MembershiphHistoryFilterPopUpView.swift in Sources */,
 				9FCE25A9250A75AF00E6B5B9 /* FitnessMainViewController.swift in Sources */,
 				9F6620BB24AE573F0061BB9C /* RequestTableViewCell.swift in Sources */,
 				9FB78767250CB6490067004F /* FitnessVideoTableViewCell.swift in Sources */,
@@ -4755,6 +4880,7 @@
 				A84B10152941DEA100F8D88F /* DiningAddMemberGuestPopUpVC.swift in Sources */,
 				5F713A652133D27700A56CE3 /* UIImage+WebP.m in Sources */,
 				74C6BBCF20D1978700842A77 /* EventList.swift in Sources */,
+				A8A29AC8294F6C5C00CC34F8 /* EditMembershipTypeTableViewCell.swift in Sources */,
 				5F05D02220E2249C00037BFE /* ImportantNumberViewController.swift in Sources */,
 				5F713A662133D27700A56CE3 /* UIImageView+HighlightedWebCache.m in Sources */,
 				5F713A5C2133D27700A56CE3 /* SDWebImageImageIOCoder.m in Sources */,
@@ -4812,6 +4938,7 @@
 				A84B0FEA2941DCB500F8D88F /* GetMyDinnningReservationModel.swift in Sources */,
 				74874F2320ED47D400C654B7 /* ActionSheetLocalePicker.m in Sources */,
 				181FF64D221D271A009D57F8 /* CheckBoxCustomCell.swift in Sources */,
+				A8A29AB4294F6B1B00CC34F8 /* HistoryFilterPopupVC.swift in Sources */,
 				59D1A40920CA773500E92C86 /* Event.swift in Sources */,
 				C70E34B6215AB1390076935C /* GuestCardsViewController.swift in Sources */,
 				5F06DC1220E62E00007137C7 /* YLTagsChooser.m in Sources */,
@@ -4850,6 +4977,7 @@
 				18D2ED25215CF02C00EDFF9C /* AddNewGuestViewController.swift in Sources */,
 				5F713A542133D27700A56CE3 /* SDWebImageCoder.m in Sources */,
 				9F6620E724AE57EF0061BB9C /* AppointmentHistory.swift in Sources */,
+				A8A29AB8294F6B1B00CC34F8 /* MembershipHistoryCell.swift in Sources */,
 				18D12553226EF90100E34D07 /* AddGroupVC.swift in Sources */,
 				598DE04F20D3C6AF009AFEF0 /* MenuTableViewCell.swift in Sources */,
 				184F5AC5222665C000240C02 /* CustomNewRegCell.swift in Sources */,
