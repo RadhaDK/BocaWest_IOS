@@ -176,6 +176,14 @@ class GolfCalendarVC: UIViewController ,UISearchBarDelegate, DTCalendarViewDeleg
         //ENGAGE0011372 -- Start
         self.addLeftEdgeSwipeDismissAction()
         //ENGAGE0011372 -- Start
+        
+        
+        if targetType == BaseUrls.Cobalt{
+            self.lblMonthName.backgroundColor = APPColor.MainColours.primary3
+            self.eventsRangeView.setDisplayAttributes(DisplayAttributes.init(font: UIFont.systemFont(ofSize: 15), textColor: .white, backgroundColor: APPColor.MainColours.primary2, textAlignment: .center), forState: .selected)
+            self.eventsRangeView.setDisplayAttributes(DisplayAttributes.init(font: UIFont.systemFont(ofSize: 15), textColor: .white, backgroundColor: APPColor.MainColours.primary2, textAlignment: .center), forState: .highlighted)
+        }
+
     }
     
     override func viewWillAppear(_ animated: Bool) {

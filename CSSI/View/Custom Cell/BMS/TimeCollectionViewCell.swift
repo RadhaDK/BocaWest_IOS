@@ -13,10 +13,14 @@ class TimeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var lblTime: UILabel!
     @IBOutlet weak var lblPeriod: UILabel!
+    @IBOutlet weak var lblHoleType: UILabel!
+    @IBOutlet weak var borderSeperationView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.lblHoleType.isHidden = true
+
     }
 
     

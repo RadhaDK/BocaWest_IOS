@@ -8,15 +8,23 @@
 
 import UIKit
 
-class GolfCalendarMYTabVC: UIViewController, UITableViewDataSource, UITableViewDelegate, EventsCellDelegate {
+class GolfCalendarMYTabVC: UIViewController, UITableViewDataSource, UITableViewDelegate, EventsCellDelegate, cancelDinningPopup {
     func imgDetailViewClicked(cell: EventCustomTableViewCell) {
         
     }
     
-
+    func cancelDinningReservation(value: Bool) {
+        
+      self.appDelegate.selectedSegment = "0"
+        self.appDelegate.typeOfCalendar = "Dining"
+        self.myDinningReservationList(strSearch: strSearchText ?? "")
+        
+    }
     @IBOutlet weak var myTableView: UITableView!
     var appDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
     var arrEventList = [ListEvents]()
+    var arrMyDinningList = [MyDiningData]()
+
     var category : NSString!
     
     var strSearchText : String?
@@ -57,7 +65,17 @@ class GolfCalendarMYTabVC: UIViewController, UITableViewDataSource, UITableViewD
                 self.myTennisEventApi(strSearch: strSearchText)
             }
             else if(self.appDelegate.typeOfCalendar == "Dining"){
-                self.myDiningEventApi(strSearch: strSearchText)
+                if targetType == BaseUrls.Cobalt{
+                    if self.appDelegate.isDiningFCFSEnable {
+                        self.myDinningReservationList(strSearch: strSearchText ?? "")
+                    } else {
+                        self.myDiningEventApi(strSearch: strSearchText)
+                    }
+                }
+                else if targetType == BaseUrls.Bocawest{
+                    self.myDiningEventApi(strSearch: strSearchText)
+
+                }
             }
             else if self.appDelegate.typeOfCalendar == "FitnessSpa"
             {
@@ -1666,4 +1684,82 @@ extension GolfCalendarMYTabVC : closeUpdateSuccesPopup
     }
     
     
+}
+
+// MARK: - API CALLING
+extension GolfCalendarMYTabVC{
+    func myDinningReservationList(strSearch :String){
+        if (Network.reachability?.isReachable) == true{
+            self.appDelegate.showIndicator(withTitle: "", intoView: self.view)
+            var paramaterDict:[String: Any]?
+            
+             paramaterDict = [
+                "Content-Type":"application/json",
+                "LinkedMemberID" : UserDefaults.standard.string(forKey: UserDefaultsKeys.id.rawValue)!,
+                "FilterStartDate" : self.appDelegate.dateSortToDate,
+                "FilterEndDate" : self.appDelegate.dateSortFromDate,
+                "SearchText"  : strSearch
+             ]
+            print(paramaterDict)
+            APIHandler.sharedInstance.GetMyDinningReservation(paramater: paramaterDict, onSuccess: { myReservationDinningListing in
+                
+                if(myReservationDinningListing.ResponseCode == InternetMessge.kSuccess)
+                {
+                    if(myReservationDinningListing.DiningReservations == nil){
+                        self.arrMyDinningList.removeAll()
+                        self.myTableView.setEmptyMessage(InternetMessge.kNoData)
+                        self.myTableView.reloadData()
+                        self.appDelegate.hideIndicator()
+                    }
+                    else{
+                        
+                        if(myReservationDinningListing.DiningReservations?.count == 0)
+                        {
+                            self.arrMyDinningList.removeAll()
+                            self.myTableView.setEmptyMessage(InternetMessge.kNoData)
+                            self.myTableView.reloadData()
+                            
+                            
+                            self.appDelegate.hideIndicator()
+                            
+                        }else{
+                            self.arrMyDinningList.removeAll()
+                            self.myTableView.restore()
+                            self.arrMyDinningList = myReservationDinningListing.DiningReservations!  //eventList.listevents!
+                            self.myTableView.reloadData()
+                        }
+                        
+                    }
+                    
+                    if(!(self.arrMyDinningList.count == 0)){
+                        let indexPath = IndexPath(row: 0, section: 0)
+                        self.myTableView.scrollToRow(at: indexPath, at: .top, animated: true)
+                    }
+                    
+                }
+                else{
+                    self.appDelegate.hideIndicator()
+                    if(((myReservationDinningListing.responseMessage?.count) ?? 0)>0){
+                        SharedUtlity.sharedHelper().showToast(on:
+                            self.view, withMeassge: myReservationDinningListing.responseMessage, withDuration: Duration.kMediumDuration)
+                    }
+                    self.myTableView.setEmptyMessage(myReservationDinningListing.responseMessage ?? "")
+                    
+                }
+                self.appDelegate.hideIndicator()
+              
+        
+                
+            },onFailure: { error  in
+                print(error)
+                self.appDelegate.hideIndicator()
+                SharedUtlity.sharedHelper().showToast(on:
+                    self.view, withMeassge: error.localizedDescription, withDuration: Duration.kMediumDuration)
+            })
+        }else{
+            self.appDelegate.hideIndicator()
+            SharedUtlity.sharedHelper().showToast(on:
+                self.view, withMeassge: InternetMessge.kInternet_not_available, withDuration: Duration.kMediumDuration)
+        }
+    }
 }

@@ -94,7 +94,11 @@ class APIHandler: NSObject
     let diningTestURL : String = "https://cobaltportal.mycobaltsoftware.com/CSSI.Cobalt.Member.Wrapper.FCFS.Test/api/dining/"
     
     lazy var baseURL : String = assignBaseUrl()
-    lazy var diningBaseURL : String = self.diningDevURL
+    lazy var diningBaseURL : String = self.engageTestURL + "dining/"
+    
+    //lazy var diningBaseURL : String = self.diningDevURL
+   
+    
     //MARK:- API Switch Variable
     //This is only implemented only for Boca West app as of now.
     

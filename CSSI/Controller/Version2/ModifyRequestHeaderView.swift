@@ -37,7 +37,9 @@ class ModifyRequestHeaderView: UITableViewCell {
     
     @IBOutlet weak var viewWaitlist: UIView!
     @IBOutlet weak var btnWaitlist: UIButton!
-    
+    @IBOutlet weak var lblHolesHeader: UILabel!
+    @IBOutlet weak var lblTransHeader: UILabel!
+    @IBOutlet weak var lblRoundLength: UILabel!
     
     var delegate: ModifyDelegate?
 

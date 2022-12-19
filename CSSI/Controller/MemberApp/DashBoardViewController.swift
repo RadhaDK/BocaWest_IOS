@@ -1723,6 +1723,11 @@ class DashBoardViewController: UIViewController, UICollectionViewDelegate, UICol
             DataManager.shared.addRequestOpt_GolfLesson = MB_AddRequestOpt_GolfLesson
         }
         //GATHER0001167 -- End
+        
+        if let transTypes = memberDirectoryInterest?.MB_TransType
+        {
+            self.appDelegate.transType_Golf = transTypes
+        }
     }
     
     //MARK:- Master List API called

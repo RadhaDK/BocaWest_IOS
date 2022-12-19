@@ -10,6 +10,8 @@ import UIKit
 import Popover
 import Charts
 
+
+
 class DiningReservationViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UITableViewDelegate, UITableViewDataSource, ChartViewDelegate  {
 
     @IBOutlet weak var instructionalLabelHeight: NSLayoutConstraint!
@@ -75,8 +77,20 @@ class DiningReservationViewController: UIViewController, UICollectionViewDataSou
 //        self.btnDiningReq.layer.borderWidth = 1
 //        self.btnDiningReq.layer.borderColor = hexStringToUIColor(hex: "F06C42").cgColor
         self.btnDiningReq.diningBtnViewSetup()
-        self.btnDiningReq.setTitle(self.appDelegate.masterLabeling.dining_request, for: UIControlState.normal)
-        
+        if targetType == BaseUrls.Bocawest{
+            self.btnDiningReq.setTitle(self.appDelegate.masterLabeling.dining_request, for: UIControlState.normal)
+
+        }
+        else if targetType == BaseUrls.Cobalt{
+            if self.appDelegate.isDiningFCFSEnable {
+                self.btnDiningReq.setTitle("Dining Resv", for: UIControlState.normal)
+            } else {
+                self.btnDiningReq.setTitle(self.appDelegate.masterLabeling.dining_request, for: UIControlState.normal)
+            }
+        }
+       // self.btnDiningReq.setStyle(style: .outlined, type: .primary)
+
+            
         self.btnMenusHours.diningBtnViewSetup()
         
         self.btnMenusHours.setTitle(self.appDelegate.masterLabeling.menus_hours ?? "", for: .normal)
@@ -91,7 +105,7 @@ class DiningReservationViewController: UIViewController, UICollectionViewDataSou
     
     override func viewWillAppear(_ animated: Bool) {
         initController()
-        
+        self.navigationController?.navigationBar.isHidden = false
         self.navigationItem.title = self.appDelegate.masterLabeling.dining_reservations ?? "" as String
         self.lblRecentNews.text = self.appDelegate.masterLabeling.recent_news ?? "" as String
         self.lblInstructionalVideos.text = self.appDelegate.masterLabeling.instructional_videos_dining ?? "" as String
@@ -400,14 +414,31 @@ class DiningReservationViewController: UIViewController, UICollectionViewDataSou
     
     @IBAction func calendarOfEventsClicked(_ sender: Any) {
         
-        
-        if let calendar = UIStoryboard.init(name: "MemberApp", bundle: .main).instantiateViewController(withIdentifier: "GolfCalendarVC") as? GolfCalendarVC
-        {
+        if targetType == BaseUrls.Bocawest{
+            if let calendar = UIStoryboard.init(name: "MemberApp", bundle: .main).instantiateViewController(withIdentifier: "GolfCalendarVC") as? GolfCalendarVC
+            {
+                self.appDelegate.buddyType = "First"
+                self.appDelegate.typeOfCalendar = "Dining"
+                self.navigationController?.pushViewController(calendar, animated: true)
+            }
+
+        }
+        else if targetType == BaseUrls.Cobalt{
             self.appDelegate.buddyType = "First"
             self.appDelegate.typeOfCalendar = "Dining"
-            self.navigationController?.pushViewController(calendar, animated: true)
+            if self.appDelegate.isDiningFCFSEnable {
+                if let calendar = UIStoryboard.init(name: "DiningStoryboard", bundle: .main).instantiateViewController(withIdentifier: "DinningCalederVC") as? DinningCalederVC
+                {
+                    self.navigationController?.pushViewController(calendar, animated: true)
+                }
+            } else {
+                if let calendar = UIStoryboard.init(name: "MemberApp", bundle: .main).instantiateViewController(withIdentifier: "GolfCalendarVC") as? GolfCalendarVC
+                {
+                    self.navigationController?.pushViewController(calendar, animated: true)
+                }
+            }
+            
         }
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -662,12 +693,41 @@ class DiningReservationViewController: UIViewController, UICollectionViewDataSou
     }
     
     func diningRequestClicked(){
+//        if let impVC = UIStoryboard.init(name: "MemberApp", bundle: .main).instantiateViewController(withIdentifier: "DiningRequestVC") as? DiningRequestVC {
+//
+//           // impVC.diningSettings = self.diningSettings
+//
+//            self.navigationController?.pushViewController(impVC, animated: true)
+//
+//        }
+        if targetType == BaseUrls.Bocawest{
+            self.moveToDiningLottery()
+        }
+        else if targetType == BaseUrls.Cobalt{
+            if self.appDelegate.isDiningFCFSEnable {
+                self.moveToDiningFCFS()
+            } else {
+                self.moveToDiningLottery()
+            }
+         }
+    }
+    
+    func moveToDiningLottery() {
         if let impVC = UIStoryboard.init(name: "MemberApp", bundle: .main).instantiateViewController(withIdentifier: "DiningRequestVC") as? DiningRequestVC {
             
            // impVC.diningSettings = self.diningSettings
             
             self.navigationController?.pushViewController(impVC, animated: true)
             
+        }
+    }
+    
+    func moveToDiningFCFS() {
+        if let impVC = UIStoryboard.init(name: "DiningStoryboard", bundle: .main).instantiateViewController(withIdentifier: "DiningReservationVC") as? DiningReservationVC {
+            impVC.showNavigationBar = false
+            impVC.enumForDinningMode = .create
+            impVC.diningPolicyURL = (self.ClubNewsDetails?.dressCode[0].URL) ?? ""
+            self.navigationController?.pushViewController(impVC, animated: true)
         }
     }
 }

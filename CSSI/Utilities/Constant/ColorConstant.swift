@@ -7,6 +7,7 @@ struct APPColor {
     struct viewBackgroundColor {
         //Background color for all viewcontroller(Layout)
         static var viewbg = hexStringToUIColor(hex: "F5F5F5")
+        static var preferenceTimeColor = hexStringToUIColor(hex: "77A1A4")
     }
     
     struct tintColor {

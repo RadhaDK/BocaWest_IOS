@@ -72,6 +72,10 @@ class RequestTeeTimeDetail: NSObject, Mappable  {
     var gameTypeTitle: String?
     var preferedDetailId: String?
     var notPreferedSpaceDetailId: String?
+    var golfRequestType: String?
+    var btnValue: Int?
+    var preferredTimeSlots: [PreferredFCFSCoursesWithTime]?
+    var teeBox: String?
     
     convenience required init?(map: Map) {
         self.init()
@@ -115,6 +119,9 @@ class RequestTeeTimeDetail: NSObject, Mappable  {
         diningDetails <- map["DiningDetails"]
         durationText <- map["DurationText"]
         gameTypeTitle <- map["GameTypeTitle"]
+        golfRequestType <- map["GolfRequestType"]
+        preferredTimeSlots <- map["PreferredFCFSCoursesWithTime"]
+        teeBox <- map["TeeBox"]
     }
     
 }
@@ -129,6 +136,7 @@ class CourseDetail: NSObject, Mappable  {
 
     var preferenceType: String?
     
+    var playType: String?
     
     convenience required init?(map: Map) {
         self.init()
@@ -143,7 +151,7 @@ class CourseDetail: NSObject, Mappable  {
         courseImage3 <- map["CourseImage2"]
 
         preferenceType <- map["PreferenceType"]
-        
+        playType <- map["PlayType"]
         
         
     }
@@ -180,6 +188,8 @@ class GroupDetail: RequestData, Mappable  {
     var playerGroup: Int?
     var confirmedReservationID: String?
     var buttonTextValue : String?
+    var teeBox: String?
+    var gameTypeTitle: String?
     
     //Added by kiran V2.8 -- ENGAGE0011784 --
     //ENGAGE0011784 -- Start
@@ -189,7 +199,8 @@ class GroupDetail: RequestData, Mappable  {
     var guestLastName : String?
     var guestLinkedMemberID : String?
     //ENGAGE0011784 -- End
-    
+    var memberTransType: String?
+    var memberRequestHoles: String?
     var modifyDietary: Int?
 
     convenience required init?(map: Map) {
@@ -237,6 +248,10 @@ class GroupDetail: RequestData, Mappable  {
         self.guestLastName <- map["GuestLastName"]
         self.guestLinkedMemberID <- map["GuestLinkedMemberID"]
         //ENGAGE0011784 -- End
+        self.memberTransType <- map["MemberTransType"]
+        self.memberRequestHoles <- map["MemberRequestHoles"]
+        self.teeBox <- map["TeeBox"]
+        self.gameTypeTitle <- map["GameTypeTitle"]
         self.modifyDietary <- map["ModifyDietary"]
     }
     
@@ -272,6 +287,10 @@ class Detail: RequestData, Mappable  {
     var guestIdentityID : String?
     //ENGAGE0011784 -- End
     
+    
+    var memberTransType: Int?
+    var memberRequestHoles: String?
+    
     convenience required init?(map: Map) {
         self.init()
     }
@@ -306,7 +325,8 @@ class Detail: RequestData, Mappable  {
         self.guestLinkedMemberID <- map["GuestLinkedMemberID"]
         self.guestIdentityID <- map["GuestIdentityID"]
         //ENGAGE0011784 -- End
-
+        self.memberTransType <- map["MemberTransType"]
+        self.memberRequestHoles <- map["MemberRequestHoles"]
     }
     
 }
@@ -355,4 +375,25 @@ class WatlistTeeTime: Codable
         case GroupStatus = "GroupStatus"
         case GroupNo = "GroupNo"
     }
+}
+class PreferredFCFSCoursesWithTime: RequestData, Mappable {
+    var courseDetailId : String?
+    var courseName : String?
+    var startingHole : String?
+    var teeBox : String?
+    var time : String?
+    
+    convenience required init?(map: Map) {
+        self.init()
+    }
+    
+    func mapping(map: Map) {
+        
+        courseDetailId <- map["CourseDetailId"]
+        courseName <- map["CourseName"]
+        startingHole <- map["G_StartingHole"]
+        teeBox <- map["TeeBox"]
+        time <- map["Time"]
+    }
+
 }

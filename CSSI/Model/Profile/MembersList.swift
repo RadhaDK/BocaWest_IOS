@@ -90,6 +90,9 @@ class GuestInfo: RequestData, Mappable
     var guestLinkedMemberID : String?
     var guestIdentityID : String?
     //ENGAGE0011784 -- End
+    var memberTransType: Int?
+    var memberRequestHoles: String?
+    
     
     convenience required init?(map: Map) {
         self.init()
@@ -124,6 +127,9 @@ class GuestInfo: RequestData, Mappable
         self.guestLinkedMemberID <- map["GuestLinkedMemberID"]
         self.guestIdentityID <- map["GuestIdentityID"]
         //ENGAGE0011784 -- End
+        
+        self.memberTransType <- map["MemberTransType"]
+        self.memberRequestHoles <- map["MemberRequestHoles"]
     }
     
     //Modified on 4th September 2020 V2.3
@@ -230,6 +236,8 @@ class CaptaineInfo: RequestData, Mappable{
     var captainParentID: String?
     var captainProfilePic:String?
     var captainFirstName: String?
+    var memberTransType: Int?
+    var memberRequestHoles: String?
     var captainDietRestriction: String?
     convenience required init?(map: Map) {
         self.init()
@@ -243,6 +251,8 @@ class CaptaineInfo: RequestData, Mappable{
         captainParentID <- map["captainParentID"]
         captainFirstName <- map[""]
         captainProfilePic <- map[""]
+        self.memberTransType <- map["MemberTransType"]
+        self.memberRequestHoles <- map["MemberRequestHoles"]
     }
     
     func setCaptainDetails(id: String, name: String,firstName: String, order: Int, memberID: String, parentID: String , profilePic: String, dietRestriction: String = "") {
@@ -335,6 +345,8 @@ class MemberInfo: RequestData, Mappable  {
     //ENGAGE0012617 -- Start
     var dietaryRestrictions : String?
     var modifyDietary: Int?
+    var memberTransType: Int?
+    var memberRequestHoles: String?
     //ENGAGE0012617 -- End
     convenience required init?(map: Map) {
         self.init()
@@ -380,7 +392,8 @@ class MemberInfo: RequestData, Mappable  {
         self.dietaryRestrictions <- map["DietaryRestrictions"]
         self.modifyDietary <- map["ModifyDietary"]
         //ENGAGE0012617 -- End
-        
+        self.memberTransType <- map["MemberTransType"]
+        self.memberRequestHoles <- map["MemberRequestHoles"]
     }
     
 }

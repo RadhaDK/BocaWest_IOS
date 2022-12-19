@@ -145,7 +145,7 @@ class GolfSettings: NSObject, Mappable  {
     var memberFromTime: String?
     var timeIntervalHours: Int?
     var gETDATETIME: String?
-    
+    var isFCFSGolfRequestEnable: Bool?
     
     convenience required init?(map: Map) {
         self.init()
@@ -171,7 +171,7 @@ class GolfSettings: NSObject, Mappable  {
         memberFromTime <- map["MemberFromTime"]
         timeIntervalHours <- map["TimeIntervalHours"]
         gETDATETIME <- map["GETDATETIME"]
-
+        isFCFSGolfRequestEnable <- map["IsFCFSGolfRequestEnable"]
     }
     
 }
@@ -187,6 +187,11 @@ class CourseSettingsDetail: NSObject, Mappable  {
     //Cobalt Pha0010644 -- Start
     var golfCourseAlert: [CourseAlertDetail]?
     //Cobalt Pha0010644 -- End
+    
+    // Added by Zeeshan
+    var scheduleType: String?
+    var displayType: Int?
+    var timeIntervals: [GolfTimeInterval]?
     
     convenience required init?(map: Map) {
         self.init()
@@ -204,6 +209,10 @@ class CourseSettingsDetail: NSObject, Mappable  {
         //Cobalt Pha0010644 -- Start
         self.golfCourseAlert <- map["GolfCourseAlert"]
         //Cobalt Pha0010644 -- End
+        
+        self.scheduleType <- map["ScheduleType"]
+        self.displayType <- map["DisplayOrder"]
+        self.timeIntervals <- map["TimeIntervals"]
     }
                 
 }
@@ -366,4 +375,27 @@ class DiningTime : NSObject,Mappable
     {
         self.time <- map["Time"]
     }
+}
+// Added by Zeeshan
+class GolfTimeInterval: NSObject, Mappable
+{
+    var borderFlag : String?
+    var startingHole : String?
+    var time : String?
+    var teeBox : String?
+    
+    convenience required init?(map: Map)
+    {
+        self.init()
+    }
+    
+    func mapping(map: Map)
+    {
+        self.borderFlag <- map["BorderFlag"]
+        self.startingHole <- map["STARTINGHOLES"]
+        self.time <- map["TIME"]
+        self.teeBox <- map["TeeBox"]
+    }
+    
+    
 }

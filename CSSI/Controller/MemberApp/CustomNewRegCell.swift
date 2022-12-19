@@ -12,7 +12,22 @@ protocol RegistrationCell: AnyObject {
     func clearButtonClicked(cell: CustomNewRegCell)
     func threeDotsClickedToMoveGroup(cell: CustomNewRegCell)
     func editClicked(cell: CustomNewRegCell)
+    func transTextFieldSelected(textField : UITextField , cell : CustomNewRegCell)
+    func selectedNineHoles(status : Bool , cell : CustomNewRegCell)
 
+
+}
+
+extension RegistrationCell
+{
+    func transTextFieldSelected(textField : UITextField , cell : CustomNewRegCell)
+    {
+        
+    }
+    func selectedNineHoles(status : Bool , cell : CustomNewRegCell)
+    {
+        
+    }
 }
 
 protocol RegistrationDiningCell: AnyObject {
@@ -30,6 +45,10 @@ class CustomNewRegCell: UITableViewCell, UITableViewDataSource, UITableViewDeleg
     //Added by kiran V2.5 -- GATHER0000606 -- included the clear btn and line lbl in a view so that it can be hidden easily.
     //GATHER0000606 -- Start
     @IBOutlet weak var viewClearBtn: UIView!
+    @IBOutlet weak var viewOptions: UIView!
+    @IBOutlet weak var btnNineHoles: UIButton!
+    @IBOutlet weak var textFieldTrans: UITextField!
+    @IBOutlet weak var viewTransWidth: NSLayoutConstraint!
     //GATHER0000606 -- End
     weak var delegate: RegistrationCell?
     weak var delegateDining: RegistrationDiningCell?
@@ -37,6 +56,14 @@ class CustomNewRegCell: UITableViewCell, UITableViewDataSource, UITableViewDeleg
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        if viewOptions != nil
+        {
+            self.btnNineHoles.setTitle("", for: .normal)
+            self.btnNineHoles.setImage(UIImage.init(named: "CheckBox_check"), for: .selected)
+            self.btnNineHoles.setImage(UIImage.init(named: "CheckBox_uncheck"), for: .normal)
+            self.textFieldTrans.setRightIcon(imageName: "Path 1847",width: 30)
+            self.textFieldTrans.delegate = self
+        }
        
     }
 
@@ -65,6 +92,16 @@ class CustomNewRegCell: UITableViewCell, UITableViewDataSource, UITableViewDeleg
         delegateDining?.addNewPopOverClickedDining(cell: self)
 
     }
+  
+    
+    //Added by kiran V1.5 -- PROD0000202 -- First come first serve change
+    //PROD0000202 -- Start
+    @IBAction func nineHolesClicked(_ sender: UIButton)
+    {
+        sender.isSelected = !sender.isSelected
+        self.delegate?.selectedNineHoles(status: sender.isSelected, cell: self)
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
     }
@@ -80,3 +117,22 @@ class CustomNewRegCell: UITableViewCell, UITableViewDataSource, UITableViewDeleg
         return UITableViewAutomaticDimension
     }
 }
+
+//Added by kiran V1.5 -- PROD0000202 -- First come first serve change
+//PROD0000202 -- Start
+extension CustomNewRegCell : UITextFieldDelegate
+{
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        
+        if textField == self.textFieldTrans
+        {
+            self.delegate?.transTextFieldSelected(textField: textField, cell: self)
+            return false
+        }
+        
+        return true
+        
+    }
+}
+//PROD0000202 -- End
+

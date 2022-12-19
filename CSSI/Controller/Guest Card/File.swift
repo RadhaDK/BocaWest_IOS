@@ -10,13 +10,13 @@ import Foundation
 extension UITextField {
     
     /// set icon of 20x20 with left padding of 8px
-    func setRightIcon(imageName:String) {
+    func setRightIcon(imageName:String , width : CGFloat? = nil) {
         
         let imageWidth : CGFloat = 30.0
         var imageHeight : CGFloat = 30.0
         
         let view = UIView.init()
-        view.frame = CGRect.init(x: 0, y: 0, width: 45, height: self.frame.height)
+        view.frame = CGRect.init(x: 0, y: 0, width: width ?? 45, height: self.frame.height)
         view.backgroundColor = .clear
         
         let arrow = UIImageView(image: UIImage(named: imageName))

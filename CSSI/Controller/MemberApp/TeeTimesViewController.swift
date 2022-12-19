@@ -1028,9 +1028,21 @@ class TeeTimesViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func gotoGolfRequest(){
-        let golfRequest = UIStoryboard.init(name: "MemberApp", bundle: nil).instantiateViewController(withIdentifier: "GolfRequestTeeTimeVC") as! GolfRequestTeeTimeVC
         
-        self.navigationController?.pushViewController(golfRequest, animated: true)
+        if targetType == BaseUrls.Bocawest{
+            let golfRequest = UIStoryboard.init(name: "MemberApp", bundle: nil).instantiateViewController(withIdentifier: "GolfRequestTeeTimeVC") as! GolfRequestTeeTimeVC
+            self.navigationController?.pushViewController(golfRequest, animated: true)
+
+
+        }
+        else if targetType == BaseUrls.Cobalt{
+            let golfRequest = UIStoryboard.init(name: "MemberApp", bundle: nil).instantiateViewController(withIdentifier: "CobaltGolfRequestTeeTimeVC") as! CobaltGolfRequestTeeTimeVC
+            self.navigationController?.pushViewController(golfRequest, animated: true)
+
+        }
+        
+       
+        
     }
     @IBAction func RulesClicked(_ sender: Any) {
         
