@@ -18,7 +18,12 @@ class StatementCategories: NSObject, Mappable {
     
     var listcategories: [ListStatementCategories]?
     var months : [ListOfMonths]?
-
+    var showMinimumDesignator: Int?
+    var minStatementLegend: String?
+    var statementDesignator: String?
+    var enableMinimumTemplate: Int?
+    var IsCreditBookEnabled : Int?
+    var CreditIndicate : String?
 
     
     override init() {
@@ -35,6 +40,12 @@ class StatementCategories: NSObject, Mappable {
         months <- map["MonthList"]
         responseCode <- map["ResponseCode"]
         responseMessage <- map["ResponseMessage"]
+        showMinimumDesignator <- map["ShowMinimumDesignatorInStatements"]
+        minStatementLegend <- map["MinStatementLegend"]
+        enableMinimumTemplate <- map["EnableMinimumTemplate"]
+        statementDesignator <- map["StatementDesignator"]
+        IsCreditBookEnabled <- map["IsCreditBookEnabled"]
+        CreditIndicate <- map["CreditIndicate"]
     }
 
     

@@ -95,7 +95,7 @@ class APIHandler: NSObject
     
     lazy var baseURL : String = assignBaseUrl()
     lazy var diningBaseURL : String = self.engageTestURL + "dining/"
-    
+    let cobaltengageDevURL : String = "https://cobaltportal.mycobaltsoftware.com/cssi.cobalt.member.wrapper.EngDev/api/"
     //lazy var diningBaseURL : String = self.diningDevURL
    
     
@@ -341,7 +341,9 @@ class APIHandler: NSObject
     static let dinningMemberValidationFCFS = "GetFBMemberValidation"
     static let dinningHistoryReservation = "GetFBHistory"
     static let dinningHistoryReservationDetail = "GetFBHistoryDetails"
-   
+    //CrediBook
+    static let creditBookList = "Member/GetMemberCreditBookList"
+    static let creditBookDetail = "Member/GetCreditBookTransactionHistory"
     
     func assignBaseUrl() -> String{
       var urlString = ""
@@ -7479,6 +7481,87 @@ print(headers)
         }
     }
     //ENGAGE0011722 -- End
+    
+    //CreditBook APIs
+    //MARK:- CreditBook Listing
+    func creditBookListingApi(paramater: [String: Any]?, onSuccess: @escaping(CreditBookListing) -> Void, onFailure: @escaping(Error) -> Void) {
+        let url : String = cobaltengageDevURL + APIHandler.creditBookList
+
+        print("============Start Time -- \(url) -- \(Date())========")
+        Alamofire.request(url,method:.post, parameters:paramater,encoding: JSONEncoding.default, headers:nil).responseJSON { response  in
+            print("============End Time -- \(url) -- \(Date())========")
+            switch response.result {
+            case.success(let result):
+                let responseString = NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue)
+          //      print("responseStringnotification = \(String(describing: responseString))")
+                do {
+                    if let jsonDict = try JSONSerialization.jsonObject(with: response.data!, options: []) as? [String: AnyObject] {
+//                        print(jsonDict)
+                        let dashboardDicterror = Mapper<BrokenRulesModel>().map(JSONObject: jsonDict)
+                        if(((dashboardDicterror?.brokenRules?.fields?.count) ?? 0) > 0 ){
+                            self.appDelegate.hideIndicator()
+                            let currentViewController = UIApplication.topViewController()
+                            let brokenMessage = (dashboardDicterror?.brokenRules?.message)!  + (dashboardDicterror?.brokenRules?.fields?.joined(separator: ","))!
+                            SharedUtlity.sharedHelper().showToast(on:currentViewController?.view, withMeassge:brokenMessage, withDuration: Duration.kMediumDuration)
+                        }
+                        else{
+                            let dashboardDict = Mapper<CreditBookListing>().map(JSONObject: jsonDict)
+                            onSuccess(dashboardDict!)
+                        }
+                    }
+                }
+                catch let error as NSError {
+                    // print(error)
+                }
+            case .failure(let error):
+                // print(error)
+                onFailure(error)
+            default:
+                print("error")
+            }
+            
+        }
+    }
+    
+    //MARK:- CreditBook HistoryDetail
+    func creditBookDetail(paramater: [String: Any]?, onSuccess: @escaping(CreditBookDetails) -> Void, onFailure: @escaping(Error) -> Void) {
+        let url : String = cobaltengageDevURL + APIHandler.creditBookDetail
+        print(paramater)
+        print("============Start Time -- \(url) -- \(Date())========")
+        Alamofire.request(url,method:.post, parameters:paramater,encoding: JSONEncoding.default, headers:nil).responseJSON { response  in
+            print("============End Time -- \(url) -- \(Date())========")
+            switch response.result {
+            case.success(let result):
+                let responseString = NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue)
+          //      print("responseStringnotification = \(String(describing: responseString))")
+                do {
+                    if let jsonDict = try JSONSerialization.jsonObject(with: response.data!, options: []) as? [String: AnyObject] {
+                        print(jsonDict)
+                        let dashboardDicterror = Mapper<BrokenRulesModel>().map(JSONObject: jsonDict)
+                        if(((dashboardDicterror?.brokenRules?.fields?.count) ?? 0) > 0 ){
+                            self.appDelegate.hideIndicator()
+                            let currentViewController = UIApplication.topViewController()
+                            let brokenMessage = (dashboardDicterror?.brokenRules?.message)!  + (dashboardDicterror?.brokenRules?.fields?.joined(separator: ","))!
+                            SharedUtlity.sharedHelper().showToast(on:currentViewController?.view, withMeassge:brokenMessage, withDuration: Duration.kMediumDuration)
+                        }
+                        else{
+                            let dashboardDict = Mapper<CreditBookDetails>().map(JSONObject: jsonDict)
+                            onSuccess(dashboardDict!)
+                        }
+                    }
+                }
+                catch let error as NSError {
+                    // print(error)
+                }
+            case .failure(let error):
+                // print(error)
+                onFailure(error)
+            default:
+                print("error")
+            }
+            
+        }
+    }
     
 }
 

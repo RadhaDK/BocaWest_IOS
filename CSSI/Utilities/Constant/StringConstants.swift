@@ -276,6 +276,9 @@ struct APIKeys
     
     //Dinning
     static let kRequestID = "RequestID"
+    
+    //CreditBook
+    static let kCreditBookID = "CreditBookID"
 }
 
 struct APIHeader

@@ -1007,6 +1007,26 @@
 		9FFF66D3246D61DA009BCA41 /* ViewVideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FFF66D1246D61D9009BCA41 /* ViewVideoCollectionViewCell.xib */; };
 		9FFF66D8246EB5EA009BCA41 /* viewContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFF66D6246EB5EA009BCA41 /* viewContentCollectionViewCell.swift */; };
 		9FFF66D9246EB5EA009BCA41 /* viewContentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FFF66D7246EB5EA009BCA41 /* viewContentCollectionViewCell.xib */; };
+		A82D1408295231E9009D2B02 /* CreditBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D1402295231E7009D2B02 /* CreditBookViewController.swift */; };
+		A82D1409295231E9009D2B02 /* CreditBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D1402295231E7009D2B02 /* CreditBookViewController.swift */; };
+		A82D140A295231E9009D2B02 /* MinimumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D1403295231E7009D2B02 /* MinimumViewController.swift */; };
+		A82D140B295231E9009D2B02 /* MinimumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D1403295231E7009D2B02 /* MinimumViewController.swift */; };
+		A82D140C295231E9009D2B02 /* TransactionDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D1404295231E7009D2B02 /* TransactionDetailTableViewCell.swift */; };
+		A82D140D295231E9009D2B02 /* TransactionDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D1404295231E7009D2B02 /* TransactionDetailTableViewCell.swift */; };
+		A82D140E295231E9009D2B02 /* TransactionHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D1405295231E8009D2B02 /* TransactionHistoryViewController.swift */; };
+		A82D140F295231E9009D2B02 /* TransactionHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D1405295231E8009D2B02 /* TransactionHistoryViewController.swift */; };
+		A82D1410295231E9009D2B02 /* MinimumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D1406295231E8009D2B02 /* MinimumTableViewCell.swift */; };
+		A82D1411295231E9009D2B02 /* MinimumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D1406295231E8009D2B02 /* MinimumTableViewCell.swift */; };
+		A82D1412295231E9009D2B02 /* CreditBookDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D1407295231E9009D2B02 /* CreditBookDetailCell.swift */; };
+		A82D1413295231E9009D2B02 /* CreditBookDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D1407295231E9009D2B02 /* CreditBookDetailCell.swift */; };
+		A82D1417295233F9009D2B02 /* CreditBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D1415295233F8009D2B02 /* CreditBookModel.swift */; };
+		A82D1418295233F9009D2B02 /* CreditBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D1415295233F8009D2B02 /* CreditBookModel.swift */; };
+		A82D1419295233F9009D2B02 /* CreditBookDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D1416295233F9009D2B02 /* CreditBookDetailModel.swift */; };
+		A82D141A295233F9009D2B02 /* CreditBookDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D1416295233F9009D2B02 /* CreditBookDetailModel.swift */; };
+		A82D141C29523635009D2B02 /* CobaltTransactionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D141B29523635009D2B02 /* CobaltTransactionDetailsViewController.swift */; };
+		A82D141D29523635009D2B02 /* CobaltTransactionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D141B29523635009D2B02 /* CobaltTransactionDetailsViewController.swift */; };
+		A82D142229523B53009D2B02 /* CobaltStatementDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D142129523B53009D2B02 /* CobaltStatementDetailCell.swift */; };
+		A82D142329523B53009D2B02 /* CobaltStatementDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D142129523B53009D2B02 /* CobaltStatementDetailCell.swift */; };
 		A84B0FBF2941D8AE00F8D88F /* membershipHistoryModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FBE2941D8AE00F8D88F /* membershipHistoryModal.swift */; };
 		A84B0FC02941D8AE00F8D88F /* membershipHistoryModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FBE2941D8AE00F8D88F /* membershipHistoryModal.swift */; };
 		A84B0FC22941D8C500F8D88F /* MembershipListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FC12941D8C500F8D88F /* MembershipListModel.swift */; };
@@ -1763,6 +1783,16 @@
 		9FFF66D1246D61D9009BCA41 /* ViewVideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewVideoCollectionViewCell.xib; sourceTree = "<group>"; };
 		9FFF66D6246EB5EA009BCA41 /* viewContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewContentCollectionViewCell.swift; sourceTree = "<group>"; };
 		9FFF66D7246EB5EA009BCA41 /* viewContentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = viewContentCollectionViewCell.xib; sourceTree = "<group>"; };
+		A82D1402295231E7009D2B02 /* CreditBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditBookViewController.swift; sourceTree = "<group>"; };
+		A82D1403295231E7009D2B02 /* MinimumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinimumViewController.swift; sourceTree = "<group>"; };
+		A82D1404295231E7009D2B02 /* TransactionDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionDetailTableViewCell.swift; sourceTree = "<group>"; };
+		A82D1405295231E8009D2B02 /* TransactionHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionHistoryViewController.swift; sourceTree = "<group>"; };
+		A82D1406295231E8009D2B02 /* MinimumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinimumTableViewCell.swift; sourceTree = "<group>"; };
+		A82D1407295231E9009D2B02 /* CreditBookDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditBookDetailCell.swift; sourceTree = "<group>"; };
+		A82D1415295233F8009D2B02 /* CreditBookModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditBookModel.swift; sourceTree = "<group>"; };
+		A82D1416295233F9009D2B02 /* CreditBookDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditBookDetailModel.swift; sourceTree = "<group>"; };
+		A82D141B29523635009D2B02 /* CobaltTransactionDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CobaltTransactionDetailsViewController.swift; sourceTree = "<group>"; };
+		A82D142129523B53009D2B02 /* CobaltStatementDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CobaltStatementDetailCell.swift; sourceTree = "<group>"; };
 		A84B0FBE2941D8AE00F8D88F /* membershipHistoryModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = membershipHistoryModal.swift; sourceTree = "<group>"; };
 		A84B0FC12941D8C500F8D88F /* MembershipListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembershipListModel.swift; sourceTree = "<group>"; };
 		A84B0FC42941D8D600F8D88F /* saveMembershipModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = saveMembershipModel.swift; sourceTree = "<group>"; };
@@ -2206,6 +2236,7 @@
 		59FEC41320B6B72F00FF2DB0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A82D1414295233DC009D2B02 /* CreditBook */,
 				A84B0FB92941D86500F8D88F /* MembershipList */,
 				A84B0FB42941D78D00F8D88F /* OTP */,
 				18BB25C821ABCCED00E12504 /* SendUsFeedback */,
@@ -2433,6 +2464,14 @@
 				59244E7C20D22E9800657B54 /* PreviousStatementDetailsViewController.swift */,
 				598DEEAA20D12C43000326DB /* CurrentStatementViewController.swift */,
 				18E1C6C521CB7D480022145D /* CustomStatmentTableViewCell.swift */,
+				A82D1407295231E9009D2B02 /* CreditBookDetailCell.swift */,
+				A82D1402295231E7009D2B02 /* CreditBookViewController.swift */,
+				A82D1406295231E8009D2B02 /* MinimumTableViewCell.swift */,
+				A82D1403295231E7009D2B02 /* MinimumViewController.swift */,
+				A82D1404295231E7009D2B02 /* TransactionDetailTableViewCell.swift */,
+				A82D1405295231E8009D2B02 /* TransactionHistoryViewController.swift */,
+				A82D141B29523635009D2B02 /* CobaltTransactionDetailsViewController.swift */,
+				A82D142129523B53009D2B02 /* CobaltStatementDetailCell.swift */,
 			);
 			path = Statement;
 			sourceTree = "<group>";
@@ -3244,6 +3283,15 @@
 				9FDBB13A2472BC820099D6E9 /* URLItem.swift */,
 			);
 			path = "Activity Share";
+			sourceTree = "<group>";
+		};
+		A82D1414295233DC009D2B02 /* CreditBook */ = {
+			isa = PBXGroup;
+			children = (
+				A82D1416295233F9009D2B02 /* CreditBookDetailModel.swift */,
+				A82D1415295233F8009D2B02 /* CreditBookModel.swift */,
+			);
+			path = CreditBook;
 			sourceTree = "<group>";
 		};
 		A84B0FB42941D78D00F8D88F /* OTP */ = {
@@ -4125,6 +4173,7 @@
 				095079A1293743BC0003DA73 /* UIImageView+WebCache.m in Sources */,
 				095079A2293743BC0003DA73 /* UIView+WebCache.m in Sources */,
 				095079A3293743BC0003DA73 /* FitnessVideoSubCategories.swift in Sources */,
+				A82D140D295231E9009D2B02 /* TransactionDetailTableViewCell.swift in Sources */,
 				A84B10222941DEFF00F8D88F /* DiningRequestSelectResturantDateVC.swift in Sources */,
 				A84B3522295091B100792A8A /* CobaltGolfRequestTeeTimeVC.swift in Sources */,
 				095079A4293743BC0003DA73 /* APIHandler.swift in Sources */,
@@ -4136,6 +4185,7 @@
 				095079A9293743BC0003DA73 /* InstructionVideoCollectionViewCell.swift in Sources */,
 				095079AA293743BC0003DA73 /* TabbarModel.swift in Sources */,
 				095079AB293743BC0003DA73 /* StringConstants.swift in Sources */,
+				A82D141D29523635009D2B02 /* CobaltTransactionDetailsViewController.swift in Sources */,
 				A85E10112950D6DA00E9138D /* CobaltRequestHeaderView.swift in Sources */,
 				095079AC293743BC0003DA73 /* ThanksUPdateViewController.swift in Sources */,
 				095079AD293743BC0003DA73 /* FitnessVideoDetailsViewController.swift in Sources */,
@@ -4210,6 +4260,7 @@
 				095079EB293743BC0003DA73 /* CustomDoneButton.swift in Sources */,
 				095079EC293743BC0003DA73 /* PaginationLayout.swift in Sources */,
 				095079ED293743BC0003DA73 /* RecentNewsCustomCell.swift in Sources */,
+				A82D1411295231E9009D2B02 /* MinimumTableViewCell.swift in Sources */,
 				095079EE293743BC0003DA73 /* NSData+ImageContentType.m in Sources */,
 				095079EF293743BC0003DA73 /* MobileConfig.swift in Sources */,
 				095079F0293743BC0003DA73 /* BMSAppointmentDetails.swift in Sources */,
@@ -4254,6 +4305,7 @@
 				09507A12293743BC0003DA73 /* MemberDirectoryViewController.swift in Sources */,
 				09507A13293743BC0003DA73 /* TodayAtGlanceVC.swift in Sources */,
 				09507A14293743BC0003DA73 /* ListEvents.swift in Sources */,
+				A82D142329523B53009D2B02 /* CobaltStatementDetailCell.swift in Sources */,
 				09507A15293743BC0003DA73 /* FitnessVideoFilterCollectionViewCell.swift in Sources */,
 				09507A16293743BC0003DA73 /* SelfSizingTableView.swift in Sources */,
 				09507A17293743BC0003DA73 /* RequestCardAccountSummaryViewController.swift in Sources */,
@@ -4378,6 +4430,7 @@
 				09507A82293743BC0003DA73 /* AlphaDetails.swift in Sources */,
 				09507A83293743BC0003DA73 /* Dashboard.swift in Sources */,
 				09507A84293743BC0003DA73 /* FitnessGoalChallangeTableViewCell.swift in Sources */,
+				A82D1409295231E9009D2B02 /* CreditBookViewController.swift in Sources */,
 				09507A85293743BC0003DA73 /* CommonString.swift in Sources */,
 				09507A86293743BC0003DA73 /* AddBuddyViewController.swift in Sources */,
 				09507A87293743BC0003DA73 /* TodayAtGlanceCategory.swift in Sources */,
@@ -4423,6 +4476,7 @@
 				09507AAC293743BC0003DA73 /* SampleViewController.swift in Sources */,
 				A8A29AAF294F6B1B00CC34F8 /* MemberShipHistoryVC.swift in Sources */,
 				09507AAD293743BC0003DA73 /* NewSuccessUpdateView.swift in Sources */,
+				A82D1418295233F9009D2B02 /* CreditBookModel.swift in Sources */,
 				09507AAE293743BC0003DA73 /* MyGroupDetails.swift in Sources */,
 				09507AAF293743BC0003DA73 /* AppVersion.swift in Sources */,
 				09507AB0293743BC0003DA73 /* UpComingTeeTimes.swift in Sources */,
@@ -4430,6 +4484,7 @@
 				09507AB2293743BC0003DA73 /* RequestCardViewController.swift in Sources */,
 				A84B10132941DE8D00F8D88F /* PartySizePopUpVC.swift in Sources */,
 				09507AB3293743BC0003DA73 /* YLCollectionReusableView.m in Sources */,
+				A82D140B295231E9009D2B02 /* MinimumViewController.swift in Sources */,
 				09507AB4293743BC0003DA73 /* FitnessProvidersTableViewCell.swift in Sources */,
 				09507AB5293743BC0003DA73 /* UIImage+MultiFormat.m in Sources */,
 				09507AB6293743BC0003DA73 /* BodyStringItem.swift in Sources */,
@@ -4478,8 +4533,10 @@
 				09507AD9293743BC0003DA73 /* AddBuddyCategory.swift in Sources */,
 				09507ADA293743BC0003DA73 /* GoalAndChallenge.swift in Sources */,
 				09507ADB293743BC0003DA73 /* EditPrefreencesViewController.swift in Sources */,
+				A82D1413295231E9009D2B02 /* CreditBookDetailCell.swift in Sources */,
 				09507ADC293743BC0003DA73 /* MyBuddiesViewController.swift in Sources */,
 				09507ADD293743BC0003DA73 /* HistoryDetails.swift in Sources */,
+				A82D141A295233F9009D2B02 /* CreditBookDetailModel.swift in Sources */,
 				09507ADE293743BC0003DA73 /* StatementCategories.swift in Sources */,
 				09507ADF293743BC0003DA73 /* MenusAndHoursTableViewCell.swift in Sources */,
 				A84B101F2941DEE600F8D88F /* RestaurantDetailsViewController.swift in Sources */,
@@ -4495,6 +4552,7 @@
 				09507AE9293743BC0003DA73 /* TennisHistoryDetailsVC.swift in Sources */,
 				09507AEA293743BC0003DA73 /* CourtTimeDetails.swift in Sources */,
 				09507AEB293743BC0003DA73 /* AstricColor.swift in Sources */,
+				A82D140F295231E9009D2B02 /* TransactionHistoryViewController.swift in Sources */,
 				09507AEC293743BC0003DA73 /* FitnessSetting.swift in Sources */,
 				09507AED293743BC0003DA73 /* MKAnnotationView+WebCache.m in Sources */,
 				09507AEE293743BC0003DA73 /* RestaurentMenuDetailViewController.swift in Sources */,
@@ -4600,6 +4658,7 @@
 				5F713A672133D27700A56CE3 /* UIImageView+WebCache.m in Sources */,
 				5F713A682133D27700A56CE3 /* UIView+WebCache.m in Sources */,
 				9F6D34CE2552CCE600531177 /* FitnessVideoSubCategories.swift in Sources */,
+				A82D140C295231E9009D2B02 /* TransactionDetailTableViewCell.swift in Sources */,
 				A84B10212941DEFF00F8D88F /* DiningRequestSelectResturantDateVC.swift in Sources */,
 				A84B352129508EB100792A8A /* CobaltGolfRequestTeeTimeVC.swift in Sources */,
 				598DEEA920D11E43000326DB /* APIHandler.swift in Sources */,
@@ -4611,6 +4670,7 @@
 				9FD0473724A3477600EE8C63 /* InstructionVideoCollectionViewCell.swift in Sources */,
 				5F17741220FF0BC1003E5529 /* TabbarModel.swift in Sources */,
 				5999C5DB20CAB08600B0382A /* StringConstants.swift in Sources */,
+				A82D141C29523635009D2B02 /* CobaltTransactionDetailsViewController.swift in Sources */,
 				A85E10102950D6DA00E9138D /* CobaltRequestHeaderView.swift in Sources */,
 				187913BF215FE1660025EC11 /* ThanksUPdateViewController.swift in Sources */,
 				9F61224F250F791D00506A8B /* FitnessVideoDetailsViewController.swift in Sources */,
@@ -4685,6 +4745,7 @@
 				74874F2C20ED4EC700C654B7 /* CustomDoneButton.swift in Sources */,
 				9F50E15923CC47C0002864DE /* PaginationLayout.swift in Sources */,
 				18FB815A219D5640006F0F78 /* RecentNewsCustomCell.swift in Sources */,
+				A82D1410295231E9009D2B02 /* MinimumTableViewCell.swift in Sources */,
 				5F713A4F2133D27700A56CE3 /* NSData+ImageContentType.m in Sources */,
 				9FB960BF264C2D4D000626F7 /* MobileConfig.swift in Sources */,
 				9F6620EB24AE57EF0061BB9C /* BMSAppointmentDetails.swift in Sources */,
@@ -4729,6 +4790,7 @@
 				18683783219178F3004FDB63 /* TodayAtGlanceVC.swift in Sources */,
 				5F85D8A520DCD4BA003F9477 /* ListEvents.swift in Sources */,
 				9FB78763250CB6070067004F /* FitnessVideoFilterCollectionViewCell.swift in Sources */,
+				A82D142229523B53009D2B02 /* CobaltStatementDetailCell.swift in Sources */,
 				9F2DF5CB23FD6874003E65F1 /* SelfSizingTableView.swift in Sources */,
 				A84B0FBF2941D8AE00F8D88F /* membershipHistoryModal.swift in Sources */,
 				5F757C3B212BF44C006AC0AA /* RequestCardAccountSummaryViewController.swift in Sources */,
@@ -4853,6 +4915,7 @@
 				5F15A6042125351800F8D14E /* Labelling.swift in Sources */,
 				180505672189DE0A00BFBA0D /* AllNewsCustomTableViewCell.swift in Sources */,
 				5F9FEBE12106F74C00DAA459 /* String.swift in Sources */,
+				A82D1408295231E9009D2B02 /* CreditBookViewController.swift in Sources */,
 				186FA6C923746C1600546C9D /* AlphaDetails.swift in Sources */,
 				5F47195020D90038002EFBB1 /* Dashboard.swift in Sources */,
 				9FC4F2EE2543214D00E7DB80 /* FitnessGoalChallangeTableViewCell.swift in Sources */,
@@ -4898,6 +4961,7 @@
 				1869D537225493AC00F02F1B /* GetSettingsValues.swift in Sources */,
 				A8A29AAE294F6B1B00CC34F8 /* MemberShipHistoryVC.swift in Sources */,
 				18B6036C226885F00045FAE5 /* HeaderViewPlayHistory.swift in Sources */,
+				A82D1417295233F9009D2B02 /* CreditBookModel.swift in Sources */,
 				5FE537F120EA410200CC3FBF /* TagView.swift in Sources */,
 				5FD6592620E757EF0033CD5B /* SampleViewController.swift in Sources */,
 				1801B39E230F03C600E7ECC2 /* NewSuccessUpdateView.swift in Sources */,
@@ -4905,6 +4969,7 @@
 				18EF0C5A2379D3C6005771FA /* AppVersion.swift in Sources */,
 				A84B10122941DE8D00F8D88F /* PartySizePopUpVC.swift in Sources */,
 				181CC2AE2269F9220033ABC8 /* UpComingTeeTimes.swift in Sources */,
+				A82D140A295231E9009D2B02 /* MinimumViewController.swift in Sources */,
 				5F713A4E2133D27700A56CE3 /* NSButton+WebCache.m in Sources */,
 				5F757C3D212BF44C006AC0AA /* RequestCardViewController.swift in Sources */,
 				5F06DC1520E62E00007137C7 /* YLCollectionReusableView.m in Sources */,
@@ -4953,8 +5018,10 @@
 				1815B55C22674E5300AB52E6 /* PlayHistoryVC.swift in Sources */,
 				187AA7D322A2BD36004F04D2 /* AddBuddyCategory.swift in Sources */,
 				9F5A1A16250B5C5200AADE80 /* GoalAndChallenge.swift in Sources */,
+				A82D1412295231E9009D2B02 /* CreditBookDetailCell.swift in Sources */,
 				5FF71EAE20E1169300CBF69C /* EditPrefreencesViewController.swift in Sources */,
 				18B6035E22675A870045FAE5 /* MyBuddiesViewController.swift in Sources */,
+				A82D1419295233F9009D2B02 /* CreditBookDetailModel.swift in Sources */,
 				181CC2AC2269F0190033ABC8 /* HistoryDetails.swift in Sources */,
 				5F9D76FB20DA752900728446 /* StatementCategories.swift in Sources */,
 				A84B101E2941DEE600F8D88F /* RestaurantDetailsViewController.swift in Sources */,
@@ -4970,6 +5037,7 @@
 				5FE537F020EA410200CC3FBF /* ButtonStyles.swift in Sources */,
 				189E8F0F22795CE300B286E9 /* TennisHistoryDetailsVC.swift in Sources */,
 				182F40FA21A5912800CDF5C2 /* CourtTimeDetails.swift in Sources */,
+				A82D140E295231E9009D2B02 /* TransactionHistoryViewController.swift in Sources */,
 				187B54DE22D5D01600A623BB /* AstricColor.swift in Sources */,
 				9FB84716250BCA290065DB8A /* FitnessSetting.swift in Sources */,
 				5F713A4D2133D27700A56CE3 /* MKAnnotationView+WebCache.m in Sources */,

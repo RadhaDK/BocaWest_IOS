@@ -4,7 +4,7 @@ import UIKit
 import ScrollableSegmentedControl
 import DTCalendarView
 
-class StatementViewController: UIViewController, UISearchBarDelegate,UISearchControllerDelegate {
+class StatementViewController: UIViewController, UISearchBarDelegate,UISearchControllerDelegate, MinimumsDetailsDelegate {
     var appDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
     
     fileprivate let now = Date()
@@ -23,6 +23,7 @@ class StatementViewController: UIViewController, UISearchBarDelegate,UISearchCon
     @IBOutlet weak var viewCalendar: UIView!
     @IBOutlet weak var btnReset: UIButton!
     @IBOutlet weak var viewBottom: UIView!
+    @IBOutlet weak var CobaltviewBottom: UIView!
     @IBOutlet weak var statmentSearchBar: UISearchBar!
     @IBOutlet weak var btnCurrent: UIButton!
     @IBOutlet weak var calendarView: UIView!
@@ -32,15 +33,28 @@ class StatementViewController: UIViewController, UISearchBarDelegate,UISearchCon
 
     @IBOutlet weak var btnClose: UIButton!
     @IBOutlet weak var btnPrevious: UIButton!
+    
+    @IBOutlet weak var btnCobaltDownloadStatement: UIButton!
+    @IBOutlet weak var btnMinimumIndication: UIButton!
+    @IBOutlet weak var lblMinimumIndication: UILabel!
+    @IBOutlet weak var btnCreditBook: UIButton!
+    @IBOutlet weak var btnMinimum: UIButton!
+    @IBOutlet weak var viewBottomHeight: NSLayoutConstraint!
+    @IBOutlet weak var viewMinimumIndication: UIView!
+    @IBOutlet weak var viewCreditIndication: UIView!
+    @IBOutlet weak var lblCreditIndication: UILabel!
+    @IBOutlet weak var centerAlignedView: NSLayoutConstraint!
+    @IBOutlet weak var lblCobaltMemberNameID: UILabel!
+    
     var calendarRangeStartDate : NSString!
     var calendarRangeEndDate : NSString!
-
+    var getStatementModel : StatementCategories?
+    
     @IBOutlet weak var DueStatementsBtn: UIButton!
     
     @IBOutlet weak var eventDateRangeView: DTCalendarView!{
         didSet {
             eventDateRangeView.delegate = self
-            
             eventDateRangeView.displayStartDate = Date(timeIntervalSince1970: 1513228704)
             eventDateRangeView.displayEndDate = Date()
             eventDateRangeView.previewDaysInPreviousAndMonth = false
@@ -69,15 +83,37 @@ class StatementViewController: UIViewController, UISearchBarDelegate,UISearchCon
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initController()
-        
         btnDownloadStatement .setTitle(self.appDelegate.masterLabeling.download_statement, for: .normal)
         btnDownloadStatement.setImage(UIImage(named: "Group 884"), for: .normal)
         btnDownloadStatement.titleLabel?.font = SFont.SourceSansPro_Semibold18
-
         btnDownloadStatement.layer.borderWidth = 1.0
         btnDownloadStatement.layer.borderColor = hexStringToUIColor(hex: "F47D4C").cgColor
+        
+        btnCobaltDownloadStatement .setTitle(self.appDelegate.masterLabeling.download_statement, for: .normal)
+        btnCobaltDownloadStatement.setImage(UIImage(named: "Group 884"), for: .normal)
+        btnCobaltDownloadStatement.titleLabel?.font = SFont.SourceSansPro_Semibold18
+        btnCobaltDownloadStatement.layer.borderWidth = 1.0
+        btnCobaltDownloadStatement.layer.borderColor = hexStringToUIColor(hex: "F47D4C").cgColor
+        
+        btnCreditBook .setTitle("Credit Book", for: .normal)
+        btnCreditBook.titleLabel?.font = SFont.SourceSansPro_Semibold18
+        btnCreditBook.layer.borderWidth = 1.0
+        btnCreditBook.layer.borderColor = hexStringToUIColor(hex: "F47D4C").cgColor
+        self.btnCreditBook.setStyle(style: .outlined, type: .primary)
+//        self.btnCreditBook.layer.cornerRadius = 18
+//        self.btnCreditBook.clipsToBounds = true
+        
+        btnMinimum .setTitle(self.appDelegate.masterLabeling.mINIMUMS_TITLE, for: .normal)
+        btnMinimum.titleLabel?.font = SFont.SourceSansPro_Semibold18
+        btnMinimum.layer.borderWidth = 1.0
+        btnMinimum.layer.borderColor = hexStringToUIColor(hex: "F47D4C").cgColor
+        self.btnMinimum.setStyle(style: .outlined, type: .primary)
+        
 
-        self.lblMemberNameID  .text = String(format: "%@ | %@", UserDefaults.standard.string(forKey: UserDefaultsKeys.fullName.rawValue)!, self.appDelegate.masterLabeling.hASH! + UserDefaults.standard.string(forKey: UserDefaultsKeys.userID.rawValue)!)
+        self.lblMemberNameID.text = String(format: "%@ | %@", UserDefaults.standard.string(forKey: UserDefaultsKeys.fullName.rawValue)!, self.appDelegate.masterLabeling.hASH! + UserDefaults.standard.string(forKey: UserDefaultsKeys.userID.rawValue)!)
+        
+        self.lblCobaltMemberNameID.text = String(format: "%@ | %@", UserDefaults.standard.string(forKey: UserDefaultsKeys.fullName.rawValue)!, self.appDelegate.masterLabeling.hASH! + UserDefaults.standard.string(forKey: UserDefaultsKeys.userID.rawValue)!)
+
         
         statmentSearchBar.searchBarStyle = .default
         
@@ -105,8 +141,17 @@ class StatementViewController: UIViewController, UISearchBarDelegate,UISearchCon
         self.DueStatementsBtn.setTitle(self.appDelegate.masterLabeling.downloadAnnualDues ?? "", for: .normal)
         self.DueStatementsBtn.titleLabel?.font = AppFonts.semibold18
         self.DueStatementsBtn.isHidden = true
+        btnCreditBook.isHidden = true
+        btnMinimum.isHidden = true
         //ENGAGE0012480 -- End
-        
+        if targetType == BaseUrls.Bocawest{
+            viewBottom.isHidden = false
+            CobaltviewBottom.isHidden = true
+        }
+        else if targetType == BaseUrls.Cobalt{
+            viewBottom.isHidden = true
+            CobaltviewBottom.isHidden = false
+        }
     }
     
     func initController()
@@ -152,6 +197,8 @@ class StatementViewController: UIViewController, UISearchBarDelegate,UISearchCon
         let currentStatementVC = storyboard!.instantiateViewController(withIdentifier: "CurrentStatementViewController") as! CurrentStatementViewController
         
         currentStatementVC.delegate = self
+        
+        currentStatementVC.minimumDelegate = self
         //ENGAGE0012480 -- End
         configureChildViewControllerForstatenents(childController: currentStatementVC, onView: self.uiContainerView)
         
@@ -163,6 +210,59 @@ class StatementViewController: UIViewController, UISearchBarDelegate,UISearchCon
         
        
     }
+    
+    func sendCurrentMinimumStatus(showMinimumDesignator: Int, statementDesignator: String, minStatementLegend: String, enableMinimumTemplate: Int, IsCreditBookEnabled : Int, CreditIndicate : String) {
+        self.viewMinimumIndication.layer.cornerRadius = 5
+        self.viewCreditIndication.layer.cornerRadius = 5
+
+
+      if enableMinimumTemplate == 1 && IsCreditBookEnabled == 1 {
+          
+          self.btnMinimum.isHidden = false
+          self.btnCreditBook.isHidden = false
+            self.viewBottomHeight.constant = 125.0
+            self.lblMinimumIndication.text = statementDesignator + " " + minStatementLegend
+            self.lblCreditIndication.text = CreditIndicate
+            if showMinimumDesignator == 1 {
+                self.btnMinimumIndication.isHidden = false
+            } else {
+                self.btnMinimumIndication.isHidden = true
+            }
+        }
+        
+        else if IsCreditBookEnabled == 1 {
+            self.btnMinimum.isHidden = true
+            self.btnCreditBook.isHidden = false
+            self.viewBottomHeight.constant = 125.0
+            self.centerAlignedView.constant = -95.0
+            self.lblCreditIndication.text = CreditIndicate
+            if showMinimumDesignator == 1 {
+                self.btnMinimumIndication.isHidden = false
+            } else {
+                self.btnMinimumIndication.isHidden = true
+            }
+        }
+        else if enableMinimumTemplate == 1 {
+            self.btnMinimum.isHidden = false
+            self.btnCreditBook.isHidden = true
+            self.viewBottomHeight.constant = 125.0
+            self.viewCreditIndication.isHidden = true
+            self.centerAlignedView.constant = 95.0
+            self.lblMinimumIndication.text = statementDesignator + " " + minStatementLegend
+            if showMinimumDesignator == 1 {
+                self.btnMinimumIndication.isHidden = false
+            } else {
+                self.btnMinimumIndication.isHidden = true
+            }
+        }
+        
+        else {
+            self.viewBottomHeight.constant = 94.0
+        }
+        
+    }
+    
+    
     fileprivate func currentDate(matchesMonthAndYearOf date: Date) -> Bool {
         let nowMonth = calendar.component(.month, from: now)
         let nowYear = calendar.component(.year, from: now)
@@ -183,6 +283,7 @@ class StatementViewController: UIViewController, UISearchBarDelegate,UISearchCon
         eventDateRangeView.isHidden = false
         uiContainerView.isHidden = true
         viewBottom.isHidden = true
+        CobaltviewBottom.isHidden = true
         btnClose.isHidden = false
         calendarView.isHidden = true
         btnReset.isHidden = false
@@ -201,6 +302,19 @@ class StatementViewController: UIViewController, UISearchBarDelegate,UISearchCon
         //ENGAGE0012480 -- Start
         restarantpdfDetailsVC.isDueStatement = 0
         //ENGAGE0012480 -- End
+        self.navigationController?.pushViewController(restarantpdfDetailsVC, animated: true)
+        
+    }
+    
+    @IBAction func cobaltDownloadClicked(_ sender: Any) {
+        
+        self.appDelegate.downloadMonth = ""
+        NotificationCenter.default.post(name: NSNotification.Name("downloadData"), object: nil, userInfo: nil)
+
+        let restarantpdfDetailsVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PDfViewController") as! PDfViewController
+        restarantpdfDetailsVC.isFrom = "downloadStatements"
+        restarantpdfDetailsVC.month =  self.appDelegate.downloadMonth
+        restarantpdfDetailsVC.year = self.appDelegate.downloadYear
         self.navigationController?.pushViewController(restarantpdfDetailsVC, animated: true)
         
     }
@@ -401,6 +515,7 @@ class StatementViewController: UIViewController, UISearchBarDelegate,UISearchCon
         uiContainerView.isHidden = false
         
         viewBottom.isHidden = false
+        CobaltviewBottom.isHidden = false
         
         let userStartDate = [ "startDate" : calendarRangeStartDate ]
         let userEndate = [ "endDate" : calendarRangeEndDate ]
@@ -445,7 +560,22 @@ class StatementViewController: UIViewController, UISearchBarDelegate,UISearchCon
         configureChildViewControllerForstatenents(childController: previousStatementVC, onView: self.uiContainerView)
     }
     
+    @IBAction func btnCreditBookClicked(_ sender: Any) {
+        let minimumVC = self.storyboard?.instantiateViewController(withIdentifier: "CreditBookViewController") as! CreditBookViewController
+        self.navigationController?.pushViewController(minimumVC, animated: true)
+    }
     
+    @IBAction func btnMinimumClicked(_ sender: Any) {
+        
+        let minimumVC = self.storyboard?.instantiateViewController(withIdentifier: "MinimumViewController") as! MinimumViewController
+        self.navigationController?.pushViewController(minimumVC, animated: true)
+    }
+    
+    @IBAction func btnMinimumIndicationClicked(_ sender: Any) {
+        
+        self.viewMinimumIndication.isHidden = !self.viewMinimumIndication.isHidden
+        self.viewCreditIndication.isHidden = !self.viewCreditIndication.isHidden
+    }
     
     
     //Mark- Token Api
@@ -639,6 +769,14 @@ extension StatementViewController: DTCalendarViewDelegate {
     
     func calendarViewHeightForMonthView(_ calendarView: DTCalendarView) -> CGFloat {
         return 80
+    }
+    func updateUi(){
+        if getStatementModel?.IsCreditBookEnabled == 1 {
+            btnCreditBook.isHidden = false
+        }
+        if getStatementModel?.enableMinimumTemplate == 1{
+            btnMinimum.isHidden = false
+        }
     }
 }
 

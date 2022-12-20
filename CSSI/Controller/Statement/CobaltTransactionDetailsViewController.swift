@@ -1,19 +1,16 @@
-
-
 //
-//  TransactionDetailsViewController.swift
+//  CobaltTransactionDetailsViewController.swift
 //  CSSI
 //
-//  Created by MACMINI13 on 14/06/18.
-//  Copyright © 2018 yujdesigns. All rights reserved.
+//  Created by Vishal Pandey on 20/12/22.
+//  Copyright © 2022 yujdesigns. All rights reserved.
 //
 
 import UIKit
 import Alamofire
 import AlamofireImage
 import Popover
-
-class TransactionDetailsViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
+class CobaltTransactionDetailsViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
     @IBOutlet weak var lblNoText: UILabel!
     @IBOutlet weak var lblItemText: UILabel!
     @IBOutlet weak var lblAmountText: UILabel!
@@ -33,7 +30,19 @@ class TransactionDetailsViewController: UIViewController, UITableViewDelegate,UI
     @IBOutlet weak var heighttableView: NSLayoutConstraint!
     @IBOutlet weak var lblTitle: UILabel!
     
-    
+    @IBOutlet weak var lblQtyText: UILabel!
+    @IBOutlet weak var lblTableNo: UILabel!
+    @IBOutlet weak var lblTableNoValue: UILabel!
+    @IBOutlet weak var lblTableNoHeight: NSLayoutConstraint!
+    @IBOutlet weak var lblTableNoValueHeight: NSLayoutConstraint!
+    @IBOutlet weak var lblTableNoTop: NSLayoutConstraint!
+    @IBOutlet weak var lblTableNoValueTop: NSLayoutConstraint!
+    @IBOutlet weak var lblCover: UILabel!
+    @IBOutlet weak var lblCoverValue: UILabel!
+    @IBOutlet weak var lblCoverHeight: NSLayoutConstraint!
+    @IBOutlet weak var lblCoverValueHeight: NSLayoutConstraint!
+    @IBOutlet weak var viewReciptTopHeight: NSLayoutConstraint!
+    @IBOutlet weak var lblQtyWidth: NSLayoutConstraint!
     var appDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
     var transactionDetailsDict = StatementDetails()
     var arrItemList = [ListStatementDetails]()
@@ -45,12 +54,12 @@ class TransactionDetailsViewController: UIViewController, UITableViewDelegate,UI
     var strmemberno = String()
     var strno = String()
     
-    var category = String()
-    var descriptions = String()
-    var purchaseDate = String()
-    var purchaseTime = String()
-    var amount = String()
-    var statementID = String()
+    var category = ""
+    var descriptions = ""
+    var purchaseDate = ""
+    var purchaseTime = ""
+    var amount = ""
+    var statementID = ""
     
     var stritems = String()
     var stramount = String()
@@ -60,12 +69,10 @@ class TransactionDetailsViewController: UIViewController, UITableViewDelegate,UI
     var strtip = String()
     
     var clubName = String()
-    
+    var isFromMinimums = false
     override func viewDidLoad() {
         super.viewDidLoad()
-        //  self.extendedLayoutIncludesOpaqueBars = false
-        //  self.definesPresentationContext = true
-        
+
         self.commomColorCode()
         self.setLocalizedString()
         self.initController()
@@ -79,7 +86,7 @@ class TransactionDetailsViewController: UIViewController, UITableViewDelegate,UI
      //   self.statementDetailTable.separatorColor = UIColor.clear
         self.statementDetailTable.rowHeight = UITableViewAutomaticDimension
         self.statementDetailTable.estimatedRowHeight = 101
-        
+        self.setupMinimums()
     }
     
     override func viewWillLayoutSubviews() {
@@ -155,9 +162,7 @@ class TransactionDetailsViewController: UIViewController, UITableViewDelegate,UI
                 }
                 
             },onFailure: { error  in
-                //commented by kiran V3.0
-                //print(error)
-                self.appDelegate.hideIndicator()
+                print(error)
                 SharedUtlity.sharedHelper().showToast(on:
                     self.view, withMeassge: error.localizedDescription, withDuration: Duration.kMediumDuration)
             })
@@ -172,7 +177,39 @@ class TransactionDetailsViewController: UIViewController, UITableViewDelegate,UI
         //  self.extendedLayoutIncludesOpaqueBars = true
     }
     
+    func showTableAndCoverLbl(hidden: Bool) {
+        if hidden {
+            self.lblTableNoTop.constant = 0
+            self.lblTableNoHeight.constant = 0
+            self.lblTableNoValueTop.constant = 0
+            self.lblTableNoValueHeight.constant = 0
+            self.lblCoverHeight.constant = 0
+            self.lblCoverValueHeight.constant = 0
+            self.viewReciptTopHeight.constant = 254
+        } else {
+            self.lblTableNoTop.constant = 7
+            self.lblTableNoHeight.constant = 22
+            self.lblTableNoValueTop.constant = 7
+            self.lblTableNoValueHeight.constant = 22
+            self.lblCoverHeight.constant = 22
+            self.lblCoverValueHeight.constant = 22
+            self.viewReciptTopHeight.constant = 312
+        }
+        self.lblTableNo.isHidden = hidden
+        self.lblTableNoValue.isHidden = hidden
+        self.lblCover.isHidden = hidden
+        self.lblCoverValue.isHidden = hidden
+    }
     
+    func setupMinimums() {
+        if isFromMinimums {
+            self.lblQtyText.isHidden = false
+            self.lblQtyWidth.constant = 40.0
+        } else {
+            self.lblQtyText.isHidden = true
+            self.lblQtyWidth.constant = 0
+        }
+    }
     //Mark- Common Color Code
     func commomColorCode()
     {
@@ -214,7 +251,16 @@ class TransactionDetailsViewController: UIViewController, UITableViewDelegate,UI
         self.lblMemberName.text = strmembername
         self.lblMemberNo.text = strmemberno
         self.lblMemberNoValue.text = self.transactionDetailsDict.memberId ?? ""
+        self.lblTableNoValue.text = self.transactionDetailsDict.tableNo ?? ""
+        self.lblCoverValue.text = "\(self.transactionDetailsDict.cover ?? 0)"
+        self.lblTableNo.text = self.appDelegate.masterLabeling.mINIMUMS_TABLE_COLUMNTITLE ?? ""
+        self.lblCover.text = self.appDelegate.masterLabeling.mINIMUMS_COVER_COLUMNTITLE ?? ""
         
+        if self.transactionDetailsDict.tableNo != nil && self.transactionDetailsDict.cover != nil && self.isFromMinimums == true {
+            showTableAndCoverLbl(hidden: false)
+        } else {
+            showTableAndCoverLbl(hidden: true)
+        }
 
     }
     
@@ -222,8 +268,8 @@ class TransactionDetailsViewController: UIViewController, UITableViewDelegate,UI
     
     func setLocalizedString(){
         self.navigationController?.navigationBar.isHidden = false
-        self.navigationController?.navigationBar.backItem?.title = self.appDelegate.masterLabeling.bACK
-        self.navigationController?.navigationBar.topItem?.title = self.appDelegate.masterLabeling.bACK
+//        self.navigationController?.navigationBar.backItem?.title = self.appDelegate.masterLabeling.bACK
+//        self.navigationController?.navigationBar.topItem?.title = self.appDelegate.masterLabeling.bACK
         navigationController!.interactivePopGestureRecognizer!.isEnabled = true
         let textAttributes = [NSAttributedStringKey.foregroundColor:APPColor.navigationColor.navigationitemcolor]
         navigationController?.navigationBar.titleTextAttributes = textAttributes
@@ -243,6 +289,7 @@ class TransactionDetailsViewController: UIViewController, UITableViewDelegate,UI
         strtax = (self.appDelegate.masterLabeling.tAX)!
         strtotal = (self.appDelegate.masterLabeling.tOTAL)!
         strtip = (self.appDelegate.masterLabeling.tIP)!
+        lblQtyText.text = self.appDelegate.masterLabeling.mINIMUMS_QTY_COLUMNTITLE ?? ""
         
         
     }
@@ -277,30 +324,48 @@ class TransactionDetailsViewController: UIViewController, UITableViewDelegate,UI
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:StatementDetailCell = self.statementDetailTable.dequeueReusableCell(withIdentifier: "StatementDetailCellID") as! StatementDetailCell
+        let cell:CobaltStatementDetailCell = self.statementDetailTable.dequeueReusableCell(withIdentifier: "CobaltStatementDetailCellID") as! CobaltStatementDetailCell
         let itemDict = self.arrItemList[indexPath.row]
         
         cell.lblNo.text = String(format: "%02d", indexPath.row + 1)
 
        // cell.lblNo.text = "\(indexPath.row + 1)"
-        cell.lblQty.text = "\(String(describing: self.appDelegate.masterLabeling.qTY ?? "")) \(itemDict.quntity ?? "")"
+        
         cell.lblItemName.text = itemDict.name
-        cell.lblSKUNo.text = itemDict.sku
+        if itemDict.sku == "" {
+            cell.lblSKUNo.isHidden = true
+            cell.lblSKUNoHeight.constant = 0
+        } else {
+            cell.lblSKUNo.isHidden = false
+            cell.lblSKUNo.text = itemDict.sku
+            cell.lblSKUNoHeight.constant = 22.0
+        }
+        
+//        cell.lblDesignator.text = itemDict.designator ?? ""
 //        cell.lblAmount.text =  self.appDelegate.masterLabeling.cURRENCY!  + String(format: "%.2f",itemDict.price ?? 0.0)
-        
-//        if((itemDict.price ?? 0.00) < 0){
-//            let temp = -(itemDict.price ?? 0.00)
-//            let firstchar = String(format: "%.2f",itemDict.price ?? 0.00).prefix(1)
-//            cell.lblAmount.text = firstchar + self.appDelegate.masterLabeling.cURRENCY!  + String(format: "%.2f",temp)
-//        }else{
-        
-            cell.lblAmount.text = itemDict.price ?? ""
-//        }
+        if isFromMinimums == true {
+            cell.lblQty.text = itemDict.quntity ?? ""
+            cell.lblQtyWidth.constant = 40.0
+            cell.lblQtyRowHeight.constant = 0
+            cell.lblQtyRow.isHidden = true
+            cell.lblQty.isHidden = false
+        } else {
+            cell.lblQtyRow.text = "\(self.appDelegate.masterLabeling.qTY ?? "") \(itemDict.quntity ?? "")"
+            cell.lblQtyWidth.constant = 0
+            cell.lblQtyRowHeight.constant = 22.0
+            cell.lblQtyRow.isHidden = false
+            cell.lblQty.isHidden = true
+        }
+        cell.lblAmount.text = itemDict.price ?? ""
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 200
+        if self.arrItemList.count != 0 {
+            return 200
+        } else {
+            return 0
+        }
     }
     //44
     
@@ -318,52 +383,6 @@ class TransactionDetailsViewController: UIViewController, UITableViewDelegate,UI
         footerView.lblTipValue.text = self.transactionDetailsDict.Tip ?? ""
         footerView.lblTotalValue.text = self.transactionDetailsDict.total ?? ""
         footerView.lblSavedValue.text = self.transactionDetailsDict.SavedAmount ?? ""
-        
-//        if((self.transactionDetailsDict.Tax ?? 0.00) < 0){
-//            let temp = -(self.transactionDetailsDict.Tax ?? 0.00)
-//            let firstchar = String(format: "%.2f",self.transactionDetailsDict.Tax ?? 0.00).prefix(1)
-//            footerView.lblTaxValue.text = firstchar + self.appDelegate.masterLabeling.cURRENCY!  + String(format: "%.2f",temp)
-//        }else{
-//
-//            footerView.lblTaxValue.text = String(format: "$%.2f", self.transactionDetailsDict.Tax ?? "")
-//        }
-        
-//        if((self.transactionDetailsDict.subTotal ?? 0.00) < 0){
-//            let temp = -(self.transactionDetailsDict.subTotal ?? 0.00)
-//            let firstchar = String(format: "%.2f",self.transactionDetailsDict.subTotal ?? 0.00).prefix(1)
-//            footerView.lblSubTotalValue.text = firstchar + self.appDelegate.masterLabeling.cURRENCY!  + String(format: "%.2f",temp)
-//        }else{
-//
-//            footerView.lblSubTotalValue.text = String(format: "$%.2f", self.transactionDetailsDict.subTotal ?? "")
-//        }
-        
-//        if((self.transactionDetailsDict.Tip ?? 0.00) < 0){
-//            let temp = -(self.transactionDetailsDict.Tip ?? 0.00)
-//            let firstchar = String(format: "%.2f",self.transactionDetailsDict.Tip ?? 0.00).prefix(1)
-//            footerView.lblTipValue.text = firstchar + self.appDelegate.masterLabeling.cURRENCY!  + String(format: "%.2f",temp)
-//        }else{
-//
-//            footerView.lblTipValue.text = String(format: "$%.2f", self.transactionDetailsDict.Tip ?? "")
-//        }
-//
-//        if((self.transactionDetailsDict.total ?? 0.00) < 0){
-//            let temp = -(self.transactionDetailsDict.total ?? 0.00)
-//            let firstchar = String(format: "%.2f",self.transactionDetailsDict.total ?? 0.00).prefix(1)
-//            footerView.lblTotalValue.text = firstchar + self.appDelegate.masterLabeling.cURRENCY!  + String(format: "%.2f",temp)
-//        }else{
-//
-//            footerView.lblTotalValue.text = String(format: "$%.2f", self.transactionDetailsDict.total ?? "")
-//        }
-        
-//        if((self.transactionDetailsDict.SavedAmount ?? 0.00) < 0){
-//            let temp = -(self.transactionDetailsDict.SavedAmount ?? 0.00)
-//            let firstchar = String(format: "%.2f",self.transactionDetailsDict.SavedAmount ?? 0.00).prefix(1)
-//            footerView.lblSavedValue.text = firstchar + self.appDelegate.masterLabeling.cURRENCY!  + String(format: "%.2f",temp)
-//        }else{
-//
-//            footerView.lblSavedValue.text = String(format: "$%.2f", self.transactionDetailsDict.SavedAmount ?? "")
-//        }
-        
         footerView.lblTax.text = strtax
         footerView.lblSubTotal.text = self.appDelegate.masterLabeling.sUB_TOTAL
         footerView.lblTip.text = strtip
@@ -379,7 +398,5 @@ class TransactionDetailsViewController: UIViewController, UITableViewDelegate,UI
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-}
 
+}
