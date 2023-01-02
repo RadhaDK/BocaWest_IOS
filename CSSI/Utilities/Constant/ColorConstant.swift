@@ -1,6 +1,7 @@
 
 
 import Foundation
+import UIKit
 
 
 struct APPColor {
@@ -45,7 +46,12 @@ struct APPColor {
         static var selectedcell = hexStringToUIColor(hex: "faf6ef")     
     }
     
-    
+    struct solidbgColorCobalt {
+        
+        static var solidNewbg = UIColor(named: "navigationColor")  //blue
+
+        static var solidbg = hexStringToUIColor(hex: "67aac9")     //blue
+    }
   
     
     struct tabBtnColor {

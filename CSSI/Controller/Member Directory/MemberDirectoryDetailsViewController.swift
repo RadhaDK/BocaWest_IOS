@@ -255,9 +255,12 @@ class MemberDirectoryDetailsViewController: UIViewController,MFMailComposeViewCo
         
         self.lblMemberName.font = SFont.SourceSansPro_Semibold18
         
-        self.btnAddToPhone.setTitleColor(APPColor.loginBackgroundButtonColor.loginBtnBGColor, for: .normal)
+        self.btnAddToPhone.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
+
+        
+        self.btnAddToPhone.setTitleColor(UIColor(named: "navigationColor"), for: .normal)
+        
         self.btnAddToPhone.backgroundColor = APPColor.viewBgColor.viewbg
-        self.btnAddToPhone.layer.borderColor = APPColor.loginBackgroundButtonColor.loginBtnBGColor.cgColor
         self.btnAddToPhone.layer.borderWidth = 1
         
         self.btnAddToPhone.layer.cornerRadius = 20

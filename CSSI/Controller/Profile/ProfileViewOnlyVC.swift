@@ -165,9 +165,12 @@ class ProfileViewOnlyVC: UIViewController {
         //ENGAGE0011372 -- Start
         
         self.enableDues(isEnable: false)
-        self.btnTermsOfUse.setTitleColor(APPColor.MainColours.primary2, for: .normal)
-        self.btnPrivacyPolicy.setTitleColor(APPColor.MainColours.primary2, for: .normal)
-        self.viewDivider.backgroundColor = APPColor.MainColours.primary2
+        self.btnTermsOfUse.setTitleColor(UIColor(named: "navigationColor"), for: .normal)
+        self.btnPrivacyPolicy.setTitleColor(UIColor(named: "navigationColor"), for: .normal)
+
+//        self.btnTermsOfUse.setTitleColor(APPColor.MainColours.primary2, for: .normal)
+//        self.btnPrivacyPolicy.setTitleColor(APPColor.MainColours.primary2, for: .normal)
+        self.viewDivider.backgroundColor = UIColor(named: "navigationColor")
         // Do any additional setup after loading the view.
         //Added by kiran V2.5 -- ENGAGE0011372 -- Custom method to dismiss screen when left edge swipe.
         //ENGAGE0011372 -- Start
@@ -236,10 +239,10 @@ class ProfileViewOnlyVC: UIViewController {
         self.btnEdit.backgroundColor = .clear
         self.btnEdit.layer.cornerRadius = 17
         self.btnEdit.layer.borderWidth = 1
-        self.btnEdit.layer.borderColor = hexStringToUIColor(hex: "67aac9").cgColor
+        self.btnEdit.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
         
         
-        self.btnEdit.setTitleColor(hexStringToUIColor(hex: "67aac9"), for: .normal)
+        self.btnEdit.setTitleColor(UIColor(named: "navigationColor"), for: .normal)
         
         
         let logOutgesture = UITapGestureRecognizer(target: self, action:  #selector(logout(sender:)))

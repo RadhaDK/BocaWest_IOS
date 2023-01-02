@@ -119,10 +119,10 @@ class GuestCardsViewController: UIViewController {
         btnModify.layer.borderWidth = 1.0
         btnAddVisit.layer.borderWidth = 1.0
         
-        btnHistory.layer.borderColor = hexStringToUIColor(hex: "F47D4C").cgColor
-        btnCancel.layer.borderColor = hexStringToUIColor(hex: "F47D4C").cgColor
-        btnModify.layer.borderColor = hexStringToUIColor(hex: "F47D4C").cgColor
-        btnAddVisit.layer.borderColor = hexStringToUIColor(hex: "F47D4C").cgColor
+        btnHistory.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
+        btnCancel.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
+        btnModify.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
+        btnAddVisit.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
         
         self.bottomView.isHidden = true
 

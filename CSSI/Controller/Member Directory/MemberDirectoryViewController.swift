@@ -278,7 +278,7 @@ class MemberDirectoryViewController: UIViewController,UITableViewDataSource, UIT
         self.btnMembers.layer.masksToBounds = true
      
         self.uiViewMemberMybuddies.layer.borderWidth = 1
-        self.uiViewMemberMybuddies.layer.borderColor = hexStringToUIColor(hex: "F37D4A").cgColor
+        self.uiViewMemberMybuddies.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
         self.uiViewMemberMybuddies.layer.cornerRadius = 17
         self.uiViewMemberMybuddies.layer.masksToBounds = true
         
@@ -620,13 +620,13 @@ class MemberDirectoryViewController: UIViewController,UITableViewDataSource, UIT
         
         self.btnMembers.layer.cornerRadius = 17
         self.btnMembers.layer.masksToBounds = true
-        self.btnMembers.backgroundColor = hexStringToUIColor(hex: "F37D4A")
+        self.btnMembers.backgroundColor = UIColor(named: "navigationColor")
         self.btnMembers.setTitleColor(.white, for: .normal)
         
         self.btnMyBuddies.layer.cornerRadius = 17
         self.btnMyBuddies.layer.masksToBounds = true
         self.btnMyBuddies.backgroundColor = UIColor.clear
-        self.btnMyBuddies.setTitleColor(hexStringToUIColor(hex: "F37D4A"), for: .normal)
+        self.btnMyBuddies.setTitleColor(UIColor(named: "navigationColor"), for: .normal)
         if isFromDashBoard == true || self.showSegmentController{
             self.hideSegmentedControllerView(false)
             
@@ -668,11 +668,11 @@ class MemberDirectoryViewController: UIViewController,UITableViewDataSource, UIT
         self.btnMembers.layer.cornerRadius = 17
         self.btnMembers.layer.masksToBounds = true
         self.btnMembers.backgroundColor = UIColor.clear
-        self.btnMembers.setTitleColor(hexStringToUIColor(hex: "F37D4A"), for: .normal)
+        self.btnMembers.setTitleColor(UIColor(named: "navigationColor"), for: .normal)
 
         self.btnMyBuddies.layer.cornerRadius = 17
         self.btnMyBuddies.layer.masksToBounds = true
-        self.btnMyBuddies.backgroundColor = hexStringToUIColor(hex: "F37D4A")
+        self.btnMyBuddies.backgroundColor = UIColor(named: "navigationColor")
         self.btnMyBuddies.setTitleColor(.white, for: .normal)
         
         self.hideSegmentedControllerView(false)
@@ -913,23 +913,24 @@ class MemberDirectoryViewController: UIViewController,UITableViewDataSource, UIT
         btnAdd.backgroundColor = .clear
         btnAdd.layer.cornerRadius = 18
         btnAdd.layer.borderWidth = 1
-        btnAdd.layer.borderColor = hexStringToUIColor(hex: "F37D4A").cgColor
+        
+        btnAdd.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
         
         
         btnLoadMore.backgroundColor = .clear
         btnLoadMore.layer.cornerRadius = 18
         btnLoadMore.layer.borderWidth = 1
-        btnLoadMore.layer.borderColor = hexStringToUIColor(hex: "F37D4A").cgColor
+        btnLoadMore.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
 
         btnCancel.backgroundColor = .clear
         btnCancel.layer.cornerRadius = 18
         btnCancel.layer.borderWidth = 1
-        btnCancel.layer.borderColor = hexStringToUIColor(hex: "F37D4A").cgColor
+        btnCancel.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
 
         btnAddToBuddies.backgroundColor = .clear
         btnAddToBuddies.layer.cornerRadius = 22
         btnAddToBuddies.layer.borderWidth = 1
-        btnAddToBuddies.layer.borderColor = hexStringToUIColor(hex: "F37D4A").cgColor
+        btnAddToBuddies.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
 
         self.pageNo = 1
         self.appDelegate.memberDictSearchText = ""

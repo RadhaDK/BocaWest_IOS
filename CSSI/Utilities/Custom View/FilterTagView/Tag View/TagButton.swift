@@ -26,13 +26,14 @@ public class TagButton: UIButton {
     self.tintColor = style.tintColor
     self.titleLabel?.font = style.titleFont
     self.sizeToFit()
-    self.layer.borderColor = APPColor.solidbgColor.solidNewbg.cgColor
+      self.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
     self.layer.borderWidth = 1.0
     self.frame.size.height = (self.titleLabel?.font.pointSize)! + style.margin 
     let radius = self.frame.height * 0.5 * style.percentCornerRadius
     self.layer.masksToBounds = true
     self.layer.cornerRadius = radius
     self.frame.size.width += radius + style.margin
+      
   }
   
   

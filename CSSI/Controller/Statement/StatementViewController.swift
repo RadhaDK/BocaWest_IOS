@@ -87,27 +87,36 @@ class StatementViewController: UIViewController, UISearchBarDelegate,UISearchCon
         btnDownloadStatement.setImage(UIImage(named: "Group 884"), for: .normal)
         btnDownloadStatement.titleLabel?.font = SFont.SourceSansPro_Semibold18
         btnDownloadStatement.layer.borderWidth = 1.0
-        btnDownloadStatement.layer.borderColor = hexStringToUIColor(hex: "F47D4C").cgColor
+        btnDownloadStatement.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
+        btnDownloadStatement.titleLabel?.textColor = UIColor(named: "navigationColor")
         
         btnCobaltDownloadStatement .setTitle(self.appDelegate.masterLabeling.download_statement, for: .normal)
         btnCobaltDownloadStatement.setImage(UIImage(named: "Group 884"), for: .normal)
         btnCobaltDownloadStatement.titleLabel?.font = SFont.SourceSansPro_Semibold18
         btnCobaltDownloadStatement.layer.borderWidth = 1.0
-        btnCobaltDownloadStatement.layer.borderColor = hexStringToUIColor(hex: "F47D4C").cgColor
+        btnCobaltDownloadStatement.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
+        btnCobaltDownloadStatement.titleLabel?.textColor = UIColor(named: "navigationColor")
+
         
         btnCreditBook .setTitle("Credit Book", for: .normal)
         btnCreditBook.titleLabel?.font = SFont.SourceSansPro_Semibold18
         btnCreditBook.layer.borderWidth = 1.0
-        btnCreditBook.layer.borderColor = hexStringToUIColor(hex: "F47D4C").cgColor
-        self.btnCreditBook.setStyle(style: .outlined, type: .primary)
+        btnCreditBook.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
+        btnMinimum.layer.cornerRadius = btnMinimum.layer.frame.height/2
+      //  self.btnCreditBook.setStyle(style: .outlined, type: .primary)
+        btnCreditBook.setTitleColor(UIColor(named: "navigationColor"), for: .normal)
+        btnCreditBook.layer.cornerRadius = btnMinimum.layer.frame.height/2
+
 //        self.btnCreditBook.layer.cornerRadius = 18
 //        self.btnCreditBook.clipsToBounds = true
         
         btnMinimum .setTitle(self.appDelegate.masterLabeling.mINIMUMS_TITLE, for: .normal)
         btnMinimum.titleLabel?.font = SFont.SourceSansPro_Semibold18
         btnMinimum.layer.borderWidth = 1.0
-        btnMinimum.layer.borderColor = hexStringToUIColor(hex: "F47D4C").cgColor
-        self.btnMinimum.setStyle(style: .outlined, type: .primary)
+        btnMinimum.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
+       // self.btnMinimum.setStyle(style: .outlined, type: .primary)
+        btnMinimum.layer.cornerRadius = btnMinimum.layer.frame.height/2
+        btnMinimum.setTitleColor(UIColor(named: "navigationColor"), for: .normal)
         
 
         self.lblMemberNameID.text = String(format: "%@ | %@", UserDefaults.standard.string(forKey: UserDefaultsKeys.fullName.rawValue)!, self.appDelegate.masterLabeling.hASH! + UserDefaults.standard.string(forKey: UserDefaultsKeys.userID.rawValue)!)

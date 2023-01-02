@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -369,7 +370,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                         <state key="normal" title="Modify">
-                                            <color key="titleColor" red="0.95686274509803915" green="0.49019607843137253" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" name="navigationColor"/>
                                         </state>
                                         <state key="disabled">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -391,7 +392,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                         <state key="normal" title="Cancel Card">
-                                            <color key="titleColor" red="0.95686274509803915" green="0.49019607843137253" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" name="navigationColor"/>
                                         </state>
                                         <state key="disabled">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -413,7 +414,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                         <state key="normal" title="History">
-                                            <color key="titleColor" red="0.95686274509803915" green="0.49019607843137253" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" name="navigationColor"/>
                                         </state>
                                         <state key="disabled">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -435,7 +436,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                         <state key="normal" title="Add Visit">
-                                            <color key="titleColor" red="0.95686274509803915" green="0.49019607843137253" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" name="navigationColor"/>
                                         </state>
                                         <state key="disabled">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1329,7 +1330,7 @@
                                             </switch>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PxQ-Jr-9wb">
                                                 <rect key="frame" x="115.5" y="491" width="144" height="37"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" name="navigationColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="37" id="eCd-id-7pS"/>
                                                 </constraints>
@@ -1611,7 +1612,7 @@
                                         </view>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4h-1p-861">
                                             <rect key="frame" x="115.5" y="502" width="144" height="37"/>
-                                            <color key="backgroundColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" name="navigationColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="37" id="oOj-XR-rp0"/>
                                             </constraints>
@@ -2931,7 +2932,7 @@
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Guest Card_Icon-1" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aiC-6q-sht">
-                                        <rect key="frame" x="153" y="103.5" width="49.5" height="38"/>
+                                        <rect key="frame" x="126.5" y="63" width="102" height="78.5"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3078,7 +3079,7 @@
                                         </constraints>
                                     </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Guest Card_Icon-1" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tZc-ke-SGw">
-                                        <rect key="frame" x="153" y="75.5" width="49.5" height="38"/>
+                                        <rect key="frame" x="126.5" y="35" width="102" height="78.5"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3136,13 +3137,16 @@
         <image name="Group 1704" width="210.5" height="99.5"/>
         <image name="Group 1712" width="61.5" height="53.5"/>
         <image name="Group 1712-1" width="67" height="46"/>
-        <image name="Guest Card_Icon-1" width="49.5" height="38"/>
+        <image name="Guest Card_Icon-1" width="102" height="78.5"/>
         <image name="Icon-options" width="4" height="16"/>
         <image name="Mask Group 94" width="351" height="781.5"/>
         <image name="Policy-BG" width="375" height="812"/>
         <image name="close-dark" width="9" height="9"/>
         <image name="icon-close-light" width="9" height="9"/>
         <image name="text" width="112" height="48.5"/>
+        <namedColor name="navigationColor">
+            <color red="0.289000004529953" green="0.40900000929832458" blue="0.56699997186660767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

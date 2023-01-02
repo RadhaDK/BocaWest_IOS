@@ -52,20 +52,21 @@ class AddBuddyViewController: UIViewController, UITableViewDataSource, UITableVi
         btnAdd.backgroundColor = .clear
         btnAdd.layer.cornerRadius = 18
         btnAdd.layer.borderWidth = 1
-        btnAdd.layer.borderColor = hexStringToUIColor(hex: "F37D4A").cgColor
+
+        btnAdd.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
         btnAdd.setTitle("Add", for: UIControlState.normal)
 
         }else{
             btnAdd.backgroundColor = .clear
             btnAdd.layer.cornerRadius = 18
             btnAdd.layer.borderWidth = 1
-            btnAdd.layer.borderColor = hexStringToUIColor(hex: "F37D4A").cgColor
+            btnAdd.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
             btnAdd.setTitle("Remove", for: UIControlState.normal)
         }
         btnCancel.backgroundColor = .clear
         btnCancel.layer.cornerRadius = 18
         btnCancel.layer.borderWidth = 1
-        btnCancel.layer.borderColor = hexStringToUIColor(hex: "F37D4A").cgColor
+        btnCancel.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
         self.tableView.setEmptyMessage(InternetMessge.kNoData)
 
        

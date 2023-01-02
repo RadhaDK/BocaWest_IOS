@@ -2858,7 +2858,7 @@
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <inset key="imageEdgeInsets" minX="-24" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title=" Download Statement" image="Group 884">
-                                            <color key="titleColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" name="navigationColor"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -2890,7 +2890,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Credit Book"/>
+                                        <state key="normal" title="Credit Book">
+                                            <color key="titleColor" name="navigationColor"/>
+                                        </state>
                                         <connections>
                                             <action selector="btnCreditBookClicked:" destination="4VS-pD-9BN" eventType="touchUpInside" id="xhT-UT-EPJ"/>
                                         </connections>
@@ -2953,7 +2955,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Twf-FW-J0E" secondAttribute="trailing" constant="10" id="8c8-jR-1hd"/>
                                     <constraint firstItem="qXc-eR-lNz" firstAttribute="centerX" secondItem="HmL-W1-rPy" secondAttribute="centerX" id="9O8-W8-38R"/>
@@ -5569,7 +5571,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAT-zU-7go">
                                                 <rect key="frame" x="0.0" y="0.0" width="117" height="34"/>
-                                                <color key="backgroundColor" red="0.95294117647058818" green="0.49019607843137253" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" name="navigationColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="Zdz-xE-h0g"/>
                                                     <constraint firstAttribute="width" constant="117" id="jfw-F7-68Q"/>
@@ -10962,7 +10964,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                                 <state key="normal" title="Remove">
-                                                    <color key="titleColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="addClciekd:" destination="b4y-xZ-Y3I" eventType="touchUpInside" id="lJN-YM-nfs"/>
@@ -10976,7 +10978,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
                                                 <state key="normal" title="Cancel">
-                                                    <color key="titleColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="cancelClicked:" destination="b4y-xZ-Y3I" eventType="touchUpInside" id="qjQ-iM-qVs"/>
@@ -11191,7 +11193,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="109" height="20"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" name="navigationColor"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="privacyPolicyClicked:" destination="sLc-lm-WrE" eventType="touchUpInside" id="v1B-qF-PtF"/>
@@ -11199,7 +11201,7 @@
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OV0-pr-9uI">
                                                         <rect key="frame" x="114" y="3.6666666666666563" width="2" height="12.666666666666664"/>
-                                                        <color key="backgroundColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="backgroundColor" name="navigationColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="12.67" id="RTX-LZ-RpR"/>
                                                             <constraint firstAttribute="width" constant="2" id="zWT-TU-mvv"/>
@@ -11212,7 +11214,7 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" name="navigationColor"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="termsofUseClicked:" destination="sLc-lm-WrE" eventType="touchUpInside" id="Yir-vI-c78"/>
@@ -14337,7 +14339,7 @@
         <image name="Group 927" width="22" height="22"/>
         <image name="Group 948" width="23" height="22.5"/>
         <image name="Icon_Address" width="16" height="20"/>
-        <image name="Icon_ArrowLeftActive" width="6.6666665077209473" height="11"/>
+        <image name="Icon_ArrowLeftActive" width="6" height="10.333333015441895"/>
         <image name="Icon_ArrowRightActive" width="6" height="10.333333015441895"/>
         <image name="Icon_Calendar" width="17" height="16.333333969116211"/>
         <image name="Icon_Password" width="13" height="18"/>
@@ -14846,7 +14848,10 @@ AFQAAAAAAAAAAAAAAAAAADWqA
             <color red="0.41200000047683716" green="0.35699999332427979" blue="0.36899998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="ThemeColor">
-            <color red="0.94099998474121094" green="0.4309999942779541" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.68199998140335083" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="navigationColor">
+            <color red="0.289000004529953" green="0.40900000929832458" blue="0.56699997186660767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="groupTableViewBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
