@@ -1592,6 +1592,11 @@ extension AddGuestRegVC
         
         self.btnAdd.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
         self.btnCancel.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
+        self.btnAdd.layer.borderWidth = 1
+        self.btnCancel.layer.borderWidth = 1
+        self.btnAdd.layer.cornerRadius = self.btnAdd.layer.frame.height/2
+        self.btnCancel.layer.cornerRadius = self.btnCancel.layer.frame.height/2
+
       //  self.btnAddToMybuddyList.setStyle(style: .outlined, type: .primary)
         self.btnAddToMybuddyList.layer.cornerRadius = self.btnAddToMybuddyList.layer.frame.height/2
         self.btnAddToMybuddyList.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
