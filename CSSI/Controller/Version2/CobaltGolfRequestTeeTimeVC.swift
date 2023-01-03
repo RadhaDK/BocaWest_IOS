@@ -354,9 +354,9 @@ class CobaltGolfRequestTeeTimeVC: UIViewController,UITableViewDelegate, UITableV
         btnCancelRequest.backgroundColor = .clear
         btnCancelRequest.layer.cornerRadius = 18
         btnCancelRequest.layer.borderWidth = 1
-        btnCancelRequest.layer.borderColor = hexStringToUIColor(hex: "F37D4A").cgColor
+        btnCancelRequest.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
         btnCancelRequest .setTitle(self.appDelegate.masterLabeling.cancel_reservation, for: UIControlState.normal)
-        self.btnCancelRequest.setStyle(style: .outlined, type: .primary)
+       // self.btnCancelRequest.setStyle(style: .outlined, type: .primary)
       
         self.myCalendar.allowsMultipleSelection = false
         self.myCalendar.weekdayHeight = 50
@@ -371,7 +371,7 @@ class CobaltGolfRequestTeeTimeVC: UIViewController,UITableViewDelegate, UITableV
             
         }else{
         btnNineHoles.setTitle(self.appDelegate.arrGolfGame[0].name , for: UIControlState.normal)
-        btnEighteenHoles.setTitle(self.appDelegate.arrGolfGame[1].name , for: UIControlState.normal)
+//        btnEighteenHoles.setTitle(self.appDelegate.arrGolfGame[1].name , for: UIControlState.normal)
         }
         
         btnNineHoles.setImage(UIImage(named : "Rectangle 2117"), for: UIControlState.normal)
@@ -414,9 +414,9 @@ class CobaltGolfRequestTeeTimeVC: UIViewController,UITableViewDelegate, UITableV
             btnRequest.backgroundColor = .clear
             btnRequest.layer.cornerRadius = 18
             btnRequest.layer.borderWidth = 1
-            btnRequest.layer.borderColor = hexStringToUIColor(hex: "F37D4A").cgColor
+            btnRequest.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
             btnRequest.setTitle(self.appDelegate.masterLabeling.Save, for: UIControlState.normal)
-            self.btnRequest.setStyle(style: .outlined, type: .primary)
+            //self.btnRequest.setStyle(style: .outlined, type: .primary)
         }
         
         else{
@@ -2754,7 +2754,7 @@ class CobaltGolfRequestTeeTimeVC: UIViewController,UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if (tableView == modifyTableview){
-            let headerView = Bundle.main.loadNibNamed("ModifyRequestHeaderView", owner: self, options: nil)?.first as! ModifyRequestHeaderView
+            let headerView = Bundle.main.loadNibNamed("CobaltModifyRequestHeaderView", owner: self, options: nil)?.first as! CobaltModifyRequestHeaderView
             headerView.lblGroupNumber.isHidden = false
             
             headerView.delegate = self
@@ -6197,8 +6197,10 @@ class CobaltGolfRequestTeeTimeVC: UIViewController,UITableViewDelegate, UITableV
 
 }
 
-extension CobaltGolfRequestTeeTimeVC : ModifyDelegate {
-    func deleteButtonClicked(cell: ModifyRequestHeaderView) {
+extension CobaltGolfRequestTeeTimeVC : CobaltModifyDelegate {
+  
+    
+    func deleteButtonClicked(cell: CobaltModifyRequestHeaderView) {
         self.confirmedReservationID = self.arrTeeTimeDetails[0].groupDetails?[cell.tag].confirmedReservationID
         
         let alertController = UIAlertController(title: "", message: self.appDelegate.masterLabeling.aREYOUSURE_YOUWANTTO_REMOVE_GROUPFROM_REQUEST ?? "" , preferredStyle: .alert)
@@ -6254,7 +6256,7 @@ extension CobaltGolfRequestTeeTimeVC : ModifyDelegate {
 
     }
     
-    func addNewButtonClicked(cell: ModifyRequestHeaderView) {
+    func addNewButtonClicked(cell: CobaltModifyRequestHeaderView) {
         
         if self.addNewMeber == true{
             self.addNewPopupModifyCase(cell: cell)
@@ -6269,7 +6271,7 @@ extension CobaltGolfRequestTeeTimeVC : ModifyDelegate {
       
     }
   
-    func addNewPopupModifyCase(cell: ModifyRequestHeaderView)
+    func addNewPopupModifyCase(cell: CobaltModifyRequestHeaderView)
     {
         
         self.isMultiSelectionClicked = false
@@ -6332,7 +6334,7 @@ extension CobaltGolfRequestTeeTimeVC : ModifyDelegate {
         
     }
     
-    func waitListClicked(cell: ModifyRequestHeaderView)
+    func waitListClicked(cell: CobaltModifyRequestHeaderView)
     {
         //Added on 4th Septmeber 2020 V2.3
         //Button should not be clickable when in view only.added as fail-safe.

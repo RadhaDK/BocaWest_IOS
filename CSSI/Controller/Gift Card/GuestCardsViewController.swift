@@ -166,7 +166,7 @@ class GuestCardsViewController: UIViewController {
         multipleSelectionMode = .None
 
         if  enableSelectionMode == false {
-            let filterBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "Filter"), style: .plain, target: self, action: #selector(onTapFilter))
+            let filterBarButtonItem = UIBarButtonItem(image: UIImage(named: "Filter"), style: .plain, target: self, action: #selector(onTapFilter))
             navigationItem.rightBarButtonItem = filterBarButtonItem
 //            getGuestList(strSearch: searchBar.text)
 

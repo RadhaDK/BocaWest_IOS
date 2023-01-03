@@ -2783,10 +2783,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hi0-qc-2q3">
-                                        <rect key="frame" x="101" y="8" width="212" height="92"/>
+                                        <rect key="frame" x="101.00000000000001" y="8" width="212.33333333333337" height="92"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n03-nN-fgg">
-                                                <rect key="frame" x="0.0" y="0.0" width="212" height="41"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="212.33333333333334" height="41"/>
                                                 <color key="backgroundColor" red="0.99215686274509807" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="41" id="2zj-Lq-rg0"/>
@@ -2808,7 +2808,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0s-h0-LCO">
-                                                <rect key="frame" x="0.0" y="51" width="212" height="41"/>
+                                                <rect key="frame" x="0.0" y="51" width="212.33333333333334" height="41"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="41" id="dys-NH-HGc"/>
                                                 </constraints>
@@ -5593,7 +5593,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="16"/>
                                                 <state key="normal" title="My Buddies">
-                                                    <color key="titleColor" red="0.95294117649999999" green="0.49019607840000001" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="myBuddiesClicked:" destination="3eO-rJ-yGx" eventType="touchUpInside" id="Wa4-3D-Y4t"/>
@@ -5650,7 +5650,7 @@
                                                         <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="30" maxY="0.0"/>
                                                         <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         <state key="normal" title="Add " image="Group 2130">
-                                                            <color key="titleColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="titleColor" name="navigationColor"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="addToBuddiesClicked:" destination="3eO-rJ-yGx" eventType="touchUpInside" id="S4F-p3-Ky8"/>
@@ -5723,7 +5723,7 @@
                                                                                 <constraint firstAttribute="height" constant="18" id="XI1-jr-gAo"/>
                                                                             </constraints>
                                                                             <state key="normal" title="X">
-                                                                                <color key="titleColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                <color key="titleColor" name="navigationColor"/>
                                                                             </state>
                                                                             <connections>
                                                                                 <action selector="cancelClicked:" destination="mDG-t6-hh8" eventType="touchUpInside" id="0FC-D6-IbI"/>
@@ -5901,7 +5901,7 @@
                                                     </constraints>
                                                     <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                                     <state key="normal" title="Load More">
-                                                        <color key="titleColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="titleColor" name="navigationColor"/>
                                                     </state>
                                                     <connections>
                                                         <action selector="loadMoreClicked:" destination="3eO-rJ-yGx" eventType="touchUpInside" id="Req-ES-tEV"/>
@@ -6010,7 +6010,7 @@
                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                         <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
                                         <state key="normal" title="Add">
-                                            <color key="titleColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" name="navigationColor"/>
                                         </state>
                                         <connections>
                                             <action selector="addClicked:" destination="3eO-rJ-yGx" eventType="touchUpInside" id="a7g-f8-M82"/>
@@ -6024,7 +6024,7 @@
                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                         <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
                                         <state key="normal" title="Cancel">
-                                            <color key="titleColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" name="navigationColor"/>
                                         </state>
                                         <connections>
                                             <action selector="cancelClicked:" destination="3eO-rJ-yGx" eventType="touchUpInside" id="xRh-Mo-rbY"/>
@@ -9499,7 +9499,7 @@
                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                         <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
                                         <state key="normal" title="Add Member">
-                                            <color key="titleColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" name="navigationColor"/>
                                         </state>
                                         <connections>
                                             <action selector="addMemberClicked:" destination="iiI-RW-UND" eventType="touchUpInside" id="nmR-Pc-LWl"/>
@@ -14335,7 +14335,7 @@
         <image name="Group 2151" width="21.666666030883789" height="20.333333969116211"/>
         <image name="Group 2312" width="375" height="727"/>
         <image name="Group 2386-2" width="21.666666030883789" height="21.666666030883789"/>
-        <image name="Group 884" width="13" height="15.333333015441895"/>
+        <image name="Group 884" width="13.333333015441895" height="15.333333015441895"/>
         <image name="Group 927" width="22" height="22"/>
         <image name="Group 948" width="23" height="22.5"/>
         <image name="Icon_Address" width="16" height="20"/>
@@ -14848,10 +14848,10 @@ AFQAAAAAAAAAAAAAAAAAADWqA
             <color red="0.41200000047683716" green="0.35699999332427979" blue="0.36899998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="ThemeColor">
-            <color red="0.0" green="0.68199998140335083" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94099998474121094" green="0.4309999942779541" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="navigationColor">
-            <color red="0.289000004529953" green="0.40900000929832458" blue="0.56699997186660767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94099998474121094" green="0.4309999942779541" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="groupTableViewBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

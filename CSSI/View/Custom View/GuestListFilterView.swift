@@ -215,7 +215,7 @@ class GuestListFilterView: UIView {
         doneButton.layer.cornerRadius = doneButton.bounds.size.height / 2
         doneButton.layer.borderWidth = 1.0
         
-        doneButton.layer.borderColor = hexStringToUIColor(hex: "F47D4C").cgColor
+        doneButton.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
         optionsTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         isFrom = "First"
         

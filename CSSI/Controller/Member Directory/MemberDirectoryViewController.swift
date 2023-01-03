@@ -547,7 +547,7 @@ class MemberDirectoryViewController: UIViewController,UITableViewDataSource, UIT
         }
         }else{
             self.segmentedController.segmentContentColor = hexStringToUIColor(hex: "40B2E6")
-            self.segmentedController.selectedSegmentContentColor = UIColor.orange
+            self.segmentedController.selectedSegmentContentColor = UIColor(named: "navigationColor")
             self.segmentedController.widthPadding = 25
             for i in 0 ..< self.arrIndexSection.count {
                 

@@ -1588,11 +1588,14 @@ extension AddGuestRegVC
         self.btnCancel.backgroundColor = .clear
         self.btnCancel.layer.cornerRadius = 18
         self.btnCancel.layer.borderWidth = 1
-        self.btnCancel.layer.borderColor = hexStringToUIColor(hex: "F37D4A").cgColor*/
+       self.btnCancel.layer.borderColor = hexStringToUIColor(hex: "F37D4A").cgColor*/
         
-        self.btnAdd.setStyle(style: .outlined, type: .primary)
-        self.btnCancel.setStyle(style: .outlined, type: .primary)
-        self.btnAddToMybuddyList.setStyle(style: .outlined, type: .primary)
+        self.btnAdd.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
+        self.btnCancel.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
+      //  self.btnAddToMybuddyList.setStyle(style: .outlined, type: .primary)
+        self.btnAddToMybuddyList.layer.cornerRadius = self.btnAddToMybuddyList.layer.frame.height/2
+        self.btnAddToMybuddyList.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
+        self.btnAddToMybuddyList.layer.borderWidth = 1
         self.btnExistingGuestAddToBuddy.setStyle(style: .outlined, type: .primary)
         //ENGAGE0011784 -- End
         
@@ -1620,7 +1623,7 @@ extension AddGuestRegVC
         self.txtTypeOfGuest.textColor = APPColor.textColor.primary
         
         self.btnAddToMybuddyList.titleLabel?.font = AppFonts.regular18
-        self.btnAddToMybuddyList.setTitleColor(APPColor.ButtonColors.primary, for: .normal)
+        self.btnAddToMybuddyList.setTitleColor(UIColor(named: "navigationColor"), for: .normal)
         
         self.btnExistingGuestAddToBuddy.titleLabel?.font = AppFonts.regular18
         self.btnExistingGuestAddToBuddy.setTitleColor(APPColor.ButtonColors.primary, for: .normal)

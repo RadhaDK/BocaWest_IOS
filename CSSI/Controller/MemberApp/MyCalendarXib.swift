@@ -65,12 +65,12 @@ class MyCalendarXib: UITableViewCell {
         btnRegister.backgroundColor = .clear
         btnRegister.layer.cornerRadius = 15
         btnRegister.layer.borderWidth = 1
-        btnRegister.layer.borderColor = hexStringToUIColor(hex: "F37D4A").cgColor
+        btnRegister.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
     
         btnViewOnly.backgroundColor = .clear
         btnViewOnly.layer.cornerRadius = 15
         btnViewOnly.layer.borderWidth = 1
-        btnViewOnly.layer.borderColor = hexStringToUIColor(hex: "F37D4A").cgColor
+        btnViewOnly.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
         
         //Added by kiran V2.5 -- ENGAGE0011395 -- observation fix sync and share buttons are not hidden/shown as per setting.
         //ENGAGE0011395 -- Start

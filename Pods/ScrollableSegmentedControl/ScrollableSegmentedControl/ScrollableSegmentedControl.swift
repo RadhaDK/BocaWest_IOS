@@ -511,7 +511,12 @@ public enum ScrollableSegmentedControlSegmentStyle: Int {
                     } else {
                         underlineView = UIView()
                         underlineView!.tag = 999
-                        underlineView!.backgroundColor = tintColor
+                        if #available(iOS 11.0, *) {
+                            underlineView!.backgroundColor = UIColor(named: "navigationColor")
+                        } else {
+                            underlineView?.backgroundColor = tintColor
+                            // Fallback on earlier versions
+                        }
                         underlineView!.isHidden = !isSelected
                         contentView.insertSubview(underlineView!, at: contentView.subviews.count)
                     }
@@ -523,7 +528,12 @@ public enum ScrollableSegmentedControlSegmentStyle: Int {
         
         override var tintColor: UIColor!{
             didSet{
-                underlineView?.backgroundColor = tintColor
+                if #available(iOS 11.0, *) {
+                    underlineView?.backgroundColor = UIColor(named: "navigationColor")
+                } else {
+                    underlineView?.backgroundColor = tintColor
+                    // Fallback on earlier versions
+                }
             }
         }
         

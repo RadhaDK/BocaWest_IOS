@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 extension UITextField {
     
     /// set icon of 20x20 with left padding of 8px
@@ -114,7 +115,7 @@ extension UIButton
     {
         self.layer.cornerRadius = self.frame.height/2
         self.layer.borderWidth = 1
-        self.layer.borderColor = UIColor.init(red: 64/255.0, green: 178/255.0, blue: 230/255.0, alpha: 1).cgColor
+        self.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
         self.clipsToBounds = true
         self.backgroundColor = .clear
     }

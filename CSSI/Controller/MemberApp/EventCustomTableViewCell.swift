@@ -100,13 +100,13 @@ class EventCustomTableViewCell: UITableViewCell {
         btnRegister.backgroundColor = .clear
         btnRegister.layer.cornerRadius = 15
         btnRegister.layer.borderWidth = 1
-        btnRegister.layer.borderColor = hexStringToUIColor(hex: "F37D4A").cgColor
+        btnRegister.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
         
         
         btnViewOnly.backgroundColor = .clear
         btnViewOnly.layer.cornerRadius = 15
         btnViewOnly.layer.borderWidth = 1
-        btnViewOnly.layer.borderColor = hexStringToUIColor(hex: "F37D4A").cgColor
+        btnViewOnly.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
 //        let sharegesture = UITapGestureRecognizer(target: self, action:  #selector(self.share(sender:)))
 //        self.viewShare.addGestureRecognizer(sharegesture)
 //

@@ -277,7 +277,7 @@ class CourtRequestVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         btnMultiday.layer.cornerRadius = 22
         btnMultiday.layer.borderWidth = 1
         
-        btnMultiday.layer.borderColor = hexStringToUIColor(hex: "F37D4A").cgColor
+        btnMultiday.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
         
         btnSingleDay.layer.cornerRadius = 22
         btnSingleDay.layer.borderWidth = 1
@@ -288,7 +288,7 @@ class CourtRequestVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         btnNintyMin.layer.borderWidth = 1
         btnNintyMin.layer.borderWidth = 0.25
         btnNintyMin.layer.borderColor = hexStringToUIColor(hex: "2D2D2D").cgColor
-        btnNintyMin.backgroundColor = hexStringToUIColor(hex: "F47D4C")
+        btnNintyMin.backgroundColor = UIColor(named: "navigationColor")
 
         btnThirtyMin.layer.cornerRadius = 6
         btnThirtyMin.layer.borderWidth = 1
@@ -367,7 +367,7 @@ class CourtRequestVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             btnRequest.backgroundColor = .clear
             btnRequest.layer.cornerRadius = 18
             btnRequest.layer.borderWidth = 1
-            btnRequest.layer.borderColor = hexStringToUIColor(hex: "F37D4A").cgColor
+            btnRequest.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
             btnRequest .setTitle(self.appDelegate.masterLabeling.Save, for: UIControlState.normal)
         }
         else{
@@ -387,7 +387,7 @@ class CourtRequestVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             self.btnModifyDate.isHidden = true
             self.modifyTime.isHidden = true
 
-            btnRequest.backgroundColor = hexStringToUIColor(hex: "F37D4A")
+            btnRequest.backgroundColor = UIColor(named: "navigationColor")
             btnRequest.layer.cornerRadius = 18
             btnRequest.layer.borderWidth = 1
             btnRequest.layer.borderColor = UIColor.clear.cgColor
@@ -1639,7 +1639,7 @@ class CourtRequestVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             btnNintyMin.layer.borderWidth = 1
             btnNintyMin.layer.borderWidth = 0.25
             btnNintyMin.layer.borderColor = hexStringToUIColor(hex: "2D2D2D").cgColor
-            btnNintyMin.backgroundColor = hexStringToUIColor(hex: "F47D4C")
+            btnNintyMin.backgroundColor = UIColor(named: "navigationColor")
             btnNintyMin.setTitleColor(UIColor.white, for: UIControlState.normal)
 
             btnThirtyMin.layer.cornerRadius = 6
@@ -1679,7 +1679,7 @@ class CourtRequestVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             btnSixtyMin.layer.borderWidth = 1
             btnSixtyMin.layer.borderWidth = 0.25
             btnSixtyMin.layer.borderColor = hexStringToUIColor(hex: "2D2D2D").cgColor
-            btnSixtyMin.backgroundColor = hexStringToUIColor(hex: "F47D4C")
+            btnSixtyMin.backgroundColor = UIColor(named: "navigationColor")
             btnSixtyMin.setTitleColor(UIColor.white, for: UIControlState.normal)
 
             durationType = "60"
@@ -1695,7 +1695,7 @@ class CourtRequestVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             btnThirtyMin.layer.borderWidth = 1
             btnThirtyMin.layer.borderWidth = 0.25
             btnThirtyMin.layer.borderColor = hexStringToUIColor(hex: "2D2D2D").cgColor
-            btnThirtyMin.backgroundColor = hexStringToUIColor(hex: "F47D4C")
+            btnThirtyMin.backgroundColor = UIColor(named: "navigationColor")
             btnThirtyMin.setTitleColor(UIColor.white, for: UIControlState.normal)
 
             
@@ -1847,14 +1847,14 @@ class CourtRequestVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             btnMultiday.backgroundColor = .clear
         btnMultiday.layer.cornerRadius = 22
         btnMultiday.layer.borderWidth = 1
-        btnMultiday.setTitleColor(hexStringToUIColor(hex: "F37D4A"), for: UIControlState.normal)
-        btnMultiday.layer.borderColor = hexStringToUIColor(hex: "F37D4A").cgColor
+        btnMultiday.setTitleColor(UIColor(named: "navigationColor"), for: UIControlState.normal)
+            btnMultiday.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
         
         btnSingleDay.layer.cornerRadius = 22
         btnSingleDay.layer.borderWidth = 1
         btnSingleDay.layer.borderWidth = 1
         btnSingleDay.layer.borderColor = UIColor.white.cgColor
-        btnSingleDay.backgroundColor = hexStringToUIColor(hex: "F37D4A")
+            btnSingleDay.backgroundColor = UIColor(named: "navigationColor")
         btnSingleDay.setTitleColor(UIColor.white, for: UIControlState.normal)
             
             
@@ -1867,14 +1867,14 @@ class CourtRequestVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             btnSingleDay.backgroundColor = .clear
             btnSingleDay.layer.cornerRadius = 22
             btnSingleDay.layer.borderWidth = 1
-            btnSingleDay.setTitleColor(hexStringToUIColor(hex: "F37D4A"), for: UIControlState.normal)
-            btnSingleDay.layer.borderColor = hexStringToUIColor(hex: "F37D4A").cgColor
+            btnSingleDay.setTitleColor(UIColor(named: "navigationColor"), for: UIControlState.normal)
+            btnSingleDay.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
             
             btnMultiday.layer.cornerRadius = 22
             btnMultiday.layer.borderWidth = 1
             btnMultiday.layer.borderWidth = 1
             btnMultiday.layer.borderColor = UIColor.white.cgColor
-            btnMultiday.backgroundColor = hexStringToUIColor(hex: "F37D4A")
+            btnMultiday.backgroundColor = UIColor(named: "navigationColor")
             btnMultiday.setTitleColor(UIColor.white, for: UIControlState.normal)
             
             
@@ -2629,7 +2629,7 @@ class CourtRequestVC: UIViewController, UITableViewDelegate, UITableViewDataSour
                                 self.btnNintyMin.layer.borderWidth = 1
                                 self.btnNintyMin.layer.borderWidth = 0.25
                                 self.btnNintyMin.layer.borderColor = hexStringToUIColor(hex: "2D2D2D").cgColor
-                                self.btnNintyMin.backgroundColor = hexStringToUIColor(hex: "F47D4C")
+                                self.btnNintyMin.backgroundColor = UIColor(named: "navigationColor")
                                 
                                 self.btnThirtyMin.layer.cornerRadius = 6
                                 self.btnThirtyMin.layer.borderWidth = 1
@@ -2667,7 +2667,7 @@ class CourtRequestVC: UIViewController, UITableViewDelegate, UITableViewDataSour
                                 self.btnSixtyMin.layer.borderWidth = 1
                                 self.btnSixtyMin.layer.borderWidth = 0.25
                                 self.btnSixtyMin.layer.borderColor = hexStringToUIColor(hex: "2D2D2D").cgColor
-                                self.btnSixtyMin.backgroundColor = hexStringToUIColor(hex: "F47D4C")
+                                self.btnSixtyMin.backgroundColor = UIColor(named: "navigationColor")
                                 self.btnSixtyMin.setTitleColor(UIColor.white, for: UIControlState.normal)
                                 self.durationType = "60"
                             }
@@ -2684,7 +2684,7 @@ class CourtRequestVC: UIViewController, UITableViewDelegate, UITableViewDataSour
                                 self.btnThirtyMin.layer.borderWidth = 1
                                 self.btnThirtyMin.layer.borderWidth = 0.25
                                 self.btnThirtyMin.layer.borderColor = hexStringToUIColor(hex: "2D2D2D").cgColor
-                                self.btnThirtyMin.backgroundColor = hexStringToUIColor(hex: "F47D4C")
+                                self.btnThirtyMin.backgroundColor = UIColor(named: "navigationColor")
                                 self.btnThirtyMin.setTitleColor(UIColor.white, for: UIControlState.normal)
                                 
                                 

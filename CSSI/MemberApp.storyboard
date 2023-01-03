@@ -2297,7 +2297,7 @@
                                                                 <real key="value" value="-2"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
-                                                                <color key="value" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="value" name="navigationColor"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
                                                                 <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2701,7 +2701,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
                                                 <state key="normal" title="Reqt">
-                                                    <color key="titleColor" name="ThemeOrangeColor"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="requestClicked:" destination="iGE-TF-HzD" eventType="touchUpInside" id="BOQ-U1-PHq"/>
@@ -2949,7 +2949,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                                 <state key="normal" title="Reqt">
-                                                    <color key="titleColor" name="ThemeOrangeColor"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="cancelRequestClicked:" destination="iGE-TF-HzD" eventType="touchUpInside" id="bc5-pf-DxF"/>
@@ -3436,7 +3436,7 @@
                                                                         <constraint firstAttribute="width" constant="40" id="Kc5-rO-B2X"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
-                                                                    <color key="textColor" name="ThemeOrangeColor"/>
+                                                                    <color key="textColor" name="navigationColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9it-45-5BI">
@@ -5415,7 +5415,7 @@
                                     <constraint firstAttribute="height" constant="37" id="9KK-XT-Nor"/>
                                 </constraints>
                                 <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="currentPageIndicatorTintColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="currentPageIndicatorTintColor" name="navigationColor"/>
                                 <connections>
                                     <action selector="pageControlValueDidChange:" destination="lpg-hn-8yn" eventType="valueChanged" id="aM5-ba-Nc8"/>
                                 </connections>
@@ -5503,7 +5503,7 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWl-nN-jHI">
                                         <rect key="frame" x="132" y="390" width="140" height="37"/>
-                                        <color key="backgroundColor" name="ThemeOrangeColor"/>
+                                        <color key="backgroundColor" name="navigationColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="37" id="61C-vY-Jct"/>
                                         </constraints>
@@ -5804,7 +5804,7 @@
                                                 <constraint firstAttribute="height" constant="35" id="uWg-Kd-IRi"/>
                                             </constraints>
                                             <state key="normal" title="Load More">
-                                                <color key="titleColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="titleColor" name="navigationColor"/>
                                             </state>
                                             <connections>
                                                 <action selector="loadMoreClicked:" destination="DUC-Eh-oSh" eventType="touchUpInside" id="91f-Hy-xEI"/>
@@ -5980,7 +5980,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event URL" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeu-5J-Jmw">
                                         <rect key="frame" x="10" y="29" width="269.5" height="18.5"/>
                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="14"/>
-                                        <color key="textColor" red="0.95686274509803915" green="0.49019607843137253" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" name="navigationColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEP-zu-ELH">
@@ -6224,7 +6224,7 @@
                                                     <constraint firstAttribute="height" constant="25.329999999999998" id="Bgh-Jl-IQt"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                <color key="textColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" name="navigationColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10PM - 11PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOQ-Kz-5HJ">
@@ -6468,7 +6468,7 @@
                                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                                 <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
                                                                 <state key="normal" title="Add to Calendar">
-                                                                    <color key="titleColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="titleColor" name="navigationColor"/>
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="addToCalendarClicked:" destination="WaT-gv-rrf" eventType="touchUpInside" id="xXm-s2-I9c"/>
@@ -6877,7 +6877,7 @@
                                                                                                 <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="30" maxY="0.0"/>
                                                                                                 <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                                                                 <state key="normal" title="Add" image="Group 2130">
-                                                                                                    <color key="titleColor" name="ThemeColor"/>
+                                                                                                    <color key="titleColor" name="navigationColor"/>
                                                                                                 </state>
                                                                                                 <connections>
                                                                                                     <action selector="addToMyBuddyClicked:" destination="MBG-qE-skf" eventType="touchUpInside" id="wZ8-0h-lpD"/>
@@ -7436,7 +7436,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
                                                 <state key="normal" title="Add">
-                                                    <color key="titleColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="addGuestClicked:" destination="MBG-qE-skf" eventType="touchUpInside" id="mS8-Ko-S6E"/>
@@ -7450,7 +7450,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
                                                 <state key="normal" title="Cancel">
-                                                    <color key="titleColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="cancelClicked:" destination="MBG-qE-skf" eventType="touchUpInside" id="oaq-Rt-vqp"/>
@@ -8152,7 +8152,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
                                                 <state key="normal" title="Reqt">
-                                                    <color key="titleColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="requestClicked:" destination="dfQ-TS-qmN" eventType="touchUpInside" id="X1g-WY-ipA"/>
@@ -8166,7 +8166,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
                                                 <state key="normal" title="Reqt">
-                                                    <color key="titleColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="cancelClicked:" destination="dfQ-TS-qmN" eventType="touchUpInside" id="vaV-B6-J9z"/>
@@ -8721,7 +8721,7 @@
                                                                                 <constraint firstAttribute="width" constant="40" id="zLy-X1-llH"/>
                                                                             </constraints>
                                                                             <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
-                                                                            <color key="textColor" name="ThemeOrangeColor"/>
+                                                                            <color key="textColor" name="navigationColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbw-wE-U3H">
@@ -9640,7 +9640,7 @@
                                                                                 <constraint firstAttribute="height" constant="22" id="tbQ-y7-DuV"/>
                                                                             </constraints>
                                                                             <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
-                                                                            <color key="textColor" name="ThemeColor"/>
+                                                                            <color key="textColor" name="navigationColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rJ-T5-ZhH">
@@ -9683,7 +9683,7 @@
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sG-kq-oo1">
                                                                             <rect key="frame" x="0.0" y="34" width="40.5" height="22.5"/>
                                                                             <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="17"/>
-                                                                            <color key="textColor" name="ThemeColor"/>
+                                                                            <color key="textColor" name="navigationColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
@@ -9984,7 +9984,7 @@
                                                                                 <constraint firstAttribute="height" constant="18" id="nqd-ub-sal"/>
                                                                             </constraints>
                                                                             <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
-                                                                            <color key="textColor" red="0.91372549020000005" green="0.35686274509999999" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <color key="textColor" name="navigationColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVt-jA-tcs">
@@ -10235,7 +10235,7 @@
                                                                             <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="18"/>
                                                                             <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                                                             <state key="normal" title="Register">
-                                                                                <color key="titleColor" name="ThemeColor"/>
+                                                                                <color key="titleColor" name="navigationColor"/>
                                                                             </state>
                                                                             <connections>
                                                                                 <action selector="registrationClicked:" destination="TBC-aN-TPp" eventType="touchUpInside" id="9TY-Lb-1xL"/>
@@ -11032,7 +11032,7 @@
                                                                 <real key="value" value="-2"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
-                                                                <color key="value" name="ThemeOrangeColor"/>
+                                                                <color key="value" name="navigationColor"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
                                                                 <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -11130,7 +11130,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
                                                 <state key="normal" title="Reqt">
-                                                    <color key="titleColor" name="ThemeOrangeColor"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="requestClicked:" destination="XPP-LS-v2C" eventType="touchUpInside" id="sEm-mU-UR8"/>
@@ -11431,7 +11431,7 @@
                                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                         <inset key="contentEdgeInsets" minX="22" minY="0.0" maxX="22" maxY="0.0"/>
                                                         <state key="normal" title="Multi-Day">
-                                                            <color key="titleColor" name="ThemeOrangeColor"/>
+                                                            <color key="titleColor" name="navigationColor"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="singleOrMultidayClicked:" destination="XPP-LS-v2C" eventType="touchUpInside" id="en2-F5-D0V"/>
@@ -11439,7 +11439,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Hn-sD-TUu">
                                                         <rect key="frame" x="30" y="18" width="170.5" height="44"/>
-                                                        <color key="backgroundColor" name="ThemeOrangeColor"/>
+                                                        <color key="backgroundColor" name="navigationColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="44" id="sKz-E2-Ufr"/>
                                                         </constraints>
@@ -11491,7 +11491,7 @@
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDN-04-5WA">
                                                         <rect key="frame" x="105" y="36.5" width="73" height="42"/>
-                                                        <color key="backgroundColor" name="ThemeOrangeColor"/>
+                                                        <color key="backgroundColor" name="navigationColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="73" id="QGZ-Vg-WH0"/>
                                                             <constraint firstAttribute="height" constant="42" id="Twy-9t-K5Q"/>
@@ -11506,7 +11506,7 @@
                                                     </button>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i07-vV-wNq">
                                                         <rect key="frame" x="190" y="36.5" width="73" height="42"/>
-                                                        <color key="backgroundColor" name="ThemeOrangeColor"/>
+                                                        <color key="backgroundColor" name="navigationColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="73" id="2xB-3Z-UNv"/>
                                                             <constraint firstAttribute="height" constant="42" id="eBB-Z8-6n7"/>
@@ -11521,7 +11521,7 @@
                                                     </button>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ta-AT-qTV">
                                                         <rect key="frame" x="275" y="36.5" width="73" height="42"/>
-                                                        <color key="backgroundColor" name="ThemeOrangeColor"/>
+                                                        <color key="backgroundColor" name="navigationColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="73" id="P0K-Fw-Rey"/>
                                                             <constraint firstAttribute="height" constant="42" id="gYQ-hL-681"/>
@@ -11566,7 +11566,7 @@
                                                             <constraint firstAttribute="height" constant="23" id="8sK-Lk-TKI"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="18"/>
-                                                        <color key="textColor" name="ThemeOrangeColor"/>
+                                                        <color key="textColor" name="navigationColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hy-j1-mg9">
@@ -11660,7 +11660,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                                 <state key="normal" title="Reqt">
-                                                    <color key="titleColor" name="ThemeOrangeColor"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="cancelReservation:" destination="XPP-LS-v2C" eventType="touchUpInside" id="cuE-j9-6cY"/>
@@ -11847,7 +11847,7 @@
                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                         <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
                                         <state key="normal" title="Add">
-                                            <color key="titleColor" name="ThemeOrangeColor"/>
+                                            <color key="titleColor" name="navigationColor"/>
                                         </state>
                                         <connections>
                                             <action selector="addClicked:" destination="IC5-8b-qcm" eventType="touchUpInside" id="nbK-0l-F9x"/>
@@ -11862,7 +11862,7 @@
                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                         <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
                                         <state key="normal" title="Cancel">
-                                            <color key="titleColor" name="ThemeOrangeColor"/>
+                                            <color key="titleColor" name="navigationColor"/>
                                         </state>
                                         <connections>
                                             <action selector="cancelClicked:" destination="MBG-qE-skf" eventType="touchUpInside" id="iEp-DY-SFg"/>
@@ -12360,7 +12360,7 @@
                                                                 <real key="value" value="-2"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
-                                                                <color key="value" name="ThemeOrangeColor"/>
+                                                                <color key="value" name="navigationColor"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
                                                                 <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -12874,7 +12874,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
                                                 <state key="normal" title="Reqt">
-                                                    <color key="titleColor" name="ThemeColor"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="requestClicked:" destination="Ngq-ll-jl6" eventType="touchUpInside" id="oUw-PR-mcI"/>
@@ -13264,7 +13264,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                                 <state key="normal" title="Reqt">
-                                                    <color key="titleColor" name="ThemeColor"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="cancelReservationClicked:" destination="Ngq-ll-jl6" eventType="touchUpInside" id="r6B-Su-qFd"/>
@@ -13521,7 +13521,7 @@
                                             <constraint firstAttribute="width" constant="250" id="eyL-Tw-jtm"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="32"/>
-                                        <color key="textColor" name="ThemeColor"/>
+                                        <color key="textColor" name="navigationColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -14143,7 +14143,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
                                                 <state key="normal" title="Reqt">
-                                                    <color key="titleColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="requestClicked:" destination="uLu-kK-kuO" eventType="touchUpInside" id="J0Z-ee-kId"/>
@@ -14157,7 +14157,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
                                                 <state key="normal" title="Reqt">
-                                                    <color key="titleColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="cancelClicked:" destination="uLu-kK-kuO" eventType="touchUpInside" id="4Wx-FV-WNB"/>
@@ -14644,7 +14644,7 @@
                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                         <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
                                         <state key="normal" title="Add">
-                                            <color key="titleColor" name="ThemeColor"/>
+                                            <color key="titleColor" name="navigationColor"/>
                                         </state>
                                         <connections>
                                             <action selector="addClicked:" destination="NUY-b5-eDX" eventType="touchUpInside" id="Mrb-vd-vAb"/>
@@ -14658,7 +14658,7 @@
                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                         <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
                                         <state key="normal" title="Cancel">
-                                            <color key="titleColor" name="ThemeColor"/>
+                                            <color key="titleColor" name="navigationColor"/>
                                         </state>
                                         <connections>
                                             <action selector="cancelClicked:" destination="NUY-b5-eDX" eventType="touchUpInside" id="vg6-Us-lgG"/>
@@ -15396,7 +15396,7 @@
                                                         <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
-                                                        <color key="value" name="ThemeColor"/>
+                                                        <color key="value" name="navigationColor"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
                                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -16675,7 +16675,7 @@
                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                         <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
                                         <state key="normal" title="Add to Calendar">
-                                            <color key="titleColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" name="navigationColor"/>
                                         </state>
                                         <connections>
                                             <action selector="addToCalendarClicked:" destination="w1Y-LN-T3S" eventType="touchUpInside" id="P7S-dP-DtC"/>
@@ -16758,7 +16758,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Living Room" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQ7-GK-gKa">
                                                 <rect key="frame" x="20" y="20" width="374" height="20"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                <color key="textColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" name="navigationColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXc-dV-Vab">
@@ -16958,7 +16958,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
                                                 <state key="normal" title="Share">
-                                                    <color key="titleColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="shareClicked:" destination="xE0-1T-0YD" eventType="touchUpInside" id="ygY-gP-7Gx"/>
@@ -17200,7 +17200,7 @@
                                                                 <real key="value" value="-2"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
-                                                                <color key="value" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="value" name="navigationColor"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
                                                                 <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -17552,7 +17552,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
                                                 <state key="normal" title="Reqt">
-                                                    <color key="titleColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="requestClicked:" destination="kaE-Wf-mfx" eventType="touchUpInside" id="4jF-UP-H6P"/>
@@ -17880,7 +17880,7 @@
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                                 <state key="normal" title="Reqt">
-                                                    <color key="titleColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" name="navigationColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="cancelRequestClicked:" destination="kaE-Wf-mfx" eventType="touchUpInside" id="oAu-xu-wHr"/>
@@ -18224,7 +18224,7 @@
         <image name="Group 2384" width="18" height="18"/>
         <image name="Group 2394" width="23.5" height="18.5"/>
         <image name="Icon-options" width="4" height="16"/>
-        <image name="Icon_ArrowLeftActive" width="6.5" height="11"/>
+        <image name="Icon_ArrowLeftActive" width="6" height="10.5"/>
         <image name="Icon_ArrowRightActive" width="6.5" height="11"/>
         <image name="Icon_Calendar" width="17" height="16.5"/>
         <image name="Icon_feather_clock" width="28" height="28"/>
@@ -18552,7 +18552,7 @@ AFQAAAAAAAAAAAAAAAAAADWqA
             <color red="0.94099998474121094" green="0.4309999942779541" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="UpcomingHeadingColor">
-            <color red="0.41200000047683716" green="0.35699999332427979" blue="0.36899998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.68199998140335083" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="ViewBackgroundGreenColor">
             <color red="0.33700001239776611" green="0.54100000858306885" blue="0.55699998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -18567,7 +18567,7 @@ AFQAAAAAAAAAAAAAAAAAADWqA
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="navigationColor">
-            <color red="0.289000004529953" green="0.40900000929832458" blue="0.56699997186660767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94099998474121094" green="0.4309999942779541" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

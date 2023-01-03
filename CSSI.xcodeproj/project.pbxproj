@@ -1119,6 +1119,8 @@
 		A85E10112950D6DA00E9138D /* CobaltRequestHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85E100E2950D6DA00E9138D /* CobaltRequestHeaderView.swift */; };
 		A85E10122950D6DA00E9138D /* CobaltRequestHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85E100F2950D6DA00E9138D /* CobaltRequestHeaderView.xib */; };
 		A85E10132950D6DA00E9138D /* CobaltRequestHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85E100F2950D6DA00E9138D /* CobaltRequestHeaderView.xib */; };
+		A86A363529649C8600945E7C /* CobaltModifyRequestHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86A363129649B1400945E7C /* CobaltModifyRequestHeaderView.swift */; };
+		A86A363629649C9C00945E7C /* CobaltModifyRequestHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A86A363229649B1400945E7C /* CobaltModifyRequestHeaderView.xib */; };
 		A8A29A9B294F6ABD00CC34F8 /* MemberBillingFrequencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8A29A98294F6ABC00CC34F8 /* MemberBillingFrequencyCell.xib */; };
 		A8A29A9C294F6ABD00CC34F8 /* MemberBillingFrequencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8A29A98294F6ABC00CC34F8 /* MemberBillingFrequencyCell.xib */; };
 		A8A29A9D294F6ABD00CC34F8 /* MemberEditBillingFrequencyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A29A99294F6ABD00CC34F8 /* MemberEditBillingFrequencyVC.swift */; };
@@ -1839,6 +1841,8 @@
 		A85E10092950D1B300E9138D /* SwitchToLotteryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchToLotteryCollectionViewCell.xib; sourceTree = "<group>"; };
 		A85E100E2950D6DA00E9138D /* CobaltRequestHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CobaltRequestHeaderView.swift; sourceTree = "<group>"; };
 		A85E100F2950D6DA00E9138D /* CobaltRequestHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CobaltRequestHeaderView.xib; sourceTree = "<group>"; };
+		A86A363129649B1400945E7C /* CobaltModifyRequestHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CobaltModifyRequestHeaderView.swift; sourceTree = "<group>"; };
+		A86A363229649B1400945E7C /* CobaltModifyRequestHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CobaltModifyRequestHeaderView.xib; sourceTree = "<group>"; };
 		A8A29A98294F6ABC00CC34F8 /* MemberBillingFrequencyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberBillingFrequencyCell.xib; sourceTree = "<group>"; };
 		A8A29A99294F6ABD00CC34F8 /* MemberEditBillingFrequencyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberEditBillingFrequencyVC.swift; sourceTree = "<group>"; };
 		A8A29A9A294F6ABD00CC34F8 /* MemberBillingFrequencyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberBillingFrequencyCell.swift; sourceTree = "<group>"; };
@@ -2038,6 +2042,8 @@
 				18D945C92286DDE5008BE907 /* AddMemberVC.swift */,
 				188A13C12289871600765664 /* ModifyRequestHeaderView.swift */,
 				A84B352029508EB100792A8A /* CobaltGolfRequestTeeTimeVC.swift */,
+				A86A363129649B1400945E7C /* CobaltModifyRequestHeaderView.swift */,
+				A86A363229649B1400945E7C /* CobaltModifyRequestHeaderView.xib */,
 			);
 			path = Version2;
 			sourceTree = "<group>";
@@ -3641,6 +3647,7 @@
 				09507B46293743BC0003DA73 /* ProviderDetailsHeaderView.xib in Resources */,
 				A85E10132950D6DA00E9138D /* CobaltRequestHeaderView.xib in Resources */,
 				09507B47293743BC0003DA73 /* AllNewsHeaderView.xib in Resources */,
+				A86A363629649C9C00945E7C /* CobaltModifyRequestHeaderView.xib in Resources */,
 				09507B48293743BC0003DA73 /* AppointmentHistoryHeaderView.xib in Resources */,
 				09507B49293743BC0003DA73 /* HeaderViewPlayHistory.xib in Resources */,
 				09507B4A293743BC0003DA73 /* BMSCancelView.xib in Resources */,
@@ -4358,6 +4365,7 @@
 				09507A40293743BC0003DA73 /* GuestCardV2.swift in Sources */,
 				09507A41293743BC0003DA73 /* MyGroupCustomCell.swift in Sources */,
 				09507A42293743BC0003DA73 /* EventsCategoryList.swift in Sources */,
+				A86A363529649C8600945E7C /* CobaltModifyRequestHeaderView.swift in Sources */,
 				09507A43293743BC0003DA73 /* TimeCollectionViewCell.swift in Sources */,
 				09507A44293743BC0003DA73 /* SDWebImageDownloaderOperation.m in Sources */,
 				09507A45293743BC0003DA73 /* VBExpandVC.swift in Sources */,

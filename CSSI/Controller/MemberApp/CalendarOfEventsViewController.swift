@@ -1513,22 +1513,52 @@ class CalendarOfEventsViewController: UIViewController, UITableViewDataSource, U
                     self.navigationController?.pushViewController(diningRequest, animated: true)
                 }
                 else{
-                    let golfRequest = UIStoryboard.init(name: "MemberApp", bundle: nil).instantiateViewController(withIdentifier: "GolfRequestTeeTimeVC") as! GolfRequestTeeTimeVC
-                    if eventobj.buttontextvalue == "4"{
-                        golfRequest.isFrom = "View"
+                    if targetType == BaseUrls.Bocawest{
+                        let golfRequest = UIStoryboard.init(name: "MemberApp", bundle: nil).instantiateViewController(withIdentifier: "GolfRequestTeeTimeVC") as! GolfRequestTeeTimeVC
+                        if eventobj.buttontextvalue == "4"{
+                            golfRequest.isFrom = "View"
+                            
+                        }else{
+                            golfRequest.isFrom = "Modify"
+                            
+                        }
+                        golfRequest.isOnlyFrom = "EventsModify"
+                        golfRequest.requestType = .reservation
+                        var eventobj =  ListEvents()
+                        eventobj = arrEventList[indexPath!.row]
+                        golfRequest.requestID = eventobj.eventID
                         
-                    }else{
-                        golfRequest.isFrom = "Modify"
-                        
+                        self.navigationController?.pushViewController(golfRequest, animated: true)
+
+
+
                     }
-                    golfRequest.isOnlyFrom = "EventsModify"
-                    golfRequest.requestType = .reservation
-                    var eventobj =  ListEvents()
-                    eventobj = arrEventList[indexPath!.row]
-                    golfRequest.requestID = eventobj.eventID
+                    else if targetType == BaseUrls.Cobalt{
+                        let golfRequest = UIStoryboard.init(name: "MemberApp", bundle: nil).instantiateViewController(withIdentifier: "CobaltGolfRequestTeeTimeVC") as! CobaltGolfRequestTeeTimeVC
+                        if eventobj.buttontextvalue == "4"{
+                            golfRequest.isFrom = "View"
+                            
+                        }else{
+                            golfRequest.isFrom = "Modify"
+                            
+                        }
+                        golfRequest.isOnlyFrom = "EventsModify"
+                        golfRequest.requestType = .reservation
+                        var eventobj =  ListEvents()
+                        eventobj = arrEventList[indexPath!.row]
+                        golfRequest.requestID = eventobj.eventID
+                        
+                        self.navigationController?.pushViewController(golfRequest, animated: true)
+
+                    }
                     
-                    self.navigationController?.pushViewController(golfRequest, animated: true)
-                }
+                    
+                    
+                    
+                    
+                    
+                    
+                                    }
                 
             }//Added condotion on 1st July 2020 BMS
             //type 1 is events
