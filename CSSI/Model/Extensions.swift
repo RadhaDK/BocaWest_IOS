@@ -167,11 +167,11 @@ extension UIViewController
     {
         let backImage = UIImage.init(named: "back_btn")
         // * Uncomment code convert back button to white color *
-//        let backBtn = BackBarButtonItem.init(image: image ?? backImage , style: .plain, target: target, action: action)
-//        backBtn.image?.withRenderingMode(.alwaysTemplate)
-//        backBtn.tintColor = APPColor.NavigationControllerColors.memberIDBackBtnColor
-//        return backBtn
-        return BackBarButtonItem.init(image: image ?? backImage , style: .plain, target: target, action: action)
+        let backBtn = BackBarButtonItem.init(image: image ?? backImage , style: .plain, target: target, action: action)
+        backBtn.image?.withRenderingMode(.alwaysTemplate)
+        backBtn.tintColor = UIColor(named: "Back_Btn_Color")
+        return backBtn
+//        return BackBarButtonItem.init(image: image ?? backImage , style: .plain, target: target, action: action)
     }
     
     //Added by kiran V2.4 -- GATHER0000176

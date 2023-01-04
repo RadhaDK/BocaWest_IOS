@@ -55,7 +55,7 @@ class CustomNavigationController: UINavigationController {
     func setNavBarColorFor(MemberID : Bool)
     {
         if #available(iOS 15.0, *) {
-            var color : UIColor = APPColor.navigationColor.barbackgroundcolor
+            var color : UIColor = UIColor(named: "NavigationBarColor") ?? APPColor.navigationColor.barbackgroundcolor
             if MemberID
             {
                 color = APPColor.loginBackgroundButtonColor.loginBtnBGColor

@@ -436,6 +436,14 @@ enum BaseUrls : String{
     case Cobalt
 }
 
+enum Environment {
+    case Dev
+    case Test
+    case UAT
+    case PreProd
+    case Prod
+}
+
 enum EventNavigatedFrom
 {
     case clubNews

@@ -64,20 +64,30 @@ class APIHandler: NSObject
     //Cobalt Engage App Prod Link. CSSIC3
     //let engageProd = "https://api.mycobaltsoftware.com/App.Wrapper.CSSI/api/"
     
+    // MARK: - BocaWest URL's
+    let BW_productionURL = "https://api.bocawestcc.org/app.wrapper/api/"
     
-    let productionURL = "https://api.bocawestcc.org/app.wrapper/api/"
-    
-    let preProductionURL = "https://api.mycobaltsoftware.com/App.Wrapper.PreProd/api/"
-    let preProductionURLCobalt = "https://api.mycobaltsoftware.com/Staging/App.Wrapper.CSSI/api/"
+    let BW_preProductionURL = "https://api.mycobaltsoftware.com/App.Wrapper.PreProd/api/"
 
     //Added on 20th August 2020
-    let UATURL = "https://api.mycobaltsoftware.com/App.Wrapper.BW/api/"
+    let BW_UATURL = "https://api.mycobaltsoftware.com/App.Wrapper.BW/api/"
     
-    let testURL = "https://cobaltportal.mycobaltsoftware.com/cssi.cobalt.member.wrapper.test/api/"
+    let BW_testURL = "https://cobaltportal.mycobaltsoftware.com/cssi.cobalt.member.wrapper.test/api/"
     
-    let devURL = "https://cobaltportal.mycobaltsoftware.com/cssi.cobalt.member.wrapper.dev/api/"
+    let BW_devURL = "https://cobaltportal.mycobaltsoftware.com/cssi.cobalt.member.wrapper.dev/api/"
     
-    let engageTestURL : String = "https://cobaltportal.mycobaltsoftware.com/cssi.cobalt.member.wrapper.Eng.Test/api/"
+    // MARK: - Cobalt URL's
+    
+    let engage_DevURL : String = "https://cobaltportal.mycobaltsoftware.com/cssi.cobalt.member.wrapper.EngDev/api/"
+    
+    let engage_TestURL : String = "https://cobaltportal.mycobaltsoftware.com/cssi.cobalt.member.wrapper.Eng.Test/api/"
+    
+    let engage_StagingURL = "https://api.mycobaltsoftware.com/Staging/App.Wrapper.CSSI/api/"
+   
+    //Cobalt Engage App Prod Link. CSSIC3, Product server
+    let engage_ProductionURL = "https://api.mycobaltsoftware.com/App.Wrapper.CSSI/api/"
+    
+    
     
     //Added on 4th September 2020
     //Demo Links
@@ -91,12 +101,10 @@ class APIHandler: NSObject
     //when using this comment generateBaseURL() method call in app delegate applicationWillFinishLaunching with options method.
 
     let  diningDevURL : String  = "https://cobaltportal.mycobaltsoftware.com/CSSI.Cobalt.Member.Wrapper.FCFS.Dev/api/dining/"
-    let diningTestURL : String = "https://cobaltportal.mycobaltsoftware.com/CSSI.Cobalt.Member.Wrapper.FCFS.Test/api/dining/"
     
-    lazy var baseURL : String = assignBaseUrl()
-    lazy var diningBaseURL : String = self.engageTestURL + "dining/"
-    let cobaltengageDevURL : String = "https://cobaltportal.mycobaltsoftware.com/cssi.cobalt.member.wrapper.EngDev/api/"
-    //lazy var diningBaseURL : String = self.diningDevURL
+    
+    lazy var baseURL : String = assignBaseUrl(environment: .Test)
+    lazy var diningBaseURL : String = self.baseURL
    
     
     //MARK:- API Switch Variable
@@ -330,30 +338,52 @@ class APIHandler: NSObject
     static let validateOTP = "Member/GetValidateTwoStepAuthenticationOTP"
     //PROD0000019 -- End
     
-    static let dinningGetReservation = "GetDiningDetailsFCFS"
-    static let dinningGetRestaurantDetail = "GetRestaurantDetails"
-    static let dinningSaveReservation = "SaveDiningReservation"
-    static let dinningEditReservation = "EditDiningReservation"
-    static let dinningMyReservationListing = "GetDiningReservationList"
-    static let dinningViewModifyData = "GetDiningReservation"
-    static let dinningTablePreferances = "GetTablePreferanceDetails"
-    static let dinningDeleteReservation = "DeleteDiningReservation"
-    static let dinningMemberValidationFCFS = "GetFBMemberValidation"
-    static let dinningHistoryReservation = "GetFBHistory"
-    static let dinningHistoryReservationDetail = "GetFBHistoryDetails"
+    static let dinningGetReservation = "dining/GetDiningDetailsFCFS"
+    static let dinningGetRestaurantDetail = "dining/GetRestaurantDetails"
+    static let dinningSaveReservation = "dining/SaveDiningReservation"
+    static let dinningEditReservation = "dining/EditDiningReservation"
+    static let dinningMyReservationListing = "dining/GetDiningReservationList"
+    static let dinningViewModifyData = "dining/GetDiningReservation"
+    static let dinningTablePreferances = "dining/GetTablePreferanceDetails"
+    static let dinningDeleteReservation = "dining/DeleteDiningReservation"
+    static let dinningMemberValidationFCFS = "dining/GetFBMemberValidation"
+    static let dinningHistoryReservation = "dining/GetFBHistory"
+    static let dinningHistoryReservationDetail = "dining/GetFBHistoryDetails"
     //CrediBook
     static let creditBookList = "Member/GetMemberCreditBookList"
     static let creditBookDetail = "Member/GetCreditBookTransactionHistory"
     
-    func assignBaseUrl() -> String{
+    func assignBaseUrl(environment: Environment) -> String{
       var urlString = ""
         if targetType == BaseUrls.Bocawest{
-            urlString = self.testURL
+            switch (environment) {
+                case .Dev:
+                    urlString = self.BW_devURL
+                case .Test:
+                    urlString = self.BW_testURL
+                case .UAT:
+                    urlString = self.BW_UATURL
+                case .PreProd:
+                    urlString = self.BW_preProductionURL
+                case .Prod:
+                    urlString = self.BW_productionURL
+            }
         }
         else if targetType == BaseUrls.Cobalt{
-            urlString = self.preProductionURLCobalt
+            switch (environment) {
+                case .Dev:
+                    urlString = self.engage_DevURL
+                case .Test:
+                    urlString = self.engage_TestURL
+                case .UAT:
+                    urlString = self.engage_StagingURL
+                case .PreProd:
+                    urlString = self.engage_StagingURL
+                case .Prod:
+                    urlString = self.engage_ProductionURL
+            }
          }else{
-             urlString = "enviroment"
+             urlString = self.engage_TestURL
          }
         return urlString
     }
@@ -393,7 +423,12 @@ class APIHandler: NSObject
                         
                         if isChangeBaseURL
                         {
-                            self.baseURL = self.preProductionURL
+                            if targetType == .Bocawest {
+                                self.baseURL = self.BW_preProductionURL
+                            } else {
+                                self.baseURL = self.engage_StagingURL
+                            }
+                            
                         }
                         
                         UserDefaults.standard.set(isChangeBaseURL, forKey: UserDefaultsKeys.isChangeBaseURL.rawValue)
@@ -7485,7 +7520,7 @@ print(headers)
     //CreditBook APIs
     //MARK:- CreditBook Listing
     func creditBookListingApi(paramater: [String: Any]?, onSuccess: @escaping(CreditBookListing) -> Void, onFailure: @escaping(Error) -> Void) {
-        let url : String = cobaltengageDevURL + APIHandler.creditBookList
+        let url : String = baseURL + APIHandler.creditBookList
 
         print("============Start Time -- \(url) -- \(Date())========")
         Alamofire.request(url,method:.post, parameters:paramater,encoding: JSONEncoding.default, headers:nil).responseJSON { response  in
@@ -7525,7 +7560,7 @@ print(headers)
     
     //MARK:- CreditBook HistoryDetail
     func creditBookDetail(paramater: [String: Any]?, onSuccess: @escaping(CreditBookDetails) -> Void, onFailure: @escaping(Error) -> Void) {
-        let url : String = cobaltengageDevURL + APIHandler.creditBookDetail
+        let url : String = baseURL + APIHandler.creditBookDetail
         print(paramater)
         print("============Start Time -- \(url) -- \(Date())========")
         Alamofire.request(url,method:.post, parameters:paramater,encoding: JSONEncoding.default, headers:nil).responseJSON { response  in
