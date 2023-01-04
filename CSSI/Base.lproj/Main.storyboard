@@ -1864,7 +1864,7 @@
                                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="23" id="54y-0I-K1c"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="18"/>
-                                                                    <color key="textColor" red="0.94117647058823528" green="0.42352941176470588" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <color key="textColor" name="navigationColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioE-bf-7Z5">
@@ -2783,10 +2783,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hi0-qc-2q3">
-                                        <rect key="frame" x="101.00000000000001" y="8" width="212.33333333333337" height="92"/>
+                                        <rect key="frame" x="101" y="8" width="212" height="92"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n03-nN-fgg">
-                                                <rect key="frame" x="0.0" y="0.0" width="212.33333333333334" height="41"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="212" height="41"/>
                                                 <color key="backgroundColor" red="0.99215686274509807" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="41" id="2zj-Lq-rg0"/>
@@ -2808,7 +2808,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0s-h0-LCO">
-                                                <rect key="frame" x="0.0" y="51" width="212.33333333333334" height="41"/>
+                                                <rect key="frame" x="0.0" y="51" width="212" height="41"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="41" id="dys-NH-HGc"/>
                                                 </constraints>
@@ -8170,7 +8170,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qeq-ds-lVL">
                                                         <rect key="frame" x="0.0" y="6.3333333333330302" width="140" height="37"/>
-                                                        <color key="backgroundColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" name="navigationColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="37" id="88J-Dy-mmg"/>
                                                         </constraints>
@@ -8198,7 +8198,7 @@
                                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                         <inset key="contentEdgeInsets" minX="35" minY="0.0" maxX="35" maxY="0.0"/>
                                                         <state key="normal" title="Cancel">
-                                                            <color key="titleColor" red="0.95686274510000002" green="0.49019607840000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" name="navigationColor"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -14335,12 +14335,12 @@
         <image name="Group 2151" width="21.666666030883789" height="20.333333969116211"/>
         <image name="Group 2312" width="375" height="727"/>
         <image name="Group 2386-2" width="21.666666030883789" height="21.666666030883789"/>
-        <image name="Group 884" width="13.333333015441895" height="15.333333015441895"/>
+        <image name="Group 884" width="13" height="15.333333015441895"/>
         <image name="Group 927" width="22" height="22"/>
         <image name="Group 948" width="23" height="22.5"/>
         <image name="Icon_Address" width="16" height="20"/>
         <image name="Icon_ArrowLeftActive" width="6" height="10.333333015441895"/>
-        <image name="Icon_ArrowRightActive" width="6" height="10.333333015441895"/>
+        <image name="Icon_ArrowRightActive" width="6.6666665077209473" height="11"/>
         <image name="Icon_Calendar" width="17" height="16.333333969116211"/>
         <image name="Icon_Password" width="13" height="18"/>
         <image name="Icon_Radio_Unselected" width="24" height="24"/>
@@ -14851,7 +14851,7 @@ AFQAAAAAAAAAAAAAAAAAADWqA
             <color red="0.94099998474121094" green="0.4309999942779541" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="navigationColor">
-            <color red="0.94099998474121094" green="0.4309999942779541" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.289000004529953" green="0.40900000929832458" blue="0.56699997186660767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="groupTableViewBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

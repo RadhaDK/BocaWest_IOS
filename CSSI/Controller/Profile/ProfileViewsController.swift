@@ -526,7 +526,7 @@ class ProfileViewsController: UIViewController , UINavigationControllerDelegate,
         
         self.btnCancel.layer.cornerRadius = 20
         self.btnCancel.layer.masksToBounds = true
-        self.btnCancel.layer.borderColor =  APPColor.tintColor.tintNew.cgColor
+        self.btnCancel.layer.borderColor =  UIColor(named: "navigationColor")?.cgColor
         self.btnCancel.layer.borderWidth = 1
 
         
