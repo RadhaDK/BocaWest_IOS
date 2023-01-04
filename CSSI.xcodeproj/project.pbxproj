@@ -1027,6 +1027,8 @@
 		A82D141D29523635009D2B02 /* CobaltTransactionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D141B29523635009D2B02 /* CobaltTransactionDetailsViewController.swift */; };
 		A82D142229523B53009D2B02 /* CobaltStatementDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D142129523B53009D2B02 /* CobaltStatementDetailCell.swift */; };
 		A82D142329523B53009D2B02 /* CobaltStatementDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D142129523B53009D2B02 /* CobaltStatementDetailCell.swift */; };
+		A84423D4296565340090E6AB /* CobaltModifyRequestHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86A363129649B1400945E7C /* CobaltModifyRequestHeaderView.swift */; };
+		A84423D52965654D0090E6AB /* CobaltModifyRequestHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A86A363229649B1400945E7C /* CobaltModifyRequestHeaderView.xib */; };
 		A84B0FBF2941D8AE00F8D88F /* membershipHistoryModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FBE2941D8AE00F8D88F /* membershipHistoryModal.swift */; };
 		A84B0FC02941D8AE00F8D88F /* membershipHistoryModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FBE2941D8AE00F8D88F /* membershipHistoryModal.swift */; };
 		A84B0FC22941D8C500F8D88F /* MembershipListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B0FC12941D8C500F8D88F /* MembershipListModel.swift */; };
@@ -3744,6 +3746,7 @@
 				9F6620D724AE578E0061BB9C /* ProviderDetailsHeaderView.xib in Resources */,
 				A85E10122950D6DA00E9138D /* CobaltRequestHeaderView.xib in Resources */,
 				18E1C6D021CBAD470022145D /* AllNewsHeaderView.xib in Resources */,
+				A84423D52965654D0090E6AB /* CobaltModifyRequestHeaderView.xib in Resources */,
 				9F6620DC24AE578E0061BB9C /* AppointmentHistoryHeaderView.xib in Resources */,
 				18B6036A226883B00045FAE5 /* HeaderViewPlayHistory.xib in Resources */,
 				9F6620D124AE578E0061BB9C /* BMSCancelView.xib in Resources */,
@@ -4851,6 +4854,7 @@
 				C740FD28215C0E580017C7ED /* GuestCardV2.swift in Sources */,
 				18574E37226DDE7A008C1C5E /* MyGroupCustomCell.swift in Sources */,
 				18050573218C315700BFBA0D /* EventsCategoryList.swift in Sources */,
+				A84423D4296565340090E6AB /* CobaltModifyRequestHeaderView.swift in Sources */,
 				9F6620B324AE573F0061BB9C /* TimeCollectionViewCell.swift in Sources */,
 				5F713A592133D27700A56CE3 /* SDWebImageDownloaderOperation.m in Sources */,
 				5F3AABF62101DCE90031103A /* VBExpandVC.swift in Sources */,

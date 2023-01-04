@@ -457,7 +457,8 @@ func addMemberDelegate() {
         self.viewMultiSelect.isHidden = (isFrom == "Modify" || isFrom == "View" || self.appDelegate.addRequestOpt_Dining_MultiSelect.count == 0)
         //GATHER0000606 -- End
         self.btnMultiSelect.setTitle(self.appDelegate.masterLabeling.MULTI_SELECT_DINING ?? "", for: .normal)
-        self.btnMultiSelect.multiSelectBtnViewSetup()
+        self.btnMultiSelect.multiSelectBtnViewSetupBlue()
+        
         
         self.arrInstructions = self.appDelegate.ReservationsInstruction
         

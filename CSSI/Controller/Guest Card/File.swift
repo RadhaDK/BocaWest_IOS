@@ -120,6 +120,15 @@ extension UIButton
         self.backgroundColor = .clear
     }
     
+    func multiSelectBtnViewSetupBlue()
+    {
+        self.layer.cornerRadius = self.frame.height/2
+        self.layer.borderWidth = 1
+        self.layer.borderColor = UIColor(named: "MultiSelectionColor")?.cgColor
+        self.clipsToBounds = true
+        self.backgroundColor = .clear
+    }
+    
     ///View button view setup
     ///
     /// Adds  corner radius, border color , border width , background color and clips to bounds
