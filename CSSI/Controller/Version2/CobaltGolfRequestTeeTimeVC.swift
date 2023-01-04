@@ -428,13 +428,13 @@ class CobaltGolfRequestTeeTimeVC: UIViewController,UITableViewDelegate, UITableV
             isFirstTime = 0
             self.heightSelectRequestDate.constant = 42
             self.btnModifyDate.isHidden = true
-            btnRequest.backgroundColor = hexStringToUIColor(hex: "F37D4A")
+            btnRequest.backgroundColor = UIColor(named: "navigationColor")
             btnRequest.layer.cornerRadius = 18
             btnRequest.layer.borderWidth = 1
             btnRequest.layer.borderColor = UIColor.clear.cgColor
             btnRequest.setTitle(self.appDelegate.masterLabeling.rEQUEST, for: UIControlState.normal)
             btnRequest.setTitleColor(UIColor.white, for: UIControlState.normal)
-            self.btnRequest.setStyle(style: .contained, type: .primary)
+           // self.btnRequest.setStyle(style: .contained, type: .primary)
 
         }
 
@@ -460,7 +460,7 @@ class CobaltGolfRequestTeeTimeVC: UIViewController,UITableViewDelegate, UITableV
         
         
         self.btnMultiSelect.setTitle(self.appDelegate.masterLabeling.MULTI_SELECT ?? "", for: .normal)
-        self.btnMultiSelect.multiSelectBtnViewSetup()
+        self.btnMultiSelect.multiSelectBtnViewSetupBlue()
         
         self.arrInstructions = self.appDelegate.ReservationsInstruction
         

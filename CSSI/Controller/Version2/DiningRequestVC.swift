@@ -322,7 +322,7 @@ func addMemberDelegate() {
             btnRequest.backgroundColor = .clear
             btnRequest.layer.cornerRadius = 18
             btnRequest.layer.borderWidth = 1
-            btnRequest.layer.borderColor = hexStringToUIColor(hex: "F37D4A").cgColor
+            btnRequest.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
             btnRequest .setTitle(self.appDelegate.masterLabeling.Save, for: UIControlState.normal)
             
             self.heightSelectRequestDate.constant = 84
@@ -378,7 +378,7 @@ func addMemberDelegate() {
             viewModify.isHidden = true
             isFirstTime = 0
             
-            btnRequest.backgroundColor = hexStringToUIColor(hex: "F37D4A")
+            btnRequest.backgroundColor = UIColor(named: "navigationColor")
             btnRequest.layer.cornerRadius = 18
             btnRequest.layer.borderWidth = 1
             btnRequest.layer.borderColor = UIColor.clear.cgColor

@@ -5038,7 +5038,7 @@
                                                             <constraint firstAttribute="height" constant="23" id="HWI-pH-pAa"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="18"/>
-                                                        <color key="textColor" name="PrimaryThemeColor"/>
+                                                        <color key="textColor" name="SecondaryHeadingColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -12222,7 +12222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nHc-an-JdA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3800.0000000000005" y="-364.4021739130435"/>
+            <point key="canvasLocation" x="-3801.5999999999999" y="-365.21739130434787"/>
         </scene>
         <!--Dining RequestVC-->
         <scene sceneID="Qg6-j0-hij">
@@ -12244,7 +12244,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the Request Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjD-HV-ooj">
                                                         <rect key="frame" x="122.5" y="52" width="169" height="22"/>
                                                         <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
-                                                        <color key="textColor" name="PrimaryThemeColor"/>
+                                                        <color key="textColor" name="SecondaryHeadingColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="MSk-mt-nkn">
@@ -12788,7 +12788,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Restaurant:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAa-1N-Zix">
                                                         <rect key="frame" x="24" y="10" width="134" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="17"/>
-                                                        <color key="textColor" name="PrimaryThemeColor"/>
+                                                        <color key="textColor" name="SecondaryHeadingColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -12808,7 +12808,7 @@
                                                             <constraint firstAttribute="height" constant="23" id="n5i-2n-fl1"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="18"/>
-                                                        <color key="textColor" name="PrimaryThemeColor"/>
+                                                        <color key="textColor" name="SecondaryHeadingColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GOQ-TY-eSL">
@@ -12817,7 +12817,7 @@
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkP-eL-YhU">
                                                                 <rect key="frame" x="104.5" y="2" width="31" height="37"/>
                                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="30"/>
-                                                                <color key="textColor" name="PrimaryThemeColor"/>
+                                                                <color key="textColor" name="SecondaryHeadingColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4z-JF-j2d">
@@ -13136,7 +13136,7 @@
                                                             <constraint firstAttribute="height" constant="23" id="mkJ-5x-b1z"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="18"/>
-                                                        <color key="textColor" name="ThemeBrownColor"/>
+                                                        <color key="textColor" name="SecondaryHeadingColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -13233,7 +13233,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reservation Comments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZwV-Be-9Co">
                                                         <rect key="frame" x="32" y="15" width="170.5" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="17"/>
-                                                        <color key="textColor" name="PrimaryThemeColor"/>
+                                                        <color key="textColor" name="SecondaryHeadingColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bWV-4X-B3C">

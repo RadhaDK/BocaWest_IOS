@@ -512,7 +512,7 @@ public enum ScrollableSegmentedControlSegmentStyle: Int {
                         underlineView = UIView()
                         underlineView!.tag = 999
                         if #available(iOS 11.0, *) {
-                            underlineView!.backgroundColor = UIColor(named: "navigationColor")
+                            underlineView!.backgroundColor = UIColor(named: "ThemeColor")
                         } else {
                             underlineView?.backgroundColor = tintColor
                             // Fallback on earlier versions
@@ -529,7 +529,7 @@ public enum ScrollableSegmentedControlSegmentStyle: Int {
         override var tintColor: UIColor!{
             didSet{
                 if #available(iOS 11.0, *) {
-                    underlineView?.backgroundColor = UIColor(named: "navigationColor")
+                    underlineView?.backgroundColor = UIColor(named: "ThemeColor")
                 } else {
                     underlineView?.backgroundColor = tintColor
                     // Fallback on earlier versions

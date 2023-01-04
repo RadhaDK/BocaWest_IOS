@@ -66,6 +66,7 @@ class MyCalendarXib: UITableViewCell {
         btnRegister.layer.cornerRadius = 15
         btnRegister.layer.borderWidth = 1
         btnRegister.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
+        
     
         btnViewOnly.backgroundColor = .clear
         btnViewOnly.layer.cornerRadius = 15

@@ -165,12 +165,12 @@ class ProfileViewOnlyVC: UIViewController {
         //ENGAGE0011372 -- Start
         
         self.enableDues(isEnable: false)
-        self.btnTermsOfUse.setTitleColor(UIColor(named: "navigationColor"), for: .normal)
-        self.btnPrivacyPolicy.setTitleColor(UIColor(named: "navigationColor"), for: .normal)
+        self.btnTermsOfUse.setTitleColor(UIColor(named: "MultiSelectionColor"), for: .normal)
+        self.btnPrivacyPolicy.setTitleColor(UIColor(named: "MultiSelectionColor"), for: .normal)
 
 //        self.btnTermsOfUse.setTitleColor(APPColor.MainColours.primary2, for: .normal)
 //        self.btnPrivacyPolicy.setTitleColor(APPColor.MainColours.primary2, for: .normal)
-        self.viewDivider.backgroundColor = UIColor(named: "navigationColor")
+        self.viewDivider.backgroundColor = UIColor(named: "MultiSelectionColor")
         // Do any additional setup after loading the view.
         //Added by kiran V2.5 -- ENGAGE0011372 -- Custom method to dismiss screen when left edge swipe.
         //ENGAGE0011372 -- Start
