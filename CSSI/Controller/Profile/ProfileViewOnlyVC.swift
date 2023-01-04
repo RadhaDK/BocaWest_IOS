@@ -239,10 +239,10 @@ class ProfileViewOnlyVC: UIViewController {
         self.btnEdit.backgroundColor = .clear
         self.btnEdit.layer.cornerRadius = 17
         self.btnEdit.layer.borderWidth = 1
-        self.btnEdit.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
+        self.btnEdit.layer.borderColor = UIColor(named: "MultiSelectionColor")?.cgColor
         
         
-        self.btnEdit.setTitleColor(UIColor(named: "navigationColor"), for: .normal)
+        self.btnEdit.setTitleColor(UIColor(named: "MultiSelectionColor"), for: .normal)
         
         
         let logOutgesture = UITapGestureRecognizer(target: self, action:  #selector(logout(sender:)))

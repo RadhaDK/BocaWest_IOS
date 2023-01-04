@@ -425,7 +425,7 @@ class CourtRequestVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         //GATHER0000606 -- End
         
         self.btnMultiSelection.setTitle(self.appDelegate.masterLabeling.MULTI_SELECT ?? "", for: .normal)
-        self.btnMultiSelection.multiSelectBtnViewSetup()
+        self.btnMultiSelection.multiSelectBtnViewSetupBlue()
         
         self.requestReservationApi()
         

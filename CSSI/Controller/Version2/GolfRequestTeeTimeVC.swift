@@ -404,7 +404,7 @@ class GolfRequestTeeTimeVC: UIViewController, UITableViewDelegate, UITableViewDa
         
         
         self.btnMultiSelect.setTitle(self.appDelegate.masterLabeling.MULTI_SELECT ?? "", for: .normal)
-        self.btnMultiSelect.multiSelectBtnViewSetup()
+        self.btnMultiSelect.multiSelectBtnViewSetupBlue()
         
         self.arrInstructions = self.appDelegate.ReservationsInstruction
         
