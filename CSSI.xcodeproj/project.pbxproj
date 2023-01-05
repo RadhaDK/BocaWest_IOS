@@ -508,7 +508,7 @@
 		09507B88293743BC0003DA73 /* HorizontalFilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F6620C824AE578D0061BB9C /* HorizontalFilterView.xib */; };
 		09507B89293743BC0003DA73 /* FitnessAppSettingsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FB84710250BC40C0065DB8A /* FitnessAppSettingsTVC.xib */; };
 		09507B8A293743BC0003DA73 /* GuestSelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C77C798921880DBF00F5DD90 /* GuestSelectionTableViewCell.xib */; };
-		09507B97293762A30003DA73 /* CobaltAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09507B95293762170003DA73 /* CobaltAsset.xcassets */; };
+		09507B97293762A30003DA73 /* CobaltAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09507B95293762170003DA73 /* CobaltAssets.xcassets */; };
 		1800E8C5225CA9C20041E95D /* HtmlTextConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800E8C4225CA9C10041E95D /* HtmlTextConverter.swift */; };
 		1801B39C230ED8BE00E7ECC2 /* NewSuccessPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801B39B230ED8BE00E7ECC2 /* NewSuccessPopupView.swift */; };
 		1801B39E230F03C600E7ECC2 /* NewSuccessUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801B39D230F03C600E7ECC2 /* NewSuccessUpdateView.swift */; };
@@ -688,7 +688,7 @@
 		59D1A40B20CA79FF00E92C86 /* EventCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1A40A20CA79FF00E92C86 /* EventCellTableViewCell.swift */; };
 		59FEC3E620B6A64F00FF2DB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEC3E520B6A64F00FF2DB0 /* ViewController.swift */; };
 		59FEC3E920B6A64F00FF2DB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59FEC3E720B6A64F00FF2DB0 /* Main.storyboard */; };
-		59FEC3EB20B6A65100FF2DB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59FEC3EA20B6A65100FF2DB0 /* Assets.xcassets */; };
+		59FEC3EB20B6A65100FF2DB0 /* BocaWestAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59FEC3EA20B6A65100FF2DB0 /* BocaWestAssets.xcassets */; };
 		59FEC3EE20B6A65100FF2DB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59FEC3EC20B6A65100FF2DB0 /* LaunchScreen.storyboard */; };
 		59FEC3F920B6A65100FF2DB0 /* CSSITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEC3F820B6A65100FF2DB0 /* CSSITests.swift */; };
 		59FEC40420B6A65100FF2DB0 /* CSSIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEC40320B6A65100FF2DB0 /* CSSIUITests.swift */; };
@@ -854,8 +854,6 @@
 		74C6BBCD20D1978700842A77 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C6BBCA20D1978600842A77 /* CheckBox.swift */; };
 		74C6BBCE20D1978700842A77 /* FormValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C6BBCB20D1978700842A77 /* FormValidation.swift */; };
 		74C6BBCF20D1978700842A77 /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C6BBCC20D1978700842A77 /* EventList.swift */; };
-		8429B32F2965637D00AA938A /* CobaltModifyRequestHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A86A363229649B1400945E7C /* CobaltModifyRequestHeaderView.xib */; };
-		8429B3302965638300AA938A /* CobaltModifyRequestHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86A363129649B1400945E7C /* CobaltModifyRequestHeaderView.swift */; };
 		86D55A1086FD8ED9B2B1696B /* Pods_CSSI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD40404E39B8A7387F55B9D /* Pods_CSSI.framework */; };
 		8F434E4F49A1EAA9880F171E /* Pods_CSSIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20BADE7CC2A967E2AEDC403F /* Pods_CSSIUITests.framework */; };
 		93EE3414BA14CB0A9C6F3748 /* Pods_CSSITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D6892D7B796CAC34002D45 /* Pods_CSSITests.framework */; };
@@ -1221,7 +1219,7 @@
 /* Begin PBXFileReference section */
 		09507B93293743BC0003DA73 /* CobaltENGAGE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CobaltENGAGE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09507B94293743BD0003DA73 /* CSSI copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CSSI copy-Info.plist"; path = "/Users/aks/Desktop/BocaWestCobaltMerging/CSSI copy-Info.plist"; sourceTree = "<absolute>"; };
-		09507B95293762170003DA73 /* CobaltAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CobaltAsset.xcassets; sourceTree = "<group>"; };
+		09507B95293762170003DA73 /* CobaltAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CobaltAssets.xcassets; sourceTree = "<group>"; };
 		0C5C799CAE16FDF3A560EEF4 /* Pods-CSSITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSSITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSSITests/Pods-CSSITests.release.xcconfig"; sourceTree = "<group>"; };
 		14421ACCD9ACF27860990504 /* Pods-CSSIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSSIUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSSIUITests/Pods-CSSIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1800E8C4225CA9C10041E95D /* HtmlTextConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtmlTextConverter.swift; sourceTree = "<group>"; };
@@ -1408,7 +1406,7 @@
 		59FEC3E020B6A64F00FF2DB0 /* CSSI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSSI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59FEC3E520B6A64F00FF2DB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		59FEC3E820B6A64F00FF2DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		59FEC3EA20B6A65100FF2DB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59FEC3EA20B6A65100FF2DB0 /* BocaWestAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BocaWestAssets.xcassets; sourceTree = "<group>"; };
 		59FEC3ED20B6A65100FF2DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59FEC3EF20B6A65100FF2DB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59FEC3F420B6A65100FF2DB0 /* CSSITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSSITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2155,8 +2153,8 @@
 				59FEC41120B6B71400FF2DB0 /* Controller */,
 				A84B0FD62941DBD300F8D88F /* Dining */,
 				59FEC3E720B6A64F00FF2DB0 /* Main.storyboard */,
-				59FEC3EA20B6A65100FF2DB0 /* Assets.xcassets */,
-				09507B95293762170003DA73 /* CobaltAsset.xcassets */,
+				59FEC3EA20B6A65100FF2DB0 /* BocaWestAssets.xcassets */,
+				09507B95293762170003DA73 /* CobaltAssets.xcassets */,
 				181EE37B23290F7F00C8A62F /* GoogleService-Info.plist */,
 				59FEC3EC20B6A65100FF2DB0 /* LaunchScreen.storyboard */,
 				59FEC3EF20B6A65100FF2DB0 /* Info.plist */,
@@ -3670,7 +3668,7 @@
 				09507B56293743BC0003DA73 /* SFUIDisplay-Semibold.otf in Resources */,
 				09507B57293743BC0003DA73 /* RequestTableViewCell.xib in Resources */,
 				09507B58293743BC0003DA73 /* FitnessActivityCollectionViewCell.xib in Resources */,
-				09507B97293762A30003DA73 /* CobaltAsset.xcassets in Resources */,
+				09507B97293762A30003DA73 /* CobaltAssets.xcassets in Resources */,
 				09507B59293743BC0003DA73 /* ModifyTableViewCell.xib in Resources */,
 				09507B5A293743BC0003DA73 /* LaunchScreen.storyboard in Resources */,
 				09507B5C293743BC0003DA73 /* SFUIDisplay-Regular.otf in Resources */,
@@ -3769,7 +3767,7 @@
 				9FDCA07C2538CD8900EABD7B /* FitnessActivityCollectionViewCell.xib in Resources */,
 				9F6620C324AE573F0061BB9C /* ModifyTableViewCell.xib in Resources */,
 				59FEC3EE20B6A65100FF2DB0 /* LaunchScreen.storyboard in Resources */,
-				59FEC3EB20B6A65100FF2DB0 /* Assets.xcassets in Resources */,
+				59FEC3EB20B6A65100FF2DB0 /* BocaWestAssets.xcassets in Resources */,
 				598DE06120D3E7A1009AFEF0 /* SFUIDisplay-Regular.otf in Resources */,
 				9F5A1A18250B7EF200AADE80 /* SourceSansPro-It.otf in Resources */,
 				18FA22032382AA6A002B82DB /* MyCalendarXib.xib in Resources */,

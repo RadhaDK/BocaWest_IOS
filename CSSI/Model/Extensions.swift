@@ -181,8 +181,10 @@ extension UIViewController
     func navHomeBtnItem(target: Any?, action: Selector,image : UIImage? = nil) -> UIBarButtonItem
     {
         let homeImage = UIImage.init(named: "Path 398")
-        
-        return BackBarButtonItem.init(image: image ?? homeImage, style: .plain, target: target, action: action)
+        let homeBtn = BackBarButtonItem.init(image: image ?? homeImage, style: .plain, target: target, action: action)
+        homeBtn.image?.withRenderingMode(.alwaysTemplate)
+        homeBtn.tintColor = UIColor(named: "Back_Btn_Color")
+        return homeBtn
     }
     
     
