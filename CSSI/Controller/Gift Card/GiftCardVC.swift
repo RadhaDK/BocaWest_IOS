@@ -77,8 +77,8 @@ class GiftCardVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         //Added on 23rd September 2020 V2.3
         if self.appDelegate.giftCertificateStatus.count > 0
         {
-            let filterBtn = UIBarButtonItem.init(image: #imageLiteral(resourceName: "Filter"), style: .plain, target: self, action: #selector(self.didSelectFilter(sender:)))
-            self.navigationItem.rightBarButtonItem = filterBtn
+            
+            self.navigationItem.rightBarButtonItem = self.navFilterBtnItem(target: self, action: #selector(self.didSelectFilter(sender:)))
         }
         
         //Added by kiran V2.5 11/30 -- ENGAGE0011297 -- Removing back button menus

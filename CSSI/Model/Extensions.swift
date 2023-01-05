@@ -187,6 +187,15 @@ extension UIViewController
         return homeBtn
     }
     
+    func navFilterBtnItem(target: Any?, action: Selector,image : UIImage? = nil) -> UIBarButtonItem
+    {
+        let filterImage = UIImage.init(named: "Filter")
+        let filterBtn = BackBarButtonItem.init(image: image ?? filterImage, style: .plain, target: target, action: action)
+        filterBtn.image?.withRenderingMode(.alwaysTemplate)
+        filterBtn.tintColor = UIColor(named: "Back_Btn_Color")
+        return filterBtn
+    }
+    
     
     //Added by kiran V2.4 -- GATHER0000176
     ///Returns UIButton with backbutton setup
