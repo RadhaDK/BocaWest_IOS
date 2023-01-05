@@ -28,8 +28,10 @@ class CreditBookViewController: UIViewController {
         self.lblMemberNameID  .text = String(format: "%@ | %@", UserDefaults.standard.string(forKey: UserDefaultsKeys.fullName.rawValue)!, self.appDelegate.masterLabeling.hASH! + UserDefaults.standard.string(forKey: UserDefaultsKeys.userID.rawValue)!)
         self.navigationController?.navigationBar.isHidden = false
         self.navigationItem.leftBarButtonItem = self.navBackBtnItem(target: self, action: #selector(self.backBtnAction(sender:)))
-        let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
-        self.navigationItem.rightBarButtonItem = homeBarButton
+//        let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
+//        self.navigationItem.rightBarButtonItem = homeBarButton
+        navigationItem.rightBarButtonItem = self.navHomeBtnItem(target: self, action: #selector(onTapHome))
+
         let textAttributes = [NSAttributedStringKey.foregroundColor:APPColor.navigationColor.navigationitemcolor]
         self.navigationController?.navigationBar.titleTextAttributes = textAttributes
         self.navigationItem.title = "Credit Book"

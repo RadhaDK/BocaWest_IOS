@@ -64,8 +64,10 @@ class MinimumViewController: UIViewController, UITableViewDelegate, UITableViewD
     func initialSetup() {
         self.navigationController?.navigationBar.isHidden = false
         self.navigationItem.leftBarButtonItem = self.navBackBtnItem(target: self, action: #selector(self.backBtnAction(sender:)))
-        let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
-        self.navigationItem.rightBarButtonItem = homeBarButton
+//        let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
+//        self.navigationItem.rightBarButtonItem = homeBarButton
+        navigationItem.rightBarButtonItem = self.navHomeBtnItem(target: self, action: #selector(onTapHome))
+
         let textAttributes = [NSAttributedStringKey.foregroundColor:APPColor.navigationColor.navigationitemcolor]
         self.navigationController?.navigationBar.titleTextAttributes = textAttributes
         self.navigationItem.title = self.appDelegate.masterLabeling.mINIMUMS_TITLE ?? ""

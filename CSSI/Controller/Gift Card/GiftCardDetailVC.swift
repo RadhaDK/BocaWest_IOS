@@ -47,8 +47,10 @@ class GiftCardDetailVC: UIViewController {
         //ENGAGE0011597 -- End
         self.navigationItem.title = self.appDelegate.masterLabeling.tT_GIFT_CARD
 
-        let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
-        navigationItem.rightBarButtonItem = homeBarButton
+//        let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
+//        navigationItem.rightBarButtonItem = homeBarButton
+        navigationItem.rightBarButtonItem = self.navHomeBtnItem(target: self, action: #selector(onTapHome))
+
         
         //Added by kiran V2.9 -- ENGAGE0011597 -- Adding 2 fields for description and count.
         //ENGAGE0011597 -- Start

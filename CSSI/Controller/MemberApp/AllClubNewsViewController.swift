@@ -62,9 +62,10 @@ class AllClubNewsViewController: UIViewController, UITableViewDataSource, UITabl
         
 
 
-        let filterBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "Filter"), style: .plain, target: self, action: #selector(onTapFilter))
-        navigationItem.rightBarButtonItem = filterBarButtonItem
-        
+//        let filterBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "Filter"), style: .plain, target: self, action: #selector(onTapFilter))
+//        navigationItem.rightBarButtonItem = filterBarButtonItem
+        navigationItem.rightBarButtonItem = self.navFilterBtnItem(target: self, action: #selector(self.onTapFilter))
+
         //Added by kiran V2.5 -- ENGAGE0011372 -- Custom method to dismiss screen when left edge swipe.
         //ENGAGE0011372 -- Start
         self.addLeftEdgeSwipeDismissAction()

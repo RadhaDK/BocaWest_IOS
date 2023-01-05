@@ -147,8 +147,10 @@ class NewVisitViewController: UIViewController,  UITextFieldDelegate,closeUpdate
         
         
 
-        let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
-        navigationItem.rightBarButtonItem = homeBarButton
+//        let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
+//        navigationItem.rightBarButtonItem = homeBarButton
+        navigationItem.rightBarButtonItem = self.navHomeBtnItem(target: self, action: #selector(onTapHome))
+
         self.btnSwitchSelection.tag = 1
         
         self.mandatoryfileds()

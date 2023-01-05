@@ -73,8 +73,10 @@ class TransactionDetailsViewController: UIViewController, UITableViewDelegate,UI
         //Commented by kiran V2.5 11/30 -- ENGAGE0011297 --
        // navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
-        let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
-        navigationItem.rightBarButtonItem = homeBarButton
+//        let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
+//        navigationItem.rightBarButtonItem = homeBarButton
+        navigationItem.rightBarButtonItem = self.navHomeBtnItem(target: self, action: #selector(onTapHome))
+
         
      //   self.statementDetailTable.separatorColor = UIColor.clear
         self.statementDetailTable.rowHeight = UITableViewAutomaticDimension

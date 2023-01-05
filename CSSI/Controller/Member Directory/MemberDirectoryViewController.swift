@@ -3953,8 +3953,10 @@ class MemberDirectoryViewController: UIViewController,UITableViewDataSource, UIT
             self.viewSections.isHidden = true
 
             self.navigationItem.title = appDelegate.masterLabeling.add_member
-            let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
-            navigationItem.rightBarButtonItem = homeBarButton
+//            let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
+//            navigationItem.rightBarButtonItem = homeBarButton
+            navigationItem.rightBarButtonItem = self.navHomeBtnItem(target: self, action: #selector(onTapHome))
+
         }
             
         else if (isFrom == "Registration")  {
@@ -3979,8 +3981,10 @@ class MemberDirectoryViewController: UIViewController,UITableViewDataSource, UIT
             self.viewSections.isHidden = true
             
             self.navigationItem.title = appDelegate.masterLabeling.add_member
-            let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
-            navigationItem.rightBarButtonItem = homeBarButton
+//            let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
+//            navigationItem.rightBarButtonItem = homeBarButton
+            navigationItem.rightBarButtonItem = self.navHomeBtnItem(target: self, action: #selector(onTapHome))
+
         }
         else if (isFrom == "BuddyList") && isOnlyFor == "DiningRequest" {
             
@@ -4005,8 +4009,10 @@ class MemberDirectoryViewController: UIViewController,UITableViewDataSource, UIT
             }
             
             self.navigationItem.title = appDelegate.masterLabeling.add_mybuddy
-            let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
-            navigationItem.rightBarButtonItem = homeBarButton
+//            let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
+//            navigationItem.rightBarButtonItem = homeBarButton
+            navigationItem.rightBarButtonItem = self.navHomeBtnItem(target: self, action: #selector(onTapHome))
+
         }
         else if (isFrom == "BuddyList"){
             
@@ -4026,8 +4032,10 @@ class MemberDirectoryViewController: UIViewController,UITableViewDataSource, UIT
             self.viewSections.isHidden = true
             
             self.navigationItem.title = appDelegate.masterLabeling.add_mybuddy
-            let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
-            navigationItem.rightBarButtonItem = homeBarButton
+//            let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
+//            navigationItem.rightBarButtonItem = homeBarButton
+            navigationItem.rightBarButtonItem = self.navHomeBtnItem(target: self, action: #selector(onTapHome))
+
         }
         else if type == "MyBuddies"{
             self.arrMemberList.removeAll()
@@ -4048,9 +4056,10 @@ class MemberDirectoryViewController: UIViewController,UITableViewDataSource, UIT
             self.viewSections.isHidden = false
 
             self.navigationItem.title = self.appDelegate.masterLabeling.tT_MEMBER_DIRECTORY
-            filterBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "Filter"), style: .plain, target: self, action: #selector(onTapFilter))
-            navigationItem.rightBarButtonItem = filterBarButtonItem
-            
+//            filterBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "Filter"), style: .plain, target: self, action: #selector(onTapFilter))
+//            navigationItem.rightBarButtonItem = filterBarButtonItem
+            navigationItem.rightBarButtonItem = self.navFilterBtnItem(target: self, action: #selector(self.onTapFilter))
+
         }
         
         //Modified on 16th June 2020 for BMS

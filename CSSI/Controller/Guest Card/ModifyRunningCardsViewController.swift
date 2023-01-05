@@ -166,9 +166,10 @@ class ModifyRunningCardsViewController: UIViewController, UITableViewDelegate, U
         self.navigationController!.navigationBar.topItem!.backBarButtonItem = backButton
 
 
-        let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
-        navigationItem.rightBarButtonItem = homeBarButton
-        
+//        let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
+//        navigationItem.rightBarButtonItem = homeBarButton
+        navigationItem.rightBarButtonItem = self.navHomeBtnItem(target: self, action: #selector(onTapHome))
+
 //        if guests?.first?.accompanyWithMainMember == 1{
 //            btnSwitchSelection.setBackgroundImage(UIImage(named : "Group 1712-1"), for: UIControlState.normal)
 //

@@ -166,9 +166,10 @@ class GuestCardsViewController: UIViewController {
         multipleSelectionMode = .None
 
         if  enableSelectionMode == false {
-            let filterBarButtonItem = UIBarButtonItem(image: UIImage(named: "Filter"), style: .plain, target: self, action: #selector(onTapFilter))
-            navigationItem.rightBarButtonItem = filterBarButtonItem
+//            let filterBarButtonItem = UIBarButtonItem(image: UIImage(named: "Filter"), style: .plain, target: self, action: #selector(onTapFilter))
+//            navigationItem.rightBarButtonItem = filterBarButtonItem
 //            getGuestList(strSearch: searchBar.text)
+            navigationItem.rightBarButtonItem = self.navFilterBtnItem(target: self, action: #selector(self.onTapFilter))
 
         }
         else{

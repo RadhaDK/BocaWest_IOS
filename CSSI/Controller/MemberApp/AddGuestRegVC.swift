@@ -1055,9 +1055,10 @@ extension AddGuestRegVC
         self.txtTypeOfGuest.setRightIcon(imageName: "Path 1847")
         
         navigationItem.title = appDelegate.masterLabeling.tT_ADD_GUEST
-        let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
-        navigationItem.rightBarButtonItem = homeBarButton
-        
+//        let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
+//        navigationItem.rightBarButtonItem = homeBarButton
+        navigationItem.rightBarButtonItem = self.navHomeBtnItem(target: self, action: #selector(onTapHome))
+
         self.searchBarGuest.delegate = self
         
         //Added by kiran V2.8 -- ENGAGE0011784 -- Show Existing guest by default

@@ -166,8 +166,10 @@ class CalendarOfEventsViewController: UIViewController, UITableViewDataSource, U
         self.calanderView.addGestureRecognizer(calandergesture)
 
         
-        filterBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "Filter"), style: .plain, target: self, action: #selector(onTapFilter))
-        navigationItem.rightBarButtonItem = filterBarButtonItem
+//        filterBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "Filter"), style: .plain, target: self, action: #selector(onTapFilter))
+//        navigationItem.rightBarButtonItem = filterBarButtonItem
+        
+        navigationItem.rightBarButtonItem = self.navFilterBtnItem(target: self, action: #selector(self.onTapFilter))
         
         btnLoadMore.backgroundColor = .clear
         btnLoadMore.layer.cornerRadius = 18

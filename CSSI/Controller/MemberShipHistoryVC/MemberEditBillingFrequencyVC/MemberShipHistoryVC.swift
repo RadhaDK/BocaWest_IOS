@@ -194,9 +194,10 @@ extension MemberShipHistoryVC{
                         }
                         self.arrForFilterOption = membershipHistory.MembershipStatusList
                         if self.arrForFilterOption?.count != 0{
-                            self.navigationItem.rightBarButtonItem = self.filterBarButtonItem;
-                            self.filterBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "Filter"), style: .plain, target: self, action: #selector(self.onTapFilter))
-                            self.navigationItem.rightBarButtonItem = self.filterBarButtonItem
+//                            self.navigationItem.rightBarButtonItem = self.filterBarButtonItem;
+//                            self.filterBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "Filter"), style: .plain, target: self, action: #selector(self.onTapFilter))
+                          //  self.navigationItem.rightBarButtonItem = self.filterBarButtonItem
+                            self.navigationItem.rightBarButtonItem = self.navFilterBtnItem(target: self, action: #selector(self.onTapFilter))
 
                         }
                         
@@ -222,9 +223,10 @@ extension MemberShipHistoryVC{
                             }
                             self.arrForFilterOption = membershipHistory.BillingStatusList
                             if self.arrForFilterOption?.count != 0{
-                                self.navigationItem.rightBarButtonItem = self.filterBarButtonItem;
-                                self.filterBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "Filter"), style: .plain, target: self, action: #selector(self.onTapFilter))
-                                self.navigationItem.rightBarButtonItem = self.filterBarButtonItem
+//                                self.navigationItem.rightBarButtonItem = self.filterBarButtonItem;
+//                                self.filterBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "Filter"), style: .plain, target: self, action: #selector(self.onTapFilter))
+//                                self.navigationItem.rightBarButtonItem = self.filterBarButtonItem
+                                self.navigationItem.rightBarButtonItem = self.navFilterBtnItem(target: self, action: #selector(self.onTapFilter))
 
                             }
                         }

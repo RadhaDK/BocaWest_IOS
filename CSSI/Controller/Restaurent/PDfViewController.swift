@@ -50,8 +50,11 @@ class PDfViewController: UIViewController,UIWebViewDelegate, WKNavigationDelegat
             let itemHome = UIBarButtonItem(customView: home)
             self.navigationItem.setRightBarButtonItems([itemHome,itemshare, itemprinter], animated: true)
         }else{
-            let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
-            navigationItem.rightBarButtonItem = homeBarButton
+//            let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
+//            navigationItem.rightBarButtonItem = homeBarButton
+            
+            navigationItem.rightBarButtonItem = self.navHomeBtnItem(target: self, action: #selector(onTapHome))
+
         }
        
         //Added by kiran V2.5 -- ENGAGE0011372 -- Custom method to dismiss screen when left edge swipe.

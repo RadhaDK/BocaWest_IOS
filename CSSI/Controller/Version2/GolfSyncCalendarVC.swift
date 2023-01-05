@@ -303,8 +303,10 @@ class GolfSyncCalendarVC: UIViewController, UITextFieldDelegate, UITableViewData
         lblMoreinfo.text = self.appDelegate.masterLabeling.moreInfo
 
         
-        let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
-        navigationItem.rightBarButtonItem = homeBarButton
+//        let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
+//        navigationItem.rightBarButtonItem = homeBarButton
+        navigationItem.rightBarButtonItem = self.navHomeBtnItem(target: self, action: #selector(onTapHome))
+
         
         //Added by kiran V2.5 11/30 -- ENGAGE0011297 -- Removing back button menus
         //ENGAGE0011297 -- Start

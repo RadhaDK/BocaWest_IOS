@@ -446,8 +446,11 @@ func addMemberDelegate() {
         self.diningSettings  = self.appDelegate.arrDiningSettings
         
         self.restaurantTableView.estimatedSectionHeaderHeight = 20
-        let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
-        navigationItem.rightBarButtonItem = homeBarButton
+//        let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
+//        navigationItem.rightBarButtonItem = homeBarButton
+        
+        navigationItem.rightBarButtonItem = self.navHomeBtnItem(target: self, action: #selector(onTapHome))
+
         
         self.partyTableview.estimatedSectionHeaderHeight = 25
         

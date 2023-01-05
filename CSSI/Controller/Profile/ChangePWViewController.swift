@@ -201,8 +201,10 @@ class ChangePWViewController: UIViewController, UITextFieldDelegate {
         if UserDefaults.standard.string(forKey: UserDefaultsKeys.isFirstTime.rawValue)  == "1" {
             self.btnIgnore.isEnabled = false
         }else{
-            let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
-            navigationItem.rightBarButtonItem = homeBarButton
+//            let homeBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(onTapHome))
+//            navigationItem.rightBarButtonItem = homeBarButton
+            navigationItem.rightBarButtonItem = self.navHomeBtnItem(target: self, action: #selector(onTapHome))
+
             //  self.btnIgnore.isEnabled = false
             //            self.btnIgnore.isHidden = true
         }
