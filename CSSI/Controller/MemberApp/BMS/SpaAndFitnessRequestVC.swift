@@ -249,7 +249,9 @@ class SpaAndFitnessRequestVC: UIViewController
         self.navigationItem.leftBarButtonItem = self.navBackBtnItem(target: self, action: #selector(self.backBtnAction(sender:)))
         //ENGAGE0011297 -- End
 
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(self.homeBtnClicked(sender:)))
+       // self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(self.homeBtnClicked(sender:)))
+        self.navigationItem.rightBarButtonItem = self.navHomeBtnItem(target: self, action: #selector(homeBtnClicked))
+
     }
     
     override func viewWillLayoutSubviews() {

@@ -92,7 +92,8 @@ class FitnessRequestListingViewController: UIViewController
             self.navigationItem.title = "\(self.appDelegate.bookingAppointmentDetails.department?.DisplayText ?? "") \(providerTitleSuffix)"
             //self.navigationItem.title = "\(self.appDelegate.bookingAppointmentDetails.department?.departmentName ?? "") \(self.appDelegate.masterLabeling.BMS_Providers ?? "")"
             //GATHER0000700 - End
-             self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(image: #imageLiteral(resourceName: "Filter"), style: .plain, target: self, action: #selector(self.filterBtnClicked(sender:)))
+             //self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(image: #imageLiteral(resourceName: "Filter"), style: .plain, target: self, action: #selector(self.filterBtnClicked(sender:)))
+            self.navigationItem.rightBarButtonItem = self.navFilterBtnItem(target: self, action: #selector(self.filterBtnClicked(sender:)))
             self.listTableView.reloadData()
         case .services:
             
@@ -117,7 +118,8 @@ class FitnessRequestListingViewController: UIViewController
             self.navigationItem.title = navTitle
             //self.navigationItem.title = "\(self.appDelegate.bookingAppointmentDetails.department?.departmentName ?? "") \(self.appDelegate.masterLabeling.BMS_Request ?? "")"
             //GATHER0000700 - End
-            self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(self.homeBtnClicked(sender:)))
+          //  self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(self.homeBtnClicked(sender:)))
+            self.navigationItem.rightBarButtonItem = self.navHomeBtnItem(target: self, action: #selector(homeBtnClicked))
             self.listTableView.reloadData()
         default:
            self.navigationItem.title = ""
