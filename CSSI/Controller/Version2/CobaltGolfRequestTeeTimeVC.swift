@@ -3176,7 +3176,7 @@ class CobaltGolfRequestTeeTimeVC: UIViewController,UITableViewDelegate, UITableV
             } else {
                 headerView.lblGroupNumber.text = groupCount
             }
-            headerView.lblGroupNumber.textColor = APPColor.textColor.secondary
+            headerView.lblGroupNumber.textColor = UIColor(named: "PrimaryGroupColor")
             if self.isFirstComeFirstServe {
                 headerView.lblTrance.text = "Trans"
                 headerView.lblNineHoles.text = "9 Holes"

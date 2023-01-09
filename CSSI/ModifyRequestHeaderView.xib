@@ -209,7 +209,7 @@
     <resources>
         <image name="AddGuest" width="22" height="22"/>
         <namedColor name="navigationColor">
-            <color red="0.289000004529953" green="0.40900000929832458" blue="0.56699997186660767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.93725490196078431" green="0.42745098039215684" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

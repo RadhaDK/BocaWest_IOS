@@ -107,9 +107,10 @@ extension HorizontalFilterView
         self.optionsCollectionView.delegate = self
         self.optionsCollectionView.dataSource = self
         self.optionsCollectionView.register(UINib.init(nibName: "OptiosCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "OptiosCollectionViewCell")
-        self.btnDone.diningBtnViewSetup()
+        self.btnDone.multiSelectBtnViewSetup()
         
         self.btnDone.setTitle(self.appDelegate.masterLabeling.done ?? "", for: .normal)
+        self.btnDone.setTitleColor(UIColor(named: "navigationColor"), for: .normal)
         self.btnReset.setTitle(self.appDelegate.masterLabeling.rESET ?? "", for: .normal)
         self.lblFilterName.text = ""
         self.layoutIfNeeded()

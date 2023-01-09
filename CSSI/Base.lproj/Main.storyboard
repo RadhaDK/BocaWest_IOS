@@ -1864,7 +1864,7 @@
                                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="23" id="54y-0I-K1c"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="18"/>
-                                                                    <color key="textColor" name="navigationColor"/>
+                                                                    <color key="textColor" name="PrimaryGroupColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioE-bf-7Z5">
@@ -14339,7 +14339,7 @@
         <image name="Group 927" width="22" height="22"/>
         <image name="Group 948" width="23" height="22.5"/>
         <image name="Icon_Address" width="16" height="20"/>
-        <image name="Icon_ArrowLeftActive" width="6" height="10.333333015441895"/>
+        <image name="Icon_ArrowLeftActive" width="6.6666665077209473" height="11"/>
         <image name="Icon_ArrowRightActive" width="6.6666665077209473" height="11"/>
         <image name="Icon_Calendar" width="17" height="16.333333969116211"/>
         <image name="Icon_Password" width="13" height="18"/>
@@ -14850,11 +14850,14 @@ AFQAAAAAAAAAAAAAAAAAADWqA
         <namedColor name="MultiSelectionColor">
             <color red="0.25099998712539673" green="0.69800001382827759" blue="0.90200001001358032" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="PrimaryGroupColor">
+            <color red="0.94117647058823528" green="0.43137254901960786" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="ThemeColor">
-            <color red="0.94099998474121094" green="0.4309999942779541" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94117647058823528" green="0.43137254901960786" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="navigationColor">
-            <color red="0.289000004529953" green="0.40900000929832458" blue="0.56699997186660767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.93725490196078431" green="0.42745098039215684" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="groupTableViewBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
