@@ -199,6 +199,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     
     
     var isDiningFCFSEnable = true
+    var isCreditBookEnable = true
+    var isMinimumsEnable = true
+    var isDuesEnable = true
+    var isGolfFCFSEnable = true
     
      //Added by Zeeshan -- Adding Trans types for Golf FCFS
     var transType_Golf = [TransTypes]()

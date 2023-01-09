@@ -387,6 +387,22 @@ class APIHandler: NSObject
          }
         return urlString
     }
+    
+    func assignModules() {
+        if targetType == BaseUrls.Bocawest{
+            appDelegate.isDiningFCFSEnable = false
+            appDelegate.isDuesEnable = false
+            appDelegate.isMinimumsEnable = false
+            appDelegate.isCreditBookEnable = false
+            appDelegate.isGolfFCFSEnable = false
+        } else {
+            appDelegate.isDiningFCFSEnable = true
+            appDelegate.isDuesEnable = false
+            appDelegate.isMinimumsEnable = true
+            appDelegate.isCreditBookEnable = true
+            appDelegate.isGolfFCFSEnable = true
+        }
+    }
 
 //    switch
 //        case .dev:
