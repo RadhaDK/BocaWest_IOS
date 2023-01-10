@@ -52,6 +52,13 @@ struct APPColor {
 
         static var solidbg = hexStringToUIColor(hex: "67aac9")     //blue
     }
+    
+    struct solidbgColorCobaltLightBlue {
+        
+        static var solidNewbg = UIColor(named: "PrimaryGroupColor")  //blue
+
+        static var solidbg = hexStringToUIColor(hex: "67aac9")     //blue
+    }
   
     
     struct tabBtnColor {

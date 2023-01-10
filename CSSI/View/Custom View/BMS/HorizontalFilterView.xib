@@ -156,7 +156,7 @@
     <resources>
         <image name="close-dark" width="9" height="9"/>
         <namedColor name="PrimaryGroupColor">
-            <color red="0.94099998474121094" green="0.4309999942779541" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.25098039215686274" green="0.69803921568627447" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

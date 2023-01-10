@@ -829,7 +829,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="y1I-Of-zcb"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="Back_Button_Blue"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="back_btn"/>
                                                 <connections>
                                                     <action selector="btnBack:" destination="1qH-8D-oX4" eventType="touchUpInside" id="GGv-7D-br6"/>
                                                 </connections>
@@ -3465,6 +3465,7 @@
         <image name="Plus_Icon_1X" width="18.666666030883789" height="18.666666030883789"/>
         <image name="Previous_Icon 1" width="8.3333330154418945" height="15"/>
         <image name="User_Icon" width="12.333333015441895" height="13.666666984558105"/>
+        <image name="back_btn" width="11.333333015441895" height="20.666666030883789"/>
         <image name="close-dark" width="9" height="9"/>
         <image name="dinningCancel" width="79" height="68"/>
         <image name="telephone-symbol-button" width="166.33332824707031" height="37"/>

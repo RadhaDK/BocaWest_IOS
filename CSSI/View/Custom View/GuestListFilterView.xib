@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -93,7 +93,7 @@
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frR-6V-zwV">
                                     <rect key="frame" x="49" y="40" width="80" height="2"/>
-                                    <color key="backgroundColor" name="navigationColor"/>
+                                    <color key="backgroundColor" name="PrimaryGroupColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="2" id="6aq-mg-PeT"/>
                                         <constraint firstAttribute="width" constant="80" id="raE-3G-qb2"/>
@@ -127,7 +127,7 @@
                                 </button>
                                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7V-zd-fwD">
                                     <rect key="frame" x="39" y="40" width="100" height="2"/>
-                                    <color key="backgroundColor" name="navigationColor"/>
+                                    <color key="backgroundColor" name="PrimaryGroupColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="2" id="1vw-y0-3Cg"/>
                                         <constraint firstAttribute="width" constant="100" id="eVN-9l-AMg"/>
@@ -205,8 +205,11 @@
     </objects>
     <resources>
         <image name="close-dark" width="9" height="9"/>
+        <namedColor name="PrimaryGroupColor">
+            <color red="0.25098039215686274" green="0.69803921568627447" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="navigationColor">
-            <color red="0.94099998474121094" green="0.4309999942779541" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.289000004529953" green="0.40900000929832458" blue="0.56699997186660767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

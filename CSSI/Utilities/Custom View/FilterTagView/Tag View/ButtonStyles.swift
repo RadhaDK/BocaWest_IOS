@@ -4,13 +4,13 @@ import UIKit
 
 public struct ButtonStyles {
   var backgroundColor: UIColor = UIColor.white
-    var tintColor: UIColor = APPColor.solidbgColorCobalt.solidNewbg!
+    var tintColor: UIColor = APPColor.solidbgColorCobaltLightBlue.solidNewbg!
     var titleFont: UIFont = SFont.SourceSansPro_Regular16!
   var percentCornerRadius: CGFloat = 1
   var margin: CGFloat = 10
   
   public static let deselect = ButtonStyles()
-    public static let select = ButtonStyles(backgroundColor: APPColor.solidbgColorCobalt.solidNewbg!,tintColor: APPColor.navigationColor.tintBGColor )
+    public static let select = ButtonStyles(backgroundColor: APPColor.solidbgColorCobaltLightBlue.solidNewbg!,tintColor: APPColor.navigationColor.tintBGColor )
   public static let action = ButtonStyles(backgroundColor: APPColor.loginBackgroundButtonColor.loginfgColor)
   
   public init(backgroundColor: UIColor, tintColor: UIColor, titleFont: UIFont, percentCornerRadius: CGFloat, margin: CGFloat) {

@@ -289,7 +289,7 @@ class GolfSyncCalendarVC: UIViewController, UITextFieldDelegate, UITableViewData
         btnAddToCalendar.backgroundColor = .clear
         btnAddToCalendar.layer.cornerRadius = 15
         btnAddToCalendar.layer.borderWidth = 1
-        btnAddToCalendar.layer.borderColor = hexStringToUIColor(hex: "F37D4A").cgColor
+        btnAddToCalendar.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
         
         viewCalendar.layer.cornerRadius = 5
         viewCalendar.layer.borderWidth = 0.1

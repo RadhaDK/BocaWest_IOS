@@ -317,9 +317,8 @@ class DiningEventRegistrationVC: UIViewController,UITableViewDataSource,UITableV
         btnRequest.backgroundColor = .clear
         btnRequest.layer.cornerRadius = 15
         btnRequest.layer.borderWidth = 1
-        btnRequest.layer.borderColor = hexStringToUIColor(hex: "F37D4A").cgColor
-        
-        
+        btnRequest.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
+     
         btnCancelReservation.backgroundColor = .clear
         btnCancelReservation.layer.cornerRadius = 15
         btnCancelReservation.layer.borderWidth = 1
@@ -433,7 +432,7 @@ class DiningEventRegistrationVC: UIViewController,UITableViewDataSource,UITableV
             self.btnRequest.setTitle(self.appDelegate.masterLabeling.bACK, for: .normal)
         }
         
-        self.btnMultiSelect.multiSelectBtnViewSetup()
+        self.btnMultiSelect.multiSelectBtnViewSetupBlue()
         self.btnMultiSelect.setTitle(self.appDelegate.masterLabeling.MULTI_SELECT_DINING, for: .normal)
         //self.btnMultiSelect.isHidden = (self.eventType == 1)
         //Modified by kiran V2.5 -- GATHER0000606 -- added hiding multiselect button when multi select options are empty.Hiding add button when member selection option is empty

@@ -159,7 +159,7 @@ extension FirstComeFirstServeTableViewCell : UICollectionViewDelegate,UICollecti
                 if foundSlotTime.count > 0 {
                     for i in foundSlotTime {
                         if self.timeSlotsDetails.timeIntervals?[indexPath.row].teeBox ?? "" == "" || self.slotType == "Single Tee" {
-                            colorHex = APPColor.MainColours.primary2
+                            colorHex = UIColor(named: "PrimaryGroupColor")!
                         } else {
                             if i["TeeBox"] as! String == self.timeSlotsDetails.timeIntervals?[indexPath.row].teeBox ?? "" {
                                 colorHex = APPColor.MainColours.primary2

@@ -237,6 +237,7 @@ class GuestListFilterView: UIView {
         self.lblRelation.isHidden = true
         self.lblDate.isHidden = false
         
+
         btnDate.titleLabel?.font = SFont.SourceSansPro_Semibold18
         btnRelation.titleLabel?.font = SFont.SourceSansPro_Semibold16
         
@@ -252,6 +253,7 @@ class GuestListFilterView: UIView {
         
         self.lblRelation.isHidden = false
         self.lblDate.isHidden = true
+
         btnDate.titleLabel?.font = SFont.SourceSansPro_Semibold16
         btnRelation.titleLabel?.font = SFont.SourceSansPro_Semibold18
 

@@ -197,7 +197,7 @@ class RegisterEventVC: UIViewController, RegistrationCell, ModifyRegistration, M
         btnRequest.backgroundColor = .clear
         btnRequest.layer.cornerRadius = 15
         btnRequest.layer.borderWidth = 1
-        btnRequest.layer.borderColor = hexStringToUIColor(hex: "F37D4A").cgColor
+        btnRequest.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
         
         btnCancelReservation.backgroundColor = .clear
         btnCancelReservation.layer.cornerRadius = 15

@@ -166,9 +166,10 @@ class EventDetailsVC: UIViewController,UITextFieldDelegate {
     override func viewWillAppear(_ animated: Bool)
     {
         super.viewWillAppear(animated)
-        
-        let homeBtn = UIBarButtonItem.init(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(self.homeClicked(sender:)))
-        self.navigationItem.rightBarButtonItem = homeBtn
+        self.navigationItem.rightBarButtonItem = self.navHomeBtnItem(target: self, action: #selector(self.homeClicked(sender:)))
+
+//        let homeBtn = UIBarButtonItem.init(image: #imageLiteral(resourceName: "Path 398"), style: .plain, target: self, action: #selector(self.homeClicked(sender:)))
+//        self.navigationItem.rightBarButtonItem = homeBtn
         //Added by kiran V2.5 11/30 -- ENGAGE0011297 -- Removing back button menus
         //ENGAGE0011297 -- Start
         self.navigationItem.leftBarButtonItem = self.navBackBtnItem(target: self, action: #selector(self.backBtnAction(sender:)))

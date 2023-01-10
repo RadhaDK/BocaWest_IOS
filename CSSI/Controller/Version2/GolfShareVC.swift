@@ -63,7 +63,7 @@ class GolfShareVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         btnShare.backgroundColor = .clear
         btnShare.layer.cornerRadius = 15
         btnShare.layer.borderWidth = 1
-        btnShare.layer.borderColor = hexStringToUIColor(hex: "F37D4A").cgColor
+        btnShare.layer.borderColor = UIColor(named: "navigationColor")?.cgColor
 
         //Added by Kiran V2.7 -- GATHER0000700 - Book a lesson changes. Added comparioson for BMS. beacuse tennis book a leasson and Tennis reservations have same isFrom.
         //GATHER0000700 - Start

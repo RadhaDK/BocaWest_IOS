@@ -37,7 +37,7 @@
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="20"/>
-                            <color key="textColor" name="navigationColor"/>
+                            <color key="textColor" name="PrimaryGroupColor"/>
                             <nil key="highlightedColor"/>
                             <size key="shadowOffset" width="0.0" height="0.0"/>
                         </label>
@@ -81,8 +81,8 @@
         </view>
     </objects>
     <resources>
-        <namedColor name="navigationColor">
-            <color red="0.289000004529953" green="0.40900000929832458" blue="0.56699997186660767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="PrimaryGroupColor">
+            <color red="0.25098039215686274" green="0.69803921568627447" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
