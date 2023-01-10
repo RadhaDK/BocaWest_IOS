@@ -448,7 +448,6 @@
 		09507B4B293743BC0003DA73 /* FitnessGoalChallangeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FC4F2ED2543214D00E7DB80 /* FitnessGoalChallangeTableViewCell.xib */; };
 		09507B4C293743BC0003DA73 /* RecentNewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F3D08CF2421EE99001FFA5F /* RecentNewsTableViewCell.xib */; };
 		09507B4D293743BC0003DA73 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F9FEBDE2106F31D00DAA459 /* Localizable.strings */; };
-		09507B4E293743BC0003DA73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 181EE37B23290F7F00C8A62F /* GoogleService-Info.plist */; };
 		09507B4F293743BC0003DA73 /* SourceSansPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5F68EDC120D3FC0900086DD6 /* SourceSansPro-Regular.otf */; };
 		09507B50293743BC0003DA73 /* AddBuddyHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187AA7CE22A2BA8F004F04D2 /* AddBuddyHeaderView.xib */; };
 		09507B51293743BC0003DA73 /* HeaderViewEventDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185746F62276DB5200F69E12 /* HeaderViewEventDetails.xib */; };
@@ -509,6 +508,9 @@
 		09507B89293743BC0003DA73 /* FitnessAppSettingsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FB84710250BC40C0065DB8A /* FitnessAppSettingsTVC.xib */; };
 		09507B8A293743BC0003DA73 /* GuestSelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C77C798921880DBF00F5DD90 /* GuestSelectionTableViewCell.xib */; };
 		09507B97293762A30003DA73 /* CobaltAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09507B95293762170003DA73 /* CobaltAssets.xcassets */; };
+		09C6A501296D69B00044CDE7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09C6A500296D69B00044CDE7 /* GoogleService-Info.plist */; };
+		09C6A504296D6BCD0044CDE7 /* HtmlTextConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800E8C4225CA9C10041E95D /* HtmlTextConverter.swift */; };
+		09C6A505296D6BCD0044CDE7 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8944D325377F8600645908 /* NotificationService.swift */; };
 		1800E8C5225CA9C20041E95D /* HtmlTextConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800E8C4225CA9C10041E95D /* HtmlTextConverter.swift */; };
 		1801B39C230ED8BE00E7ECC2 /* NewSuccessPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801B39B230ED8BE00E7ECC2 /* NewSuccessPopupView.swift */; };
 		1801B39E230F03C600E7ECC2 /* NewSuccessUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801B39D230F03C600E7ECC2 /* NewSuccessUpdateView.swift */; };
@@ -1220,6 +1222,9 @@
 		09507B93293743BC0003DA73 /* CobaltENGAGE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CobaltENGAGE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09507B94293743BD0003DA73 /* CSSI copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CSSI copy-Info.plist"; path = "/Users/aks/Desktop/BocaWestCobaltMerging/CSSI copy-Info.plist"; sourceTree = "<absolute>"; };
 		09507B95293762170003DA73 /* CobaltAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CobaltAssets.xcassets; sourceTree = "<group>"; };
+		09C6A500296D69B00044CDE7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		09C6A50B296D6BCD0044CDE7 /* CSSINotificationServiceCobalt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CSSINotificationServiceCobalt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		09C6A50C296D6BCD0044CDE7 /* CSSINotificationService copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CSSINotificationService copy-Info.plist"; path = "/Users/aks/Desktop/BocaWestCobaltMerging/CSSINotificationService copy-Info.plist"; sourceTree = "<absolute>"; };
 		0C5C799CAE16FDF3A560EEF4 /* Pods-CSSITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSSITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSSITests/Pods-CSSITests.release.xcconfig"; sourceTree = "<group>"; };
 		14421ACCD9ACF27860990504 /* Pods-CSSIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSSIUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSSIUITests/Pods-CSSIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1800E8C4225CA9C10041E95D /* HtmlTextConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtmlTextConverter.swift; sourceTree = "<group>"; };
@@ -1890,6 +1895,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		09C6A506296D6BCD0044CDE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		59FEC3DD20B6A64F00FF2DB0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1930,6 +1942,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09C6A4FE296D69450044CDE7 /* Cobalt */ = {
+			isa = PBXGroup;
+			children = (
+				09507B95293762170003DA73 /* CobaltAssets.xcassets */,
+				09C6A500296D69B00044CDE7 /* GoogleService-Info.plist */,
+			);
+			path = Cobalt;
+			sourceTree = "<group>";
+		};
+		09C6A4FF296D69520044CDE7 /* Bocawest */ = {
+			isa = PBXGroup;
+			children = (
+				181EE37B23290F7F00C8A62F /* GoogleService-Info.plist */,
+				59FEC3EA20B6A65100FF2DB0 /* BocaWestAssets.xcassets */,
+			);
+			path = Bocawest;
+			sourceTree = "<group>";
+		};
 		180505682189E3BE00BFBA0D /* ClubNewsDetails */ = {
 			isa = PBXGroup;
 			children = (
@@ -2125,6 +2155,7 @@
 				C5F611C3BCD0E07FDB029C8B /* Pods */,
 				F596BC958A1FB95EE986535E /* Frameworks */,
 				09507B94293743BD0003DA73 /* CSSI copy-Info.plist */,
+				09C6A50C296D6BCD0044CDE7 /* CSSINotificationService copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2136,6 +2167,7 @@
 				59FEC3FF20B6A65100FF2DB0 /* CSSIUITests.xctest */,
 				9F8944D125377F8600645908 /* CSSINotificationService.appex */,
 				09507B93293743BC0003DA73 /* CobaltENGAGE.app */,
+				09C6A50B296D6BCD0044CDE7 /* CSSINotificationServiceCobalt.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2143,6 +2175,8 @@
 		59FEC3E220B6A64F00FF2DB0 /* CSSI */ = {
 			isa = PBXGroup;
 			children = (
+				09C6A4FF296D69520044CDE7 /* Bocawest */,
+				09C6A4FE296D69450044CDE7 /* Cobalt */,
 				5F3AABFA2101DE960031103A /* AppDelegate */,
 				5F2E85352138035F00530F3D /* Utilities */,
 				5F8D96A52109A5550088FA61 /* CSSI.entitlements */,
@@ -2153,9 +2187,6 @@
 				59FEC41120B6B71400FF2DB0 /* Controller */,
 				A84B0FD62941DBD300F8D88F /* Dining */,
 				59FEC3E720B6A64F00FF2DB0 /* Main.storyboard */,
-				59FEC3EA20B6A65100FF2DB0 /* BocaWestAssets.xcassets */,
-				09507B95293762170003DA73 /* CobaltAssets.xcassets */,
-				181EE37B23290F7F00C8A62F /* GoogleService-Info.plist */,
 				59FEC3EC20B6A65100FF2DB0 /* LaunchScreen.storyboard */,
 				59FEC3EF20B6A65100FF2DB0 /* Info.plist */,
 				187913B7215FA7320025EC11 /* HeaderTableView.xib */,
@@ -3486,6 +3517,23 @@
 			productReference = 09507B93293743BC0003DA73 /* CobaltENGAGE.app */;
 			productType = "com.apple.product-type.application";
 		};
+		09C6A502296D6BCD0044CDE7 /* CSSINotificationServiceCobalt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09C6A508296D6BCD0044CDE7 /* Build configuration list for PBXNativeTarget "CSSINotificationServiceCobalt" */;
+			buildPhases = (
+				09C6A503296D6BCD0044CDE7 /* Sources */,
+				09C6A506296D6BCD0044CDE7 /* Frameworks */,
+				09C6A507296D6BCD0044CDE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CSSINotificationServiceCobalt;
+			productName = CSSINotificationService;
+			productReference = 09C6A50B296D6BCD0044CDE7 /* CSSINotificationServiceCobalt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		59FEC3DF20B6A64F00FF2DB0 /* CSSI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59FEC40820B6A65100FF2DB0 /* Build configuration list for PBXNativeTarget "CSSI" */;
@@ -3578,6 +3626,9 @@
 					0950798E293743BC0003DA73 = {
 						ProvisioningStyle = Automatic;
 					};
+					09C6A502296D6BCD0044CDE7 = {
+						ProvisioningStyle = Automatic;
+					};
 					59FEC3DF20B6A64F00FF2DB0 = {
 						CreatedOnToolsVersion = 9.3;
 						LastSwiftMigration = 0930;
@@ -3626,6 +3677,7 @@
 				59FEC3FE20B6A65100FF2DB0 /* CSSIUITests */,
 				9F8944D025377F8600645908 /* CSSINotificationService */,
 				0950798E293743BC0003DA73 /* CobaltENGAGE */,
+				09C6A502296D6BCD0044CDE7 /* CSSINotificationServiceCobalt */,
 			);
 		};
 /* End PBXProject section */
@@ -3656,7 +3708,6 @@
 				09507B4B293743BC0003DA73 /* FitnessGoalChallangeTableViewCell.xib in Resources */,
 				09507B4C293743BC0003DA73 /* RecentNewsTableViewCell.xib in Resources */,
 				09507B4D293743BC0003DA73 /* Localizable.strings in Resources */,
-				09507B4E293743BC0003DA73 /* GoogleService-Info.plist in Resources */,
 				09507B4F293743BC0003DA73 /* SourceSansPro-Regular.otf in Resources */,
 				09507B50293743BC0003DA73 /* AddBuddyHeaderView.xib in Resources */,
 				09507B51293743BC0003DA73 /* HeaderViewEventDetails.xib in Resources */,
@@ -3683,6 +3734,7 @@
 				09507B63293743BC0003DA73 /* FitnessVideoTableViewCell.xib in Resources */,
 				09507B64293743BC0003DA73 /* README.md in Resources */,
 				09507B65293743BC0003DA73 /* SFUIDisplay-Medium.otf in Resources */,
+				09C6A501296D69B00044CDE7 /* GoogleService-Info.plist in Resources */,
 				09507B66293743BC0003DA73 /* Main.storyboard in Resources */,
 				09507B67293743BC0003DA73 /* MemberApp.storyboard in Resources */,
 				09507B68293743BC0003DA73 /* FitnessGroupCollectionViewCell.xib in Resources */,
@@ -3725,6 +3777,13 @@
 				A84B35282950982800792A8A /* FirstComeFirstServeTableViewCell.xib in Resources */,
 				A84B0FF12941DD7C00F8D88F /* DiningResvTableCell.xib in Resources */,
 				09507B8A293743BC0003DA73 /* GuestSelectionTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09C6A507296D6BCD0044CDE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4646,6 +4705,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		09C6A503296D6BCD0044CDE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09C6A504296D6BCD0044CDE7 /* HtmlTextConverter.swift in Sources */,
+				09C6A505296D6BCD0044CDE7 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		59FEC3DC20B6A64F00FF2DB0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5277,6 +5345,49 @@
 			};
 			name = Release;
 		};
+		09C6A509296D6BCD0044CDE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.5;
+				DEVELOPMENT_TEAM = VX62S9W9R7;
+				INFOPLIST_FILE = "CSSINotificationService copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 2.9;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycobaltsoftware.cobaltengage.CSSINotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		09C6A50A296D6BCD0044CDE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.5;
+				DEVELOPMENT_TEAM = VX62S9W9R7;
+				INFOPLIST_FILE = "CSSINotificationService copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 2.9;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycobaltsoftware.cobaltengage.CSSINotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		59FEC40620B6A65100FF2DB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -5579,6 +5690,15 @@
 			buildConfigurations = (
 				09507B91293743BC0003DA73 /* Debug */,
 				09507B92293743BC0003DA73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		09C6A508296D6BCD0044CDE7 /* Build configuration list for PBXNativeTarget "CSSINotificationServiceCobalt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09C6A509296D6BCD0044CDE7 /* Debug */,
+				09C6A50A296D6BCD0044CDE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
